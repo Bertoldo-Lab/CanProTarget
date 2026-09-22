@@ -1,0 +1,92 @@
+"covpdb_index","protein_name","organism","uniprot_accession","n_protein_ligand_complexes","source_page"
+1,"14-3-3 protein sigma","Homo sapiens (Human)","P31947",11,1
+10,"3-phosphoinositide-dependent protein kinase 1","Homo sapiens (Human)","O15530",3,1
+18,"Aldehyde dehydrogenase, dimeric NADP-preferring","Homo sapiens (Human)","P30838",2,1
+19,"Aldehyde dehydrogenase, mitochondrial","Homo sapiens (Human)","P05091",1,1
+20,"Alpha-aminoadipic semialdehyde dehydrogenase","Homo sapiens (Human)","P49419",1,1
+26,"Asparagine synthetase [glutamine-hydrolyzing]","Homo sapiens (Human)","P08243",1,1
+29,"Aurora kinase A","Homo sapiens (Human)","O14965",1,1
+30,"Baculoviral IAP repeat-containing protein 2","Homo sapiens (Human)","Q13490",1,1
+31,"Bcl-2 homologous antagonist/killer","Homo sapiens (Human)","Q16611",1,1
+34,"Beta-secretase 1","Homo sapiens (Human)","P56817",3,1
+37,"Calpain-1 catalytic subunit","Homo sapiens (Human)","P07384",1,1
+40,"Carbonic anhydrase 2","Homo sapiens (Human)","P00918",4,1
+43,"Caspase-1","Homo sapiens (Human)","P29466",10,1
+44,"Caspase-3","Homo sapiens (Human)","P42574",19,1
+45,"Caspase-8","Homo sapiens (Human)","Q14790",3,1
+48,"Cathepsin B","Homo sapiens (Human)","P07858",3,1
+51,"Cathepsin F","Homo sapiens (Human)","Q9UBX1",1,2
+52,"Cathepsin K","Homo sapiens (Human)","P43235",38,2
+54,"Cathepsin L2","Homo sapiens (Human)","O60911",1,2
+56,"Cathepsin S","Homo sapiens (Human)","P25774",18,2
+58,"Chloride intracellular channel protein 2","Homo sapiens (Human)","O15247",1,2
+64,"Coagulation factor XIII A chain","Homo sapiens (Human)","P00488",3,2
+67,"Cyclin-dependent kinase 2","Homo sapiens (Human)","P24941",8,2
+71,"Cytoplasmic tyrosine-protein kinase BMX","Homo sapiens (Human)","P51813",1,2
+83,"Dipeptidyl peptidase 1","Homo sapiens (Human)","P53634",10,2
+84,"Dual specificity mitogen-activated protein kinase kinase 1","Homo sapiens (Human)","Q02750",1,2
+85,"Dual specificity mitogen-activated protein kinase kinase 7","Homo sapiens (Human)","O14733",8,2
+86,"E3 ubiquitin-protein ligase RNF31","Homo sapiens (Human)","Q96EP0",6,2
+87,"Ephrin type-B receptor 1","Homo sapiens (Human)","P54762",1,2
+88,"Epidermal growth factor receptor","Homo sapiens (Human)","P00533",15,2
+90,"Estrogen receptor","Homo sapiens (Human)","P03372",2,2
+95,"Fibroblast growth factor receptor 1","Homo sapiens (Human)","P11362",5,2
+96,"Fibroblast growth factor receptor 4","Homo sapiens (Human)","P22455",14,2
+98,"Fructose-1,6-bisphosphatase 1","Homo sapiens (Human)","P09467",1,2
+121,"Glutathione reductase, mitochondrial","Homo sapiens (Human)","P00390",1,3
+122,"Glutathione S-transferase omega-1","Homo sapiens (Human)","P78417",7,3
+126,"Glycogen synthase kinase-3 beta","Homo sapiens (Human)","P49841",1,3
+128,"Golgi-associated PDZ and coiled-coil motif-containing protein","Homo sapiens (Human)","Q9HD26",1,3
+129,"GTPase HRas","Homo sapiens (Human)","P01112",9,3
+130,"GTPase KRas","Homo sapiens (Human)","P01116",43,3
+132,"Hemoglobin subunit beta","Homo sapiens (Human)","P68871",2,3
+136,"Histone-lysine N-methyltransferase SMYD3","Homo sapiens (Human)","Q9H7B4",2,3
+141,"Inosine-5'-monophosphate dehydrogenase 1","Homo sapiens (Human)","P20839",1,3
+142,"Interleukin-12 subunit beta","Homo sapiens (Human)","P29460",1,3
+143,"Interleukin-2","Homo sapiens (Human)","P60568",3,3
+147,"Kelch-like ECH-associated protein 1","Homo sapiens (Human)","Q14145",3,3
+153,"Lysine-specific demethylase 5A","Homo sapiens (Human)","P29375",3,4
+154,"Lysine-specific demethylase 5B","Homo sapiens (Human)","Q9UGL1",1,4
+155,"Lysozyme C","Homo sapiens (Human)","P61626",1,4
+156,"Mast/stem cell growth factor receptor Kit","Homo sapiens (Human)","P10721",1,4
+160,"Mitogen-activated protein kinase 1","Homo sapiens (Human)","P28482",5,4
+162,"Mitogen-activated protein kinase 14","Homo sapiens (Human)","Q16539",2,4
+163,"Mitogen-activated protein kinase 3","Homo sapiens (Human)","P27361",1,4
+164,"Mucosa-associated lymphoid tissue lymphoma translocation protein 1","Homo sapiens (Human)","Q9UDY8",1,4
+173,"N(G),N(G)-dimethylarginine dimethylaminohydrolase 1","Homo sapiens (Human)","O94760",3,4
+174,"N-lysine methyltransferase KMT5A","Homo sapiens (Human)","Q9NQR1",3,4
+176,"Nuclear receptor subfamily 4 group A member 2","Homo sapiens (Human)","P43354",2,4
+179,"Pantetheinase","Homo sapiens (Human)","O95497",1,4
+181,"Parkinson disease protein 7","Homo sapiens (Human)","Q99497",6,4
+183,"Peroxisome proliferator-activated receptor gamma","Homo sapiens (Human)","P37231",14,4
+187,"Phospholipase A and acyltransferase 3","Homo sapiens (Human)","P53816",1,4
+194,"Procathepsin L","Homo sapiens (Human)","P07711",19,4
+199,"Protein-arginine deiminase type-4","Homo sapiens (Human)","Q9UM07",2,4
+200,"Protein-glutamine gamma-glutamyltransferase 2","Homo sapiens (Human)","P21980",1,4
+203,"Proto-oncogene tyrosine-protein kinase Src","Homo sapiens (Human)","P12931",8,5
+211,"RAC-alpha serine/threonine-protein kinase","Homo sapiens (Human)","P31749",3,5
+223,"Retinal dehydrogenase 1","Homo sapiens (Human)","P00352",1,5
+225,"Retinal dehydrogenase 2","Homo sapiens (Human)","O94788",1,5
+227,"Ribosomal protein S6 kinase alpha-3","Homo sapiens (Human)","P51812",2,5
+229,"RNA demethylase ALKBH5","Homo sapiens (Human)","Q6P6C2",1,5
+230,"Serine/threonine-protein kinase Nek2","Homo sapiens (Human)","P51955",1,5
+244,"SUMO-activating enzyme subunit 2","Homo sapiens (Human)","Q9UBT2",1,5
+245,"Superoxide dismutase [Cu-Zn]","Homo sapiens (Human)","P00441",4,5
+246,"Targeting protein for Xklp2","Homo sapiens (Human)","Q9ULW0",2,5
+247,"T-box transcription factor T","Homo sapiens (Human)","O15178",1,5
+248,"TGF-beta-activated kinase 1 and MAP3K7-binding protein 1","Homo sapiens (Human)","Q15750",6,5
+254,"Thymidylate synthase","Homo sapiens (Human)","P04818",1,6
+262,"Transforming protein RhoA","Homo sapiens (Human)","P61586",1,6
+265,"Tubulinyl-Tyr carboxypeptidase 1","Homo sapiens (Human)","Q7L8A9",2,6
+266,"Tubulinyl-Tyr carboxypeptidase 2","Homo sapiens (Human)","Q86V25",1,6
+268,"Tyrosine-protein kinase BTK","Homo sapiens (Human)","Q06187",14,6
+269,"Tyrosine-protein kinase ITK/TSK","Homo sapiens (Human)","Q08881",4,6
+270,"Tyrosine-protein kinase JAK3","Homo sapiens (Human)","P52333",9,6
+271,"Tyrosine-protein kinase ZAP-70","Homo sapiens (Human)","P43403",1,6
+272,"Tyrosine-protein phosphatase non-receptor type 1","Homo sapiens (Human)","P18031",2,6
+273,"Tyrosine-protein phosphatase non-receptor type 13","Homo sapiens (Human)","Q12923",2,6
+275,"Ubiquitin carboxyl-terminal hydrolase 2","Homo sapiens (Human)","O75604",1,6
+276,"Ubiquitin carboxyl-terminal hydrolase 7","Homo sapiens (Human)","Q93009",1,6
+277,"Ubiquitin-conjugating enzyme E2 N","Homo sapiens (Human)","P61088",2,6
+278,"Ubiquitin thioesterase OTUB2","Homo sapiens (Human)","Q96DC9",12,6
+279,"UDP-glucose 6-dehydrogenase","Homo sapiens (Human)","O60701",1,6

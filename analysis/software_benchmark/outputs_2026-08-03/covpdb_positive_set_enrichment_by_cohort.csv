@@ -1,0 +1,361 @@
+"panel","cohort_code","cohort","ranker","top_fraction","n_candidates","n_scored","n_known_positive","n_known_positive_scored","n_top","n_top_known_positive","overall_prevalence","top_prevalence","fold_enrichment","known_positive_recall"
+"Adult","AML","Acute Myeloid Leukemia","CPT_default",0.05,1231,1231,7,7,62,0,0.00568643379366369,0,0,0
+"Adult","BLCA","Bladder Urothelial Carcinoma","CPT_default",0.05,250,250,4,4,13,0,0.016,0,0,0
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","CPT_default",0.05,656,656,4,4,33,0,0.00609756097560976,0,0,0
+"Adult","COAD","Colon Adenocarcinoma","CPT_default",0.05,237,237,4,4,12,0,0.0168776371308017,0,0,0
+"Adult","GBM","Glioblastoma","CPT_default",0.05,650,650,2,2,33,0,0.00307692307692308,0,0,0
+"Adult","LUAD","Lung Adenocarcinoma","CPT_default",0.05,55,55,2,2,3,0,0.0363636363636364,0,0,0
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","CPT_default",0.05,919,919,5,5,46,1,0.00544069640914037,0.0217391304347826,3.99565217391304,0.2
+"Adult","PDAC","Pancreatic Adenocarcinoma","CPT_default",0.05,280,280,2,2,14,0,0.00714285714285714,0,0,0
+"Adult","SCLC","Small Cell Lung Cancer","CPT_default",0.05,579,579,1,1,29,0,0.00172711571675302,0,0,0
+"Adult","SKCM","Melanoma","CPT_default",0.05,713,713,5,5,36,1,0.00701262272089762,0.0277777777777778,3.96111111111111,0.2
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","CPT_default",0.05,829,829,6,6,42,0,0.00723763570566948,0,0,0
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","CPT_default",0.05,1011,1011,4,4,51,0,0.0039564787339268,0,0,0
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","CPT_default",0.05,1819,1819,11,11,91,1,0.00604727872457394,0.010989010989011,1.81718281718282,0.0909090909090909
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","CPT_default",0.05,646,646,6,6,33,0,0.00928792569659443,0,0,0
+"Paediatric","EWS","Ewing Sarcoma","CPT_default",0.05,1703,1703,8,8,86,0,0.00469759248385203,0,0,0
+"Paediatric","MB","Medulloblastoma","CPT_default",0.05,1154,1154,5,5,58,0,0.00433275563258232,0,0,0
+"Paediatric","NB","Neuroblastoma","CPT_default",0.05,959,959,13,13,48,0,0.013555787278415,0,0,0
+"Paediatric","OS","Osteosarcoma","CPT_default",0.05,416,416,2,2,21,1,0.00480769230769231,0.0476190476190476,9.9047619047619,0.5
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","CPT_default",0.05,467,467,4,4,24,0,0.00856531049250535,0,0,0
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","CPT_default",0.05,303,303,3,3,16,0,0.0099009900990099,0,0,0
+"Adult","AML","Acute Myeloid Leukemia","CPT_default",0.1,1231,1231,7,7,124,0,0.00568643379366369,0,0,0
+"Adult","BLCA","Bladder Urothelial Carcinoma","CPT_default",0.1,250,250,4,4,25,0,0.016,0,0,0
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","CPT_default",0.1,656,656,4,4,66,0,0.00609756097560976,0,0,0
+"Adult","COAD","Colon Adenocarcinoma","CPT_default",0.1,237,237,4,4,24,0,0.0168776371308017,0,0,0
+"Adult","GBM","Glioblastoma","CPT_default",0.1,650,650,2,2,65,0,0.00307692307692308,0,0,0
+"Adult","LUAD","Lung Adenocarcinoma","CPT_default",0.1,55,55,2,2,6,0,0.0363636363636364,0,0,0
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","CPT_default",0.1,919,919,5,5,92,1,0.00544069640914037,0.0108695652173913,1.99782608695652,0.2
+"Adult","PDAC","Pancreatic Adenocarcinoma","CPT_default",0.1,280,280,2,2,28,0,0.00714285714285714,0,0,0
+"Adult","SCLC","Small Cell Lung Cancer","CPT_default",0.1,579,579,1,1,58,0,0.00172711571675302,0,0,0
+"Adult","SKCM","Melanoma","CPT_default",0.1,713,713,5,5,72,3,0.00701262272089762,0.0416666666666667,5.94166666666667,0.6
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","CPT_default",0.1,829,829,6,6,83,0,0.00723763570566948,0,0,0
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","CPT_default",0.1,1011,1011,4,4,102,1,0.0039564787339268,0.00980392156862745,2.47794117647059,0.25
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","CPT_default",0.1,1819,1819,11,11,182,3,0.00604727872457394,0.0164835164835165,2.72577422577423,0.272727272727273
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","CPT_default",0.1,646,646,6,6,65,0,0.00928792569659443,0,0,0
+"Paediatric","EWS","Ewing Sarcoma","CPT_default",0.1,1703,1703,8,8,171,0,0.00469759248385203,0,0,0
+"Paediatric","MB","Medulloblastoma","CPT_default",0.1,1154,1154,5,5,116,0,0.00433275563258232,0,0,0
+"Paediatric","NB","Neuroblastoma","CPT_default",0.1,959,959,13,13,96,0,0.013555787278415,0,0,0
+"Paediatric","OS","Osteosarcoma","CPT_default",0.1,416,416,2,2,42,1,0.00480769230769231,0.0238095238095238,4.95238095238095,0.5
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","CPT_default",0.1,467,467,4,4,47,1,0.00856531049250535,0.0212765957446809,2.48404255319149,0.25
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","CPT_default",0.1,303,303,3,3,31,0,0.0099009900990099,0,0,0
+"Adult","AML","Acute Myeloid Leukemia","CPT_default",0.2,1231,1231,7,7,247,0,0.00568643379366369,0,0,0
+"Adult","BLCA","Bladder Urothelial Carcinoma","CPT_default",0.2,250,250,4,4,50,1,0.016,0.02,1.25,0.25
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","CPT_default",0.2,656,656,4,4,132,1,0.00609756097560976,0.00757575757575758,1.24242424242424,0.25
+"Adult","COAD","Colon Adenocarcinoma","CPT_default",0.2,237,237,4,4,48,0,0.0168776371308017,0,0,0
+"Adult","GBM","Glioblastoma","CPT_default",0.2,650,650,2,2,130,0,0.00307692307692308,0,0,0
+"Adult","LUAD","Lung Adenocarcinoma","CPT_default",0.2,55,55,2,2,11,0,0.0363636363636364,0,0,0
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","CPT_default",0.2,919,919,5,5,184,1,0.00544069640914037,0.00543478260869565,0.998913043478261,0.2
+"Adult","PDAC","Pancreatic Adenocarcinoma","CPT_default",0.2,280,280,2,2,56,0,0.00714285714285714,0,0,0
+"Adult","SCLC","Small Cell Lung Cancer","CPT_default",0.2,579,579,1,1,116,0,0.00172711571675302,0,0,0
+"Adult","SKCM","Melanoma","CPT_default",0.2,713,713,5,5,143,3,0.00701262272089762,0.020979020979021,2.99160839160839,0.6
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","CPT_default",0.2,829,829,6,6,166,1,0.00723763570566948,0.00602409638554217,0.832329317269076,0.166666666666667
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","CPT_default",0.2,1011,1011,4,4,203,2,0.0039564787339268,0.00985221674876847,2.49014778325123,0.5
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","CPT_default",0.2,1819,1819,11,11,364,5,0.00604727872457394,0.0137362637362637,2.27147852147852,0.454545454545455
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","CPT_default",0.2,646,646,6,6,130,0,0.00928792569659443,0,0,0
+"Paediatric","EWS","Ewing Sarcoma","CPT_default",0.2,1703,1703,8,8,341,0,0.00469759248385203,0,0,0
+"Paediatric","MB","Medulloblastoma","CPT_default",0.2,1154,1154,5,5,231,1,0.00433275563258232,0.00432900432900433,0.999134199134199,0.2
+"Paediatric","NB","Neuroblastoma","CPT_default",0.2,959,959,13,13,192,1,0.013555787278415,0.00520833333333333,0.384214743589744,0.0769230769230769
+"Paediatric","OS","Osteosarcoma","CPT_default",0.2,416,416,2,2,84,1,0.00480769230769231,0.0119047619047619,2.47619047619048,0.5
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","CPT_default",0.2,467,467,4,4,94,2,0.00856531049250535,0.0212765957446809,2.48404255319149,0.5
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","CPT_default",0.2,303,303,3,3,61,1,0.0099009900990099,0.0163934426229508,1.65573770491803,0.333333333333333
+"Adult","AML","Acute Myeloid Leukemia","CPT_equal",0.05,1231,1231,7,7,62,0,0.00568643379366369,0,0,0
+"Adult","BLCA","Bladder Urothelial Carcinoma","CPT_equal",0.05,250,250,4,4,13,0,0.016,0,0,0
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","CPT_equal",0.05,656,656,4,4,33,0,0.00609756097560976,0,0,0
+"Adult","COAD","Colon Adenocarcinoma","CPT_equal",0.05,237,237,4,4,12,0,0.0168776371308017,0,0,0
+"Adult","GBM","Glioblastoma","CPT_equal",0.05,650,650,2,2,33,0,0.00307692307692308,0,0,0
+"Adult","LUAD","Lung Adenocarcinoma","CPT_equal",0.05,55,55,2,2,3,0,0.0363636363636364,0,0,0
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","CPT_equal",0.05,919,919,5,5,46,1,0.00544069640914037,0.0217391304347826,3.99565217391304,0.2
+"Adult","PDAC","Pancreatic Adenocarcinoma","CPT_equal",0.05,280,280,2,2,14,0,0.00714285714285714,0,0,0
+"Adult","SCLC","Small Cell Lung Cancer","CPT_equal",0.05,579,579,1,1,29,0,0.00172711571675302,0,0,0
+"Adult","SKCM","Melanoma","CPT_equal",0.05,713,713,5,5,36,1,0.00701262272089762,0.0277777777777778,3.96111111111111,0.2
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","CPT_equal",0.05,829,829,6,6,42,0,0.00723763570566948,0,0,0
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","CPT_equal",0.05,1011,1011,4,4,51,0,0.0039564787339268,0,0,0
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","CPT_equal",0.05,1819,1819,11,11,91,1,0.00604727872457394,0.010989010989011,1.81718281718282,0.0909090909090909
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","CPT_equal",0.05,646,646,6,6,33,0,0.00928792569659443,0,0,0
+"Paediatric","EWS","Ewing Sarcoma","CPT_equal",0.05,1703,1703,8,8,86,0,0.00469759248385203,0,0,0
+"Paediatric","MB","Medulloblastoma","CPT_equal",0.05,1154,1154,5,5,58,0,0.00433275563258232,0,0,0
+"Paediatric","NB","Neuroblastoma","CPT_equal",0.05,959,959,13,13,48,0,0.013555787278415,0,0,0
+"Paediatric","OS","Osteosarcoma","CPT_equal",0.05,416,416,2,2,21,1,0.00480769230769231,0.0476190476190476,9.9047619047619,0.5
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","CPT_equal",0.05,467,467,4,4,24,0,0.00856531049250535,0,0,0
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","CPT_equal",0.05,303,303,3,3,16,0,0.0099009900990099,0,0,0
+"Adult","AML","Acute Myeloid Leukemia","CPT_equal",0.1,1231,1231,7,7,124,0,0.00568643379366369,0,0,0
+"Adult","BLCA","Bladder Urothelial Carcinoma","CPT_equal",0.1,250,250,4,4,25,0,0.016,0,0,0
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","CPT_equal",0.1,656,656,4,4,66,0,0.00609756097560976,0,0,0
+"Adult","COAD","Colon Adenocarcinoma","CPT_equal",0.1,237,237,4,4,24,0,0.0168776371308017,0,0,0
+"Adult","GBM","Glioblastoma","CPT_equal",0.1,650,650,2,2,65,0,0.00307692307692308,0,0,0
+"Adult","LUAD","Lung Adenocarcinoma","CPT_equal",0.1,55,55,2,2,6,0,0.0363636363636364,0,0,0
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","CPT_equal",0.1,919,919,5,5,92,1,0.00544069640914037,0.0108695652173913,1.99782608695652,0.2
+"Adult","PDAC","Pancreatic Adenocarcinoma","CPT_equal",0.1,280,280,2,2,28,0,0.00714285714285714,0,0,0
+"Adult","SCLC","Small Cell Lung Cancer","CPT_equal",0.1,579,579,1,1,58,0,0.00172711571675302,0,0,0
+"Adult","SKCM","Melanoma","CPT_equal",0.1,713,713,5,5,72,3,0.00701262272089762,0.0416666666666667,5.94166666666667,0.6
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","CPT_equal",0.1,829,829,6,6,83,0,0.00723763570566948,0,0,0
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","CPT_equal",0.1,1011,1011,4,4,102,1,0.0039564787339268,0.00980392156862745,2.47794117647059,0.25
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","CPT_equal",0.1,1819,1819,11,11,182,3,0.00604727872457394,0.0164835164835165,2.72577422577423,0.272727272727273
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","CPT_equal",0.1,646,646,6,6,65,0,0.00928792569659443,0,0,0
+"Paediatric","EWS","Ewing Sarcoma","CPT_equal",0.1,1703,1703,8,8,171,0,0.00469759248385203,0,0,0
+"Paediatric","MB","Medulloblastoma","CPT_equal",0.1,1154,1154,5,5,116,0,0.00433275563258232,0,0,0
+"Paediatric","NB","Neuroblastoma","CPT_equal",0.1,959,959,13,13,96,0,0.013555787278415,0,0,0
+"Paediatric","OS","Osteosarcoma","CPT_equal",0.1,416,416,2,2,42,1,0.00480769230769231,0.0238095238095238,4.95238095238095,0.5
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","CPT_equal",0.1,467,467,4,4,47,1,0.00856531049250535,0.0212765957446809,2.48404255319149,0.25
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","CPT_equal",0.1,303,303,3,3,31,0,0.0099009900990099,0,0,0
+"Adult","AML","Acute Myeloid Leukemia","CPT_equal",0.2,1231,1231,7,7,247,0,0.00568643379366369,0,0,0
+"Adult","BLCA","Bladder Urothelial Carcinoma","CPT_equal",0.2,250,250,4,4,50,1,0.016,0.02,1.25,0.25
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","CPT_equal",0.2,656,656,4,4,132,2,0.00609756097560976,0.0151515151515152,2.48484848484848,0.5
+"Adult","COAD","Colon Adenocarcinoma","CPT_equal",0.2,237,237,4,4,48,0,0.0168776371308017,0,0,0
+"Adult","GBM","Glioblastoma","CPT_equal",0.2,650,650,2,2,130,0,0.00307692307692308,0,0,0
+"Adult","LUAD","Lung Adenocarcinoma","CPT_equal",0.2,55,55,2,2,11,0,0.0363636363636364,0,0,0
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","CPT_equal",0.2,919,919,5,5,184,1,0.00544069640914037,0.00543478260869565,0.998913043478261,0.2
+"Adult","PDAC","Pancreatic Adenocarcinoma","CPT_equal",0.2,280,280,2,2,56,0,0.00714285714285714,0,0,0
+"Adult","SCLC","Small Cell Lung Cancer","CPT_equal",0.2,579,579,1,1,116,0,0.00172711571675302,0,0,0
+"Adult","SKCM","Melanoma","CPT_equal",0.2,713,713,5,5,143,3,0.00701262272089762,0.020979020979021,2.99160839160839,0.6
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","CPT_equal",0.2,829,829,6,6,166,1,0.00723763570566948,0.00602409638554217,0.832329317269076,0.166666666666667
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","CPT_equal",0.2,1011,1011,4,4,203,2,0.0039564787339268,0.00985221674876847,2.49014778325123,0.5
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","CPT_equal",0.2,1819,1819,11,11,364,5,0.00604727872457394,0.0137362637362637,2.27147852147852,0.454545454545455
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","CPT_equal",0.2,646,646,6,6,130,0,0.00928792569659443,0,0,0
+"Paediatric","EWS","Ewing Sarcoma","CPT_equal",0.2,1703,1703,8,8,341,0,0.00469759248385203,0,0,0
+"Paediatric","MB","Medulloblastoma","CPT_equal",0.2,1154,1154,5,5,231,1,0.00433275563258232,0.00432900432900433,0.999134199134199,0.2
+"Paediatric","NB","Neuroblastoma","CPT_equal",0.2,959,959,13,13,192,1,0.013555787278415,0.00520833333333333,0.384214743589744,0.0769230769230769
+"Paediatric","OS","Osteosarcoma","CPT_equal",0.2,416,416,2,2,84,1,0.00480769230769231,0.0119047619047619,2.47619047619048,0.5
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","CPT_equal",0.2,467,467,4,4,94,2,0.00856531049250535,0.0212765957446809,2.48404255319149,0.5
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","CPT_equal",0.2,303,303,3,3,61,1,0.0099009900990099,0.0163934426229508,1.65573770491803,0.333333333333333
+"Adult","AML","Acute Myeloid Leukemia","Dependency",0.05,1231,1231,7,7,62,0,0.00568643379366369,0,0,0
+"Adult","BLCA","Bladder Urothelial Carcinoma","Dependency",0.05,250,250,4,4,13,0,0.016,0,0,0
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","Dependency",0.05,656,656,4,4,33,0,0.00609756097560976,0,0,0
+"Adult","COAD","Colon Adenocarcinoma","Dependency",0.05,237,237,4,4,12,1,0.0168776371308017,0.0833333333333333,4.9375,0.25
+"Adult","GBM","Glioblastoma","Dependency",0.05,650,650,2,2,33,0,0.00307692307692308,0,0,0
+"Adult","LUAD","Lung Adenocarcinoma","Dependency",0.05,55,55,2,2,3,0,0.0363636363636364,0,0,0
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","Dependency",0.05,919,919,5,5,46,1,0.00544069640914037,0.0217391304347826,3.99565217391304,0.2
+"Adult","PDAC","Pancreatic Adenocarcinoma","Dependency",0.05,280,280,2,2,14,1,0.00714285714285714,0.0714285714285714,10,0.5
+"Adult","SCLC","Small Cell Lung Cancer","Dependency",0.05,579,579,1,1,29,1,0.00172711571675302,0.0344827586206897,19.9655172413793,1
+"Adult","SKCM","Melanoma","Dependency",0.05,713,713,5,5,36,2,0.00701262272089762,0.0555555555555556,7.92222222222222,0.4
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","Dependency",0.05,829,829,6,6,42,0,0.00723763570566948,0,0,0
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","Dependency",0.05,1011,1011,4,4,51,0,0.0039564787339268,0,0,0
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","Dependency",0.05,1819,1819,11,11,91,2,0.00604727872457394,0.021978021978022,3.63436563436563,0.181818181818182
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","Dependency",0.05,646,646,6,6,33,0,0.00928792569659443,0,0,0
+"Paediatric","EWS","Ewing Sarcoma","Dependency",0.05,1703,1703,8,8,86,0,0.00469759248385203,0,0,0
+"Paediatric","MB","Medulloblastoma","Dependency",0.05,1154,1154,5,5,58,0,0.00433275563258232,0,0,0
+"Paediatric","NB","Neuroblastoma","Dependency",0.05,959,959,13,13,48,1,0.013555787278415,0.0208333333333333,1.53685897435897,0.0769230769230769
+"Paediatric","OS","Osteosarcoma","Dependency",0.05,416,416,2,2,21,0,0.00480769230769231,0,0,0
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","Dependency",0.05,467,467,4,4,24,0,0.00856531049250535,0,0,0
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","Dependency",0.05,303,303,3,3,16,0,0.0099009900990099,0,0,0
+"Adult","AML","Acute Myeloid Leukemia","Dependency",0.1,1231,1231,7,7,124,1,0.00568643379366369,0.00806451612903226,1.41820276497696,0.142857142857143
+"Adult","BLCA","Bladder Urothelial Carcinoma","Dependency",0.1,250,250,4,4,25,0,0.016,0,0,0
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","Dependency",0.1,656,656,4,4,66,1,0.00609756097560976,0.0151515151515152,2.48484848484848,0.25
+"Adult","COAD","Colon Adenocarcinoma","Dependency",0.1,237,237,4,4,24,1,0.0168776371308017,0.0416666666666667,2.46875,0.25
+"Adult","GBM","Glioblastoma","Dependency",0.1,650,650,2,2,65,0,0.00307692307692308,0,0,0
+"Adult","LUAD","Lung Adenocarcinoma","Dependency",0.1,55,55,2,2,6,0,0.0363636363636364,0,0,0
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","Dependency",0.1,919,919,5,5,92,2,0.00544069640914037,0.0217391304347826,3.99565217391304,0.4
+"Adult","PDAC","Pancreatic Adenocarcinoma","Dependency",0.1,280,280,2,2,28,1,0.00714285714285714,0.0357142857142857,5,0.5
+"Adult","SCLC","Small Cell Lung Cancer","Dependency",0.1,579,579,1,1,58,1,0.00172711571675302,0.0172413793103448,9.98275862068965,1
+"Adult","SKCM","Melanoma","Dependency",0.1,713,713,5,5,72,3,0.00701262272089762,0.0416666666666667,5.94166666666667,0.6
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","Dependency",0.1,829,829,6,6,83,0,0.00723763570566948,0,0,0
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","Dependency",0.1,1011,1011,4,4,102,0,0.0039564787339268,0,0,0
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","Dependency",0.1,1819,1819,11,11,182,4,0.00604727872457394,0.021978021978022,3.63436563436563,0.363636363636364
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","Dependency",0.1,646,646,6,6,65,0,0.00928792569659443,0,0,0
+"Paediatric","EWS","Ewing Sarcoma","Dependency",0.1,1703,1703,8,8,171,0,0.00469759248385203,0,0,0
+"Paediatric","MB","Medulloblastoma","Dependency",0.1,1154,1154,5,5,116,1,0.00433275563258232,0.00862068965517241,1.98965517241379,0.2
+"Paediatric","NB","Neuroblastoma","Dependency",0.1,959,959,13,13,96,1,0.013555787278415,0.0104166666666667,0.768429487179487,0.0769230769230769
+"Paediatric","OS","Osteosarcoma","Dependency",0.1,416,416,2,2,42,1,0.00480769230769231,0.0238095238095238,4.95238095238095,0.5
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","Dependency",0.1,467,467,4,4,47,0,0.00856531049250535,0,0,0
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","Dependency",0.1,303,303,3,3,31,0,0.0099009900990099,0,0,0
+"Adult","AML","Acute Myeloid Leukemia","Dependency",0.2,1231,1231,7,7,247,1,0.00568643379366369,0.00404858299595142,0.711972238288028,0.142857142857143
+"Adult","BLCA","Bladder Urothelial Carcinoma","Dependency",0.2,250,250,4,4,50,1,0.016,0.02,1.25,0.25
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","Dependency",0.2,656,656,4,4,132,1,0.00609756097560976,0.00757575757575758,1.24242424242424,0.25
+"Adult","COAD","Colon Adenocarcinoma","Dependency",0.2,237,237,4,4,48,2,0.0168776371308017,0.0416666666666667,2.46875,0.5
+"Adult","GBM","Glioblastoma","Dependency",0.2,650,650,2,2,130,0,0.00307692307692308,0,0,0
+"Adult","LUAD","Lung Adenocarcinoma","Dependency",0.2,55,55,2,2,11,0,0.0363636363636364,0,0,0
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","Dependency",0.2,919,919,5,5,184,3,0.00544069640914037,0.016304347826087,2.99673913043478,0.6
+"Adult","PDAC","Pancreatic Adenocarcinoma","Dependency",0.2,280,280,2,2,56,1,0.00714285714285714,0.0178571428571429,2.5,0.5
+"Adult","SCLC","Small Cell Lung Cancer","Dependency",0.2,579,579,1,1,116,1,0.00172711571675302,0.00862068965517241,4.99137931034483,1
+"Adult","SKCM","Melanoma","Dependency",0.2,713,713,5,5,143,3,0.00701262272089762,0.020979020979021,2.99160839160839,0.6
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","Dependency",0.2,829,829,6,6,166,1,0.00723763570566948,0.00602409638554217,0.832329317269076,0.166666666666667
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","Dependency",0.2,1011,1011,4,4,203,2,0.0039564787339268,0.00985221674876847,2.49014778325123,0.5
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","Dependency",0.2,1819,1819,11,11,364,6,0.00604727872457394,0.0164835164835165,2.72577422577423,0.545454545454545
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","Dependency",0.2,646,646,6,6,130,0,0.00928792569659443,0,0,0
+"Paediatric","EWS","Ewing Sarcoma","Dependency",0.2,1703,1703,8,8,341,1,0.00469759248385203,0.00293255131964809,0.624266862170088,0.125
+"Paediatric","MB","Medulloblastoma","Dependency",0.2,1154,1154,5,5,231,2,0.00433275563258232,0.00865800865800866,1.9982683982684,0.4
+"Paediatric","NB","Neuroblastoma","Dependency",0.2,959,959,13,13,192,3,0.013555787278415,0.015625,1.15264423076923,0.230769230769231
+"Paediatric","OS","Osteosarcoma","Dependency",0.2,416,416,2,2,84,1,0.00480769230769231,0.0119047619047619,2.47619047619048,0.5
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","Dependency",0.2,467,467,4,4,94,1,0.00856531049250535,0.0106382978723404,1.24202127659574,0.25
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","Dependency",0.2,303,303,3,3,61,0,0.0099009900990099,0,0,0
+"Adult","AML","Acute Myeloid Leukemia","Selectivity",0.05,1231,1231,7,7,62,0,0.00568643379366369,0,0,0
+"Adult","BLCA","Bladder Urothelial Carcinoma","Selectivity",0.05,250,250,4,4,13,0,0.016,0,0,0
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","Selectivity",0.05,656,656,4,4,33,1,0.00609756097560976,0.0303030303030303,4.96969696969697,0.25
+"Adult","COAD","Colon Adenocarcinoma","Selectivity",0.05,237,237,4,4,12,1,0.0168776371308017,0.0833333333333333,4.9375,0.25
+"Adult","GBM","Glioblastoma","Selectivity",0.05,650,650,2,2,33,0,0.00307692307692308,0,0,0
+"Adult","LUAD","Lung Adenocarcinoma","Selectivity",0.05,55,55,2,2,3,1,0.0363636363636364,0.333333333333333,9.16666666666667,0.5
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","Selectivity",0.05,919,919,5,5,46,2,0.00544069640914037,0.0434782608695652,7.99130434782609,0.4
+"Adult","PDAC","Pancreatic Adenocarcinoma","Selectivity",0.05,280,280,2,2,14,1,0.00714285714285714,0.0714285714285714,10,0.5
+"Adult","SCLC","Small Cell Lung Cancer","Selectivity",0.05,579,579,1,1,29,1,0.00172711571675302,0.0344827586206897,19.9655172413793,1
+"Adult","SKCM","Melanoma","Selectivity",0.05,713,713,5,5,36,1,0.00701262272089762,0.0277777777777778,3.96111111111111,0.2
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","Selectivity",0.05,829,829,6,6,42,0,0.00723763570566948,0,0,0
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","Selectivity",0.05,1011,1011,4,4,51,0,0.0039564787339268,0,0,0
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","Selectivity",0.05,1819,1819,11,11,91,3,0.00604727872457394,0.032967032967033,5.45154845154845,0.272727272727273
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","Selectivity",0.05,646,646,6,6,33,0,0.00928792569659443,0,0,0
+"Paediatric","EWS","Ewing Sarcoma","Selectivity",0.05,1703,1703,8,8,86,0,0.00469759248385203,0,0,0
+"Paediatric","MB","Medulloblastoma","Selectivity",0.05,1154,1154,5,5,58,0,0.00433275563258232,0,0,0
+"Paediatric","NB","Neuroblastoma","Selectivity",0.05,959,959,13,13,48,1,0.013555787278415,0.0208333333333333,1.53685897435897,0.0769230769230769
+"Paediatric","OS","Osteosarcoma","Selectivity",0.05,416,416,2,2,21,0,0.00480769230769231,0,0,0
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","Selectivity",0.05,467,467,4,4,24,0,0.00856531049250535,0,0,0
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","Selectivity",0.05,303,303,3,3,16,0,0.0099009900990099,0,0,0
+"Adult","AML","Acute Myeloid Leukemia","Selectivity",0.1,1231,1231,7,7,124,0,0.00568643379366369,0,0,0
+"Adult","BLCA","Bladder Urothelial Carcinoma","Selectivity",0.1,250,250,4,4,25,0,0.016,0,0,0
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","Selectivity",0.1,656,656,4,4,66,2,0.00609756097560976,0.0303030303030303,4.96969696969697,0.5
+"Adult","COAD","Colon Adenocarcinoma","Selectivity",0.1,237,237,4,4,24,1,0.0168776371308017,0.0416666666666667,2.46875,0.25
+"Adult","GBM","Glioblastoma","Selectivity",0.1,650,650,2,2,65,0,0.00307692307692308,0,0,0
+"Adult","LUAD","Lung Adenocarcinoma","Selectivity",0.1,55,55,2,2,6,2,0.0363636363636364,0.333333333333333,9.16666666666667,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","Selectivity",0.1,919,919,5,5,92,2,0.00544069640914037,0.0217391304347826,3.99565217391304,0.4
+"Adult","PDAC","Pancreatic Adenocarcinoma","Selectivity",0.1,280,280,2,2,28,1,0.00714285714285714,0.0357142857142857,5,0.5
+"Adult","SCLC","Small Cell Lung Cancer","Selectivity",0.1,579,579,1,1,58,1,0.00172711571675302,0.0172413793103448,9.98275862068965,1
+"Adult","SKCM","Melanoma","Selectivity",0.1,713,713,5,5,72,3,0.00701262272089762,0.0416666666666667,5.94166666666667,0.6
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","Selectivity",0.1,829,829,6,6,83,0,0.00723763570566948,0,0,0
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","Selectivity",0.1,1011,1011,4,4,102,1,0.0039564787339268,0.00980392156862745,2.47794117647059,0.25
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","Selectivity",0.1,1819,1819,11,11,182,5,0.00604727872457394,0.0274725274725275,4.54295704295704,0.454545454545455
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","Selectivity",0.1,646,646,6,6,65,0,0.00928792569659443,0,0,0
+"Paediatric","EWS","Ewing Sarcoma","Selectivity",0.1,1703,1703,8,8,171,0,0.00469759248385203,0,0,0
+"Paediatric","MB","Medulloblastoma","Selectivity",0.1,1154,1154,5,5,116,0,0.00433275563258232,0,0,0
+"Paediatric","NB","Neuroblastoma","Selectivity",0.1,959,959,13,13,96,1,0.013555787278415,0.0104166666666667,0.768429487179487,0.0769230769230769
+"Paediatric","OS","Osteosarcoma","Selectivity",0.1,416,416,2,2,42,0,0.00480769230769231,0,0,0
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","Selectivity",0.1,467,467,4,4,47,0,0.00856531049250535,0,0,0
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","Selectivity",0.1,303,303,3,3,31,0,0.0099009900990099,0,0,0
+"Adult","AML","Acute Myeloid Leukemia","Selectivity",0.2,1231,1231,7,7,247,2,0.00568643379366369,0.00809716599190283,1.42394447657606,0.285714285714286
+"Adult","BLCA","Bladder Urothelial Carcinoma","Selectivity",0.2,250,250,4,4,50,1,0.016,0.02,1.25,0.25
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","Selectivity",0.2,656,656,4,4,132,2,0.00609756097560976,0.0151515151515152,2.48484848484848,0.5
+"Adult","COAD","Colon Adenocarcinoma","Selectivity",0.2,237,237,4,4,48,1,0.0168776371308017,0.0208333333333333,1.234375,0.25
+"Adult","GBM","Glioblastoma","Selectivity",0.2,650,650,2,2,130,0,0.00307692307692308,0,0,0
+"Adult","LUAD","Lung Adenocarcinoma","Selectivity",0.2,55,55,2,2,11,2,0.0363636363636364,0.181818181818182,5,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","Selectivity",0.2,919,919,5,5,184,2,0.00544069640914037,0.0108695652173913,1.99782608695652,0.4
+"Adult","PDAC","Pancreatic Adenocarcinoma","Selectivity",0.2,280,280,2,2,56,1,0.00714285714285714,0.0178571428571429,2.5,0.5
+"Adult","SCLC","Small Cell Lung Cancer","Selectivity",0.2,579,579,1,1,116,1,0.00172711571675302,0.00862068965517241,4.99137931034483,1
+"Adult","SKCM","Melanoma","Selectivity",0.2,713,713,5,5,143,3,0.00701262272089762,0.020979020979021,2.99160839160839,0.6
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","Selectivity",0.2,829,829,6,6,166,1,0.00723763570566948,0.00602409638554217,0.832329317269076,0.166666666666667
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","Selectivity",0.2,1011,1011,4,4,203,2,0.0039564787339268,0.00985221674876847,2.49014778325123,0.5
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","Selectivity",0.2,1819,1819,11,11,364,7,0.00604727872457394,0.0192307692307692,3.18006993006993,0.636363636363636
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","Selectivity",0.2,646,646,6,6,130,0,0.00928792569659443,0,0,0
+"Paediatric","EWS","Ewing Sarcoma","Selectivity",0.2,1703,1703,8,8,341,1,0.00469759248385203,0.00293255131964809,0.624266862170088,0.125
+"Paediatric","MB","Medulloblastoma","Selectivity",0.2,1154,1154,5,5,231,0,0.00433275563258232,0,0,0
+"Paediatric","NB","Neuroblastoma","Selectivity",0.2,959,959,13,13,192,1,0.013555787278415,0.00520833333333333,0.384214743589744,0.0769230769230769
+"Paediatric","OS","Osteosarcoma","Selectivity",0.2,416,416,2,2,84,0,0.00480769230769231,0,0,0
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","Selectivity",0.2,467,467,4,4,94,2,0.00856531049250535,0.0212765957446809,2.48404255319149,0.5
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","Selectivity",0.2,303,303,3,3,61,0,0.0099009900990099,0,0,0
+"Adult","AML","Acute Myeloid Leukemia","Dependency_selectivity_mean",0.05,1231,1231,7,7,62,0,0.00568643379366369,0,0,0
+"Adult","BLCA","Bladder Urothelial Carcinoma","Dependency_selectivity_mean",0.05,250,250,4,4,13,0,0.016,0,0,0
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","Dependency_selectivity_mean",0.05,656,656,4,4,33,1,0.00609756097560976,0.0303030303030303,4.96969696969697,0.25
+"Adult","COAD","Colon Adenocarcinoma","Dependency_selectivity_mean",0.05,237,237,4,4,12,1,0.0168776371308017,0.0833333333333333,4.9375,0.25
+"Adult","GBM","Glioblastoma","Dependency_selectivity_mean",0.05,650,650,2,2,33,0,0.00307692307692308,0,0,0
+"Adult","LUAD","Lung Adenocarcinoma","Dependency_selectivity_mean",0.05,55,55,2,2,3,0,0.0363636363636364,0,0,0
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","Dependency_selectivity_mean",0.05,919,919,5,5,46,2,0.00544069640914037,0.0434782608695652,7.99130434782609,0.4
+"Adult","PDAC","Pancreatic Adenocarcinoma","Dependency_selectivity_mean",0.05,280,280,2,2,14,1,0.00714285714285714,0.0714285714285714,10,0.5
+"Adult","SCLC","Small Cell Lung Cancer","Dependency_selectivity_mean",0.05,579,579,1,1,29,1,0.00172711571675302,0.0344827586206897,19.9655172413793,1
+"Adult","SKCM","Melanoma","Dependency_selectivity_mean",0.05,713,713,5,5,36,2,0.00701262272089762,0.0555555555555556,7.92222222222222,0.4
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","Dependency_selectivity_mean",0.05,829,829,6,6,42,0,0.00723763570566948,0,0,0
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","Dependency_selectivity_mean",0.05,1011,1011,4,4,51,0,0.0039564787339268,0,0,0
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","Dependency_selectivity_mean",0.05,1819,1819,11,11,91,3,0.00604727872457394,0.032967032967033,5.45154845154845,0.272727272727273
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","Dependency_selectivity_mean",0.05,646,646,6,6,33,0,0.00928792569659443,0,0,0
+"Paediatric","EWS","Ewing Sarcoma","Dependency_selectivity_mean",0.05,1703,1703,8,8,86,0,0.00469759248385203,0,0,0
+"Paediatric","MB","Medulloblastoma","Dependency_selectivity_mean",0.05,1154,1154,5,5,58,0,0.00433275563258232,0,0,0
+"Paediatric","NB","Neuroblastoma","Dependency_selectivity_mean",0.05,959,959,13,13,48,1,0.013555787278415,0.0208333333333333,1.53685897435897,0.0769230769230769
+"Paediatric","OS","Osteosarcoma","Dependency_selectivity_mean",0.05,416,416,2,2,21,0,0.00480769230769231,0,0,0
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","Dependency_selectivity_mean",0.05,467,467,4,4,24,0,0.00856531049250535,0,0,0
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","Dependency_selectivity_mean",0.05,303,303,3,3,16,0,0.0099009900990099,0,0,0
+"Adult","AML","Acute Myeloid Leukemia","Dependency_selectivity_mean",0.1,1231,1231,7,7,124,0,0.00568643379366369,0,0,0
+"Adult","BLCA","Bladder Urothelial Carcinoma","Dependency_selectivity_mean",0.1,250,250,4,4,25,0,0.016,0,0,0
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","Dependency_selectivity_mean",0.1,656,656,4,4,66,1,0.00609756097560976,0.0151515151515152,2.48484848484848,0.25
+"Adult","COAD","Colon Adenocarcinoma","Dependency_selectivity_mean",0.1,237,237,4,4,24,1,0.0168776371308017,0.0416666666666667,2.46875,0.25
+"Adult","GBM","Glioblastoma","Dependency_selectivity_mean",0.1,650,650,2,2,65,0,0.00307692307692308,0,0,0
+"Adult","LUAD","Lung Adenocarcinoma","Dependency_selectivity_mean",0.1,55,55,2,2,6,0,0.0363636363636364,0,0,0
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","Dependency_selectivity_mean",0.1,919,919,5,5,92,2,0.00544069640914037,0.0217391304347826,3.99565217391304,0.4
+"Adult","PDAC","Pancreatic Adenocarcinoma","Dependency_selectivity_mean",0.1,280,280,2,2,28,1,0.00714285714285714,0.0357142857142857,5,0.5
+"Adult","SCLC","Small Cell Lung Cancer","Dependency_selectivity_mean",0.1,579,579,1,1,58,1,0.00172711571675302,0.0172413793103448,9.98275862068965,1
+"Adult","SKCM","Melanoma","Dependency_selectivity_mean",0.1,713,713,5,5,72,3,0.00701262272089762,0.0416666666666667,5.94166666666667,0.6
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","Dependency_selectivity_mean",0.1,829,829,6,6,83,0,0.00723763570566948,0,0,0
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","Dependency_selectivity_mean",0.1,1011,1011,4,4,102,0,0.0039564787339268,0,0,0
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","Dependency_selectivity_mean",0.1,1819,1819,11,11,182,5,0.00604727872457394,0.0274725274725275,4.54295704295704,0.454545454545455
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","Dependency_selectivity_mean",0.1,646,646,6,6,65,0,0.00928792569659443,0,0,0
+"Paediatric","EWS","Ewing Sarcoma","Dependency_selectivity_mean",0.1,1703,1703,8,8,171,0,0.00469759248385203,0,0,0
+"Paediatric","MB","Medulloblastoma","Dependency_selectivity_mean",0.1,1154,1154,5,5,116,0,0.00433275563258232,0,0,0
+"Paediatric","NB","Neuroblastoma","Dependency_selectivity_mean",0.1,959,959,13,13,96,1,0.013555787278415,0.0104166666666667,0.768429487179487,0.0769230769230769
+"Paediatric","OS","Osteosarcoma","Dependency_selectivity_mean",0.1,416,416,2,2,42,1,0.00480769230769231,0.0238095238095238,4.95238095238095,0.5
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","Dependency_selectivity_mean",0.1,467,467,4,4,47,0,0.00856531049250535,0,0,0
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","Dependency_selectivity_mean",0.1,303,303,3,3,31,0,0.0099009900990099,0,0,0
+"Adult","AML","Acute Myeloid Leukemia","Dependency_selectivity_mean",0.2,1231,1231,7,7,247,0,0.00568643379366369,0,0,0
+"Adult","BLCA","Bladder Urothelial Carcinoma","Dependency_selectivity_mean",0.2,250,250,4,4,50,1,0.016,0.02,1.25,0.25
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","Dependency_selectivity_mean",0.2,656,656,4,4,132,1,0.00609756097560976,0.00757575757575758,1.24242424242424,0.25
+"Adult","COAD","Colon Adenocarcinoma","Dependency_selectivity_mean",0.2,237,237,4,4,48,2,0.0168776371308017,0.0416666666666667,2.46875,0.5
+"Adult","GBM","Glioblastoma","Dependency_selectivity_mean",0.2,650,650,2,2,130,0,0.00307692307692308,0,0,0
+"Adult","LUAD","Lung Adenocarcinoma","Dependency_selectivity_mean",0.2,55,55,2,2,11,0,0.0363636363636364,0,0,0
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","Dependency_selectivity_mean",0.2,919,919,5,5,184,3,0.00544069640914037,0.016304347826087,2.99673913043478,0.6
+"Adult","PDAC","Pancreatic Adenocarcinoma","Dependency_selectivity_mean",0.2,280,280,2,2,56,1,0.00714285714285714,0.0178571428571429,2.5,0.5
+"Adult","SCLC","Small Cell Lung Cancer","Dependency_selectivity_mean",0.2,579,579,1,1,116,1,0.00172711571675302,0.00862068965517241,4.99137931034483,1
+"Adult","SKCM","Melanoma","Dependency_selectivity_mean",0.2,713,713,5,5,143,4,0.00701262272089762,0.027972027972028,3.98881118881119,0.8
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","Dependency_selectivity_mean",0.2,829,829,6,6,166,1,0.00723763570566948,0.00602409638554217,0.832329317269076,0.166666666666667
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","Dependency_selectivity_mean",0.2,1011,1011,4,4,203,2,0.0039564787339268,0.00985221674876847,2.49014778325123,0.5
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","Dependency_selectivity_mean",0.2,1819,1819,11,11,364,7,0.00604727872457394,0.0192307692307692,3.18006993006993,0.636363636363636
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","Dependency_selectivity_mean",0.2,646,646,6,6,130,0,0.00928792569659443,0,0,0
+"Paediatric","EWS","Ewing Sarcoma","Dependency_selectivity_mean",0.2,1703,1703,8,8,341,0,0.00469759248385203,0,0,0
+"Paediatric","MB","Medulloblastoma","Dependency_selectivity_mean",0.2,1154,1154,5,5,231,1,0.00433275563258232,0.00432900432900433,0.999134199134199,0.2
+"Paediatric","NB","Neuroblastoma","Dependency_selectivity_mean",0.2,959,959,13,13,192,2,0.013555787278415,0.0104166666666667,0.768429487179487,0.153846153846154
+"Paediatric","OS","Osteosarcoma","Dependency_selectivity_mean",0.2,416,416,2,2,84,1,0.00480769230769231,0.0119047619047619,2.47619047619048,0.5
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","Dependency_selectivity_mean",0.2,467,467,4,4,94,2,0.00856531049250535,0.0212765957446809,2.48404255319149,0.5
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","Dependency_selectivity_mean",0.2,303,303,3,3,61,1,0.0099009900990099,0.0163934426229508,1.65573770491803,0.333333333333333
+"Adult","AML","Acute Myeloid Leukemia","Cysteine_ligandability",0.05,1231,94,7,1,62,1,0.00568643379366369,0.0161290322580645,2.83640552995392,0.142857142857143
+"Adult","BLCA","Bladder Urothelial Carcinoma","Cysteine_ligandability",0.05,250,21,4,0,13,0,0.016,0,0,0
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","Cysteine_ligandability",0.05,656,82,4,2,33,2,0.00609756097560976,0.0606060606060606,9.93939393939394,0.5
+"Adult","COAD","Colon Adenocarcinoma","Cysteine_ligandability",0.05,237,37,4,2,12,0,0.0168776371308017,0,0,0
+"Adult","GBM","Glioblastoma","Cysteine_ligandability",0.05,650,46,2,0,33,0,0.00307692307692308,0,0,0
+"Adult","LUAD","Lung Adenocarcinoma","Cysteine_ligandability",0.05,55,28,2,2,3,1,0.0363636363636364,0.333333333333333,9.16666666666667,0.5
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","Cysteine_ligandability",0.05,919,90,5,3,46,2,0.00544069640914037,0.0434782608695652,7.99130434782609,0.4
+"Adult","PDAC","Pancreatic Adenocarcinoma","Cysteine_ligandability",0.05,280,55,2,2,14,1,0.00714285714285714,0.0714285714285714,10,0.5
+"Adult","SCLC","Small Cell Lung Cancer","Cysteine_ligandability",0.05,579,52,1,1,29,1,0.00172711571675302,0.0344827586206897,19.9655172413793,1
+"Adult","SKCM","Melanoma","Cysteine_ligandability",0.05,713,87,5,2,36,1,0.00701262272089762,0.0277777777777778,3.96111111111111,0.2
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","Cysteine_ligandability",0.05,829,31,6,0,42,0,0.00723763570566948,0,0,0
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","Cysteine_ligandability",0.05,1011,66,4,1,51,1,0.0039564787339268,0.0196078431372549,4.95588235294118,0.25
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","Cysteine_ligandability",0.05,1819,107,11,2,91,2,0.00604727872457394,0.021978021978022,3.63436563436563,0.181818181818182
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","Cysteine_ligandability",0.05,646,29,6,0,33,0,0.00928792569659443,0,0,0
+"Paediatric","EWS","Ewing Sarcoma","Cysteine_ligandability",0.05,1703,80,8,1,86,1,0.00469759248385203,0.0116279069767442,2.47529069767442,0.125
+"Paediatric","MB","Medulloblastoma","Cysteine_ligandability",0.05,1154,82,5,1,58,1,0.00433275563258232,0.0172413793103448,3.97931034482759,0.2
+"Paediatric","NB","Neuroblastoma","Cysteine_ligandability",0.05,959,72,13,1,48,1,0.013555787278415,0.0208333333333333,1.53685897435897,0.0769230769230769
+"Paediatric","OS","Osteosarcoma","Cysteine_ligandability",0.05,416,40,2,0,21,0,0.00480769230769231,0,0,0
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","Cysteine_ligandability",0.05,467,36,4,0,24,0,0.00856531049250535,0,0,0
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","Cysteine_ligandability",0.05,303,33,3,0,16,0,0.0099009900990099,0,0,0
+"Adult","AML","Acute Myeloid Leukemia","Cysteine_ligandability",0.1,1231,94,7,1,124,1,0.00568643379366369,0.00806451612903226,1.41820276497696,0.142857142857143
+"Adult","BLCA","Bladder Urothelial Carcinoma","Cysteine_ligandability",0.1,250,21,4,0,25,0,0.016,0,0,0
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","Cysteine_ligandability",0.1,656,82,4,2,66,2,0.00609756097560976,0.0303030303030303,4.96969696969697,0.5
+"Adult","COAD","Colon Adenocarcinoma","Cysteine_ligandability",0.1,237,37,4,2,24,2,0.0168776371308017,0.0833333333333333,4.9375,0.5
+"Adult","GBM","Glioblastoma","Cysteine_ligandability",0.1,650,46,2,0,65,0,0.00307692307692308,0,0,0
+"Adult","LUAD","Lung Adenocarcinoma","Cysteine_ligandability",0.1,55,28,2,2,6,1,0.0363636363636364,0.166666666666667,4.58333333333333,0.5
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","Cysteine_ligandability",0.1,919,90,5,3,92,3,0.00544069640914037,0.0326086956521739,5.99347826086956,0.6
+"Adult","PDAC","Pancreatic Adenocarcinoma","Cysteine_ligandability",0.1,280,55,2,2,28,1,0.00714285714285714,0.0357142857142857,5,0.5
+"Adult","SCLC","Small Cell Lung Cancer","Cysteine_ligandability",0.1,579,52,1,1,58,1,0.00172711571675302,0.0172413793103448,9.98275862068965,1
+"Adult","SKCM","Melanoma","Cysteine_ligandability",0.1,713,87,5,2,72,2,0.00701262272089762,0.0277777777777778,3.96111111111111,0.4
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","Cysteine_ligandability",0.1,829,31,6,0,83,1,0.00723763570566948,0.0120481927710843,1.66465863453815,0.166666666666667
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","Cysteine_ligandability",0.1,1011,66,4,1,102,1,0.0039564787339268,0.00980392156862745,2.47794117647059,0.25
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","Cysteine_ligandability",0.1,1819,107,11,2,182,4,0.00604727872457394,0.021978021978022,3.63436563436563,0.363636363636364
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","Cysteine_ligandability",0.1,646,29,6,0,65,0,0.00928792569659443,0,0,0
+"Paediatric","EWS","Ewing Sarcoma","Cysteine_ligandability",0.1,1703,80,8,1,171,3,0.00469759248385203,0.0175438596491228,3.73464912280702,0.375
+"Paediatric","MB","Medulloblastoma","Cysteine_ligandability",0.1,1154,82,5,1,116,1,0.00433275563258232,0.00862068965517241,1.98965517241379,0.2
+"Paediatric","NB","Neuroblastoma","Cysteine_ligandability",0.1,959,72,13,1,96,1,0.013555787278415,0.0104166666666667,0.768429487179487,0.0769230769230769
+"Paediatric","OS","Osteosarcoma","Cysteine_ligandability",0.1,416,40,2,0,42,0,0.00480769230769231,0,0,0
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","Cysteine_ligandability",0.1,467,36,4,0,47,0,0.00856531049250535,0,0,0
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","Cysteine_ligandability",0.1,303,33,3,0,31,0,0.0099009900990099,0,0,0
+"Adult","AML","Acute Myeloid Leukemia","Cysteine_ligandability",0.2,1231,94,7,1,247,2,0.00568643379366369,0.00809716599190283,1.42394447657606,0.285714285714286
+"Adult","BLCA","Bladder Urothelial Carcinoma","Cysteine_ligandability",0.2,250,21,4,0,50,1,0.016,0.02,1.25,0.25
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","Cysteine_ligandability",0.2,656,82,4,2,132,3,0.00609756097560976,0.0227272727272727,3.72727272727273,0.75
+"Adult","COAD","Colon Adenocarcinoma","Cysteine_ligandability",0.2,237,37,4,2,48,2,0.0168776371308017,0.0416666666666667,2.46875,0.5
+"Adult","GBM","Glioblastoma","Cysteine_ligandability",0.2,650,46,2,0,130,0,0.00307692307692308,0,0,0
+"Adult","LUAD","Lung Adenocarcinoma","Cysteine_ligandability",0.2,55,28,2,2,11,1,0.0363636363636364,0.0909090909090909,2.5,0.5
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","Cysteine_ligandability",0.2,919,90,5,3,184,3,0.00544069640914037,0.016304347826087,2.99673913043478,0.6
+"Adult","PDAC","Pancreatic Adenocarcinoma","Cysteine_ligandability",0.2,280,55,2,2,56,2,0.00714285714285714,0.0357142857142857,5,1
+"Adult","SCLC","Small Cell Lung Cancer","Cysteine_ligandability",0.2,579,52,1,1,116,1,0.00172711571675302,0.00862068965517241,4.99137931034483,1
+"Adult","SKCM","Melanoma","Cysteine_ligandability",0.2,713,87,5,2,143,2,0.00701262272089762,0.013986013986014,1.99440559440559,0.4
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","Cysteine_ligandability",0.2,829,31,6,0,166,2,0.00723763570566948,0.0120481927710843,1.66465863453815,0.333333333333333
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","Cysteine_ligandability",0.2,1011,66,4,1,203,2,0.0039564787339268,0.00985221674876847,2.49014778325123,0.5
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","Cysteine_ligandability",0.2,1819,107,11,2,364,6,0.00604727872457394,0.0164835164835165,2.72577422577423,0.545454545454545
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","Cysteine_ligandability",0.2,646,29,6,0,130,1,0.00928792569659443,0.00769230769230769,0.828205128205128,0.166666666666667
+"Paediatric","EWS","Ewing Sarcoma","Cysteine_ligandability",0.2,1703,80,8,1,341,3,0.00469759248385203,0.00879765395894428,1.87280058651026,0.375
+"Paediatric","MB","Medulloblastoma","Cysteine_ligandability",0.2,1154,82,5,1,231,2,0.00433275563258232,0.00865800865800866,1.9982683982684,0.4
+"Paediatric","NB","Neuroblastoma","Cysteine_ligandability",0.2,959,72,13,1,192,6,0.013555787278415,0.03125,2.30528846153846,0.461538461538462
+"Paediatric","OS","Osteosarcoma","Cysteine_ligandability",0.2,416,40,2,0,84,1,0.00480769230769231,0.0119047619047619,2.47619047619048,0.5
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","Cysteine_ligandability",0.2,467,36,4,0,94,0,0.00856531049250535,0,0,0
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","Cysteine_ligandability",0.2,303,33,3,0,61,0,0.0099009900990099,0,0,0

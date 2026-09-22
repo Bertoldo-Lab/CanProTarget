@@ -1,0 +1,292 @@
+"covpdb_index","protein_name","organism","uniprot_accession","n_protein_ligand_complexes","source_page"
+1,"14-3-3 protein sigma","Homo sapiens (Human)","P31947",11,1
+2,"2-aminomuconate 6-semialdehyde dehydrogenase","Pseudomonas fluorescens","Q83V33",3,1
+3,"2-mercaptophenol-alpha3C","None",,1,1
+4,"2'-O-methyltransferase","Middle East respiratory syndrome-related coronavirus (MERS-CoV)","T2B9U0",6,1
+5,"3C-like proteinase","Porcine epidemic diarrhea virus","K4L9I6",1,1
+6,"3C-like proteinase","Middle East respiratory syndrome-related coronavirus (MERS-CoV)","V9TU12",1,1
+7,"3-oxoacyl-[acyl-carrier-protein] synthase 1","Escherichia coli (strain K12)","P0A953",1,1
+8,"3-oxoacyl-[acyl-carrier-protein] synthase 2","Bacillus subtilis (strain 168)","O34340",1,1
+9,"3-oxoacyl-[acyl-carrier-protein] synthase 3","Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)","P9WNG3",3,1
+10,"3-phosphoinositide-dependent protein kinase 1","Homo sapiens (Human)","O15530",3,1
+11,"4-hydroxyphenylpyruvate 3-dimethylallyltransferase","Streptomyces roseochromogenus subsp. oscitans","Q8GHB2",2,1
+12,"A. acutangulus PKS2","Anisodus acutangulus",,1,1
+13,"ACP_syn_III_C domain-containing protein","Photorhabdus laumondii subsp. laumondii (strain DSM 15139 / CIP 105565 / TT01)","Q7N4Z6",1,1
+14,"Actinidain","Actinidia chinensis var. chinensis (Chinese soft-hair kiwi)","P00785",1,1
+15,"Acyl-carrier-protein] S-malonyltransferase","Sorangium cellulosum (Polyangium cellulosum)","Q4U443",1,1
+16,"Acyl-CoA:acyl-CoA alkyltransferase","Xanthomonas campestris pv. campestris (strain ATCC 33913 / DSM 3586 / NCPPB 528 / LMG 568 / P 25)","Q8PDX2",5,1
+17,"Agglutinin","Marasmius oreades","Q8X123",2,1
+18,"Aldehyde dehydrogenase, dimeric NADP-preferring","Homo sapiens (Human)","P30838",2,1
+19,"Aldehyde dehydrogenase, mitochondrial","Homo sapiens (Human)","P05091",1,1
+20,"Alpha-aminoadipic semialdehyde dehydrogenase","Homo sapiens (Human)","P49419",1,1
+21,"Amidophosphoribosyltransferase","Escherichia coli (strain K12)","P0AG16",2,1
+22,"Ananain","Ananas comosus (Pineapple) (Ananas ananas)","P80884",1,1
+23,"Arginine deiminase","Mycoplasma arginini","P23793",1,1
+24,"Arsenate reductase","Staphylococcus aureus","P0A006",1,1
+25,"Arsenic methyltransferase","Cyanidioschyzon sp. 5508","C0JV69",3,1
+26,"Asparagine synthetase [glutamine-hydrolyzing]","Homo sapiens (Human)","P08243",1,1
+27,"Aspartate-semialdehyde dehydrogenase","Streptococcus pneumoniae serotype 4 (strain ATCC BAA-334 / TIGR4)","A0A0H2UPS5",1,1
+28,"ATP synthase subunit s, mitochondrial","Bos taurus (Bovine)","P22027",1,1
+29,"Aurora kinase A","Homo sapiens (Human)","O14965",1,1
+30,"Baculoviral IAP repeat-containing protein 2","Homo sapiens (Human)","Q13490",1,1
+31,"Bcl-2 homologous antagonist/killer","Homo sapiens (Human)","Q16611",1,1
+32,"Betaine aldehyde dehydrogenase, chloroplastic","Spinacia oleracea (Spinach)","P17202",1,1
+33,"Beta-lactamase","Bacillus licheniformis","P00808",12,1
+34,"Beta-secretase 1","Homo sapiens (Human)","P56817",3,1
+35,"Bifunctional cytochrome P450/NADPH--P450 reductase","Bacillus megaterium (strain ATCC 14581 / DSM 32 / JCM 2506 / NBRC 15308 / NCIMB 9376 / NCTC 10342 / NRRL B-14308 / VKM B-512)","P14779",3,1
+36,"Botulinum neurotoxin type A","Clostridium botulinum (strain Hall / ATCC 3502 / NCTC 13319 / Type A)","P0DPI1",1,1
+37,"Calpain-1 catalytic subunit","Homo sapiens (Human)","P07384",1,1
+38,"Calpain-1 catalytic subunit","Rattus norvegicus (Rat)","P97571",7,1
+39,"Camphor 5-monooxygenase","Pseudomonas putida (Arthrobacter siderocapsulatus)","P00183",2,1
+40,"Carbonic anhydrase 2","Homo sapiens (Human)","P00918",4,1
+41,"Carbonic anhydrase 5A, mitochondrial","Mus musculus (Mouse)","P23589",1,1
+42,"Caricain","Carica papaya (Papaya)","P10056",1,1
+43,"Caspase-1","Homo sapiens (Human)","P29466",10,1
+44,"Caspase-3","Homo sapiens (Human)","P42574",19,1
+45,"Caspase-8","Homo sapiens (Human)","Q14790",3,1
+46,"Cathepsin B","Rattus norvegicus (Rat)","P00787",2,1
+47,"Cathepsin B","Bos taurus (Bovine)","P07688",11,1
+48,"Cathepsin B","Homo sapiens (Human)","P07858",3,1
+49,"Cathepsin B1 isotype 1","Schistosoma mansoni (Blood fluke)","Q8MNY2",4,1
+50,"Cathepsin B-like cysteine protease","Trypanosoma brucei","Q6R7Z5",1,1
+51,"Cathepsin F","Homo sapiens (Human)","Q9UBX1",1,2
+52,"Cathepsin K","Homo sapiens (Human)","P43235",38,2
+53,"Cathepsin K","Oryctolagus cuniculus (Rabbit)","P43236",1,2
+54,"Cathepsin L2","Homo sapiens (Human)","O60911",1,2
+55,"Cathepsin S","Mus musculus (Mouse)","O70370",6,2
+56,"Cathepsin S","Homo sapiens (Human)","P25774",18,2
+57,"CDA peptide synthetase I","Streptomyces coelicolor (strain ATCC BAA-471 / A3(2) / M145)","Q9Z4X6",2,2
+58,"Chloride intracellular channel protein 2","Homo sapiens (Human)","O15247",1,2
+59,"Choline trimethylamine-lyase","Desulfovibrio alaskensis (strain ATCC BAA 1058 / DSM 17464 / G20) (Desulfovibrio desulfuricans (strain G20))","Q30W70",1,2
+60,"Class A sortase SrtA","Staphylococcus aureus","Q9S446",1,2
+61,"Clostripain family","Parabacteroides merdae ATCC 43184","A7A9N3",1,2
+62,"Clostripain-related protein","Bacteroides thetaiotaomicron (strain ATCC 29148 / DSM 2079 / NCTC 10582 / E50 / VPI-5482)","Q8A866",1,2
+63,"CmeC","Campylobacter jejuni","Q8RTE3",1,2
+64,"Coagulation factor XIII A chain","Homo sapiens (Human)","P00488",3,2
+65,"Core protein precursor","Hepatitis C virus subtype 1b","Q99AU2",1,2
+66,"Cruzipain","Trypanosoma cruzi","P25779",17,2
+67,"Cyclin-dependent kinase 2","Homo sapiens (Human)","P24941",8,2
+68,"Cysteine protease","Trypanosoma brucei rhodesiense","Q95PM0",2,2
+69,"Cysteine proteinase","Vasconcellea cundinamarcensis (Mountain papaya) (Carica candamarcensis)","Q84XA1",1,2
+70,"Cysteine proteinase B","Leishmania mexicana","P36400",1,2
+71,"Cytoplasmic tyrosine-protein kinase BMX","Homo sapiens (Human)","P51813",1,2
+72,"Deaminated glutathione amidase","Saccharomyces cerevisiae (strain ATCC 204508 / S288c) (Baker's yeast)","P47016",2,2
+73,"Decaprenylphosphoryl-beta-D-ribose oxidase","Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh)","P9WJF0",1,2
+74,"Decaprenylphosphoryl-beta-D-ribose oxidase","Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)","P9WJF1",6,2
+75,"Deoxyribose-phosphate aldolase","Escherichia coli (strain K12)","P0A6L0",5,2
+76,"Deubiquitinase and deneddylase Dub1","Chlamydia trachomatis serovar L2 (strain 434/Bu / ATCC VR-902B)","B0B9A0",2,2
+77,"Diacylglycerol acyltransferase/mycolyltransferase Ag85C","Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)","P9WQN9",2,2
+78,"Diaminopimelate epimerase","Haemophilus influenzae (strain ATCC 51907 / DSM 11121 / KW20 / Rd)","P44859",2,2
+79,"Dihydroorotate dehydrogenase (fumarate)","Trypanosoma cruzi (strain CL Brener)","Q4D3W2",2,2
+80,"Dihydroorotate dehydrogenase (fumarate)","Leishmania major","Q4QEW7",2,2
+81,"Dihydropyrimidine dehydrogenase [NADP(+)]","Sus scrofa (Pig)","Q28943",1,2
+82,"Dionain-1","Dionaea muscipula (Venus flytrap)","A0A0E3GLN3",1,2
+83,"Dipeptidyl peptidase 1","Homo sapiens (Human)","P53634",10,2
+84,"Dual specificity mitogen-activated protein kinase kinase 1","Homo sapiens (Human)","Q02750",1,2
+85,"Dual specificity mitogen-activated protein kinase kinase 7","Homo sapiens (Human)","O14733",8,2
+86,"E3 ubiquitin-protein ligase RNF31","Homo sapiens (Human)","Q96EP0",6,2
+87,"Ephrin type-B receptor 1","Homo sapiens (Human)","P54762",1,2
+88,"Epidermal growth factor receptor","Homo sapiens (Human)","P00533",15,2
+89,"ErfK/YbiS/YcfS/YnhG family protein","Enterococcus faecium (strain ATCC BAA-472 / TX0016 / DO)","Q3Y185",1,2
+90,"Estrogen receptor","Homo sapiens (Human)","P03372",2,2
+91,"Exportin-1","Saccharomyces cerevisiae (strain ATCC 204508 / S288c) (Baker's yeast)","P30822",12,2
+92,"Fatty-acid amide hydrolase 1","Rattus norvegicus (Rat)","P97612",10,2
+93,"Ferredoxin-dependent glutamate synthase 2","Synechocystis sp. (strain PCC 6803 / Kazusa)","P55038",1,2
+94,"Ferritin light chain","Equus caballus (Horse)","P02791",3,2
+95,"Fibroblast growth factor receptor 1","Homo sapiens (Human)","P11362",5,2
+96,"Fibroblast growth factor receptor 4","Homo sapiens (Human)","P22455",14,2
+97,"Formamidopyrimidine-DNA glycosylase","Lactococcus lactis subsp. cremoris (Streptococcus cremoris)","P42371",1,2
+98,"Fructose-1,6-bisphosphatase 1","Homo sapiens (Human)","P09467",1,2
+99,"Gag-Pol polyprotein","Human immunodeficiency virus type 1 group M subtype B (isolate BH10) (HIV-1)","P03366",3,2
+100,"Genome polyprotein","Human enterovirus D68 (EV68) (EV-68)","A1E4A3",7,2
+101,"Genome polyprotein","Human enterovirus 71 (EV71) (EV-71)","A9XG43",12,3
+102,"Genome polyprotein","Coxsackievirus A16","C8CIL7",1,3
+103,"Genome polyprotein","Human enterovirus 71 (EV71) (EV-71)","E0WWC7",1,3
+104,"Genome polyprotein","Human enterovirus 71 (EV71) (EV-71)","E7E815",3,3
+105,"Genome polyprotein","Echovirus 1 (strain Human/Egypt/Farouk/1951) (E-1)","O91734",1,3
+106,"Genome polyprotein","Hepatitis C virus genotype 1b (strain HC-J4) (HCV)","O92972",1,3
+107,"Genome polyprotein","Foot-and-mouth disease virus (isolate Bovine/Germany/O1Kaufbeuren/1966 serotype O) (FMDV)","P03305",1,3
+108,"Genome polyprotein","Coxsackievirus B3 (strain Nancy)","P03313",1,3
+109,"Genome polyprotein","Human rhinovirus 2 (HRV-2)","P04936",1,3
+110,"Genome polyprotein","Hepatitis C virus genotype 1b (isolate BK) (HCV)","P26663",4,3
+111,"Genome polyprotein","Southampton virus (strain GI/Human/United Kingdom/Southampton/1991) (SHV) (Hu/NV/SHV/1991/UK)","Q04544",1,3
+112,"Genome polyprotein","Enterovirus B","Q5DSM6",2,3
+113,"Genome polyprotein","Coxsackievirus B3","Q5UEA2",9,3
+114,"Genome polyprotein","Poliovirus type 1 (strain Mahoney)","P03300",1,3
+115,"Genome polyprotein","Human hepatitis A virus genotype IB (isolate HM175) (HHAV) (Human hepatitis A virus (isolate Human/Australia/HM175/1976))","P08617",5,3
+116,"Genome polyprotein","Norwalk virus (strain GI/Human/United States/Norwalk/1968) (Hu/NV/NV/1968/US)","Q83883",19,3
+117,"Gingipain R2","Porphyromonas gingivalis (strain ATCC BAA-308 / W83)","P95493",1,3
+118,"Glutamine-dependent NAD(+) synthetase","Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)","P9WJJ3",1,3
+119,"Glutamine--fructose-6-phosphate aminotransferase [isomerizing]","Escherichia coli (strain K12)","P17169",1,3
+120,"Glutamyl-tRNA reductase","Bacteroides fragilis (strain ATCC 25285 / DSM 2151 / JCM 11019 / NCTC 9343)","Q5LAQ6",1,3
+121,"Glutathione reductase, mitochondrial","Homo sapiens (Human)","P00390",1,3
+122,"Glutathione S-transferase omega-1","Homo sapiens (Human)","P78417",7,3
+123,"Glyceraldehyde-3-phosphate dehydrogenase","Geobacillus stearothermophilus (Bacillus stearothermophilus)","P00362",1,3
+124,"Glyceraldehyde-3-phosphate dehydrogenase A","Escherichia coli (strain K12)","P0A9B2",1,3
+125,"Glyceraldehyde-3-phosphate dehydrogenase, glycosomal","Trypanosoma cruzi","P22513",1,3
+126,"Glycogen synthase kinase-3 beta","Homo sapiens (Human)","P49841",1,3
+127,"Glyoxalase/bleomycin resistance protein/dioxygenase","Thermomonospora curvata (strain ATCC 19995 / DSM 43183 / JCM 3096 / KCTC 9072 / NBRC 15933 / NCIMB 10081 / Henssen B9)","D1A230",1,3
+128,"Golgi-associated PDZ and coiled-coil motif-containing protein","Homo sapiens (Human)","Q9HD26",1,3
+129,"GTPase HRas","Homo sapiens (Human)","P01112",9,3
+130,"GTPase KRas","Homo sapiens (Human)","P01116",43,3
+131,"GTPase KRas isoform X2","Erinaceus europaeus (Western European hedgehog)","A0A1S2ZE25",1,3
+132,"Hemoglobin subunit beta","Homo sapiens (Human)","P68871",2,3
+133,"Histidine--tRNA ligase","Trypanosoma cruzi (strain CL Brener)","Q4DA54",1,3
+134,"Histone deacetylase-like amidohydrolase","Alcaligenes sp. (strain DSM 11172) (Bordetella sp. (strain FB188))","Q70I53",1,3
+135,"Histone lysine acetyltransferase CREBBP","Mus musculus (Mouse)","P45481",1,3
+136,"Histone-lysine N-methyltransferase SMYD3","Homo sapiens (Human)","Q9H7B4",2,3
+137,"Hydroxymethylglutaryl-CoA synthase","Enterococcus faecalis (Streptococcus faecalis)","Q9FD71",1,3
+138,"Immunoglobulin G-binding protein A","Staphylococcus aureus","P38507",1,3
+139,"Inosine-5'-monophosphate dehydrogenase","Ashbya gossypii (strain ATCC 10895 / CBS 109.51 / FGSC 9923 / NRRL Y-1056) (Yeast) (Eremothecium gossypii)","Q756Z6",2,3
+140,"Inosine-5'-monophosphate dehydrogenase","Bacillus anthracis","A0A6L8P2U9",1,3
+141,"Inosine-5'-monophosphate dehydrogenase 1","Homo sapiens (Human)","P20839",1,3
+142,"Interleukin-12 subunit beta","Homo sapiens (Human)","P29460",1,3
+143,"Interleukin-2","Homo sapiens (Human)","P60568",3,3
+144,"Isocitrate lyase","Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)","P9WKK7",1,3
+145,"Isonitrile hydratase InhA","Pseudomonas fluorescens (strain ATCC BAA-477 / NRRL B-23932 / Pf-5)","Q4K977",1,3
+146,"Isopentenyl-diphosphate Delta-isomerase","Escherichia coli (strain K12)","Q46822",1,3
+147,"Kelch-like ECH-associated protein 1","Homo sapiens (Human)","Q14145",3,3
+148,"L,D-transpeptidase 1","Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)","O53638",1,3
+149,"L,D-transpeptidase 2","Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh)","O53223",2,3
+150,"L,D-transpeptidase 2","Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)","I6Y9J2",15,3
+151,"LPXTG-site transpeptidase family protein","Bacillus anthracis","Q81V16",1,4
+152,"Lys-gingipain W83","Porphyromonas gingivalis","Q51817",3,4
+153,"Lysine-specific demethylase 5A","Homo sapiens (Human)","P29375",3,4
+154,"Lysine-specific demethylase 5B","Homo sapiens (Human)","Q9UGL1",1,4
+155,"Lysozyme C","Homo sapiens (Human)","P61626",1,4
+156,"Mast/stem cell growth factor receptor Kit","Homo sapiens (Human)","P10721",1,4
+157,"Methionine aminopeptidase","Escherichia coli","C3TPN7",1,4
+158,"Methylated-DNA--protein-cysteine methyltransferase","Saccharolobus solfataricus (strain ATCC 35092 / DSM 1617 / JCM 11322 / P2) (Sulfolobus solfataricus)","Q97VW7",1,4
+159,"Methyl-branched alkylpyrone synthesis polyketide synthase-like Pks11","Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)","P9WPF3",3,4
+160,"Mitogen-activated protein kinase 1","Homo sapiens (Human)","P28482",5,4
+161,"Mitogen-activated protein kinase 1","Rattus norvegicus (Rat)","P63086",1,4
+162,"Mitogen-activated protein kinase 14","Homo sapiens (Human)","Q16539",2,4
+163,"Mitogen-activated protein kinase 3","Homo sapiens (Human)","P27361",1,4
+164,"Mucosa-associated lymphoid tissue lymphoma translocation protein 1","Homo sapiens (Human)","Q9UDY8",1,4
+165,"Multidrug efflux outer membrane protein OprN","Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1)","Q9I0Y7",1,4
+166,"Multifunctional-autoprocessing repeats-in-toxin","Vibrio cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba N16961)","Q9KS12",1,4
+167,"NADP-dependent glyceraldehyde-3-phosphate dehydrogenase","Streptococcus mutans serotype c (strain ATCC 700610 / UA159)","Q59931",1,4
+168,"NADPH-dependent 7-cyano-7-deazaguanine reductase","Bacillus subtilis (strain 168)","O31678",1,4
+169,"NADPH-dependent 7-cyano-7-deazaguanine reductase","Vibrio cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba N16961)","Q9KTK0",2,4
+170,"N-carbamoylputrescine amidohydrolase, putative","Medicago truncatula (Barrel medic) (Medicago tribuloides)","G7ITU5",1,4
+171,"NcmC","Saccharothrix syringae (Nocardiopsis syringae)","A0A1X9WEN9",1,4
+172,"N(G),N(G)-dimethylarginine dimethylaminohydrolase","Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1)","Q9I4E3",1,4
+173,"N(G),N(G)-dimethylarginine dimethylaminohydrolase 1","Homo sapiens (Human)","O94760",3,4
+174,"N-lysine methyltransferase KMT5A","Homo sapiens (Human)","Q9NQR1",3,4
+175,"NmrA family protein","Shigella flexneri",,1,4
+176,"Nuclear receptor subfamily 4 group A member 2","Homo sapiens (Human)","P43354",2,4
+177,"O-GlcNAcase BT_4395","Bacteroides thetaiotaomicron (strain ATCC 29148 / DSM 2079 / NCTC 10582 / E50 / VPI-5482)","Q89ZI2",4,4
+178,"Ornithine decarboxylase","Trypanosoma brucei brucei","P07805",1,4
+179,"Pantetheinase","Homo sapiens (Human)","O95497",1,4
+180,"Papain","Carica papaya (Papaya)","P00784",5,4
+181,"Parkinson disease protein 7","Homo sapiens (Human)","Q99497",6,4
+182,"Peptidylarginine deiminase","Porphyromonas gingivalis (strain ATCC BAA-308 / W83)","Q9RQJ2",1,4
+183,"Peroxisome proliferator-activated receptor gamma","Homo sapiens (Human)","P37231",14,4
+184,"Phenylpyruvate C(3)-methyltransferase","Streptomyces hygroscopicus","Q643C8",10,4
+185,"Phosphate-binding protein PstS","Escherichia coli (strain K12)","P0AG82",1,4
+186,"Phosphoenolpyruvate carboxykinase, cytosolic [GTP]","Rattus norvegicus (Rat)","P07379",1,4
+187,"Phospholipase A and acyltransferase 3","Homo sapiens (Human)","P53816",1,4
+188,"Phosphomethylpyrimidine kinase","Staphylococcus aureus (strain Mu50 / ATCC 700699)","A0A0H3JTP0",1,4
+189,"PHOSPHOMETHYLPYRIMIDINE KINASE","Staphylococcus aureus",,1,4
+190,"Phosphonoacetaldehyde dehydrogenase","Rhizobium meliloti (strain 1021) (Ensifer meliloti) (Sinorhizobium meliloti)","Q92UV7",3,4
+191,"Photoactive yellow protein","Halorhodospira halophila (Ectothiorhodospira halophila)","P16113",3,4
+192,"Polyprotein P1234","Venezuelan equine encephalitis virus (strain Trinidad donkey) (VEEV)","P27282",1,4
+193,"Polyprotein P1234","Getah virus (GETV)","Q5Y389",1,4
+194,"Procathepsin L","Homo sapiens (Human)","P07711",19,4
+195,"Proline racemase A","Trypanosoma cruzi (strain CL Brener)","Q4DA80",2,4
+196,"Protease","Human adenovirus D serotype 8 (HAdV-8) (Human adenovirus 8)","B9A5C1",4,4
+197,"Protease","Human adenovirus C serotype 2 (HAdV-2) (Human adenovirus 2)","P03252",2,4
+198,"Proteinaceous RNase P 1, chloroplastic/mitochondrial","Arabidopsis thaliana (Mouse-ear cress)","Q66GI4",4,4
+199,"Protein-arginine deiminase type-4","Homo sapiens (Human)","Q9UM07",2,4
+200,"Protein-glutamine gamma-glutamyltransferase 2","Homo sapiens (Human)","P21980",1,4
+201,"Protein S100-B","Bos taurus (Bovine)","P02638",2,5
+202,"Proto-oncogene tyrosine-protein kinase Src","Gallus gallus (Chicken)","P00523",11,5
+203,"Proto-oncogene tyrosine-protein kinase Src","Homo sapiens (Human)","P12931",8,5
+204,"Pteridine reductase","Trypanosoma brucei brucei","O76290",2,5
+205,"Putative amidase","Rhizobium leguminosarum bv. viciae (strain 3841)","Q1M7F4",1,5
+206,"Putative betaine aldehyde dehyrogenase","Solanum lycopersicum (Tomato) (Lycopersicon esculentum)","Q56R04",1,5
+207,"Putative conserved lipoprotein LppS","Mycobacterium tuberculosis (strain ATCC 25177 / H37Ra)","A5U5L6",1,5
+208,"Putative L,D-transpeptidase YkuD","Bacillus subtilis (strain 168)","O34816",1,5
+209,"Putative periplasmic protein","Campylobacter jejuni subsp. jejuni serotype O:2 (strain ATCC 700819 / NCTC 11168)","Q0PB90",1,5
+210,"Queuine tRNA-ribosyltransferase","Zymomonas mobilis subsp. mobilis (strain ATCC 31821 / ZM4 / CP4)","P28720",1,5
+211,"RAC-alpha serine/threonine-protein kinase","Homo sapiens (Human)","P31749",3,5
+212,"Replicase polyprotein 1a","Middle East respiratory syndrome-related coronavirus (isolate United Kingdom/H123990006/2012) (MERS-CoV) (Betacoronavirus England 1)","K9N638",8,5
+213,"Replicase polyprotein 1a","Bat coronavirus HKU4 (BtCoV) (BtCoV/HKU4/2004)","P0C6T4",1,5
+214,"Replicase polyprotein 1a","Human coronavirus HKU1 (isolate N1) (HCoV-HKU1)","P0C6U3",1,5
+215,"Replicase polyprotein 1a","Severe acute respiratory syndrome coronavirus (SARS-CoV)","P0C6U8",10,5
+216,"Replicase polyprotein 1a","Porcine transmissible gastroenteritis coronavirus (strain Purdue) (TGEV)","P0C6V2",1,5
+217,"Replicase polyprotein 1a","Avian infectious bronchitis virus (strain M41) (IBV)","P0C6V5",1,5
+218,"Replicase polyprotein 1a","Porcine epidemic diarrhea virus (strain CV777) (PEDV)","P0C6V6",1,5
+219,"Replicase polyprotein 1ab","Feline coronavirus (strain FIPV WSU-79/1146) (FCoV)","Q98VG9",2,5
+220,"Replicase polyprotein 1ab","Human coronavirus NL63 (HCoV-NL63)","P0C6X5",2,5
+221,"Replicase polyprotein 1ab","Severe acute respiratory syndrome coronavirus (SARS-CoV)","P0C6X7",19,5
+222,"Replicase polyprotein 1ab","Severe acute respiratory syndrome coronavirus 2 (2019-nCoV) (SARS-CoV-2)","P0DTD1",83,5
+223,"Retinal dehydrogenase 1","Homo sapiens (Human)","P00352",1,5
+224,"Retinal dehydrogenase 1","Ovis aries (Sheep)","P51977",2,5
+225,"Retinal dehydrogenase 2","Homo sapiens (Human)","O94788",1,5
+226,"Ribosomal protein S6 kinase alpha-3","Mus musculus (Mouse)","P18654",1,5
+227,"Ribosomal protein S6 kinase alpha-3","Homo sapiens (Human)","P51812",2,5
+228,"Ricin B-related lectin","Polyporus squamosus","Q75WT9",1,5
+229,"RNA demethylase ALKBH5","Homo sapiens (Human)","Q6P6C2",1,5
+230,"Serine/threonine-protein kinase Nek2","Homo sapiens (Human)","P51955",1,5
+231,"Soluble cytochrome b562","Escherichia coli","P0ABE7",1,5
+232,"Sortase A","Staphylococcus aureus (strain NCTC 8325 / PS 47)","Q2FV99",1,5
+233,"Sortase B","Staphylococcus aureus (strain USA300)","A0A0H2XI76",1,5
+234,"Sortase B","Staphylococcus aureus (strain NCTC 8325 / PS 47)","Q2FZE3",2,5
+235,"Sortase family protein","Staphylococcus aureus CA-347",,1,5
+236,"Spermidine synthase, putative","Trypanosoma cruzi (strain CL Brener)","Q4DA73",1,5
+237,"Spindle pole body-associated protein VIK1","Saccharomyces cerevisiae (strain ATCC 204508 / S288c) (Baker's yeast)","Q12045",1,5
+238,"Staphopain A","Staphylococcus aureus","P81297",1,5
+239,"Streptopain","Streptococcus pyogenes",,1,5
+240,"Streptopain","Streptococcus pyogenes","P0C0J0",1,5
+241,"Subtilisin Savinase","Lederbergia lentus (Bacillus lentus)","P29600",4,5
+242,"Succinate-semialdehyde dehydrogenase","Synechococcus sp. (strain ATCC 27264 / PCC 7002 / PR-6) (Agmenellum quadruplicatum)","B1XMM6",1,5
+243,"Sulfurtransferase","Chlorobium limicola (strain DSM 245 / NBRC 103803 / 6330)","B3ECE3",1,5
+244,"SUMO-activating enzyme subunit 2","Homo sapiens (Human)","Q9UBT2",1,5
+245,"Superoxide dismutase [Cu-Zn]","Homo sapiens (Human)","P00441",4,5
+246,"Targeting protein for Xklp2","Homo sapiens (Human)","Q9ULW0",2,5
+247,"T-box transcription factor T","Homo sapiens (Human)","O15178",1,5
+248,"TGF-beta-activated kinase 1 and MAP3K7-binding protein 1","Homo sapiens (Human)","Q15750",6,5
+249,"Thiol:disulfide interchange protein DsbA","Shigella flexneri","P52235",1,5
+250,"Thioredoxin","Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)","P9WG67",1,5
+251,"Thymidylate synthase","Lactobacillus casei","P00469",1,6
+252,"Thymidylate synthase","Pneumocystis carinii","P13100",1,6
+253,"Thymidylate synthase","Trichinella spiralis (Trichina worm)","Q9NDD3",1,6
+254,"Thymidylate synthase","Homo sapiens (Human)","P04818",1,6
+255,"Thymidylate synthase","Mus musculus (Mouse)","P07607",2,6
+256,"Thymidylate synthase","Escherichia coli (strain K12)","P0A884",13,6
+257,"Thymidylate synthase","Cryptococcus neoformans var. neoformans serotype D (strain JEC21 / ATCC MYA-565) (Filobasidiella neoformans)","P0CS12",1,6
+258,"Thymidylate synthase 1","Bacillus subtilis (strain 168)","P0CI79",1,6
+259,"Toxin B","Clostridioides difficile (strain 630) (Peptoclostridium difficile)","Q189K3",1,6
+260,"Transcriptional regulator, ArsR family","Rhodobacter capsulatus (strain ATCC BAA-309 / NBRC 16581 / SB1003)","D5AT91",1,6
+261,"Transcriptional regulator, PadR-like family","Lactococcus lactis subsp. cremoris (strain MG1363)","A2RI36",1,6
+262,"Transforming protein RhoA","Homo sapiens (Human)","P61586",1,6
+263,"Tryparedoxin","Trypanosoma brucei brucei","O77404",1,6
+264,"Tubulin alpha-1B chain","Bos taurus (Bovine)","P81947",1,6
+265,"Tubulinyl-Tyr carboxypeptidase 1","Homo sapiens (Human)","Q7L8A9",2,6
+266,"Tubulinyl-Tyr carboxypeptidase 2","Homo sapiens (Human)","Q86V25",1,6
+267,"Tumor necrosis factor receptor superfamily member 16","Rattus norvegicus (Rat)","P07174",1,6
+268,"Tyrosine-protein kinase BTK","Homo sapiens (Human)","Q06187",14,6
+269,"Tyrosine-protein kinase ITK/TSK","Homo sapiens (Human)","Q08881",4,6
+270,"Tyrosine-protein kinase JAK3","Homo sapiens (Human)","P52333",9,6
+271,"Tyrosine-protein kinase ZAP-70","Homo sapiens (Human)","P43403",1,6
+272,"Tyrosine-protein phosphatase non-receptor type 1","Homo sapiens (Human)","P18031",2,6
+273,"Tyrosine-protein phosphatase non-receptor type 13","Homo sapiens (Human)","Q12923",2,6
+274,"Tyrosine-protein phosphatase YopH","Yersinia enterocolitica","P15273",2,6
+275,"Ubiquitin carboxyl-terminal hydrolase 2","Homo sapiens (Human)","O75604",1,6
+276,"Ubiquitin carboxyl-terminal hydrolase 7","Homo sapiens (Human)","Q93009",1,6
+277,"Ubiquitin-conjugating enzyme E2 N","Homo sapiens (Human)","P61088",2,6
+278,"Ubiquitin thioesterase OTUB2","Homo sapiens (Human)","Q96DC9",12,6
+279,"UDP-glucose 6-dehydrogenase","Homo sapiens (Human)","O60701",1,6
+280,"UDP-N-acetylglucosamine 1-carboxyvinyltransferase","Acinetobacter baumannii","A0A0R0VXX6",1,6
+281,"UDP-N-acetylglucosamine 1-carboxyvinyltransferase","Aliivibrio fischeri (strain MJ11) (Vibrio fischeri)","B5F9P4",1,6
+282,"UDP-N-acetylglucosamine 1-carboxyvinyltransferase","Enterobacter cloacae subsp. cloacae (strain ATCC 13047 / DSM 30054 / NBRC 13535 / NCTC 10005 / WDCM 00083 / NCDC 279-56)","P33038",1,6
+283,"UDP-N-acetylglucosamine 1-carboxyvinyltransferase","Haemophilus influenzae (strain ATCC 51907 / DSM 11121 / KW20 / Rd)","P45025",1,6
+284,"UDP-N-acetylglucosamine 1-carboxyvinyltransferase","Escherichia coli (strain K12)","P0A749",2,6
+285,"UDP-N-acetylglucosamine 1-carboxyvinyltransferase","Vibrio cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba N16961)","Q9KP62",1,6
+286,"UDP-N-acetylglucosamine 1-carboxyvinyltransferase 1","Streptococcus pneumoniae serotype 4 (strain ATCC BAA-334 / TIGR4)","Q97NQ4",2,6
+287,"Uncharacterized protein","Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh)","Q8VK10",1,6
+288,"UPF0678 fatty acid-binding protein-like protein At1g79260","Arabidopsis thaliana (Mouse-ear cress)","O64527",1,6
+289,"Urease subunit alpha","Sporosarcina pasteurii (Bacillus pasteurii)","A0A0H3YL32",1,6
+290,"Urease subunit alpha","Sporosarcina pasteurii (Bacillus pasteurii)","P41020",2,6
+291,"Ypt/Rab-type GTPase YPT7","Saccharomyces cerevisiae (strain ATCC 204508 / S288c) (Baker's yeast)","P32939",2,6

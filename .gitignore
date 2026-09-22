@@ -1,0 +1,54 @@
+# R-related
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# Data directory — ignore bulk by default; allowlisted runtime + rebuild inputs below.
+data/*
+!data/cys_editing_atlas.rds
+!data/protein_binding_lookup_preprocessed.rds
+!data/swissadme_preprocessed.rds
+# Per-gene index behind the Gene tab. Derived (docs/scripts/build_gene_index.R)
+# but tracked like the other runtime RDS files: it is small, and the Gene tab
+# and the Cys_tier/Probes columns are blank without it.
+!data/gene_index.rds
+!data/README.md
+!data/data_versions.yaml
+!data/raw/
+!data/raw/**
+
+# Precomputed subtype effect-size TSVs are NOT tracked. They are a local
+# performance cache only; the app recomputes on the fly when absent.
+# Rebuild with docs/scripts/precompute_effectsizes_all_subtypes.R
+data/precomputed_stats/
+data/precomputed_effectsizes/
+
+# Shiny deployment artefacts
+rsconnect/
+
+# Optional local usage logs (enable with CPT_LOG_USAGE=1)
+logs/usage/*.jsonl
+
+# OS artefacts
+.DS_Store
+Thumbs.db
+
+# Python virtual environments
+mcp/.venv/
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# R plot artefacts
+Rplots.pdf
+
+# Generated reports (rendered on demand)
+reports/
+
+# Manuscript drafts (not for GitHub)
+paper/
+
+# Internal strategy notes, not part of the public release
+docs/ROADMAP.md

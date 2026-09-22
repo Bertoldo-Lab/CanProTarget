@@ -1,0 +1,7 @@
+"resource","primary_scope","cohort_specific_dependency","exact_residue_evidence","residue_function_evidence","configurable_integrated_rank","comparison_type","source"
+"CanProTarget","Cancer dependency-to-cysteine prioritisation","Yes","Yes","Yes, through Cys_editing","Yes","Index workflow","Local implementation benchmark"
+"Open Targets Platform","Target-disease evidence integration","Disease-level rather than this cohort workflow","Limited","No","Association score","Complementary resource","https://platform-docs.opentargets.org/associations"
+"CysDB","Aggregated human cysteine chemoproteomics","No","Yes","Annotations vary by source","No","Complementary resource","https://pmc.ncbi.nlm.nih.gov/articles/PMC10510411/"
+"DrugMap","Pan-cancer, cell-line-resolved cysteine ligandability","No","Yes","No direct editing evidence","No","Complementary resource","https://pmc.ncbi.nlm.nih.gov/articles/PMC11143475/"
+"CovPDB","Experimentally resolved covalent protein-ligand structures","No","Yes","No","No","Complementary resource","https://pmc.ncbi.nlm.nih.gov/articles/PMC8728183/"
+"CovalentInDB 2.0","Covalent inhibitors, targets and structural annotations","No","Yes","No","No","Complementary resource","https://pmc.ncbi.nlm.nih.gov/articles/PMC11701572/"

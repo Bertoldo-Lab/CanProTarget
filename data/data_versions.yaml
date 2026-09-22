@@ -1,0 +1,80 @@
+# CanProTarget Data Versioning Manifest
+# Lists each dataset bundled with or required by the platform.
+# Read at app startup and embedded in reports for reproducibility.
+#
+# To update: edit this file when refreshing any data source, then
+# commit alongside the new RDS files.
+
+datasets:
+  - name: "CRISPR Gene Effect"
+    file: "CRISPRGeneEffect_23Q4_clean.rds"
+    version: "23Q4"
+    source: "DepMap Portal (Broad Institute)"
+    url: "https://depmap.org/portal/"
+    date_accessed: "2026-08-18"
+    description: "Genome-wide CRISPR-Cas9 knockout gene effect scores"
+    dimensions: "1100 cell lines x 18443 genes"
+    notes: >-
+      Rebuilt in R from official CRISPRGeneEffect.csv. Never open that CSV in
+      Excel (16,384-column limit truncates at TNFRSF10C). ACH-002509 / WM4235
+      is not in 23Q4 CRISPR.
+
+  - name: "RNAi Gene Effect (DEMETER2)"
+    file: "d2_gene_effect_headers_refined.rds"
+    version: "v6"
+    source: "DepMap Portal (Broad Institute)"
+    url: "https://depmap.org/portal/"
+    date_accessed: "2024-01-15"
+    description: "Combined shRNA screens processed with DEMETER2"
+    dimensions: "712 cell lines x 17309 genes"
+
+  - name: "Cancer Model Metadata (Model_v2.csv)"
+    file: "cancer_model_data.rds"
+    version: "23Q4"
+    source: "DepMap Portal (Broad Institute)"
+    url: "https://depmap.org/portal/"
+    date_accessed: "2026-08-18"
+    description: "Cell line annotations (Oncotree subtypes, lineage, disease)"
+    dimensions: "1921 models x 36 columns"
+    notes: >-
+      23Q4 Model_v2.csv. Current Portal Model.csv is retracted (includes models
+      that do not exist). Acral Melanoma: 4 models in metadata, 3 in 23Q4 CRISPR.
+
+  - name: "Functional Cysteine Atlas"
+    file: "cys_editing_atlas.rds"
+    version: "1.0"
+    source: "Li et al., Nat Chem Biol 2023"
+    url: "https://doi.org/10.1038/s41589-023-01428-w"
+    date_accessed: "2024-06-01"
+    description: "Base-editing screens (ABE/CBE) identifying functional cysteines"
+    dimensions: "13872 sites x 41 columns"
+
+  - name: "Chemoproteomics (Protein Binding)"
+    file: "protein_binding_lookup_preprocessed.rds"
+    version: "1.0"
+    source: "Backus et al., Nature 2020"
+    url: "https://doi.org/10.1038/s41586-020-2600-6"
+    date_accessed: "2024-01-15"
+    description: "Competition ratio data for cysteine-reactive probes"
+    status: "available"
+    dimensions: "10588541 probe-cysteine rows x 11 columns; 8425 genes; 998 probes"
+    notes: "Bundled in repo. Rebuild from data/raw/table-s2.xlsx + id_mapping.tsv."
+
+  - name: "SwissADME Properties"
+    file: "swissadme_preprocessed.rds"
+    version: "1.0"
+    source: "SwissADME (SIB)"
+    url: "http://www.swissadme.ch/"
+    date_accessed: "2024-01-15"
+    description: "ADME, drug-likeness, and pharmacokinetic properties for probes"
+    status: "available"
+    dimensions: "1000 probes x 53 descriptors"
+    notes: >-
+      Bundled in repo. Rebuild from data/raw/swissadme.csv. 996 of 998 probes in
+      the chemoproteomics table have matching ADME descriptors.
+
+platform:
+  name: "CanProTarget"
+  version: "1.0.0"
+  r_version: "4.6.1"
+  last_data_refresh: "2026-08-18"

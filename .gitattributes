@@ -1,0 +1,24 @@
+# Git LFS tracking
+#
+# Only the large raw chemoproteomics workbooks live in LFS. They are rebuild
+# inputs (never read at runtime) and are kept in the repo so the reformatted
+# Backus source cannot be lost again.
+#
+# After clone, materialise them with:
+#   git lfs install
+#   git lfs pull
+data/raw/*.xlsx filter=lfs diff=lfs merge=lfs -text
+
+# Release archives
+#
+# Zenodo archives GitHub's zipball, and zipballs do not resolve LFS pointers:
+# the two workbooks above would appear in a released archive as ~130-byte text
+# stubs rather than files. A missing file that the documentation explains is
+# honest; a stub that looks like a 118 MB spreadsheet is a trap for whoever
+# downloads it. They are excluded from archives instead.
+#
+# Nothing at runtime is affected. data/raw/ is already outside the deployment
+# bundle (see docs/scripts/deploy_shinyapps.R) and the application never reads
+# these workbooks — they are rebuild inputs for docs/scripts/. Their provenance
+# is in docs/DATA_PROVENANCE.md.
+data/raw/*.xlsx export-ignore

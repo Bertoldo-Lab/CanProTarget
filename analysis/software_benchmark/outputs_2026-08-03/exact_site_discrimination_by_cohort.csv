@@ -1,0 +1,41 @@
+"panel","cohort_code","dependency_associations","gene_level_ligandable_associations","standalone_functional_cysteine_associations","gene_level_combined_associations","exact_site_functional_gene_associations","gene_level_false_upgrades","scope","false_upgrade_fraction","exact_site_retention_fraction"
+"Adult","AML",1231,227,38,19,7,12,"All engaged molecules",0.631578947368421,0.368421052631579
+"Adult","BLCA",250,39,10,5,2,3,"All engaged molecules",0.6,0.4
+"Adult","BRCA",656,149,48,28,10,18,"All engaged molecules",0.642857142857143,0.357142857142857
+"Adult","COAD",237,42,20,7,2,5,"All engaged molecules",0.714285714285714,0.285714285714286
+"Adult","GBM",650,119,22,13,3,10,"All engaged molecules",0.769230769230769,0.230769230769231
+"Adult","LUAD",55,19,14,8,3,5,"All engaged molecules",0.625,0.375
+"Adult","OCSCC",919,163,35,17,6,11,"All engaged molecules",0.647058823529412,0.352941176470588
+"Adult","PDAC",280,70,30,15,4,11,"All engaged molecules",0.733333333333333,0.266666666666667
+"Adult","SCLC",579,110,18,13,3,10,"All engaged molecules",0.769230769230769,0.230769230769231
+"Adult","SKCM",713,152,42,26,12,14,"All engaged molecules",0.538461538461538,0.461538461538462
+"Paediatric","ARMS",829,129,11,8,2,6,"All engaged molecules",0.75,0.25
+"Paediatric","ATRT",1011,179,26,12,6,6,"All engaged molecules",0.5,0.5
+"Paediatric","B-ALL",1819,361,57,32,12,20,"All engaged molecules",0.625,0.375
+"Paediatric","ERMS",646,102,17,10,5,5,"All engaged molecules",0.5,0.5
+"Paediatric","EWS",1703,293,33,17,7,10,"All engaged molecules",0.588235294117647,0.411764705882353
+"Paediatric","MB",1154,206,31,17,5,12,"All engaged molecules",0.705882352941177,0.294117647058824
+"Paediatric","NB",959,211,40,20,7,13,"All engaged molecules",0.65,0.35
+"Paediatric","OS",416,86,23,16,6,10,"All engaged molecules",0.625,0.375
+"Paediatric","T-ALL",303,66,14,10,4,6,"All engaged molecules",0.6,0.4
+"Paediatric","pAML",467,82,15,8,4,4,"All engaged molecules",0.5,0.5
+"Adult","AML",1231,70,38,4,2,2,"Molecules with <=20 targets",0.5,0.5
+"Adult","BLCA",250,14,10,2,0,2,"Molecules with <=20 targets",1,0
+"Adult","BRCA",656,53,48,9,5,4,"Molecules with <=20 targets",0.444444444444444,0.555555555555556
+"Adult","COAD",237,14,20,3,0,3,"Molecules with <=20 targets",1,0
+"Adult","GBM",650,33,22,4,1,3,"Molecules with <=20 targets",0.75,0.25
+"Adult","LUAD",55,10,14,6,0,6,"Molecules with <=20 targets",1,0
+"Adult","OCSCC",919,62,35,10,2,8,"Molecules with <=20 targets",0.8,0.2
+"Adult","PDAC",280,24,30,5,0,5,"Molecules with <=20 targets",1,0
+"Adult","SCLC",579,33,18,7,3,4,"Molecules with <=20 targets",0.571428571428571,0.428571428571429
+"Adult","SKCM",713,53,42,13,4,9,"Molecules with <=20 targets",0.692307692307692,0.307692307692308
+"Paediatric","ARMS",829,37,11,2,1,1,"Molecules with <=20 targets",0.5,0.5
+"Paediatric","ATRT",1011,55,26,6,2,4,"Molecules with <=20 targets",0.666666666666667,0.333333333333333
+"Paediatric","B-ALL",1819,116,57,10,5,5,"Molecules with <=20 targets",0.5,0.5
+"Paediatric","ERMS",646,32,17,4,2,2,"Molecules with <=20 targets",0.5,0.5
+"Paediatric","EWS",1703,96,33,6,2,4,"Molecules with <=20 targets",0.666666666666667,0.333333333333333
+"Paediatric","MB",1154,68,31,7,1,6,"Molecules with <=20 targets",0.857142857142857,0.142857142857143
+"Paediatric","NB",959,70,40,11,5,6,"Molecules with <=20 targets",0.545454545454545,0.454545454545455
+"Paediatric","OS",416,33,23,8,3,5,"Molecules with <=20 targets",0.625,0.375
+"Paediatric","T-ALL",303,28,14,4,1,3,"Molecules with <=20 targets",0.75,0.25
+"Paediatric","pAML",467,24,15,3,1,2,"Molecules with <=20 targets",0.666666666666667,0.333333333333333

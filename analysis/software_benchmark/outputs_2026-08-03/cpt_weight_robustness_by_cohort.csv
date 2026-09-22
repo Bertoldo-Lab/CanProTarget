@@ -1,0 +1,1281 @@
+"panel","cohort_code","cohort","scenario","n_candidates","n_compared","spearman","top_definition","top_n","overlap_fraction","jaccard"
+"Adult","AML","Acute Myeloid Leukemia","equal",1231,1231,0.993809720439064,"top_10",10,1,1
+"Adult","AML","Acute Myeloid Leukemia","equal",1231,1231,0.993809720439064,"top_25",25,1,1
+"Adult","AML","Acute Myeloid Leukemia","equal",1231,1231,0.993809720439064,"top_50",50,1,1
+"Adult","AML","Acute Myeloid Leukemia","equal",1231,1231,0.993809720439064,"top_10_percent",124,1,1
+"Adult","AML","Acute Myeloid Leukemia","leave_out_dependency_strength",1231,94,0.896687497742297,"top_10",10,0,0
+"Adult","AML","Acute Myeloid Leukemia","leave_out_dependency_strength",1231,94,0.896687497742297,"top_25",25,0,0
+"Adult","AML","Acute Myeloid Leukemia","leave_out_dependency_strength",1231,94,0.896687497742297,"top_50",50,0,0
+"Adult","AML","Acute Myeloid Leukemia","leave_out_dependency_strength",1231,94,0.896687497742297,"top_10_percent",10,0,0
+"Adult","AML","Acute Myeloid Leukemia","half_dependency_strength",1231,1231,0.985675163999905,"top_10",10,1,1
+"Adult","AML","Acute Myeloid Leukemia","half_dependency_strength",1231,1231,0.985675163999905,"top_25",25,0.92,0.851851851851852
+"Adult","AML","Acute Myeloid Leukemia","half_dependency_strength",1231,1231,0.985675163999905,"top_50",50,0.92,0.851851851851852
+"Adult","AML","Acute Myeloid Leukemia","half_dependency_strength",1231,1231,0.985675163999905,"top_10_percent",124,0.911290322580645,0.837037037037037
+"Adult","AML","Acute Myeloid Leukemia","double_dependency_strength",1231,1231,0.986743404670192,"top_10",10,0.9,0.818181818181818
+"Adult","AML","Acute Myeloid Leukemia","double_dependency_strength",1231,1231,0.986743404670192,"top_25",25,0.84,0.724137931034483
+"Adult","AML","Acute Myeloid Leukemia","double_dependency_strength",1231,1231,0.986743404670192,"top_50",50,0.9,0.818181818181818
+"Adult","AML","Acute Myeloid Leukemia","double_dependency_strength",1231,1231,0.986743404670192,"top_10_percent",124,0.903225806451613,0.823529411764706
+"Adult","AML","Acute Myeloid Leukemia","leave_out_cancer_selectivity",1231,94,0.990882491059495,"top_10",10,0,0
+"Adult","AML","Acute Myeloid Leukemia","leave_out_cancer_selectivity",1231,94,0.990882491059495,"top_25",25,0,0
+"Adult","AML","Acute Myeloid Leukemia","leave_out_cancer_selectivity",1231,94,0.990882491059495,"top_50",50,0,0
+"Adult","AML","Acute Myeloid Leukemia","leave_out_cancer_selectivity",1231,94,0.990882491059495,"top_10_percent",10,0,0
+"Adult","AML","Acute Myeloid Leukemia","half_cancer_selectivity",1231,1231,0.995327092868802,"top_10",10,0.9,0.818181818181818
+"Adult","AML","Acute Myeloid Leukemia","half_cancer_selectivity",1231,1231,0.995327092868802,"top_25",25,0.84,0.724137931034483
+"Adult","AML","Acute Myeloid Leukemia","half_cancer_selectivity",1231,1231,0.995327092868802,"top_50",50,0.9,0.818181818181818
+"Adult","AML","Acute Myeloid Leukemia","half_cancer_selectivity",1231,1231,0.995327092868802,"top_10_percent",124,0.903225806451613,0.823529411764706
+"Adult","AML","Acute Myeloid Leukemia","double_cancer_selectivity",1231,1231,0.990068136586315,"top_10",10,1,1
+"Adult","AML","Acute Myeloid Leukemia","double_cancer_selectivity",1231,1231,0.990068136586315,"top_25",25,0.92,0.851851851851852
+"Adult","AML","Acute Myeloid Leukemia","double_cancer_selectivity",1231,1231,0.990068136586315,"top_50",50,0.92,0.851851851851852
+"Adult","AML","Acute Myeloid Leukemia","double_cancer_selectivity",1231,1231,0.990068136586315,"top_10_percent",124,0.911290322580645,0.837037037037037
+"Adult","AML","Acute Myeloid Leukemia","leave_out_cysteine_ligandability",1231,1231,0.97859944687914,"top_10",10,1,1
+"Adult","AML","Acute Myeloid Leukemia","leave_out_cysteine_ligandability",1231,1231,0.97859944687914,"top_25",25,1,1
+"Adult","AML","Acute Myeloid Leukemia","leave_out_cysteine_ligandability",1231,1231,0.97859944687914,"top_50",50,1,1
+"Adult","AML","Acute Myeloid Leukemia","leave_out_cysteine_ligandability",1231,1231,0.97859944687914,"top_10_percent",124,0.991935483870968,0.984
+"Adult","AML","Acute Myeloid Leukemia","half_cysteine_ligandability",1231,1231,0.997754863110741,"top_10",10,1,1
+"Adult","AML","Acute Myeloid Leukemia","half_cysteine_ligandability",1231,1231,0.997754863110741,"top_25",25,1,1
+"Adult","AML","Acute Myeloid Leukemia","half_cysteine_ligandability",1231,1231,0.997754863110741,"top_50",50,1,1
+"Adult","AML","Acute Myeloid Leukemia","half_cysteine_ligandability",1231,1231,0.997754863110741,"top_10_percent",124,1,1
+"Adult","AML","Acute Myeloid Leukemia","double_cysteine_ligandability",1231,1231,0.998161673876511,"top_10",10,1,1
+"Adult","AML","Acute Myeloid Leukemia","double_cysteine_ligandability",1231,1231,0.998161673876511,"top_25",25,1,1
+"Adult","AML","Acute Myeloid Leukemia","double_cysteine_ligandability",1231,1231,0.998161673876511,"top_50",50,1,1
+"Adult","AML","Acute Myeloid Leukemia","double_cysteine_ligandability",1231,1231,0.998161673876511,"top_10_percent",124,1,1
+"Adult","AML","Acute Myeloid Leukemia","leave_out_conservation",1231,1231,0.99876059865872,"top_10",10,1,1
+"Adult","AML","Acute Myeloid Leukemia","leave_out_conservation",1231,1231,0.99876059865872,"top_25",25,1,1
+"Adult","AML","Acute Myeloid Leukemia","leave_out_conservation",1231,1231,0.99876059865872,"top_50",50,1,1
+"Adult","AML","Acute Myeloid Leukemia","leave_out_conservation",1231,1231,0.99876059865872,"top_10_percent",124,1,1
+"Adult","AML","Acute Myeloid Leukemia","half_conservation",1231,1231,0.999685417858162,"top_10",10,1,1
+"Adult","AML","Acute Myeloid Leukemia","half_conservation",1231,1231,0.999685417858162,"top_25",25,1,1
+"Adult","AML","Acute Myeloid Leukemia","half_conservation",1231,1231,0.999685417858162,"top_50",50,1,1
+"Adult","AML","Acute Myeloid Leukemia","half_conservation",1231,1231,0.999685417858162,"top_10_percent",124,1,1
+"Adult","AML","Acute Myeloid Leukemia","double_conservation",1231,1231,0.998971377766147,"top_10",10,1,1
+"Adult","AML","Acute Myeloid Leukemia","double_conservation",1231,1231,0.998971377766147,"top_25",25,1,1
+"Adult","AML","Acute Myeloid Leukemia","double_conservation",1231,1231,0.998971377766147,"top_50",50,1,1
+"Adult","AML","Acute Myeloid Leukemia","double_conservation",1231,1231,0.998971377766147,"top_10_percent",124,1,1
+"Adult","AML","Acute Myeloid Leukemia","leave_out_clinical_evidence",1231,1231,0.981518675492233,"top_10",10,1,1
+"Adult","AML","Acute Myeloid Leukemia","leave_out_clinical_evidence",1231,1231,0.981518675492233,"top_25",25,1,1
+"Adult","AML","Acute Myeloid Leukemia","leave_out_clinical_evidence",1231,1231,0.981518675492233,"top_50",50,1,1
+"Adult","AML","Acute Myeloid Leukemia","leave_out_clinical_evidence",1231,1231,0.981518675492233,"top_10_percent",124,0.975806451612903,0.952755905511811
+"Adult","AML","Acute Myeloid Leukemia","half_clinical_evidence",1231,1231,0.996745089301811,"top_10",10,1,1
+"Adult","AML","Acute Myeloid Leukemia","half_clinical_evidence",1231,1231,0.996745089301811,"top_25",25,1,1
+"Adult","AML","Acute Myeloid Leukemia","half_clinical_evidence",1231,1231,0.996745089301811,"top_50",50,1,1
+"Adult","AML","Acute Myeloid Leukemia","half_clinical_evidence",1231,1231,0.996745089301811,"top_10_percent",124,1,1
+"Adult","AML","Acute Myeloid Leukemia","double_clinical_evidence",1231,1231,0.996184017365511,"top_10",10,1,1
+"Adult","AML","Acute Myeloid Leukemia","double_clinical_evidence",1231,1231,0.996184017365511,"top_25",25,1,1
+"Adult","AML","Acute Myeloid Leukemia","double_clinical_evidence",1231,1231,0.996184017365511,"top_50",50,1,1
+"Adult","AML","Acute Myeloid Leukemia","double_clinical_evidence",1231,1231,0.996184017365511,"top_10_percent",124,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","equal",250,250,0.994971431819028,"top_10",10,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","equal",250,250,0.994971431819028,"top_25",25,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","equal",250,250,0.994971431819028,"top_50",50,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","equal",250,250,0.994971431819028,"top_10_percent",25,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","leave_out_dependency_strength",250,21,0.901298701298701,"top_10",10,0,0
+"Adult","BLCA","Bladder Urothelial Carcinoma","leave_out_dependency_strength",250,21,0.901298701298701,"top_25",25,0,0
+"Adult","BLCA","Bladder Urothelial Carcinoma","leave_out_dependency_strength",250,21,0.901298701298701,"top_50",50,0.1,0.0526315789473684
+"Adult","BLCA","Bladder Urothelial Carcinoma","leave_out_dependency_strength",250,21,0.901298701298701,"top_10_percent",3,0,0
+"Adult","BLCA","Bladder Urothelial Carcinoma","half_dependency_strength",250,250,0.988925254298956,"top_10",10,0.9,0.818181818181818
+"Adult","BLCA","Bladder Urothelial Carcinoma","half_dependency_strength",250,250,0.988925254298956,"top_25",25,0.92,0.851851851851852
+"Adult","BLCA","Bladder Urothelial Carcinoma","half_dependency_strength",250,250,0.988925254298956,"top_50",50,0.9,0.818181818181818
+"Adult","BLCA","Bladder Urothelial Carcinoma","half_dependency_strength",250,250,0.988925254298956,"top_10_percent",25,0.92,0.851851851851852
+"Adult","BLCA","Bladder Urothelial Carcinoma","double_dependency_strength",250,250,0.989849743953977,"top_10",10,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","double_dependency_strength",250,250,0.989849743953977,"top_25",25,0.92,0.851851851851852
+"Adult","BLCA","Bladder Urothelial Carcinoma","double_dependency_strength",250,250,0.989849743953977,"top_50",50,0.94,0.886792452830189
+"Adult","BLCA","Bladder Urothelial Carcinoma","double_dependency_strength",250,250,0.989849743953977,"top_10_percent",25,0.92,0.851851851851852
+"Adult","BLCA","Bladder Urothelial Carcinoma","leave_out_cancer_selectivity",250,21,0.994805194805195,"top_10",10,0,0
+"Adult","BLCA","Bladder Urothelial Carcinoma","leave_out_cancer_selectivity",250,21,0.994805194805195,"top_25",25,0,0
+"Adult","BLCA","Bladder Urothelial Carcinoma","leave_out_cancer_selectivity",250,21,0.994805194805195,"top_50",50,0.1,0.0526315789473684
+"Adult","BLCA","Bladder Urothelial Carcinoma","leave_out_cancer_selectivity",250,21,0.994805194805195,"top_10_percent",3,0,0
+"Adult","BLCA","Bladder Urothelial Carcinoma","half_cancer_selectivity",250,250,0.996697350718869,"top_10",10,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","half_cancer_selectivity",250,250,0.996697350718869,"top_25",25,0.92,0.851851851851852
+"Adult","BLCA","Bladder Urothelial Carcinoma","half_cancer_selectivity",250,250,0.996697350718869,"top_50",50,0.94,0.886792452830189
+"Adult","BLCA","Bladder Urothelial Carcinoma","half_cancer_selectivity",250,250,0.996697350718869,"top_10_percent",25,0.92,0.851851851851852
+"Adult","BLCA","Bladder Urothelial Carcinoma","double_cancer_selectivity",250,250,0.992713477819889,"top_10",10,0.9,0.818181818181818
+"Adult","BLCA","Bladder Urothelial Carcinoma","double_cancer_selectivity",250,250,0.992713477819889,"top_25",25,0.92,0.851851851851852
+"Adult","BLCA","Bladder Urothelial Carcinoma","double_cancer_selectivity",250,250,0.992713477819889,"top_50",50,0.9,0.818181818181818
+"Adult","BLCA","Bladder Urothelial Carcinoma","double_cancer_selectivity",250,250,0.992713477819889,"top_10_percent",25,0.92,0.851851851851852
+"Adult","BLCA","Bladder Urothelial Carcinoma","leave_out_cysteine_ligandability",250,250,0.991930482492941,"top_10",10,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","leave_out_cysteine_ligandability",250,250,0.991930482492941,"top_25",25,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","leave_out_cysteine_ligandability",250,250,0.991930482492941,"top_50",50,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","leave_out_cysteine_ligandability",250,250,0.991930482492941,"top_10_percent",25,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","half_cysteine_ligandability",250,250,0.999243506734134,"top_10",10,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","half_cysteine_ligandability",250,250,0.999243506734134,"top_25",25,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","half_cysteine_ligandability",250,250,0.999243506734134,"top_50",50,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","half_cysteine_ligandability",250,250,0.999243506734134,"top_10_percent",25,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","double_cysteine_ligandability",250,250,0.99924120269373,"top_10",10,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","double_cysteine_ligandability",250,250,0.99924120269373,"top_25",25,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","double_cysteine_ligandability",250,250,0.99924120269373,"top_50",50,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","double_cysteine_ligandability",250,250,0.99924120269373,"top_10_percent",25,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","leave_out_conservation",250,250,0.999253490909217,"top_10",10,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","leave_out_conservation",250,250,0.999253490909217,"top_25",25,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","leave_out_conservation",250,250,0.999253490909217,"top_50",50,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","leave_out_conservation",250,250,0.999253490909217,"top_10_percent",25,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","half_conservation",250,250,0.9997895643098,"top_10",10,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","half_conservation",250,250,0.9997895643098,"top_25",25,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","half_conservation",250,250,0.9997895643098,"top_50",50,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","half_conservation",250,250,0.9997895643098,"top_10_percent",25,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","double_conservation",250,250,0.999265779124703,"top_10",10,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","double_conservation",250,250,0.999265779124703,"top_25",25,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","double_conservation",250,250,0.999265779124703,"top_50",50,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","double_conservation",250,250,0.999265779124703,"top_10_percent",25,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","leave_out_clinical_evidence",250,250,0.975275342428405,"top_10",10,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","leave_out_clinical_evidence",250,250,0.975275342428405,"top_25",25,0.96,0.923076923076923
+"Adult","BLCA","Bladder Urothelial Carcinoma","leave_out_clinical_evidence",250,250,0.975275342428405,"top_50",50,0.98,0.96078431372549
+"Adult","BLCA","Bladder Urothelial Carcinoma","leave_out_clinical_evidence",250,250,0.975275342428405,"top_10_percent",25,0.96,0.923076923076923
+"Adult","BLCA","Bladder Urothelial Carcinoma","half_clinical_evidence",250,250,0.996630724916392,"top_10",10,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","half_clinical_evidence",250,250,0.996630724916392,"top_25",25,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","half_clinical_evidence",250,250,0.996630724916392,"top_50",50,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","half_clinical_evidence",250,250,0.996630724916392,"top_10_percent",25,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","double_clinical_evidence",250,250,0.996449473737971,"top_10",10,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","double_clinical_evidence",250,250,0.996449473737971,"top_25",25,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","double_clinical_evidence",250,250,0.996449473737971,"top_50",50,1,1
+"Adult","BLCA","Bladder Urothelial Carcinoma","double_clinical_evidence",250,250,0.996449473737971,"top_10_percent",25,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","equal",656,656,0.994619015683378,"top_10",10,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","equal",656,656,0.994619015683378,"top_25",25,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","equal",656,656,0.994619015683378,"top_50",50,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","equal",656,656,0.994619015683378,"top_10_percent",66,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","leave_out_dependency_strength",656,82,0.982934447818374,"top_10",10,0,0
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","leave_out_dependency_strength",656,82,0.982934447818374,"top_25",25,0,0
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","leave_out_dependency_strength",656,82,0.982934447818374,"top_50",50,0,0
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","leave_out_dependency_strength",656,82,0.982934447818374,"top_10_percent",9,0,0
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","half_dependency_strength",656,656,0.990193281966001,"top_10",10,0.9,0.818181818181818
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","half_dependency_strength",656,656,0.990193281966001,"top_25",25,0.96,0.923076923076923
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","half_dependency_strength",656,656,0.990193281966001,"top_50",50,0.94,0.886792452830189
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","half_dependency_strength",656,656,0.990193281966001,"top_10_percent",66,0.93939393939394,0.885714285714286
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","double_dependency_strength",656,656,0.989370083894679,"top_10",10,0.8,0.666666666666667
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","double_dependency_strength",656,656,0.989370083894679,"top_25",25,0.92,0.851851851851852
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","double_dependency_strength",656,656,0.989370083894679,"top_50",50,0.94,0.886792452830189
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","double_dependency_strength",656,656,0.989370083894679,"top_10_percent",66,0.924242424242424,0.859154929577465
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","leave_out_cancer_selectivity",656,82,0.997692667689729,"top_10",10,0,0
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","leave_out_cancer_selectivity",656,82,0.997692667689729,"top_25",25,0,0
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","leave_out_cancer_selectivity",656,82,0.997692667689729,"top_50",50,0,0
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","leave_out_cancer_selectivity",656,82,0.997692667689729,"top_10_percent",9,0,0
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","half_cancer_selectivity",656,656,0.998009902157602,"top_10",10,0.8,0.666666666666667
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","half_cancer_selectivity",656,656,0.998009902157602,"top_25",25,0.92,0.851851851851852
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","half_cancer_selectivity",656,656,0.998009902157602,"top_50",50,0.94,0.886792452830189
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","half_cancer_selectivity",656,656,0.998009902157602,"top_10_percent",66,0.924242424242424,0.859154929577465
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","double_cancer_selectivity",656,656,0.99541038744342,"top_10",10,0.9,0.818181818181818
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","double_cancer_selectivity",656,656,0.99541038744342,"top_25",25,0.96,0.923076923076923
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","double_cancer_selectivity",656,656,0.99541038744342,"top_50",50,0.94,0.886792452830189
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","double_cancer_selectivity",656,656,0.99541038744342,"top_10_percent",66,0.93939393939394,0.885714285714286
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","leave_out_cysteine_ligandability",656,656,0.98253209360955,"top_10",10,0.9,0.818181818181818
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","leave_out_cysteine_ligandability",656,656,0.98253209360955,"top_25",25,0.92,0.851851851851852
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","leave_out_cysteine_ligandability",656,656,0.98253209360955,"top_50",50,0.9,0.818181818181818
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","leave_out_cysteine_ligandability",656,656,0.98253209360955,"top_10_percent",66,0.924242424242424,0.859154929577465
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","half_cysteine_ligandability",656,656,0.998301677007345,"top_10",10,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","half_cysteine_ligandability",656,656,0.998301677007345,"top_25",25,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","half_cysteine_ligandability",656,656,0.998301677007345,"top_50",50,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","half_cysteine_ligandability",656,656,0.998301677007345,"top_10_percent",66,0.984848484848485,0.970149253731343
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","double_cysteine_ligandability",656,656,0.997937425769039,"top_10",10,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","double_cysteine_ligandability",656,656,0.997937425769039,"top_25",25,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","double_cysteine_ligandability",656,656,0.997937425769039,"top_50",50,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","double_cysteine_ligandability",656,656,0.997937425769039,"top_10_percent",66,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","leave_out_conservation",656,656,0.998771943251876,"top_10",10,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","leave_out_conservation",656,656,0.998771943251876,"top_25",25,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","leave_out_conservation",656,656,0.998771943251876,"top_50",50,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","leave_out_conservation",656,656,0.998771943251876,"top_10_percent",66,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","half_conservation",656,656,0.999736790329374,"top_10",10,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","half_conservation",656,656,0.999736790329374,"top_25",25,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","half_conservation",656,656,0.999736790329374,"top_50",50,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","half_conservation",656,656,0.999736790329374,"top_10_percent",66,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","double_conservation",656,656,0.999212836453383,"top_10",10,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","double_conservation",656,656,0.999212836453383,"top_25",25,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","double_conservation",656,656,0.999212836453383,"top_50",50,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","double_conservation",656,656,0.999212836453383,"top_10_percent",66,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","leave_out_clinical_evidence",656,656,0.965492413030128,"top_10",10,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","leave_out_clinical_evidence",656,656,0.965492413030128,"top_25",25,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","leave_out_clinical_evidence",656,656,0.965492413030128,"top_50",50,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","leave_out_clinical_evidence",656,656,0.965492413030128,"top_10_percent",66,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","half_clinical_evidence",656,656,0.996082035636047,"top_10",10,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","half_clinical_evidence",656,656,0.996082035636047,"top_25",25,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","half_clinical_evidence",656,656,0.996082035636047,"top_50",50,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","half_clinical_evidence",656,656,0.996082035636047,"top_10_percent",66,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","double_clinical_evidence",656,656,0.996631919405301,"top_10",10,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","double_clinical_evidence",656,656,0.996631919405301,"top_25",25,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","double_clinical_evidence",656,656,0.996631919405301,"top_50",50,1,1
+"Adult","BRCA","Breast Invasive Ductal Carcinoma","double_clinical_evidence",656,656,0.996631919405301,"top_10_percent",66,1,1
+"Adult","COAD","Colon Adenocarcinoma","equal",237,237,0.991840024086893,"top_10",10,1,1
+"Adult","COAD","Colon Adenocarcinoma","equal",237,237,0.991840024086893,"top_25",25,1,1
+"Adult","COAD","Colon Adenocarcinoma","equal",237,237,0.991840024086893,"top_50",50,1,1
+"Adult","COAD","Colon Adenocarcinoma","equal",237,237,0.991840024086893,"top_10_percent",24,1,1
+"Adult","COAD","Colon Adenocarcinoma","leave_out_dependency_strength",237,37,0.968705547652916,"top_10",10,0,0
+"Adult","COAD","Colon Adenocarcinoma","leave_out_dependency_strength",237,37,0.968705547652916,"top_25",25,0,0
+"Adult","COAD","Colon Adenocarcinoma","leave_out_dependency_strength",237,37,0.968705547652916,"top_50",50,0.06,0.0309278350515464
+"Adult","COAD","Colon Adenocarcinoma","leave_out_dependency_strength",237,37,0.968705547652916,"top_10_percent",4,0,0
+"Adult","COAD","Colon Adenocarcinoma","half_dependency_strength",237,237,0.987952496896739,"top_10",10,0.8,0.666666666666667
+"Adult","COAD","Colon Adenocarcinoma","half_dependency_strength",237,237,0.987952496896739,"top_25",25,0.84,0.724137931034483
+"Adult","COAD","Colon Adenocarcinoma","half_dependency_strength",237,237,0.987952496896739,"top_50",50,0.9,0.818181818181818
+"Adult","COAD","Colon Adenocarcinoma","half_dependency_strength",237,237,0.987952496896739,"top_10_percent",24,0.791666666666667,0.655172413793103
+"Adult","COAD","Colon Adenocarcinoma","double_dependency_strength",237,237,0.983500215222523,"top_10",10,0.8,0.666666666666667
+"Adult","COAD","Colon Adenocarcinoma","double_dependency_strength",237,237,0.983500215222523,"top_25",25,0.88,0.785714285714286
+"Adult","COAD","Colon Adenocarcinoma","double_dependency_strength",237,237,0.983500215222523,"top_50",50,0.98,0.96078431372549
+"Adult","COAD","Colon Adenocarcinoma","double_dependency_strength",237,237,0.983500215222523,"top_10_percent",24,0.916666666666667,0.846153846153846
+"Adult","COAD","Colon Adenocarcinoma","leave_out_cancer_selectivity",237,37,0.998814604077762,"top_10",10,0,0
+"Adult","COAD","Colon Adenocarcinoma","leave_out_cancer_selectivity",237,37,0.998814604077762,"top_25",25,0,0
+"Adult","COAD","Colon Adenocarcinoma","leave_out_cancer_selectivity",237,37,0.998814604077762,"top_50",50,0.06,0.0309278350515464
+"Adult","COAD","Colon Adenocarcinoma","leave_out_cancer_selectivity",237,37,0.998814604077762,"top_10_percent",4,0,0
+"Adult","COAD","Colon Adenocarcinoma","half_cancer_selectivity",237,237,0.997822985754856,"top_10",10,0.8,0.666666666666667
+"Adult","COAD","Colon Adenocarcinoma","half_cancer_selectivity",237,237,0.997822985754856,"top_25",25,0.88,0.785714285714286
+"Adult","COAD","Colon Adenocarcinoma","half_cancer_selectivity",237,237,0.997822985754856,"top_50",50,0.98,0.96078431372549
+"Adult","COAD","Colon Adenocarcinoma","half_cancer_selectivity",237,237,0.997822985754856,"top_10_percent",24,0.916666666666667,0.846153846153846
+"Adult","COAD","Colon Adenocarcinoma","double_cancer_selectivity",237,237,0.995401224356969,"top_10",10,0.8,0.666666666666667
+"Adult","COAD","Colon Adenocarcinoma","double_cancer_selectivity",237,237,0.995401224356969,"top_25",25,0.84,0.724137931034483
+"Adult","COAD","Colon Adenocarcinoma","double_cancer_selectivity",237,237,0.995401224356969,"top_50",50,0.9,0.818181818181818
+"Adult","COAD","Colon Adenocarcinoma","double_cancer_selectivity",237,237,0.995401224356969,"top_10_percent",24,0.791666666666667,0.655172413793103
+"Adult","COAD","Colon Adenocarcinoma","leave_out_cysteine_ligandability",237,237,0.958920669204564,"top_10",10,0.9,0.818181818181818
+"Adult","COAD","Colon Adenocarcinoma","leave_out_cysteine_ligandability",237,237,0.958920669204564,"top_25",25,0.96,0.923076923076923
+"Adult","COAD","Colon Adenocarcinoma","leave_out_cysteine_ligandability",237,237,0.958920669204564,"top_50",50,0.98,0.96078431372549
+"Adult","COAD","Colon Adenocarcinoma","leave_out_cysteine_ligandability",237,237,0.958920669204564,"top_10_percent",24,0.958333333333333,0.92
+"Adult","COAD","Colon Adenocarcinoma","half_cysteine_ligandability",237,237,0.996060639113977,"top_10",10,1,1
+"Adult","COAD","Colon Adenocarcinoma","half_cysteine_ligandability",237,237,0.996060639113977,"top_25",25,1,1
+"Adult","COAD","Colon Adenocarcinoma","half_cysteine_ligandability",237,237,0.996060639113977,"top_50",50,1,1
+"Adult","COAD","Colon Adenocarcinoma","half_cysteine_ligandability",237,237,0.996060639113977,"top_10_percent",24,1,1
+"Adult","COAD","Colon Adenocarcinoma","double_cysteine_ligandability",237,237,0.997383975905895,"top_10",10,1,1
+"Adult","COAD","Colon Adenocarcinoma","double_cysteine_ligandability",237,237,0.997383975905895,"top_25",25,1,1
+"Adult","COAD","Colon Adenocarcinoma","double_cysteine_ligandability",237,237,0.997383975905895,"top_50",50,1,1
+"Adult","COAD","Colon Adenocarcinoma","double_cysteine_ligandability",237,237,0.997383975905895,"top_10_percent",24,1,1
+"Adult","COAD","Colon Adenocarcinoma","leave_out_conservation",237,237,0.998287234397381,"top_10",10,1,1
+"Adult","COAD","Colon Adenocarcinoma","leave_out_conservation",237,237,0.998287234397381,"top_25",25,1,1
+"Adult","COAD","Colon Adenocarcinoma","leave_out_conservation",237,237,0.998287234397381,"top_50",50,1,1
+"Adult","COAD","Colon Adenocarcinoma","leave_out_conservation",237,237,0.998287234397381,"top_10_percent",24,1,1
+"Adult","COAD","Colon Adenocarcinoma","half_conservation",237,237,0.999626797389745,"top_10",10,1,1
+"Adult","COAD","Colon Adenocarcinoma","half_conservation",237,237,0.999626797389745,"top_25",25,1,1
+"Adult","COAD","Colon Adenocarcinoma","half_conservation",237,237,0.999626797389745,"top_50",50,1,1
+"Adult","COAD","Colon Adenocarcinoma","half_conservation",237,237,0.999626797389745,"top_10_percent",24,1,1
+"Adult","COAD","Colon Adenocarcinoma","double_conservation",237,237,0.99872714472058,"top_10",10,1,1
+"Adult","COAD","Colon Adenocarcinoma","double_conservation",237,237,0.99872714472058,"top_25",25,1,1
+"Adult","COAD","Colon Adenocarcinoma","double_conservation",237,237,0.99872714472058,"top_50",50,1,1
+"Adult","COAD","Colon Adenocarcinoma","double_conservation",237,237,0.99872714472058,"top_10_percent",24,1,1
+"Adult","COAD","Colon Adenocarcinoma","leave_out_clinical_evidence",237,237,0.959911368887342,"top_10",10,0.9,0.818181818181818
+"Adult","COAD","Colon Adenocarcinoma","leave_out_clinical_evidence",237,237,0.959911368887342,"top_25",25,0.96,0.923076923076923
+"Adult","COAD","Colon Adenocarcinoma","leave_out_clinical_evidence",237,237,0.959911368887342,"top_50",50,0.96,0.923076923076923
+"Adult","COAD","Colon Adenocarcinoma","leave_out_clinical_evidence",237,237,0.959911368887342,"top_10_percent",24,0.958333333333333,0.92
+"Adult","COAD","Colon Adenocarcinoma","half_clinical_evidence",237,237,0.99540528090708,"top_10",10,1,1
+"Adult","COAD","Colon Adenocarcinoma","half_clinical_evidence",237,237,0.99540528090708,"top_25",25,1,1
+"Adult","COAD","Colon Adenocarcinoma","half_clinical_evidence",237,237,0.99540528090708,"top_50",50,1,1
+"Adult","COAD","Colon Adenocarcinoma","half_clinical_evidence",237,237,0.99540528090708,"top_10_percent",24,1,1
+"Adult","COAD","Colon Adenocarcinoma","double_clinical_evidence",237,237,0.995643265180286,"top_10",10,1,1
+"Adult","COAD","Colon Adenocarcinoma","double_clinical_evidence",237,237,0.995643265180286,"top_25",25,1,1
+"Adult","COAD","Colon Adenocarcinoma","double_clinical_evidence",237,237,0.995643265180286,"top_50",50,1,1
+"Adult","COAD","Colon Adenocarcinoma","double_clinical_evidence",237,237,0.995643265180286,"top_10_percent",24,1,1
+"Adult","GBM","Glioblastoma","equal",650,650,0.994531830628543,"top_10",10,1,1
+"Adult","GBM","Glioblastoma","equal",650,650,0.994531830628543,"top_25",25,1,1
+"Adult","GBM","Glioblastoma","equal",650,650,0.994531830628543,"top_50",50,1,1
+"Adult","GBM","Glioblastoma","equal",650,650,0.994531830628543,"top_10_percent",65,1,1
+"Adult","GBM","Glioblastoma","leave_out_dependency_strength",650,46,0.924267653407339,"top_10",10,0,0
+"Adult","GBM","Glioblastoma","leave_out_dependency_strength",650,46,0.924267653407339,"top_25",25,0,0
+"Adult","GBM","Glioblastoma","leave_out_dependency_strength",650,46,0.924267653407339,"top_50",50,0.02,0.0101010101010101
+"Adult","GBM","Glioblastoma","leave_out_dependency_strength",650,46,0.924267653407339,"top_10_percent",5,0,0
+"Adult","GBM","Glioblastoma","half_dependency_strength",650,650,0.987070247299841,"top_10",10,0.9,0.818181818181818
+"Adult","GBM","Glioblastoma","half_dependency_strength",650,650,0.987070247299841,"top_25",25,0.92,0.851851851851852
+"Adult","GBM","Glioblastoma","half_dependency_strength",650,650,0.987070247299841,"top_50",50,0.92,0.851851851851852
+"Adult","GBM","Glioblastoma","half_dependency_strength",650,650,0.987070247299841,"top_10_percent",65,0.923076923076923,0.857142857142857
+"Adult","GBM","Glioblastoma","double_dependency_strength",650,650,0.987446263539407,"top_10",10,0.8,0.666666666666667
+"Adult","GBM","Glioblastoma","double_dependency_strength",650,650,0.987446263539407,"top_25",25,0.92,0.851851851851852
+"Adult","GBM","Glioblastoma","double_dependency_strength",650,650,0.987446263539407,"top_50",50,0.92,0.851851851851852
+"Adult","GBM","Glioblastoma","double_dependency_strength",650,650,0.987446263539407,"top_10_percent",65,0.892307692307692,0.805555555555556
+"Adult","GBM","Glioblastoma","leave_out_cancer_selectivity",650,46,0.987419056429232,"top_10",10,0,0
+"Adult","GBM","Glioblastoma","leave_out_cancer_selectivity",650,46,0.987419056429232,"top_25",25,0,0
+"Adult","GBM","Glioblastoma","leave_out_cancer_selectivity",650,46,0.987419056429232,"top_50",50,0.02,0.0101010101010101
+"Adult","GBM","Glioblastoma","leave_out_cancer_selectivity",650,46,0.987419056429232,"top_10_percent",5,0,0
+"Adult","GBM","Glioblastoma","half_cancer_selectivity",650,650,0.996001515423114,"top_10",10,0.8,0.666666666666667
+"Adult","GBM","Glioblastoma","half_cancer_selectivity",650,650,0.996001515423114,"top_25",25,0.92,0.851851851851852
+"Adult","GBM","Glioblastoma","half_cancer_selectivity",650,650,0.996001515423114,"top_50",50,0.92,0.851851851851852
+"Adult","GBM","Glioblastoma","half_cancer_selectivity",650,650,0.996001515423114,"top_10_percent",65,0.892307692307692,0.805555555555556
+"Adult","GBM","Glioblastoma","double_cancer_selectivity",650,650,0.991447216476616,"top_10",10,0.9,0.818181818181818
+"Adult","GBM","Glioblastoma","double_cancer_selectivity",650,650,0.991447216476616,"top_25",25,0.92,0.851851851851852
+"Adult","GBM","Glioblastoma","double_cancer_selectivity",650,650,0.991447216476616,"top_50",50,0.92,0.851851851851852
+"Adult","GBM","Glioblastoma","double_cancer_selectivity",650,650,0.991447216476616,"top_10_percent",65,0.923076923076923,0.857142857142857
+"Adult","GBM","Glioblastoma","leave_out_cysteine_ligandability",650,650,0.982285789705124,"top_10",10,1,1
+"Adult","GBM","Glioblastoma","leave_out_cysteine_ligandability",650,650,0.982285789705124,"top_25",25,1,1
+"Adult","GBM","Glioblastoma","leave_out_cysteine_ligandability",650,650,0.982285789705124,"top_50",50,0.98,0.96078431372549
+"Adult","GBM","Glioblastoma","leave_out_cysteine_ligandability",650,650,0.982285789705124,"top_10_percent",65,0.984615384615385,0.96969696969697
+"Adult","GBM","Glioblastoma","half_cysteine_ligandability",650,650,0.998117355004601,"top_10",10,1,1
+"Adult","GBM","Glioblastoma","half_cysteine_ligandability",650,650,0.998117355004601,"top_25",25,1,1
+"Adult","GBM","Glioblastoma","half_cysteine_ligandability",650,650,0.998117355004601,"top_50",50,1,1
+"Adult","GBM","Glioblastoma","half_cysteine_ligandability",650,650,0.998117355004601,"top_10_percent",65,1,1
+"Adult","GBM","Glioblastoma","double_cysteine_ligandability",650,650,0.999097282976443,"top_10",10,1,1
+"Adult","GBM","Glioblastoma","double_cysteine_ligandability",650,650,0.999097282976443,"top_25",25,1,1
+"Adult","GBM","Glioblastoma","double_cysteine_ligandability",650,650,0.999097282976443,"top_50",50,1,1
+"Adult","GBM","Glioblastoma","double_cysteine_ligandability",650,650,0.999097282976443,"top_10_percent",65,1,1
+"Adult","GBM","Glioblastoma","leave_out_conservation",650,650,0.998533603727502,"top_10",10,1,1
+"Adult","GBM","Glioblastoma","leave_out_conservation",650,650,0.998533603727502,"top_25",25,1,1
+"Adult","GBM","Glioblastoma","leave_out_conservation",650,650,0.998533603727502,"top_50",50,1,1
+"Adult","GBM","Glioblastoma","leave_out_conservation",650,650,0.998533603727502,"top_10_percent",65,1,1
+"Adult","GBM","Glioblastoma","half_conservation",650,650,0.999709071593841,"top_10",10,1,1
+"Adult","GBM","Glioblastoma","half_conservation",650,650,0.999709071593841,"top_25",25,1,1
+"Adult","GBM","Glioblastoma","half_conservation",650,650,0.999709071593841,"top_50",50,1,1
+"Adult","GBM","Glioblastoma","half_conservation",650,650,0.999709071593841,"top_10_percent",65,1,1
+"Adult","GBM","Glioblastoma","double_conservation",650,650,0.999102974379216,"top_10",10,1,1
+"Adult","GBM","Glioblastoma","double_conservation",650,650,0.999102974379216,"top_25",25,1,1
+"Adult","GBM","Glioblastoma","double_conservation",650,650,0.999102974379216,"top_50",50,1,1
+"Adult","GBM","Glioblastoma","double_conservation",650,650,0.999102974379216,"top_10_percent",65,1,1
+"Adult","GBM","Glioblastoma","leave_out_clinical_evidence",650,650,0.978535006808175,"top_10",10,1,1
+"Adult","GBM","Glioblastoma","leave_out_clinical_evidence",650,650,0.978535006808175,"top_25",25,1,1
+"Adult","GBM","Glioblastoma","leave_out_clinical_evidence",650,650,0.978535006808175,"top_50",50,1,1
+"Adult","GBM","Glioblastoma","leave_out_clinical_evidence",650,650,0.978535006808175,"top_10_percent",65,1,1
+"Adult","GBM","Glioblastoma","half_clinical_evidence",650,650,0.996293481217716,"top_10",10,1,1
+"Adult","GBM","Glioblastoma","half_clinical_evidence",650,650,0.996293481217716,"top_25",25,1,1
+"Adult","GBM","Glioblastoma","half_clinical_evidence",650,650,0.996293481217716,"top_50",50,1,1
+"Adult","GBM","Glioblastoma","half_clinical_evidence",650,650,0.996293481217716,"top_10_percent",65,1,1
+"Adult","GBM","Glioblastoma","double_clinical_evidence",650,650,0.996573136038896,"top_10",10,1,1
+"Adult","GBM","Glioblastoma","double_clinical_evidence",650,650,0.996573136038896,"top_25",25,1,1
+"Adult","GBM","Glioblastoma","double_clinical_evidence",650,650,0.996573136038896,"top_50",50,1,1
+"Adult","GBM","Glioblastoma","double_clinical_evidence",650,650,0.996573136038896,"top_10_percent",65,1,1
+"Adult","LUAD","Lung Adenocarcinoma","equal",55,55,0.977849927849928,"top_10",10,1,1
+"Adult","LUAD","Lung Adenocarcinoma","equal",55,55,0.977849927849928,"top_25",25,0.92,0.851851851851852
+"Adult","LUAD","Lung Adenocarcinoma","equal",55,55,0.977849927849928,"top_50",50,0.96,0.923076923076923
+"Adult","LUAD","Lung Adenocarcinoma","equal",55,55,0.977849927849928,"top_10_percent",6,1,1
+"Adult","LUAD","Lung Adenocarcinoma","leave_out_dependency_strength",55,28,0.984126984126984,"top_10",10,0,0
+"Adult","LUAD","Lung Adenocarcinoma","leave_out_dependency_strength",55,28,0.984126984126984,"top_25",25,0.16,0.0869565217391304
+"Adult","LUAD","Lung Adenocarcinoma","leave_out_dependency_strength",55,28,0.984126984126984,"top_50",50,0.9,0.818181818181818
+"Adult","LUAD","Lung Adenocarcinoma","leave_out_dependency_strength",55,28,0.984126984126984,"top_10_percent",3,0,0
+"Adult","LUAD","Lung Adenocarcinoma","half_dependency_strength",55,55,0.976479076479076,"top_10",10,0.9,0.818181818181818
+"Adult","LUAD","Lung Adenocarcinoma","half_dependency_strength",55,55,0.976479076479076,"top_25",25,0.92,0.851851851851852
+"Adult","LUAD","Lung Adenocarcinoma","half_dependency_strength",55,55,0.976479076479076,"top_50",50,0.96,0.923076923076923
+"Adult","LUAD","Lung Adenocarcinoma","half_dependency_strength",55,55,0.976479076479076,"top_10_percent",6,1,1
+"Adult","LUAD","Lung Adenocarcinoma","double_dependency_strength",55,55,0.969119769119769,"top_10",10,1,1
+"Adult","LUAD","Lung Adenocarcinoma","double_dependency_strength",55,55,0.969119769119769,"top_25",25,0.92,0.851851851851852
+"Adult","LUAD","Lung Adenocarcinoma","double_dependency_strength",55,55,0.969119769119769,"top_50",50,0.96,0.923076923076923
+"Adult","LUAD","Lung Adenocarcinoma","double_dependency_strength",55,55,0.969119769119769,"top_10_percent",6,1,1
+"Adult","LUAD","Lung Adenocarcinoma","leave_out_cancer_selectivity",55,28,0.999452654625068,"top_10",10,0,0
+"Adult","LUAD","Lung Adenocarcinoma","leave_out_cancer_selectivity",55,28,0.999452654625068,"top_25",25,0.16,0.0869565217391304
+"Adult","LUAD","Lung Adenocarcinoma","leave_out_cancer_selectivity",55,28,0.999452654625068,"top_50",50,0.9,0.818181818181818
+"Adult","LUAD","Lung Adenocarcinoma","leave_out_cancer_selectivity",55,28,0.999452654625068,"top_10_percent",3,0,0
+"Adult","LUAD","Lung Adenocarcinoma","half_cancer_selectivity",55,55,0.998051948051948,"top_10",10,1,1
+"Adult","LUAD","Lung Adenocarcinoma","half_cancer_selectivity",55,55,0.998051948051948,"top_25",25,0.96,0.923076923076923
+"Adult","LUAD","Lung Adenocarcinoma","half_cancer_selectivity",55,55,0.998051948051948,"top_50",50,1,1
+"Adult","LUAD","Lung Adenocarcinoma","half_cancer_selectivity",55,55,0.998051948051948,"top_10_percent",6,1,1
+"Adult","LUAD","Lung Adenocarcinoma","double_cancer_selectivity",55,55,0.995165945165945,"top_10",10,0.9,0.818181818181818
+"Adult","LUAD","Lung Adenocarcinoma","double_cancer_selectivity",55,55,0.995165945165945,"top_25",25,0.96,0.923076923076923
+"Adult","LUAD","Lung Adenocarcinoma","double_cancer_selectivity",55,55,0.995165945165945,"top_50",50,0.98,0.96078431372549
+"Adult","LUAD","Lung Adenocarcinoma","double_cancer_selectivity",55,55,0.995165945165945,"top_10_percent",6,1,1
+"Adult","LUAD","Lung Adenocarcinoma","leave_out_cysteine_ligandability",55,55,0.874458874458874,"top_10",10,0.7,0.538461538461538
+"Adult","LUAD","Lung Adenocarcinoma","leave_out_cysteine_ligandability",55,55,0.874458874458874,"top_25",25,0.92,0.851851851851852
+"Adult","LUAD","Lung Adenocarcinoma","leave_out_cysteine_ligandability",55,55,0.874458874458874,"top_50",50,0.94,0.886792452830189
+"Adult","LUAD","Lung Adenocarcinoma","leave_out_cysteine_ligandability",55,55,0.874458874458874,"top_10_percent",6,0.666666666666667,0.5
+"Adult","LUAD","Lung Adenocarcinoma","half_cysteine_ligandability",55,55,0.991341991341991,"top_10",10,1,1
+"Adult","LUAD","Lung Adenocarcinoma","half_cysteine_ligandability",55,55,0.991341991341991,"top_25",25,0.96,0.923076923076923
+"Adult","LUAD","Lung Adenocarcinoma","half_cysteine_ligandability",55,55,0.991341991341991,"top_50",50,1,1
+"Adult","LUAD","Lung Adenocarcinoma","half_cysteine_ligandability",55,55,0.991341991341991,"top_10_percent",6,1,1
+"Adult","LUAD","Lung Adenocarcinoma","double_cysteine_ligandability",55,55,0.989105339105339,"top_10",10,1,1
+"Adult","LUAD","Lung Adenocarcinoma","double_cysteine_ligandability",55,55,0.989105339105339,"top_25",25,0.96,0.923076923076923
+"Adult","LUAD","Lung Adenocarcinoma","double_cysteine_ligandability",55,55,0.989105339105339,"top_50",50,0.98,0.96078431372549
+"Adult","LUAD","Lung Adenocarcinoma","double_cysteine_ligandability",55,55,0.989105339105339,"top_10_percent",6,1,1
+"Adult","LUAD","Lung Adenocarcinoma","leave_out_conservation",55,55,0.994805194805195,"top_10",10,1,1
+"Adult","LUAD","Lung Adenocarcinoma","leave_out_conservation",55,55,0.994805194805195,"top_25",25,0.96,0.923076923076923
+"Adult","LUAD","Lung Adenocarcinoma","leave_out_conservation",55,55,0.994805194805195,"top_50",50,1,1
+"Adult","LUAD","Lung Adenocarcinoma","leave_out_conservation",55,55,0.994805194805195,"top_10_percent",6,1,1
+"Adult","LUAD","Lung Adenocarcinoma","half_conservation",55,55,0.998340548340548,"top_10",10,1,1
+"Adult","LUAD","Lung Adenocarcinoma","half_conservation",55,55,0.998340548340548,"top_25",25,1,1
+"Adult","LUAD","Lung Adenocarcinoma","half_conservation",55,55,0.998340548340548,"top_50",50,1,1
+"Adult","LUAD","Lung Adenocarcinoma","half_conservation",55,55,0.998340548340548,"top_10_percent",6,1,1
+"Adult","LUAD","Lung Adenocarcinoma","double_conservation",55,55,0.996464646464646,"top_10",10,1,1
+"Adult","LUAD","Lung Adenocarcinoma","double_conservation",55,55,0.996464646464646,"top_25",25,0.96,0.923076923076923
+"Adult","LUAD","Lung Adenocarcinoma","double_conservation",55,55,0.996464646464646,"top_50",50,0.98,0.96078431372549
+"Adult","LUAD","Lung Adenocarcinoma","double_conservation",55,55,0.996464646464646,"top_10_percent",6,1,1
+"Adult","LUAD","Lung Adenocarcinoma","leave_out_clinical_evidence",55,55,0.933333333333333,"top_10",10,0.8,0.666666666666667
+"Adult","LUAD","Lung Adenocarcinoma","leave_out_clinical_evidence",55,55,0.933333333333333,"top_25",25,0.84,0.724137931034483
+"Adult","LUAD","Lung Adenocarcinoma","leave_out_clinical_evidence",55,55,0.933333333333333,"top_50",50,1,1
+"Adult","LUAD","Lung Adenocarcinoma","leave_out_clinical_evidence",55,55,0.933333333333333,"top_10_percent",6,0.833333333333333,0.714285714285714
+"Adult","LUAD","Lung Adenocarcinoma","half_clinical_evidence",55,55,0.991919191919192,"top_10",10,1,1
+"Adult","LUAD","Lung Adenocarcinoma","half_clinical_evidence",55,55,0.991919191919192,"top_25",25,0.92,0.851851851851852
+"Adult","LUAD","Lung Adenocarcinoma","half_clinical_evidence",55,55,0.991919191919192,"top_50",50,1,1
+"Adult","LUAD","Lung Adenocarcinoma","half_clinical_evidence",55,55,0.991919191919192,"top_10_percent",6,1,1
+"Adult","LUAD","Lung Adenocarcinoma","double_clinical_evidence",55,55,0.987950937950938,"top_10",10,1,1
+"Adult","LUAD","Lung Adenocarcinoma","double_clinical_evidence",55,55,0.987950937950938,"top_25",25,0.92,0.851851851851852
+"Adult","LUAD","Lung Adenocarcinoma","double_clinical_evidence",55,55,0.987950937950938,"top_50",50,0.98,0.96078431372549
+"Adult","LUAD","Lung Adenocarcinoma","double_clinical_evidence",55,55,0.987950937950938,"top_10_percent",6,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","equal",919,919,0.988615394720879,"top_10",10,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","equal",919,919,0.988615394720879,"top_25",25,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","equal",919,919,0.988615394720879,"top_50",50,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","equal",919,919,0.988615394720879,"top_10_percent",92,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","leave_out_dependency_strength",919,90,0.945853397538791,"top_10",10,0.1,0.0526315789473684
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","leave_out_dependency_strength",919,90,0.945853397538791,"top_25",25,0.04,0.0204081632653061
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","leave_out_dependency_strength",919,90,0.945853397538791,"top_50",50,0.02,0.0101010101010101
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","leave_out_dependency_strength",919,90,0.945853397538791,"top_10_percent",9,0.111111111111111,0.0588235294117647
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","half_dependency_strength",919,919,0.986297176988888,"top_10",10,0.7,0.538461538461538
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","half_dependency_strength",919,919,0.986297176988888,"top_25",25,0.96,0.923076923076923
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","half_dependency_strength",919,919,0.986297176988888,"top_50",50,0.88,0.785714285714286
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","half_dependency_strength",919,919,0.986297176988888,"top_10_percent",92,0.891304347826087,0.803921568627451
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","double_dependency_strength",919,919,0.98376675878488,"top_10",10,0.9,0.818181818181818
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","double_dependency_strength",919,919,0.98376675878488,"top_25",25,0.84,0.724137931034483
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","double_dependency_strength",919,919,0.98376675878488,"top_50",50,0.86,0.754385964912281
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","double_dependency_strength",919,919,0.98376675878488,"top_10_percent",92,0.923913043478261,0.858585858585859
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","leave_out_cancer_selectivity",919,90,0.996625097748693,"top_10",10,0.1,0.0526315789473684
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","leave_out_cancer_selectivity",919,90,0.996625097748693,"top_25",25,0.04,0.0204081632653061
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","leave_out_cancer_selectivity",919,90,0.996625097748693,"top_50",50,0.02,0.0101010101010101
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","leave_out_cancer_selectivity",919,90,0.996625097748693,"top_10_percent",9,0.111111111111111,0.0588235294117647
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","half_cancer_selectivity",919,919,0.997502880059827,"top_10",10,0.9,0.818181818181818
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","half_cancer_selectivity",919,919,0.997502880059827,"top_25",25,0.84,0.724137931034483
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","half_cancer_selectivity",919,919,0.997502880059827,"top_50",50,0.86,0.754385964912281
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","half_cancer_selectivity",919,919,0.997502880059827,"top_10_percent",92,0.923913043478261,0.858585858585859
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","double_cancer_selectivity",919,919,0.994387125986602,"top_10",10,0.7,0.538461538461538
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","double_cancer_selectivity",919,919,0.994387125986602,"top_25",25,0.96,0.923076923076923
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","double_cancer_selectivity",919,919,0.994387125986602,"top_50",50,0.88,0.785714285714286
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","double_cancer_selectivity",919,919,0.994387125986602,"top_10_percent",92,0.891304347826087,0.803921568627451
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","leave_out_cysteine_ligandability",919,919,0.979258469658667,"top_10",10,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","leave_out_cysteine_ligandability",919,919,0.979258469658667,"top_25",25,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","leave_out_cysteine_ligandability",919,919,0.979258469658667,"top_50",50,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","leave_out_cysteine_ligandability",919,919,0.979258469658667,"top_10_percent",92,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","half_cysteine_ligandability",919,919,0.99753316398061,"top_10",10,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","half_cysteine_ligandability",919,919,0.99753316398061,"top_25",25,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","half_cysteine_ligandability",919,919,0.99753316398061,"top_50",50,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","half_cysteine_ligandability",919,919,0.99753316398061,"top_10_percent",92,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","double_cysteine_ligandability",919,919,0.998434210882731,"top_10",10,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","double_cysteine_ligandability",919,919,0.998434210882731,"top_25",25,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","double_cysteine_ligandability",919,919,0.998434210882731,"top_50",50,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","double_cysteine_ligandability",919,919,0.998434210882731,"top_10_percent",92,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","leave_out_conservation",919,919,0.998518237106885,"top_10",10,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","leave_out_conservation",919,919,0.998518237106885,"top_25",25,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","leave_out_conservation",919,919,0.998518237106885,"top_50",50,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","leave_out_conservation",919,919,0.998518237106885,"top_10_percent",92,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","half_conservation",919,919,0.999637534213468,"top_10",10,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","half_conservation",919,919,0.999637534213468,"top_25",25,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","half_conservation",919,919,0.999637534213468,"top_50",50,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","half_conservation",919,919,0.999637534213468,"top_10_percent",92,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","double_conservation",919,919,0.998802783732293,"top_10",10,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","double_conservation",919,919,0.998802783732293,"top_25",25,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","double_conservation",919,919,0.998802783732293,"top_50",50,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","double_conservation",919,919,0.998802783732293,"top_10_percent",92,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","leave_out_clinical_evidence",919,919,0.966011550419727,"top_10",10,0.8,0.666666666666667
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","leave_out_clinical_evidence",919,919,0.966011550419727,"top_25",25,0.88,0.785714285714286
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","leave_out_clinical_evidence",919,919,0.966011550419727,"top_50",50,0.92,0.851851851851852
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","leave_out_clinical_evidence",919,919,0.966011550419727,"top_10_percent",92,0.956521739130435,0.916666666666667
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","half_clinical_evidence",919,919,0.993702674899792,"top_10",10,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","half_clinical_evidence",919,919,0.993702674899792,"top_25",25,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","half_clinical_evidence",919,919,0.993702674899792,"top_50",50,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","half_clinical_evidence",919,919,0.993702674899792,"top_10_percent",92,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","double_clinical_evidence",919,919,0.99302361587359,"top_10",10,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","double_clinical_evidence",919,919,0.99302361587359,"top_25",25,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","double_clinical_evidence",919,919,0.99302361587359,"top_50",50,1,1
+"Adult","OCSCC","Oral Cavity Squamous Cell Carcinoma","double_clinical_evidence",919,919,0.99302361587359,"top_10_percent",92,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","equal",280,280,0.97395764574428,"top_10",10,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","equal",280,280,0.97395764574428,"top_25",25,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","equal",280,280,0.97395764574428,"top_50",50,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","equal",280,280,0.97395764574428,"top_10_percent",28,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","leave_out_dependency_strength",280,55,0.922294372294372,"top_10",10,0,0
+"Adult","PDAC","Pancreatic Adenocarcinoma","leave_out_dependency_strength",280,55,0.922294372294372,"top_25",25,0,0
+"Adult","PDAC","Pancreatic Adenocarcinoma","leave_out_dependency_strength",280,55,0.922294372294372,"top_50",50,0,0
+"Adult","PDAC","Pancreatic Adenocarcinoma","leave_out_dependency_strength",280,55,0.922294372294372,"top_10_percent",6,0,0
+"Adult","PDAC","Pancreatic Adenocarcinoma","half_dependency_strength",280,280,0.97577937898959,"top_10",10,0.9,0.818181818181818
+"Adult","PDAC","Pancreatic Adenocarcinoma","half_dependency_strength",280,280,0.97577937898959,"top_25",25,0.84,0.724137931034483
+"Adult","PDAC","Pancreatic Adenocarcinoma","half_dependency_strength",280,280,0.97577937898959,"top_50",50,0.94,0.886792452830189
+"Adult","PDAC","Pancreatic Adenocarcinoma","half_dependency_strength",280,280,0.97577937898959,"top_10_percent",28,0.821428571428571,0.696969696969697
+"Adult","PDAC","Pancreatic Adenocarcinoma","double_dependency_strength",280,280,0.965908165323664,"top_10",10,0.9,0.818181818181818
+"Adult","PDAC","Pancreatic Adenocarcinoma","double_dependency_strength",280,280,0.965908165323664,"top_25",25,0.92,0.851851851851852
+"Adult","PDAC","Pancreatic Adenocarcinoma","double_dependency_strength",280,280,0.965908165323664,"top_50",50,0.98,0.96078431372549
+"Adult","PDAC","Pancreatic Adenocarcinoma","double_dependency_strength",280,280,0.965908165323664,"top_10_percent",28,0.892857142857143,0.806451612903226
+"Adult","PDAC","Pancreatic Adenocarcinoma","leave_out_cancer_selectivity",280,55,0.991341991341991,"top_10",10,0,0
+"Adult","PDAC","Pancreatic Adenocarcinoma","leave_out_cancer_selectivity",280,55,0.991341991341991,"top_25",25,0,0
+"Adult","PDAC","Pancreatic Adenocarcinoma","leave_out_cancer_selectivity",280,55,0.991341991341991,"top_50",50,0,0
+"Adult","PDAC","Pancreatic Adenocarcinoma","leave_out_cancer_selectivity",280,55,0.991341991341991,"top_10_percent",6,0,0
+"Adult","PDAC","Pancreatic Adenocarcinoma","half_cancer_selectivity",280,280,0.997065831961723,"top_10",10,0.9,0.818181818181818
+"Adult","PDAC","Pancreatic Adenocarcinoma","half_cancer_selectivity",280,280,0.997065831961723,"top_25",25,0.92,0.851851851851852
+"Adult","PDAC","Pancreatic Adenocarcinoma","half_cancer_selectivity",280,280,0.997065831961723,"top_50",50,0.98,0.96078431372549
+"Adult","PDAC","Pancreatic Adenocarcinoma","half_cancer_selectivity",280,280,0.997065831961723,"top_10_percent",28,0.892857142857143,0.806451612903226
+"Adult","PDAC","Pancreatic Adenocarcinoma","double_cancer_selectivity",280,280,0.995336763772588,"top_10",10,0.9,0.818181818181818
+"Adult","PDAC","Pancreatic Adenocarcinoma","double_cancer_selectivity",280,280,0.995336763772588,"top_25",25,0.84,0.724137931034483
+"Adult","PDAC","Pancreatic Adenocarcinoma","double_cancer_selectivity",280,280,0.995336763772588,"top_50",50,0.94,0.886792452830189
+"Adult","PDAC","Pancreatic Adenocarcinoma","double_cancer_selectivity",280,280,0.995336763772588,"top_10_percent",28,0.821428571428571,0.696969696969697
+"Adult","PDAC","Pancreatic Adenocarcinoma","leave_out_cysteine_ligandability",280,280,0.951392015070176,"top_10",10,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","leave_out_cysteine_ligandability",280,280,0.951392015070176,"top_25",25,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","leave_out_cysteine_ligandability",280,280,0.951392015070176,"top_50",50,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","leave_out_cysteine_ligandability",280,280,0.951392015070176,"top_10_percent",28,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","half_cysteine_ligandability",280,280,0.994815527288044,"top_10",10,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","half_cysteine_ligandability",280,280,0.994815527288044,"top_25",25,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","half_cysteine_ligandability",280,280,0.994815527288044,"top_50",50,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","half_cysteine_ligandability",280,280,0.994815527288044,"top_10_percent",28,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","double_cysteine_ligandability",280,280,0.996416678761401,"top_10",10,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","double_cysteine_ligandability",280,280,0.996416678761401,"top_25",25,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","double_cysteine_ligandability",280,280,0.996416678761401,"top_50",50,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","double_cysteine_ligandability",280,280,0.996416678761401,"top_10_percent",28,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","leave_out_conservation",280,280,0.996007234427654,"top_10",10,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","leave_out_conservation",280,280,0.996007234427654,"top_25",25,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","leave_out_conservation",280,280,0.996007234427654,"top_50",50,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","leave_out_conservation",280,280,0.996007234427654,"top_10_percent",28,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","half_conservation",280,280,0.999094739897617,"top_10",10,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","half_conservation",280,280,0.999094739897617,"top_25",25,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","half_conservation",280,280,0.999094739897617,"top_50",50,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","half_conservation",280,280,0.999094739897617,"top_10_percent",28,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","double_conservation",280,280,0.997235020774244,"top_10",10,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","double_conservation",280,280,0.997235020774244,"top_25",25,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","double_conservation",280,280,0.997235020774244,"top_50",50,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","double_conservation",280,280,0.997235020774244,"top_10_percent",28,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","leave_out_clinical_evidence",280,280,0.928183791853589,"top_10",10,0.9,0.818181818181818
+"Adult","PDAC","Pancreatic Adenocarcinoma","leave_out_clinical_evidence",280,280,0.928183791853589,"top_25",25,0.88,0.785714285714286
+"Adult","PDAC","Pancreatic Adenocarcinoma","leave_out_clinical_evidence",280,280,0.928183791853589,"top_50",50,0.92,0.851851851851852
+"Adult","PDAC","Pancreatic Adenocarcinoma","leave_out_clinical_evidence",280,280,0.928183791853589,"top_10_percent",28,0.857142857142857,0.75
+"Adult","PDAC","Pancreatic Adenocarcinoma","half_clinical_evidence",280,280,0.987051937931738,"top_10",10,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","half_clinical_evidence",280,280,0.987051937931738,"top_25",25,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","half_clinical_evidence",280,280,0.987051937931738,"top_50",50,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","half_clinical_evidence",280,280,0.987051937931738,"top_10_percent",28,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","double_clinical_evidence",280,280,0.98389828724898,"top_10",10,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","double_clinical_evidence",280,280,0.98389828724898,"top_25",25,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","double_clinical_evidence",280,280,0.98389828724898,"top_50",50,1,1
+"Adult","PDAC","Pancreatic Adenocarcinoma","double_clinical_evidence",280,280,0.98389828724898,"top_10_percent",28,1,1
+"Adult","SCLC","Small Cell Lung Cancer","equal",579,579,0.99602737392437,"top_10",10,1,1
+"Adult","SCLC","Small Cell Lung Cancer","equal",579,579,0.99602737392437,"top_25",25,1,1
+"Adult","SCLC","Small Cell Lung Cancer","equal",579,579,0.99602737392437,"top_50",50,1,1
+"Adult","SCLC","Small Cell Lung Cancer","equal",579,579,0.99602737392437,"top_10_percent",58,1,1
+"Adult","SCLC","Small Cell Lung Cancer","leave_out_dependency_strength",579,52,0.864253393665158,"top_10",10,0,0
+"Adult","SCLC","Small Cell Lung Cancer","leave_out_dependency_strength",579,52,0.864253393665158,"top_25",25,0,0
+"Adult","SCLC","Small Cell Lung Cancer","leave_out_dependency_strength",579,52,0.864253393665158,"top_50",50,0,0
+"Adult","SCLC","Small Cell Lung Cancer","leave_out_dependency_strength",579,52,0.864253393665158,"top_10_percent",6,0,0
+"Adult","SCLC","Small Cell Lung Cancer","half_dependency_strength",579,579,0.991463878831219,"top_10",10,0.9,0.818181818181818
+"Adult","SCLC","Small Cell Lung Cancer","half_dependency_strength",579,579,0.991463878831219,"top_25",25,0.8,0.666666666666667
+"Adult","SCLC","Small Cell Lung Cancer","half_dependency_strength",579,579,0.991463878831219,"top_50",50,0.92,0.851851851851852
+"Adult","SCLC","Small Cell Lung Cancer","half_dependency_strength",579,579,0.991463878831219,"top_10_percent",58,0.896551724137931,0.8125
+"Adult","SCLC","Small Cell Lung Cancer","double_dependency_strength",579,579,0.990467006586742,"top_10",10,0.8,0.666666666666667
+"Adult","SCLC","Small Cell Lung Cancer","double_dependency_strength",579,579,0.990467006586742,"top_25",25,0.84,0.724137931034483
+"Adult","SCLC","Small Cell Lung Cancer","double_dependency_strength",579,579,0.990467006586742,"top_50",50,0.78,0.639344262295082
+"Adult","SCLC","Small Cell Lung Cancer","double_dependency_strength",579,579,0.990467006586742,"top_10_percent",58,0.879310344827586,0.784615384615385
+"Adult","SCLC","Small Cell Lung Cancer","leave_out_cancer_selectivity",579,52,0.997097242380261,"top_10",10,0,0
+"Adult","SCLC","Small Cell Lung Cancer","leave_out_cancer_selectivity",579,52,0.997097242380261,"top_25",25,0,0
+"Adult","SCLC","Small Cell Lung Cancer","leave_out_cancer_selectivity",579,52,0.997097242380261,"top_50",50,0,0
+"Adult","SCLC","Small Cell Lung Cancer","leave_out_cancer_selectivity",579,52,0.997097242380261,"top_10_percent",6,0,0
+"Adult","SCLC","Small Cell Lung Cancer","half_cancer_selectivity",579,579,0.998064258159442,"top_10",10,0.8,0.666666666666667
+"Adult","SCLC","Small Cell Lung Cancer","half_cancer_selectivity",579,579,0.998064258159442,"top_25",25,0.84,0.724137931034483
+"Adult","SCLC","Small Cell Lung Cancer","half_cancer_selectivity",579,579,0.998064258159442,"top_50",50,0.8,0.666666666666667
+"Adult","SCLC","Small Cell Lung Cancer","half_cancer_selectivity",579,579,0.998064258159442,"top_10_percent",58,0.896551724137931,0.8125
+"Adult","SCLC","Small Cell Lung Cancer","double_cancer_selectivity",579,579,0.995540382235073,"top_10",10,0.9,0.818181818181818
+"Adult","SCLC","Small Cell Lung Cancer","double_cancer_selectivity",579,579,0.995540382235073,"top_25",25,0.8,0.666666666666667
+"Adult","SCLC","Small Cell Lung Cancer","double_cancer_selectivity",579,579,0.995540382235073,"top_50",50,0.92,0.851851851851852
+"Adult","SCLC","Small Cell Lung Cancer","double_cancer_selectivity",579,579,0.995540382235073,"top_10_percent",58,0.896551724137931,0.8125
+"Adult","SCLC","Small Cell Lung Cancer","leave_out_cysteine_ligandability",579,579,0.981745337395036,"top_10",10,0.9,0.818181818181818
+"Adult","SCLC","Small Cell Lung Cancer","leave_out_cysteine_ligandability",579,579,0.981745337395036,"top_25",25,0.92,0.851851851851852
+"Adult","SCLC","Small Cell Lung Cancer","leave_out_cysteine_ligandability",579,579,0.981745337395036,"top_50",50,0.96,0.923076923076923
+"Adult","SCLC","Small Cell Lung Cancer","leave_out_cysteine_ligandability",579,579,0.981745337395036,"top_10_percent",58,0.96551724137931,0.933333333333333
+"Adult","SCLC","Small Cell Lung Cancer","half_cysteine_ligandability",579,579,0.99823545989308,"top_10",10,1,1
+"Adult","SCLC","Small Cell Lung Cancer","half_cysteine_ligandability",579,579,0.99823545989308,"top_25",25,0.96,0.923076923076923
+"Adult","SCLC","Small Cell Lung Cancer","half_cysteine_ligandability",579,579,0.99823545989308,"top_50",50,0.98,0.96078431372549
+"Adult","SCLC","Small Cell Lung Cancer","half_cysteine_ligandability",579,579,0.99823545989308,"top_10_percent",58,0.982758620689655,0.966101694915254
+"Adult","SCLC","Small Cell Lung Cancer","double_cysteine_ligandability",579,579,0.998384452313291,"top_10",10,1,1
+"Adult","SCLC","Small Cell Lung Cancer","double_cysteine_ligandability",579,579,0.998384452313291,"top_25",25,1,1
+"Adult","SCLC","Small Cell Lung Cancer","double_cysteine_ligandability",579,579,0.998384452313291,"top_50",50,1,1
+"Adult","SCLC","Small Cell Lung Cancer","double_cysteine_ligandability",579,579,0.998384452313291,"top_10_percent",58,1,1
+"Adult","SCLC","Small Cell Lung Cancer","leave_out_conservation",579,579,0.999195255463114,"top_10",10,1,1
+"Adult","SCLC","Small Cell Lung Cancer","leave_out_conservation",579,579,0.999195255463114,"top_25",25,1,1
+"Adult","SCLC","Small Cell Lung Cancer","leave_out_conservation",579,579,0.999195255463114,"top_50",50,1,1
+"Adult","SCLC","Small Cell Lung Cancer","leave_out_conservation",579,579,0.999195255463114,"top_10_percent",58,1,1
+"Adult","SCLC","Small Cell Lung Cancer","half_conservation",579,579,0.999792956176229,"top_10",10,1,1
+"Adult","SCLC","Small Cell Lung Cancer","half_conservation",579,579,0.999792956176229,"top_25",25,1,1
+"Adult","SCLC","Small Cell Lung Cancer","half_conservation",579,579,0.999792956176229,"top_50",50,1,1
+"Adult","SCLC","Small Cell Lung Cancer","half_conservation",579,579,0.999792956176229,"top_10_percent",58,1,1
+"Adult","SCLC","Small Cell Lung Cancer","double_conservation",579,579,0.999390923931982,"top_10",10,1,1
+"Adult","SCLC","Small Cell Lung Cancer","double_conservation",579,579,0.999390923931982,"top_25",25,1,1
+"Adult","SCLC","Small Cell Lung Cancer","double_conservation",579,579,0.999390923931982,"top_50",50,1,1
+"Adult","SCLC","Small Cell Lung Cancer","double_conservation",579,579,0.999390923931982,"top_10_percent",58,1,1
+"Adult","SCLC","Small Cell Lung Cancer","leave_out_clinical_evidence",579,579,0.976389894493274,"top_10",10,1,1
+"Adult","SCLC","Small Cell Lung Cancer","leave_out_clinical_evidence",579,579,0.976389894493274,"top_25",25,1,1
+"Adult","SCLC","Small Cell Lung Cancer","leave_out_clinical_evidence",579,579,0.976389894493274,"top_50",50,1,1
+"Adult","SCLC","Small Cell Lung Cancer","leave_out_clinical_evidence",579,579,0.976389894493274,"top_10_percent",58,1,1
+"Adult","SCLC","Small Cell Lung Cancer","half_clinical_evidence",579,579,0.996914249514515,"top_10",10,1,1
+"Adult","SCLC","Small Cell Lung Cancer","half_clinical_evidence",579,579,0.996914249514515,"top_25",25,1,1
+"Adult","SCLC","Small Cell Lung Cancer","half_clinical_evidence",579,579,0.996914249514515,"top_50",50,1,1
+"Adult","SCLC","Small Cell Lung Cancer","half_clinical_evidence",579,579,0.996914249514515,"top_10_percent",58,1,1
+"Adult","SCLC","Small Cell Lung Cancer","double_clinical_evidence",579,579,0.997679674889884,"top_10",10,1,1
+"Adult","SCLC","Small Cell Lung Cancer","double_clinical_evidence",579,579,0.997679674889884,"top_25",25,1,1
+"Adult","SCLC","Small Cell Lung Cancer","double_clinical_evidence",579,579,0.997679674889884,"top_50",50,1,1
+"Adult","SCLC","Small Cell Lung Cancer","double_clinical_evidence",579,579,0.997679674889884,"top_10_percent",58,1,1
+"Adult","SKCM","Melanoma","equal",713,713,0.983868753475927,"top_10",10,1,1
+"Adult","SKCM","Melanoma","equal",713,713,0.983868753475927,"top_25",25,1,1
+"Adult","SKCM","Melanoma","equal",713,713,0.983868753475927,"top_50",50,1,1
+"Adult","SKCM","Melanoma","equal",713,713,0.983868753475927,"top_10_percent",72,1,1
+"Adult","SKCM","Melanoma","leave_out_dependency_strength",713,87,0.936502150616024,"top_10",10,0.1,0.0526315789473684
+"Adult","SKCM","Melanoma","leave_out_dependency_strength",713,87,0.936502150616024,"top_25",25,0.04,0.0204081632653061
+"Adult","SKCM","Melanoma","leave_out_dependency_strength",713,87,0.936502150616024,"top_50",50,0.02,0.0101010101010101
+"Adult","SKCM","Melanoma","leave_out_dependency_strength",713,87,0.936502150616024,"top_10_percent",9,0.111111111111111,0.0588235294117647
+"Adult","SKCM","Melanoma","half_dependency_strength",713,713,0.980225182968178,"top_10",10,0.9,0.818181818181818
+"Adult","SKCM","Melanoma","half_dependency_strength",713,713,0.980225182968178,"top_25",25,0.88,0.785714285714286
+"Adult","SKCM","Melanoma","half_dependency_strength",713,713,0.980225182968178,"top_50",50,0.88,0.785714285714286
+"Adult","SKCM","Melanoma","half_dependency_strength",713,713,0.980225182968178,"top_10_percent",72,0.916666666666667,0.846153846153846
+"Adult","SKCM","Melanoma","double_dependency_strength",713,713,0.976582456250478,"top_10",10,0.9,0.818181818181818
+"Adult","SKCM","Melanoma","double_dependency_strength",713,713,0.976582456250478,"top_25",25,0.88,0.785714285714286
+"Adult","SKCM","Melanoma","double_dependency_strength",713,713,0.976582456250478,"top_50",50,0.92,0.851851851851852
+"Adult","SKCM","Melanoma","double_dependency_strength",713,713,0.976582456250478,"top_10_percent",72,0.888888888888889,0.8
+"Adult","SKCM","Melanoma","leave_out_cancer_selectivity",713,87,0.995808121309324,"top_10",10,0.1,0.0526315789473684
+"Adult","SKCM","Melanoma","leave_out_cancer_selectivity",713,87,0.995808121309324,"top_25",25,0.04,0.0204081632653061
+"Adult","SKCM","Melanoma","leave_out_cancer_selectivity",713,87,0.995808121309324,"top_50",50,0.02,0.0101010101010101
+"Adult","SKCM","Melanoma","leave_out_cancer_selectivity",713,87,0.995808121309324,"top_10_percent",9,0.111111111111111,0.0588235294117647
+"Adult","SKCM","Melanoma","half_cancer_selectivity",713,713,0.997558915293885,"top_10",10,0.9,0.818181818181818
+"Adult","SKCM","Melanoma","half_cancer_selectivity",713,713,0.997558915293885,"top_25",25,0.88,0.785714285714286
+"Adult","SKCM","Melanoma","half_cancer_selectivity",713,713,0.997558915293885,"top_50",50,0.92,0.851851851851852
+"Adult","SKCM","Melanoma","half_cancer_selectivity",713,713,0.997558915293885,"top_10_percent",72,0.888888888888889,0.8
+"Adult","SKCM","Melanoma","double_cancer_selectivity",713,713,0.996062417519234,"top_10",10,0.9,0.818181818181818
+"Adult","SKCM","Melanoma","double_cancer_selectivity",713,713,0.996062417519234,"top_25",25,0.88,0.785714285714286
+"Adult","SKCM","Melanoma","double_cancer_selectivity",713,713,0.996062417519234,"top_50",50,0.88,0.785714285714286
+"Adult","SKCM","Melanoma","double_cancer_selectivity",713,713,0.996062417519234,"top_10_percent",72,0.916666666666667,0.846153846153846
+"Adult","SKCM","Melanoma","leave_out_cysteine_ligandability",713,713,0.956682492910899,"top_10",10,0.7,0.538461538461538
+"Adult","SKCM","Melanoma","leave_out_cysteine_ligandability",713,713,0.956682492910899,"top_25",25,0.8,0.666666666666667
+"Adult","SKCM","Melanoma","leave_out_cysteine_ligandability",713,713,0.956682492910899,"top_50",50,0.9,0.818181818181818
+"Adult","SKCM","Melanoma","leave_out_cysteine_ligandability",713,713,0.956682492910899,"top_10_percent",72,0.930555555555556,0.87012987012987
+"Adult","SKCM","Melanoma","half_cysteine_ligandability",713,713,0.993932632984616,"top_10",10,1,1
+"Adult","SKCM","Melanoma","half_cysteine_ligandability",713,713,0.993932632984616,"top_25",25,0.96,0.923076923076923
+"Adult","SKCM","Melanoma","half_cysteine_ligandability",713,713,0.993932632984616,"top_50",50,0.98,0.96078431372549
+"Adult","SKCM","Melanoma","half_cysteine_ligandability",713,713,0.993932632984616,"top_10_percent",72,0.986111111111111,0.972602739726027
+"Adult","SKCM","Melanoma","double_cysteine_ligandability",713,713,0.995040708447898,"top_10",10,0.9,0.818181818181818
+"Adult","SKCM","Melanoma","double_cysteine_ligandability",713,713,0.995040708447898,"top_25",25,1,1
+"Adult","SKCM","Melanoma","double_cysteine_ligandability",713,713,0.995040708447898,"top_50",50,1,1
+"Adult","SKCM","Melanoma","double_cysteine_ligandability",713,713,0.995040708447898,"top_10_percent",72,0.986111111111111,0.972602739726027
+"Adult","SKCM","Melanoma","leave_out_conservation",713,713,0.99747049579408,"top_10",10,0.9,0.818181818181818
+"Adult","SKCM","Melanoma","leave_out_conservation",713,713,0.99747049579408,"top_25",25,1,1
+"Adult","SKCM","Melanoma","leave_out_conservation",713,713,0.99747049579408,"top_50",50,0.98,0.96078431372549
+"Adult","SKCM","Melanoma","leave_out_conservation",713,713,0.99747049579408,"top_10_percent",72,0.986111111111111,0.972602739726027
+"Adult","SKCM","Melanoma","half_conservation",713,713,0.999403023102662,"top_10",10,1,1
+"Adult","SKCM","Melanoma","half_conservation",713,713,0.999403023102662,"top_25",25,1,1
+"Adult","SKCM","Melanoma","half_conservation",713,713,0.999403023102662,"top_50",50,1,1
+"Adult","SKCM","Melanoma","half_conservation",713,713,0.999403023102662,"top_10_percent",72,0.986111111111111,0.972602739726027
+"Adult","SKCM","Melanoma","double_conservation",713,713,0.997919983113023,"top_10",10,1,1
+"Adult","SKCM","Melanoma","double_conservation",713,713,0.997919983113023,"top_25",25,1,1
+"Adult","SKCM","Melanoma","double_conservation",713,713,0.997919983113023,"top_50",50,0.98,0.96078431372549
+"Adult","SKCM","Melanoma","double_conservation",713,713,0.997919983113023,"top_10_percent",72,0.986111111111111,0.972602739726027
+"Adult","SKCM","Melanoma","leave_out_clinical_evidence",713,713,0.961035968122917,"top_10",10,1,1
+"Adult","SKCM","Melanoma","leave_out_clinical_evidence",713,713,0.961035968122917,"top_25",25,0.96,0.923076923076923
+"Adult","SKCM","Melanoma","leave_out_clinical_evidence",713,713,0.961035968122917,"top_50",50,0.96,0.923076923076923
+"Adult","SKCM","Melanoma","leave_out_clinical_evidence",713,713,0.961035968122917,"top_10_percent",72,0.888888888888889,0.8
+"Adult","SKCM","Melanoma","half_clinical_evidence",713,713,0.992851903512748,"top_10",10,1,1
+"Adult","SKCM","Melanoma","half_clinical_evidence",713,713,0.992851903512748,"top_25",25,1,1
+"Adult","SKCM","Melanoma","half_clinical_evidence",713,713,0.992851903512748,"top_50",50,1,1
+"Adult","SKCM","Melanoma","half_clinical_evidence",713,713,0.992851903512748,"top_10_percent",72,0.972222222222222,0.945945945945946
+"Adult","SKCM","Melanoma","double_clinical_evidence",713,713,0.990153258059685,"top_10",10,1,1
+"Adult","SKCM","Melanoma","double_clinical_evidence",713,713,0.990153258059685,"top_25",25,1,1
+"Adult","SKCM","Melanoma","double_clinical_evidence",713,713,0.990153258059685,"top_50",50,0.98,0.96078431372549
+"Adult","SKCM","Melanoma","double_clinical_evidence",713,713,0.990153258059685,"top_10_percent",72,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","equal",829,829,0.997435289973333,"top_10",10,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","equal",829,829,0.997435289973333,"top_25",25,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","equal",829,829,0.997435289973333,"top_50",50,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","equal",829,829,0.997435289973333,"top_10_percent",83,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","leave_out_dependency_strength",829,31,0.943951612903226,"top_10",10,0,0
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","leave_out_dependency_strength",829,31,0.943951612903226,"top_25",25,0,0
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","leave_out_dependency_strength",829,31,0.943951612903226,"top_50",50,0.02,0.0101010101010101
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","leave_out_dependency_strength",829,31,0.943951612903226,"top_10_percent",4,0,0
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","half_dependency_strength",829,829,0.991574097976585,"top_10",10,0.9,0.818181818181818
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","half_dependency_strength",829,829,0.991574097976585,"top_25",25,0.88,0.785714285714286
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","half_dependency_strength",829,829,0.991574097976585,"top_50",50,0.92,0.851851851851852
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","half_dependency_strength",829,829,0.991574097976585,"top_10_percent",83,0.91566265060241,0.844444444444444
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","double_dependency_strength",829,829,0.994020002278697,"top_10",10,0.9,0.818181818181818
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","double_dependency_strength",829,829,0.994020002278697,"top_25",25,0.96,0.923076923076923
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","double_dependency_strength",829,829,0.994020002278697,"top_50",50,0.92,0.851851851851852
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","double_dependency_strength",829,829,0.994020002278697,"top_10_percent",83,0.963855421686747,0.930232558139535
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","leave_out_cancer_selectivity",829,31,0.990725806451613,"top_10",10,0,0
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","leave_out_cancer_selectivity",829,31,0.990725806451613,"top_25",25,0,0
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","leave_out_cancer_selectivity",829,31,0.990725806451613,"top_50",50,0.02,0.0101010101010101
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","leave_out_cancer_selectivity",829,31,0.990725806451613,"top_10_percent",4,0,0
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","half_cancer_selectivity",829,829,0.997053251196618,"top_10",10,0.9,0.818181818181818
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","half_cancer_selectivity",829,829,0.997053251196618,"top_25",25,0.96,0.923076923076923
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","half_cancer_selectivity",829,829,0.997053251196618,"top_50",50,0.92,0.851851851851852
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","half_cancer_selectivity",829,829,0.997053251196618,"top_10_percent",83,0.963855421686747,0.930232558139535
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","double_cancer_selectivity",829,829,0.993135186234905,"top_10",10,0.9,0.818181818181818
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","double_cancer_selectivity",829,829,0.993135186234905,"top_25",25,0.88,0.785714285714286
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","double_cancer_selectivity",829,829,0.993135186234905,"top_50",50,0.92,0.851851851851852
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","double_cancer_selectivity",829,829,0.993135186234905,"top_10_percent",83,0.91566265060241,0.844444444444444
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","leave_out_cysteine_ligandability",829,829,0.996911734414004,"top_10",10,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","leave_out_cysteine_ligandability",829,829,0.996911734414004,"top_25",25,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","leave_out_cysteine_ligandability",829,829,0.996911734414004,"top_50",50,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","leave_out_cysteine_ligandability",829,829,0.996911734414004,"top_10_percent",83,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","half_cysteine_ligandability",829,829,0.999781430136298,"top_10",10,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","half_cysteine_ligandability",829,829,0.999781430136298,"top_25",25,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","half_cysteine_ligandability",829,829,0.999781430136298,"top_50",50,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","half_cysteine_ligandability",829,829,0.999781430136298,"top_10_percent",83,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","double_cysteine_ligandability",829,829,0.999891968311561,"top_10",10,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","double_cysteine_ligandability",829,829,0.999891968311561,"top_25",25,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","double_cysteine_ligandability",829,829,0.999891968311561,"top_50",50,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","double_cysteine_ligandability",829,829,0.999891968311561,"top_10_percent",83,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","leave_out_conservation",829,829,0.999703792233473,"top_10",10,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","leave_out_conservation",829,829,0.999703792233473,"top_25",25,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","leave_out_conservation",829,829,0.999703792233473,"top_50",50,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","leave_out_conservation",829,829,0.999703792233473,"top_10_percent",83,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","half_conservation",829,829,0.999922825481295,"top_10",10,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","half_conservation",829,829,0.999922825481295,"top_25",25,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","half_conservation",829,829,0.999922825481295,"top_50",50,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","half_conservation",829,829,0.999922825481295,"top_10_percent",83,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","double_conservation",829,829,0.999728309465944,"top_10",10,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","double_conservation",829,829,0.999728309465944,"top_25",25,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","double_conservation",829,829,0.999728309465944,"top_50",50,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","double_conservation",829,829,0.999728309465944,"top_10_percent",83,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","leave_out_clinical_evidence",829,829,0.982136626469463,"top_10",10,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","leave_out_clinical_evidence",829,829,0.982136626469463,"top_25",25,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","leave_out_clinical_evidence",829,829,0.982136626469463,"top_50",50,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","leave_out_clinical_evidence",829,829,0.982136626469463,"top_10_percent",83,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","half_clinical_evidence",829,829,0.997905819726453,"top_10",10,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","half_clinical_evidence",829,829,0.997905819726453,"top_25",25,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","half_clinical_evidence",829,829,0.997905819726453,"top_50",50,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","half_clinical_evidence",829,829,0.997905819726453,"top_10_percent",83,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","double_clinical_evidence",829,829,0.998101999712049,"top_10",10,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","double_clinical_evidence",829,829,0.998101999712049,"top_25",25,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","double_clinical_evidence",829,829,0.998101999712049,"top_50",50,1,1
+"Paediatric","ARMS","Alveolar Rhabdomyosarcoma","double_clinical_evidence",829,829,0.998101999712049,"top_10_percent",83,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","equal",1011,1011,0.992523616082601,"top_10",10,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","equal",1011,1011,0.992523616082601,"top_25",25,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","equal",1011,1011,0.992523616082601,"top_50",50,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","equal",1011,1011,0.992523616082601,"top_10_percent",102,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_dependency_strength",1011,66,0.948105625717566,"top_10",10,0,0
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_dependency_strength",1011,66,0.948105625717566,"top_25",25,0,0
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_dependency_strength",1011,66,0.948105625717566,"top_50",50,0,0
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_dependency_strength",1011,66,0.948105625717566,"top_10_percent",7,0,0
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_dependency_strength",1011,1011,0.988020657272885,"top_10",10,0.8,0.666666666666667
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_dependency_strength",1011,1011,0.988020657272885,"top_25",25,0.96,0.923076923076923
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_dependency_strength",1011,1011,0.988020657272885,"top_50",50,0.9,0.818181818181818
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_dependency_strength",1011,1011,0.988020657272885,"top_10_percent",102,0.931372549019608,0.871559633027523
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_dependency_strength",1011,1011,0.98760817052743,"top_10",10,0.9,0.818181818181818
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_dependency_strength",1011,1011,0.98760817052743,"top_25",25,0.88,0.785714285714286
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_dependency_strength",1011,1011,0.98760817052743,"top_50",50,0.98,0.96078431372549
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_dependency_strength",1011,1011,0.98760817052743,"top_10_percent",102,0.941176470588235,0.888888888888889
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_cancer_selectivity",1011,66,0.995866819747417,"top_10",10,0,0
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_cancer_selectivity",1011,66,0.995866819747417,"top_25",25,0,0
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_cancer_selectivity",1011,66,0.995866819747417,"top_50",50,0,0
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_cancer_selectivity",1011,66,0.995866819747417,"top_10_percent",7,0,0
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_cancer_selectivity",1011,1011,0.99697923138073,"top_10",10,0.9,0.818181818181818
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_cancer_selectivity",1011,1011,0.99697923138073,"top_25",25,0.88,0.785714285714286
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_cancer_selectivity",1011,1011,0.99697923138073,"top_50",50,0.98,0.96078431372549
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_cancer_selectivity",1011,1011,0.99697923138073,"top_10_percent",102,0.941176470588235,0.888888888888889
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_cancer_selectivity",1011,1011,0.993236668842534,"top_10",10,0.8,0.666666666666667
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_cancer_selectivity",1011,1011,0.993236668842534,"top_25",25,0.96,0.923076923076923
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_cancer_selectivity",1011,1011,0.993236668842534,"top_50",50,0.9,0.818181818181818
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_cancer_selectivity",1011,1011,0.993236668842534,"top_10_percent",102,0.931372549019608,0.871559633027523
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_cysteine_ligandability",1011,1011,0.983101819254671,"top_10",10,0.9,0.818181818181818
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_cysteine_ligandability",1011,1011,0.983101819254671,"top_25",25,0.96,0.923076923076923
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_cysteine_ligandability",1011,1011,0.983101819254671,"top_50",50,0.98,0.96078431372549
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_cysteine_ligandability",1011,1011,0.983101819254671,"top_10_percent",102,0.990196078431373,0.980582524271845
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_cysteine_ligandability",1011,1011,0.998192875237189,"top_10",10,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_cysteine_ligandability",1011,1011,0.998192875237189,"top_25",25,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_cysteine_ligandability",1011,1011,0.998192875237189,"top_50",50,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_cysteine_ligandability",1011,1011,0.998192875237189,"top_10_percent",102,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_cysteine_ligandability",1011,1011,0.998610474831037,"top_10",10,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_cysteine_ligandability",1011,1011,0.998610474831037,"top_25",25,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_cysteine_ligandability",1011,1011,0.998610474831037,"top_50",50,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_cysteine_ligandability",1011,1011,0.998610474831037,"top_10_percent",102,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_conservation",1011,1011,0.998888189418698,"top_10",10,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_conservation",1011,1011,0.998888189418698,"top_25",25,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_conservation",1011,1011,0.998888189418698,"top_50",50,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_conservation",1011,1011,0.998888189418698,"top_10_percent",102,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_conservation",1011,1011,0.999722633789409,"top_10",10,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_conservation",1011,1011,0.999722633789409,"top_25",25,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_conservation",1011,1011,0.999722633789409,"top_50",50,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_conservation",1011,1011,0.999722633789409,"top_10_percent",102,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_conservation",1011,1011,0.999102011651715,"top_10",10,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_conservation",1011,1011,0.999102011651715,"top_25",25,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_conservation",1011,1011,0.999102011651715,"top_50",50,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_conservation",1011,1011,0.999102011651715,"top_10_percent",102,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_clinical_evidence",1011,1011,0.977889436370551,"top_10",10,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_clinical_evidence",1011,1011,0.977889436370551,"top_25",25,0.96,0.923076923076923
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_clinical_evidence",1011,1011,0.977889436370551,"top_50",50,0.96,0.923076923076923
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_clinical_evidence",1011,1011,0.977889436370551,"top_10_percent",102,0.980392156862745,0.961538461538462
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_clinical_evidence",1011,1011,0.995874228422449,"top_10",10,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_clinical_evidence",1011,1011,0.995874228422449,"top_25",25,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_clinical_evidence",1011,1011,0.995874228422449,"top_50",50,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_clinical_evidence",1011,1011,0.995874228422449,"top_10_percent",102,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_clinical_evidence",1011,1011,0.995250389603141,"top_10",10,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_clinical_evidence",1011,1011,0.995250389603141,"top_25",25,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_clinical_evidence",1011,1011,0.995250389603141,"top_50",50,1,1
+"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_clinical_evidence",1011,1011,0.995250389603141,"top_10_percent",102,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","equal",1819,1819,0.991597377026257,"top_10",10,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","equal",1819,1819,0.991597377026257,"top_25",25,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","equal",1819,1819,0.991597377026257,"top_50",50,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","equal",1819,1819,0.991597377026257,"top_10_percent",182,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","leave_out_dependency_strength",1819,107,0.937381218284057,"top_10",10,0,0
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","leave_out_dependency_strength",1819,107,0.937381218284057,"top_25",25,0,0
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","leave_out_dependency_strength",1819,107,0.937381218284057,"top_50",50,0,0
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","leave_out_dependency_strength",1819,107,0.937381218284057,"top_10_percent",11,0,0
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","half_dependency_strength",1819,1819,0.986130891078033,"top_10",10,0.8,0.666666666666667
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","half_dependency_strength",1819,1819,0.986130891078033,"top_25",25,0.96,0.923076923076923
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","half_dependency_strength",1819,1819,0.986130891078033,"top_50",50,0.88,0.785714285714286
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","half_dependency_strength",1819,1819,0.986130891078033,"top_10_percent",182,0.923076923076923,0.857142857142857
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","double_dependency_strength",1819,1819,0.986782290603351,"top_10",10,0.9,0.818181818181818
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","double_dependency_strength",1819,1819,0.986782290603351,"top_25",25,0.92,0.851851851851852
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","double_dependency_strength",1819,1819,0.986782290603351,"top_50",50,0.94,0.886792452830189
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","double_dependency_strength",1819,1819,0.986782290603351,"top_10_percent",182,0.923076923076923,0.857142857142857
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","leave_out_cancer_selectivity",1819,107,0.98301299006642,"top_10",10,0,0
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","leave_out_cancer_selectivity",1819,107,0.98301299006642,"top_25",25,0,0
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","leave_out_cancer_selectivity",1819,107,0.98301299006642,"top_50",50,0,0
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","leave_out_cancer_selectivity",1819,107,0.98301299006642,"top_10_percent",11,0,0
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","half_cancer_selectivity",1819,1819,0.993916232334037,"top_10",10,0.9,0.818181818181818
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","half_cancer_selectivity",1819,1819,0.993916232334037,"top_25",25,0.92,0.851851851851852
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","half_cancer_selectivity",1819,1819,0.993916232334037,"top_50",50,0.94,0.886792452830189
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","half_cancer_selectivity",1819,1819,0.993916232334037,"top_10_percent",182,0.923076923076923,0.857142857142857
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","double_cancer_selectivity",1819,1819,0.988940047925413,"top_10",10,0.8,0.666666666666667
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","double_cancer_selectivity",1819,1819,0.988940047925413,"top_25",25,0.96,0.923076923076923
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","double_cancer_selectivity",1819,1819,0.988940047925413,"top_50",50,0.88,0.785714285714286
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","double_cancer_selectivity",1819,1819,0.988940047925413,"top_10_percent",182,0.923076923076923,0.857142857142857
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","leave_out_cysteine_ligandability",1819,1819,0.980295254682667,"top_10",10,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","leave_out_cysteine_ligandability",1819,1819,0.980295254682667,"top_25",25,0.96,0.923076923076923
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","leave_out_cysteine_ligandability",1819,1819,0.980295254682667,"top_50",50,0.98,0.96078431372549
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","leave_out_cysteine_ligandability",1819,1819,0.980295254682667,"top_10_percent",182,0.994505494505495,0.989071038251366
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","half_cysteine_ligandability",1819,1819,0.997811628174715,"top_10",10,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","half_cysteine_ligandability",1819,1819,0.997811628174715,"top_25",25,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","half_cysteine_ligandability",1819,1819,0.997811628174715,"top_50",50,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","half_cysteine_ligandability",1819,1819,0.997811628174715,"top_10_percent",182,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","double_cysteine_ligandability",1819,1819,0.998614732067313,"top_10",10,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","double_cysteine_ligandability",1819,1819,0.998614732067313,"top_25",25,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","double_cysteine_ligandability",1819,1819,0.998614732067313,"top_50",50,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","double_cysteine_ligandability",1819,1819,0.998614732067313,"top_10_percent",182,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","leave_out_conservation",1819,1819,0.998963309530372,"top_10",10,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","leave_out_conservation",1819,1819,0.998963309530372,"top_25",25,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","leave_out_conservation",1819,1819,0.998963309530372,"top_50",50,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","leave_out_conservation",1819,1819,0.998963309530372,"top_10_percent",182,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","half_conservation",1819,1819,0.999726443552799,"top_10",10,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","half_conservation",1819,1819,0.999726443552799,"top_25",25,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","half_conservation",1819,1819,0.999726443552799,"top_50",50,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","half_conservation",1819,1819,0.999726443552799,"top_10_percent",182,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","double_conservation",1819,1819,0.998993220638883,"top_10",10,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","double_conservation",1819,1819,0.998993220638883,"top_25",25,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","double_conservation",1819,1819,0.998993220638883,"top_50",50,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","double_conservation",1819,1819,0.998993220638883,"top_10_percent",182,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","leave_out_clinical_evidence",1819,1819,0.979572286002176,"top_10",10,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","leave_out_clinical_evidence",1819,1819,0.979572286002176,"top_25",25,0.96,0.923076923076923
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","leave_out_clinical_evidence",1819,1819,0.979572286002176,"top_50",50,0.98,0.96078431372549
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","leave_out_clinical_evidence",1819,1819,0.979572286002176,"top_10_percent",182,0.978021978021978,0.956989247311828
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","half_clinical_evidence",1819,1819,0.995975129577212,"top_10",10,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","half_clinical_evidence",1819,1819,0.995975129577212,"top_25",25,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","half_clinical_evidence",1819,1819,0.995975129577212,"top_50",50,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","half_clinical_evidence",1819,1819,0.995975129577212,"top_10_percent",182,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","double_clinical_evidence",1819,1819,0.994518551105465,"top_10",10,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","double_clinical_evidence",1819,1819,0.994518551105465,"top_25",25,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","double_clinical_evidence",1819,1819,0.994518551105465,"top_50",50,1,1
+"Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","double_clinical_evidence",1819,1819,0.994518551105465,"top_10_percent",182,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","equal",646,646,0.998703475233438,"top_10",10,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","equal",646,646,0.998703475233438,"top_25",25,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","equal",646,646,0.998703475233438,"top_50",50,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","equal",646,646,0.998703475233438,"top_10_percent",65,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_dependency_strength",646,29,0.961576354679803,"top_10",10,0,0
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_dependency_strength",646,29,0.961576354679803,"top_25",25,0,0
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_dependency_strength",646,29,0.961576354679803,"top_50",50,0,0
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_dependency_strength",646,29,0.961576354679803,"top_10_percent",3,0,0
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_dependency_strength",646,646,0.989161855138407,"top_10",10,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_dependency_strength",646,646,0.989161855138407,"top_25",25,0.84,0.724137931034483
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_dependency_strength",646,646,0.989161855138407,"top_50",50,0.96,0.923076923076923
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_dependency_strength",646,646,0.989161855138407,"top_10_percent",65,0.907692307692308,0.830985915492958
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_dependency_strength",646,646,0.992078468413342,"top_10",10,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_dependency_strength",646,646,0.992078468413342,"top_25",25,0.92,0.851851851851852
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_dependency_strength",646,646,0.992078468413342,"top_50",50,0.94,0.886792452830189
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_dependency_strength",646,646,0.992078468413342,"top_10_percent",65,0.969230769230769,0.940298507462687
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_cancer_selectivity",646,29,0.994581280788177,"top_10",10,0,0
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_cancer_selectivity",646,29,0.994581280788177,"top_25",25,0,0
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_cancer_selectivity",646,29,0.994581280788177,"top_50",50,0,0
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_cancer_selectivity",646,29,0.994581280788177,"top_10_percent",3,0,0
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_cancer_selectivity",646,646,0.994942244027692,"top_10",10,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_cancer_selectivity",646,646,0.994942244027692,"top_25",25,0.92,0.851851851851852
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_cancer_selectivity",646,646,0.994942244027692,"top_50",50,0.94,0.886792452830189
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_cancer_selectivity",646,646,0.994942244027692,"top_10_percent",65,0.969230769230769,0.940298507462687
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_cancer_selectivity",646,646,0.990200205357617,"top_10",10,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_cancer_selectivity",646,646,0.990200205357617,"top_25",25,0.84,0.724137931034483
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_cancer_selectivity",646,646,0.990200205357617,"top_50",50,0.96,0.923076923076923
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_cancer_selectivity",646,646,0.990200205357617,"top_10_percent",65,0.907692307692308,0.830985915492958
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_cysteine_ligandability",646,646,0.991723866187985,"top_10",10,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_cysteine_ligandability",646,646,0.991723866187985,"top_25",25,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_cysteine_ligandability",646,646,0.991723866187985,"top_50",50,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_cysteine_ligandability",646,646,0.991723866187985,"top_10_percent",65,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_cysteine_ligandability",646,646,0.999298522577444,"top_10",10,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_cysteine_ligandability",646,646,0.999298522577444,"top_25",25,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_cysteine_ligandability",646,646,0.999298522577444,"top_50",50,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_cysteine_ligandability",646,646,0.999298522577444,"top_10_percent",65,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_cysteine_ligandability",646,646,0.999369164411926,"top_10",10,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_cysteine_ligandability",646,646,0.999369164411926,"top_25",25,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_cysteine_ligandability",646,646,0.999369164411926,"top_50",50,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_cysteine_ligandability",646,646,0.999369164411926,"top_10_percent",65,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_conservation",646,646,0.999652711031742,"top_10",10,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_conservation",646,646,0.999652711031742,"top_25",25,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_conservation",646,646,0.999652711031742,"top_50",50,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_conservation",646,646,0.999652711031742,"top_10_percent",65,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_conservation",646,646,0.999914891501242,"top_10",10,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_conservation",646,646,0.999914891501242,"top_25",25,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_conservation",646,646,0.999914891501242,"top_50",50,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_conservation",646,646,0.999914891501242,"top_10_percent",65,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_conservation",646,646,0.999557631662837,"top_10",10,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_conservation",646,646,0.999557631662837,"top_25",25,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_conservation",646,646,0.999557631662837,"top_50",50,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_conservation",646,646,0.999557631662837,"top_10_percent",65,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_clinical_evidence",646,646,0.984758857287537,"top_10",10,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_clinical_evidence",646,646,0.984758857287537,"top_25",25,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_clinical_evidence",646,646,0.984758857287537,"top_50",50,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_clinical_evidence",646,646,0.984758857287537,"top_10_percent",65,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_clinical_evidence",646,646,0.998001196637956,"top_10",10,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_clinical_evidence",646,646,0.998001196637956,"top_25",25,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_clinical_evidence",646,646,0.998001196637956,"top_50",50,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_clinical_evidence",646,646,0.998001196637956,"top_10_percent",65,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_clinical_evidence",646,646,0.999041683645523,"top_10",10,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_clinical_evidence",646,646,0.999041683645523,"top_25",25,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_clinical_evidence",646,646,0.999041683645523,"top_50",50,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_clinical_evidence",646,646,0.999041683645523,"top_10_percent",65,1,1
+"Paediatric","EWS","Ewing Sarcoma","equal",1703,1703,0.995999388779252,"top_10",10,1,1
+"Paediatric","EWS","Ewing Sarcoma","equal",1703,1703,0.995999388779252,"top_25",25,1,1
+"Paediatric","EWS","Ewing Sarcoma","equal",1703,1703,0.995999388779252,"top_50",50,1,1
+"Paediatric","EWS","Ewing Sarcoma","equal",1703,1703,0.995999388779252,"top_10_percent",171,1,1
+"Paediatric","EWS","Ewing Sarcoma","leave_out_dependency_strength",1703,80,0.896507266760431,"top_10",10,0,0
+"Paediatric","EWS","Ewing Sarcoma","leave_out_dependency_strength",1703,80,0.896507266760431,"top_25",25,0,0
+"Paediatric","EWS","Ewing Sarcoma","leave_out_dependency_strength",1703,80,0.896507266760431,"top_50",50,0,0
+"Paediatric","EWS","Ewing Sarcoma","leave_out_dependency_strength",1703,80,0.896507266760431,"top_10_percent",8,0,0
+"Paediatric","EWS","Ewing Sarcoma","half_dependency_strength",1703,1703,0.986450398549799,"top_10",10,0.9,0.818181818181818
+"Paediatric","EWS","Ewing Sarcoma","half_dependency_strength",1703,1703,0.986450398549799,"top_25",25,0.92,0.851851851851852
+"Paediatric","EWS","Ewing Sarcoma","half_dependency_strength",1703,1703,0.986450398549799,"top_50",50,0.96,0.923076923076923
+"Paediatric","EWS","Ewing Sarcoma","half_dependency_strength",1703,1703,0.986450398549799,"top_10_percent",171,0.929824561403509,0.868852459016393
+"Paediatric","EWS","Ewing Sarcoma","double_dependency_strength",1703,1703,0.989893242368153,"top_10",10,1,1
+"Paediatric","EWS","Ewing Sarcoma","double_dependency_strength",1703,1703,0.989893242368153,"top_25",25,0.96,0.923076923076923
+"Paediatric","EWS","Ewing Sarcoma","double_dependency_strength",1703,1703,0.989893242368153,"top_50",50,0.9,0.818181818181818
+"Paediatric","EWS","Ewing Sarcoma","double_dependency_strength",1703,1703,0.989893242368153,"top_10_percent",171,0.91812865497076,0.848648648648649
+"Paediatric","EWS","Ewing Sarcoma","leave_out_cancer_selectivity",1703,80,0.990037505860291,"top_10",10,0,0
+"Paediatric","EWS","Ewing Sarcoma","leave_out_cancer_selectivity",1703,80,0.990037505860291,"top_25",25,0,0
+"Paediatric","EWS","Ewing Sarcoma","leave_out_cancer_selectivity",1703,80,0.990037505860291,"top_50",50,0,0
+"Paediatric","EWS","Ewing Sarcoma","leave_out_cancer_selectivity",1703,80,0.990037505860291,"top_10_percent",8,0,0
+"Paediatric","EWS","Ewing Sarcoma","half_cancer_selectivity",1703,1703,0.99410332635306,"top_10",10,1,1
+"Paediatric","EWS","Ewing Sarcoma","half_cancer_selectivity",1703,1703,0.99410332635306,"top_25",25,0.96,0.923076923076923
+"Paediatric","EWS","Ewing Sarcoma","half_cancer_selectivity",1703,1703,0.99410332635306,"top_50",50,0.9,0.818181818181818
+"Paediatric","EWS","Ewing Sarcoma","half_cancer_selectivity",1703,1703,0.99410332635306,"top_10_percent",171,0.91812865497076,0.848648648648649
+"Paediatric","EWS","Ewing Sarcoma","double_cancer_selectivity",1703,1703,0.988233663231287,"top_10",10,0.9,0.818181818181818
+"Paediatric","EWS","Ewing Sarcoma","double_cancer_selectivity",1703,1703,0.988233663231287,"top_25",25,0.92,0.851851851851852
+"Paediatric","EWS","Ewing Sarcoma","double_cancer_selectivity",1703,1703,0.988233663231287,"top_50",50,0.96,0.923076923076923
+"Paediatric","EWS","Ewing Sarcoma","double_cancer_selectivity",1703,1703,0.988233663231287,"top_10_percent",171,0.929824561403509,0.868852459016393
+"Paediatric","EWS","Ewing Sarcoma","leave_out_cysteine_ligandability",1703,1703,0.989922845592162,"top_10",10,1,1
+"Paediatric","EWS","Ewing Sarcoma","leave_out_cysteine_ligandability",1703,1703,0.989922845592162,"top_25",25,1,1
+"Paediatric","EWS","Ewing Sarcoma","leave_out_cysteine_ligandability",1703,1703,0.989922845592162,"top_50",50,1,1
+"Paediatric","EWS","Ewing Sarcoma","leave_out_cysteine_ligandability",1703,1703,0.989922845592162,"top_10_percent",171,1,1
+"Paediatric","EWS","Ewing Sarcoma","half_cysteine_ligandability",1703,1703,0.999197772614219,"top_10",10,1,1
+"Paediatric","EWS","Ewing Sarcoma","half_cysteine_ligandability",1703,1703,0.999197772614219,"top_25",25,1,1
+"Paediatric","EWS","Ewing Sarcoma","half_cysteine_ligandability",1703,1703,0.999197772614219,"top_50",50,1,1
+"Paediatric","EWS","Ewing Sarcoma","half_cysteine_ligandability",1703,1703,0.999197772614219,"top_10_percent",171,1,1
+"Paediatric","EWS","Ewing Sarcoma","double_cysteine_ligandability",1703,1703,0.999508724498278,"top_10",10,1,1
+"Paediatric","EWS","Ewing Sarcoma","double_cysteine_ligandability",1703,1703,0.999508724498278,"top_25",25,1,1
+"Paediatric","EWS","Ewing Sarcoma","double_cysteine_ligandability",1703,1703,0.999508724498278,"top_50",50,1,1
+"Paediatric","EWS","Ewing Sarcoma","double_cysteine_ligandability",1703,1703,0.999508724498278,"top_10_percent",171,1,1
+"Paediatric","EWS","Ewing Sarcoma","leave_out_conservation",1703,1703,0.999435957520159,"top_10",10,1,1
+"Paediatric","EWS","Ewing Sarcoma","leave_out_conservation",1703,1703,0.999435957520159,"top_25",25,1,1
+"Paediatric","EWS","Ewing Sarcoma","leave_out_conservation",1703,1703,0.999435957520159,"top_50",50,1,1
+"Paediatric","EWS","Ewing Sarcoma","leave_out_conservation",1703,1703,0.999435957520159,"top_10_percent",171,1,1
+"Paediatric","EWS","Ewing Sarcoma","half_conservation",1703,1703,0.999866497498709,"top_10",10,1,1
+"Paediatric","EWS","Ewing Sarcoma","half_conservation",1703,1703,0.999866497498709,"top_25",25,1,1
+"Paediatric","EWS","Ewing Sarcoma","half_conservation",1703,1703,0.999866497498709,"top_50",50,1,1
+"Paediatric","EWS","Ewing Sarcoma","half_conservation",1703,1703,0.999866497498709,"top_10_percent",171,1,1
+"Paediatric","EWS","Ewing Sarcoma","double_conservation",1703,1703,0.999500446798964,"top_10",10,1,1
+"Paediatric","EWS","Ewing Sarcoma","double_conservation",1703,1703,0.999500446798964,"top_25",25,1,1
+"Paediatric","EWS","Ewing Sarcoma","double_conservation",1703,1703,0.999500446798964,"top_50",50,1,1
+"Paediatric","EWS","Ewing Sarcoma","double_conservation",1703,1703,0.999500446798964,"top_10_percent",171,1,1
+"Paediatric","EWS","Ewing Sarcoma","leave_out_clinical_evidence",1703,1703,0.988861217298393,"top_10",10,1,1
+"Paediatric","EWS","Ewing Sarcoma","leave_out_clinical_evidence",1703,1703,0.988861217298393,"top_25",25,0.96,0.923076923076923
+"Paediatric","EWS","Ewing Sarcoma","leave_out_clinical_evidence",1703,1703,0.988861217298393,"top_50",50,0.98,0.96078431372549
+"Paediatric","EWS","Ewing Sarcoma","leave_out_clinical_evidence",1703,1703,0.988861217298393,"top_10_percent",171,0.976608187134503,0.954285714285714
+"Paediatric","EWS","Ewing Sarcoma","half_clinical_evidence",1703,1703,0.99789872534461,"top_10",10,1,1
+"Paediatric","EWS","Ewing Sarcoma","half_clinical_evidence",1703,1703,0.99789872534461,"top_25",25,1,1
+"Paediatric","EWS","Ewing Sarcoma","half_clinical_evidence",1703,1703,0.99789872534461,"top_50",50,1,1
+"Paediatric","EWS","Ewing Sarcoma","half_clinical_evidence",1703,1703,0.99789872534461,"top_10_percent",171,1,1
+"Paediatric","EWS","Ewing Sarcoma","double_clinical_evidence",1703,1703,0.997281058825569,"top_10",10,1,1
+"Paediatric","EWS","Ewing Sarcoma","double_clinical_evidence",1703,1703,0.997281058825569,"top_25",25,1,1
+"Paediatric","EWS","Ewing Sarcoma","double_clinical_evidence",1703,1703,0.997281058825569,"top_50",50,1,1
+"Paediatric","EWS","Ewing Sarcoma","double_clinical_evidence",1703,1703,0.997281058825569,"top_10_percent",171,1,1
+"Paediatric","MB","Medulloblastoma","equal",1154,1154,0.994037586841194,"top_10",10,1,1
+"Paediatric","MB","Medulloblastoma","equal",1154,1154,0.994037586841194,"top_25",25,1,1
+"Paediatric","MB","Medulloblastoma","equal",1154,1154,0.994037586841194,"top_50",50,1,1
+"Paediatric","MB","Medulloblastoma","equal",1154,1154,0.994037586841194,"top_10_percent",116,1,1
+"Paediatric","MB","Medulloblastoma","leave_out_dependency_strength",1154,82,0.897519617766459,"top_10",10,0,0
+"Paediatric","MB","Medulloblastoma","leave_out_dependency_strength",1154,82,0.897519617766459,"top_25",25,0,0
+"Paediatric","MB","Medulloblastoma","leave_out_dependency_strength",1154,82,0.897519617766459,"top_50",50,0.02,0.0101010101010101
+"Paediatric","MB","Medulloblastoma","leave_out_dependency_strength",1154,82,0.897519617766459,"top_10_percent",9,0,0
+"Paediatric","MB","Medulloblastoma","half_dependency_strength",1154,1154,0.987932797207597,"top_10",10,0.9,0.818181818181818
+"Paediatric","MB","Medulloblastoma","half_dependency_strength",1154,1154,0.987932797207597,"top_25",25,0.92,0.851851851851852
+"Paediatric","MB","Medulloblastoma","half_dependency_strength",1154,1154,0.987932797207597,"top_50",50,0.9,0.818181818181818
+"Paediatric","MB","Medulloblastoma","half_dependency_strength",1154,1154,0.987932797207597,"top_10_percent",116,0.913793103448276,0.841269841269841
+"Paediatric","MB","Medulloblastoma","double_dependency_strength",1154,1154,0.988386606391638,"top_10",10,1,1
+"Paediatric","MB","Medulloblastoma","double_dependency_strength",1154,1154,0.988386606391638,"top_25",25,0.96,0.923076923076923
+"Paediatric","MB","Medulloblastoma","double_dependency_strength",1154,1154,0.988386606391638,"top_50",50,0.92,0.851851851851852
+"Paediatric","MB","Medulloblastoma","double_dependency_strength",1154,1154,0.988386606391638,"top_10_percent",116,0.896551724137931,0.8125
+"Paediatric","MB","Medulloblastoma","leave_out_cancer_selectivity",1154,82,0.988528640306483,"top_10",10,0,0
+"Paediatric","MB","Medulloblastoma","leave_out_cancer_selectivity",1154,82,0.988528640306483,"top_25",25,0,0
+"Paediatric","MB","Medulloblastoma","leave_out_cancer_selectivity",1154,82,0.988528640306483,"top_50",50,0.02,0.0101010101010101
+"Paediatric","MB","Medulloblastoma","leave_out_cancer_selectivity",1154,82,0.988528640306483,"top_10_percent",9,0,0
+"Paediatric","MB","Medulloblastoma","half_cancer_selectivity",1154,1154,0.996203775151826,"top_10",10,1,1
+"Paediatric","MB","Medulloblastoma","half_cancer_selectivity",1154,1154,0.996203775151826,"top_25",25,0.96,0.923076923076923
+"Paediatric","MB","Medulloblastoma","half_cancer_selectivity",1154,1154,0.996203775151826,"top_50",50,0.92,0.851851851851852
+"Paediatric","MB","Medulloblastoma","half_cancer_selectivity",1154,1154,0.996203775151826,"top_10_percent",116,0.896551724137931,0.8125
+"Paediatric","MB","Medulloblastoma","double_cancer_selectivity",1154,1154,0.991566676887199,"top_10",10,0.9,0.818181818181818
+"Paediatric","MB","Medulloblastoma","double_cancer_selectivity",1154,1154,0.991566676887199,"top_25",25,0.92,0.851851851851852
+"Paediatric","MB","Medulloblastoma","double_cancer_selectivity",1154,1154,0.991566676887199,"top_50",50,0.92,0.851851851851852
+"Paediatric","MB","Medulloblastoma","double_cancer_selectivity",1154,1154,0.991566676887199,"top_10_percent",116,0.913793103448276,0.841269841269841
+"Paediatric","MB","Medulloblastoma","leave_out_cysteine_ligandability",1154,1154,0.98484133580802,"top_10",10,0.8,0.666666666666667
+"Paediatric","MB","Medulloblastoma","leave_out_cysteine_ligandability",1154,1154,0.98484133580802,"top_25",25,0.92,0.851851851851852
+"Paediatric","MB","Medulloblastoma","leave_out_cysteine_ligandability",1154,1154,0.98484133580802,"top_50",50,0.98,0.96078431372549
+"Paediatric","MB","Medulloblastoma","leave_out_cysteine_ligandability",1154,1154,0.98484133580802,"top_10_percent",116,0.991379310344828,0.982905982905983
+"Paediatric","MB","Medulloblastoma","half_cysteine_ligandability",1154,1154,0.998461354801034,"top_10",10,1,1
+"Paediatric","MB","Medulloblastoma","half_cysteine_ligandability",1154,1154,0.998461354801034,"top_25",25,1,1
+"Paediatric","MB","Medulloblastoma","half_cysteine_ligandability",1154,1154,0.998461354801034,"top_50",50,1,1
+"Paediatric","MB","Medulloblastoma","half_cysteine_ligandability",1154,1154,0.998461354801034,"top_10_percent",116,1,1
+"Paediatric","MB","Medulloblastoma","double_cysteine_ligandability",1154,1154,0.999100428725105,"top_10",10,1,1
+"Paediatric","MB","Medulloblastoma","double_cysteine_ligandability",1154,1154,0.999100428725105,"top_25",25,1,1
+"Paediatric","MB","Medulloblastoma","double_cysteine_ligandability",1154,1154,0.999100428725105,"top_50",50,0.98,0.96078431372549
+"Paediatric","MB","Medulloblastoma","double_cysteine_ligandability",1154,1154,0.999100428725105,"top_10_percent",116,1,1
+"Paediatric","MB","Medulloblastoma","leave_out_conservation",1154,1154,0.999029496860506,"top_10",10,1,1
+"Paediatric","MB","Medulloblastoma","leave_out_conservation",1154,1154,0.999029496860506,"top_25",25,1,1
+"Paediatric","MB","Medulloblastoma","leave_out_conservation",1154,1154,0.999029496860506,"top_50",50,0.98,0.96078431372549
+"Paediatric","MB","Medulloblastoma","leave_out_conservation",1154,1154,0.999029496860506,"top_10_percent",116,0.991379310344828,0.982905982905983
+"Paediatric","MB","Medulloblastoma","half_conservation",1154,1154,0.999763123178723,"top_10",10,1,1
+"Paediatric","MB","Medulloblastoma","half_conservation",1154,1154,0.999763123178723,"top_25",25,1,1
+"Paediatric","MB","Medulloblastoma","half_conservation",1154,1154,0.999763123178723,"top_50",50,1,1
+"Paediatric","MB","Medulloblastoma","half_conservation",1154,1154,0.999763123178723,"top_10_percent",116,0.991379310344828,0.982905982905983
+"Paediatric","MB","Medulloblastoma","double_conservation",1154,1154,0.999141665094209,"top_10",10,1,1
+"Paediatric","MB","Medulloblastoma","double_conservation",1154,1154,0.999141665094209,"top_25",25,1,1
+"Paediatric","MB","Medulloblastoma","double_conservation",1154,1154,0.999141665094209,"top_50",50,1,1
+"Paediatric","MB","Medulloblastoma","double_conservation",1154,1154,0.999141665094209,"top_10_percent",116,1,1
+"Paediatric","MB","Medulloblastoma","leave_out_clinical_evidence",1154,1154,0.975999394658535,"top_10",10,1,1
+"Paediatric","MB","Medulloblastoma","leave_out_clinical_evidence",1154,1154,0.975999394658535,"top_25",25,0.96,0.923076923076923
+"Paediatric","MB","Medulloblastoma","leave_out_clinical_evidence",1154,1154,0.975999394658535,"top_50",50,0.98,0.96078431372549
+"Paediatric","MB","Medulloblastoma","leave_out_clinical_evidence",1154,1154,0.975999394658535,"top_10_percent",116,0.982758620689655,0.966101694915254
+"Paediatric","MB","Medulloblastoma","half_clinical_evidence",1154,1154,0.995765733118399,"top_10",10,1,1
+"Paediatric","MB","Medulloblastoma","half_clinical_evidence",1154,1154,0.995765733118399,"top_25",25,1,1
+"Paediatric","MB","Medulloblastoma","half_clinical_evidence",1154,1154,0.995765733118399,"top_50",50,1,1
+"Paediatric","MB","Medulloblastoma","half_clinical_evidence",1154,1154,0.995765733118399,"top_10_percent",116,1,1
+"Paediatric","MB","Medulloblastoma","double_clinical_evidence",1154,1154,0.996016594854856,"top_10",10,1,1
+"Paediatric","MB","Medulloblastoma","double_clinical_evidence",1154,1154,0.996016594854856,"top_25",25,1,1
+"Paediatric","MB","Medulloblastoma","double_clinical_evidence",1154,1154,0.996016594854856,"top_50",50,1,1
+"Paediatric","MB","Medulloblastoma","double_clinical_evidence",1154,1154,0.996016594854856,"top_10_percent",116,1,1
+"Paediatric","NB","Neuroblastoma","equal",959,959,0.986509786894498,"top_10",10,1,1
+"Paediatric","NB","Neuroblastoma","equal",959,959,0.986509786894498,"top_25",25,1,1
+"Paediatric","NB","Neuroblastoma","equal",959,959,0.986509786894498,"top_50",50,1,1
+"Paediatric","NB","Neuroblastoma","equal",959,959,0.986509786894498,"top_10_percent",96,0.989583333333333,0.979381443298969
+"Paediatric","NB","Neuroblastoma","leave_out_dependency_strength",959,72,0.964016978583832,"top_10",10,0,0
+"Paediatric","NB","Neuroblastoma","leave_out_dependency_strength",959,72,0.964016978583832,"top_25",25,0.04,0.0204081632653061
+"Paediatric","NB","Neuroblastoma","leave_out_dependency_strength",959,72,0.964016978583832,"top_50",50,0.02,0.0101010101010101
+"Paediatric","NB","Neuroblastoma","leave_out_dependency_strength",959,72,0.964016978583832,"top_10_percent",8,0,0
+"Paediatric","NB","Neuroblastoma","half_dependency_strength",959,959,0.984597490185055,"top_10",10,0.8,0.666666666666667
+"Paediatric","NB","Neuroblastoma","half_dependency_strength",959,959,0.984597490185055,"top_25",25,0.88,0.785714285714286
+"Paediatric","NB","Neuroblastoma","half_dependency_strength",959,959,0.984597490185055,"top_50",50,0.88,0.785714285714286
+"Paediatric","NB","Neuroblastoma","half_dependency_strength",959,959,0.984597490185055,"top_10_percent",96,0.916666666666667,0.846153846153846
+"Paediatric","NB","Neuroblastoma","double_dependency_strength",959,959,0.985245786575024,"top_10",10,0.9,0.818181818181818
+"Paediatric","NB","Neuroblastoma","double_dependency_strength",959,959,0.985245786575024,"top_25",25,0.92,0.851851851851852
+"Paediatric","NB","Neuroblastoma","double_dependency_strength",959,959,0.985245786575024,"top_50",50,0.88,0.785714285714286
+"Paediatric","NB","Neuroblastoma","double_dependency_strength",959,959,0.985245786575024,"top_10_percent",96,0.90625,0.828571428571429
+"Paediatric","NB","Neuroblastoma","leave_out_cancer_selectivity",959,72,0.991253456813943,"top_10",10,0,0
+"Paediatric","NB","Neuroblastoma","leave_out_cancer_selectivity",959,72,0.991253456813943,"top_25",25,0.04,0.0204081632653061
+"Paediatric","NB","Neuroblastoma","leave_out_cancer_selectivity",959,72,0.991253456813943,"top_50",50,0.02,0.0101010101010101
+"Paediatric","NB","Neuroblastoma","leave_out_cancer_selectivity",959,72,0.991253456813943,"top_10_percent",8,0,0
+"Paediatric","NB","Neuroblastoma","half_cancer_selectivity",959,959,0.994625511157348,"top_10",10,0.9,0.818181818181818
+"Paediatric","NB","Neuroblastoma","half_cancer_selectivity",959,959,0.994625511157348,"top_25",25,0.92,0.851851851851852
+"Paediatric","NB","Neuroblastoma","half_cancer_selectivity",959,959,0.994625511157348,"top_50",50,0.88,0.785714285714286
+"Paediatric","NB","Neuroblastoma","half_cancer_selectivity",959,959,0.994625511157348,"top_10_percent",96,0.90625,0.828571428571429
+"Paediatric","NB","Neuroblastoma","double_cancer_selectivity",959,959,0.989509322189335,"top_10",10,0.8,0.666666666666667
+"Paediatric","NB","Neuroblastoma","double_cancer_selectivity",959,959,0.989509322189335,"top_25",25,0.88,0.785714285714286
+"Paediatric","NB","Neuroblastoma","double_cancer_selectivity",959,959,0.989509322189335,"top_50",50,0.88,0.785714285714286
+"Paediatric","NB","Neuroblastoma","double_cancer_selectivity",959,959,0.989509322189335,"top_10_percent",96,0.916666666666667,0.846153846153846
+"Paediatric","NB","Neuroblastoma","leave_out_cysteine_ligandability",959,959,0.985930666752874,"top_10",10,0.8,0.666666666666667
+"Paediatric","NB","Neuroblastoma","leave_out_cysteine_ligandability",959,959,0.985930666752874,"top_25",25,0.96,0.923076923076923
+"Paediatric","NB","Neuroblastoma","leave_out_cysteine_ligandability",959,959,0.985930666752874,"top_50",50,0.96,0.923076923076923
+"Paediatric","NB","Neuroblastoma","leave_out_cysteine_ligandability",959,959,0.985930666752874,"top_10_percent",96,0.958333333333333,0.92
+"Paediatric","NB","Neuroblastoma","half_cysteine_ligandability",959,959,0.998073641081086,"top_10",10,1,1
+"Paediatric","NB","Neuroblastoma","half_cysteine_ligandability",959,959,0.998073641081086,"top_25",25,1,1
+"Paediatric","NB","Neuroblastoma","half_cysteine_ligandability",959,959,0.998073641081086,"top_50",50,1,1
+"Paediatric","NB","Neuroblastoma","half_cysteine_ligandability",959,959,0.998073641081086,"top_10_percent",96,1,1
+"Paediatric","NB","Neuroblastoma","double_cysteine_ligandability",959,959,0.998392195154446,"top_10",10,1,1
+"Paediatric","NB","Neuroblastoma","double_cysteine_ligandability",959,959,0.998392195154446,"top_25",25,0.96,0.923076923076923
+"Paediatric","NB","Neuroblastoma","double_cysteine_ligandability",959,959,0.998392195154446,"top_50",50,1,1
+"Paediatric","NB","Neuroblastoma","double_cysteine_ligandability",959,959,0.998392195154446,"top_10_percent",96,1,1
+"Paediatric","NB","Neuroblastoma","leave_out_conservation",959,959,0.998497912710932,"top_10",10,1,1
+"Paediatric","NB","Neuroblastoma","leave_out_conservation",959,959,0.998497912710932,"top_25",25,0.96,0.923076923076923
+"Paediatric","NB","Neuroblastoma","leave_out_conservation",959,959,0.998497912710932,"top_50",50,1,1
+"Paediatric","NB","Neuroblastoma","leave_out_conservation",959,959,0.998497912710932,"top_10_percent",96,1,1
+"Paediatric","NB","Neuroblastoma","half_conservation",959,959,0.999645036636916,"top_10",10,1,1
+"Paediatric","NB","Neuroblastoma","half_conservation",959,959,0.999645036636916,"top_25",25,1,1
+"Paediatric","NB","Neuroblastoma","half_conservation",959,959,0.999645036636916,"top_50",50,1,1
+"Paediatric","NB","Neuroblastoma","half_conservation",959,959,0.999645036636916,"top_10_percent",96,1,1
+"Paediatric","NB","Neuroblastoma","double_conservation",959,959,0.998713361553526,"top_10",10,1,1
+"Paediatric","NB","Neuroblastoma","double_conservation",959,959,0.998713361553526,"top_25",25,1,1
+"Paediatric","NB","Neuroblastoma","double_conservation",959,959,0.998713361553526,"top_50",50,1,1
+"Paediatric","NB","Neuroblastoma","double_conservation",959,959,0.998713361553526,"top_10_percent",96,1,1
+"Paediatric","NB","Neuroblastoma","leave_out_clinical_evidence",959,959,0.962546446675099,"top_10",10,1,1
+"Paediatric","NB","Neuroblastoma","leave_out_clinical_evidence",959,959,0.962546446675099,"top_25",25,0.96,0.923076923076923
+"Paediatric","NB","Neuroblastoma","leave_out_clinical_evidence",959,959,0.962546446675099,"top_50",50,0.92,0.851851851851852
+"Paediatric","NB","Neuroblastoma","leave_out_clinical_evidence",959,959,0.962546446675099,"top_10_percent",96,0.90625,0.828571428571429
+"Paediatric","NB","Neuroblastoma","half_clinical_evidence",959,959,0.99258654614702,"top_10",10,1,1
+"Paediatric","NB","Neuroblastoma","half_clinical_evidence",959,959,0.99258654614702,"top_25",25,1,1
+"Paediatric","NB","Neuroblastoma","half_clinical_evidence",959,959,0.99258654614702,"top_50",50,1,1
+"Paediatric","NB","Neuroblastoma","half_clinical_evidence",959,959,0.99258654614702,"top_10_percent",96,1,1
+"Paediatric","NB","Neuroblastoma","double_clinical_evidence",959,959,0.990968373633764,"top_10",10,1,1
+"Paediatric","NB","Neuroblastoma","double_clinical_evidence",959,959,0.990968373633764,"top_25",25,1,1
+"Paediatric","NB","Neuroblastoma","double_clinical_evidence",959,959,0.990968373633764,"top_50",50,1,1
+"Paediatric","NB","Neuroblastoma","double_clinical_evidence",959,959,0.990968373633764,"top_10_percent",96,1,1
+"Paediatric","OS","Osteosarcoma","equal",416,416,0.992573469784068,"top_10",10,1,1
+"Paediatric","OS","Osteosarcoma","equal",416,416,0.992573469784068,"top_25",25,1,1
+"Paediatric","OS","Osteosarcoma","equal",416,416,0.992573469784068,"top_50",50,1,1
+"Paediatric","OS","Osteosarcoma","equal",416,416,0.992573469784068,"top_10_percent",42,1,1
+"Paediatric","OS","Osteosarcoma","leave_out_dependency_strength",416,40,0.922701688555347,"top_10",10,0,0
+"Paediatric","OS","Osteosarcoma","leave_out_dependency_strength",416,40,0.922701688555347,"top_25",25,0,0
+"Paediatric","OS","Osteosarcoma","leave_out_dependency_strength",416,40,0.922701688555347,"top_50",50,0.02,0.0101010101010101
+"Paediatric","OS","Osteosarcoma","leave_out_dependency_strength",416,40,0.922701688555347,"top_10_percent",4,0,0
+"Paediatric","OS","Osteosarcoma","half_dependency_strength",416,416,0.990491662290769,"top_10",10,0.9,0.818181818181818
+"Paediatric","OS","Osteosarcoma","half_dependency_strength",416,416,0.990491662290769,"top_25",25,0.96,0.923076923076923
+"Paediatric","OS","Osteosarcoma","half_dependency_strength",416,416,0.990491662290769,"top_50",50,0.94,0.886792452830189
+"Paediatric","OS","Osteosarcoma","half_dependency_strength",416,416,0.990491662290769,"top_10_percent",42,0.928571428571429,0.866666666666667
+"Paediatric","OS","Osteosarcoma","double_dependency_strength",416,416,0.985995635194782,"top_10",10,1,1
+"Paediatric","OS","Osteosarcoma","double_dependency_strength",416,416,0.985995635194782,"top_25",25,0.96,0.923076923076923
+"Paediatric","OS","Osteosarcoma","double_dependency_strength",416,416,0.985995635194782,"top_50",50,0.92,0.851851851851852
+"Paediatric","OS","Osteosarcoma","double_dependency_strength",416,416,0.985995635194782,"top_10_percent",42,0.904761904761905,0.826086956521739
+"Paediatric","OS","Osteosarcoma","leave_out_cancer_selectivity",416,40,0.992120075046905,"top_10",10,0,0
+"Paediatric","OS","Osteosarcoma","leave_out_cancer_selectivity",416,40,0.992120075046905,"top_25",25,0,0
+"Paediatric","OS","Osteosarcoma","leave_out_cancer_selectivity",416,40,0.992120075046905,"top_50",50,0.02,0.0101010101010101
+"Paediatric","OS","Osteosarcoma","leave_out_cancer_selectivity",416,40,0.992120075046905,"top_10_percent",4,0,0
+"Paediatric","OS","Osteosarcoma","half_cancer_selectivity",416,416,0.997945988712669,"top_10",10,1,1
+"Paediatric","OS","Osteosarcoma","half_cancer_selectivity",416,416,0.997945988712669,"top_25",25,0.96,0.923076923076923
+"Paediatric","OS","Osteosarcoma","half_cancer_selectivity",416,416,0.997945988712669,"top_50",50,0.92,0.851851851851852
+"Paediatric","OS","Osteosarcoma","half_cancer_selectivity",416,416,0.997945988712669,"top_10_percent",42,0.904761904761905,0.826086956521739
+"Paediatric","OS","Osteosarcoma","double_cancer_selectivity",416,416,0.995828676315766,"top_10",10,0.9,0.818181818181818
+"Paediatric","OS","Osteosarcoma","double_cancer_selectivity",416,416,0.995828676315766,"top_25",25,0.96,0.923076923076923
+"Paediatric","OS","Osteosarcoma","double_cancer_selectivity",416,416,0.995828676315766,"top_50",50,0.94,0.886792452830189
+"Paediatric","OS","Osteosarcoma","double_cancer_selectivity",416,416,0.995828676315766,"top_10_percent",42,0.928571428571429,0.866666666666667
+"Paediatric","OS","Osteosarcoma","leave_out_cysteine_ligandability",416,416,0.987600420086859,"top_10",10,1,1
+"Paediatric","OS","Osteosarcoma","leave_out_cysteine_ligandability",416,416,0.987600420086859,"top_25",25,1,1
+"Paediatric","OS","Osteosarcoma","leave_out_cysteine_ligandability",416,416,0.987600420086859,"top_50",50,1,1
+"Paediatric","OS","Osteosarcoma","leave_out_cysteine_ligandability",416,416,0.987600420086859,"top_10_percent",42,1,1
+"Paediatric","OS","Osteosarcoma","half_cysteine_ligandability",416,416,0.999031376581233,"top_10",10,1,1
+"Paediatric","OS","Osteosarcoma","half_cysteine_ligandability",416,416,0.999031376581233,"top_25",25,1,1
+"Paediatric","OS","Osteosarcoma","half_cysteine_ligandability",416,416,0.999031376581233,"top_50",50,1,1
+"Paediatric","OS","Osteosarcoma","half_cysteine_ligandability",416,416,0.999031376581233,"top_10_percent",42,1,1
+"Paediatric","OS","Osteosarcoma","double_cysteine_ligandability",416,416,0.999362252073618,"top_10",10,1,1
+"Paediatric","OS","Osteosarcoma","double_cysteine_ligandability",416,416,0.999362252073618,"top_25",25,1,1
+"Paediatric","OS","Osteosarcoma","double_cysteine_ligandability",416,416,0.999362252073618,"top_50",50,1,1
+"Paediatric","OS","Osteosarcoma","double_cysteine_ligandability",416,416,0.999362252073618,"top_10_percent",42,1,1
+"Paediatric","OS","Osteosarcoma","leave_out_conservation",416,416,0.997732711109607,"top_10",10,1,1
+"Paediatric","OS","Osteosarcoma","leave_out_conservation",416,416,0.997732711109607,"top_25",25,1,1
+"Paediatric","OS","Osteosarcoma","leave_out_conservation",416,416,0.997732711109607,"top_50",50,1,1
+"Paediatric","OS","Osteosarcoma","leave_out_conservation",416,416,0.997732711109607,"top_10_percent",42,1,1
+"Paediatric","OS","Osteosarcoma","half_conservation",416,416,0.999587280746022,"top_10",10,1,1
+"Paediatric","OS","Osteosarcoma","half_conservation",416,416,0.999587280746022,"top_25",25,1,1
+"Paediatric","OS","Osteosarcoma","half_conservation",416,416,0.999587280746022,"top_50",50,1,1
+"Paediatric","OS","Osteosarcoma","half_conservation",416,416,0.999587280746022,"top_10_percent",42,1,1
+"Paediatric","OS","Osteosarcoma","double_conservation",416,416,0.999016541357645,"top_10",10,1,1
+"Paediatric","OS","Osteosarcoma","double_conservation",416,416,0.999016541357645,"top_25",25,1,1
+"Paediatric","OS","Osteosarcoma","double_conservation",416,416,0.999016541357645,"top_50",50,1,1
+"Paediatric","OS","Osteosarcoma","double_conservation",416,416,0.999016541357645,"top_10_percent",42,1,1
+"Paediatric","OS","Osteosarcoma","leave_out_clinical_evidence",416,416,0.967866905708236,"top_10",10,1,1
+"Paediatric","OS","Osteosarcoma","leave_out_clinical_evidence",416,416,0.967866905708236,"top_25",25,1,1
+"Paediatric","OS","Osteosarcoma","leave_out_clinical_evidence",416,416,0.967866905708236,"top_50",50,1,1
+"Paediatric","OS","Osteosarcoma","leave_out_clinical_evidence",416,416,0.967866905708236,"top_10_percent",42,1,1
+"Paediatric","OS","Osteosarcoma","half_clinical_evidence",416,416,0.995152715708526,"top_10",10,1,1
+"Paediatric","OS","Osteosarcoma","half_clinical_evidence",416,416,0.995152715708526,"top_25",25,1,1
+"Paediatric","OS","Osteosarcoma","half_clinical_evidence",416,416,0.995152715708526,"top_50",50,1,1
+"Paediatric","OS","Osteosarcoma","half_clinical_evidence",416,416,0.995152715708526,"top_10_percent",42,1,1
+"Paediatric","OS","Osteosarcoma","double_clinical_evidence",416,416,0.994834008433241,"top_10",10,1,1
+"Paediatric","OS","Osteosarcoma","double_clinical_evidence",416,416,0.994834008433241,"top_25",25,1,1
+"Paediatric","OS","Osteosarcoma","double_clinical_evidence",416,416,0.994834008433241,"top_50",50,1,1
+"Paediatric","OS","Osteosarcoma","double_clinical_evidence",416,416,0.994834008433241,"top_10_percent",42,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","equal",467,467,0.99578249802071,"top_10",10,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","equal",467,467,0.99578249802071,"top_25",25,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","equal",467,467,0.99578249802071,"top_50",50,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","equal",467,467,0.99578249802071,"top_10_percent",47,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","leave_out_dependency_strength",467,36,0.930690522552733,"top_10",10,0,0
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","leave_out_dependency_strength",467,36,0.930690522552733,"top_25",25,0,0
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","leave_out_dependency_strength",467,36,0.930690522552733,"top_50",50,0.02,0.0101010101010101
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","leave_out_dependency_strength",467,36,0.930690522552733,"top_10_percent",4,0,0
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","half_dependency_strength",467,467,0.992143215747956,"top_10",10,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","half_dependency_strength",467,467,0.992143215747956,"top_25",25,0.96,0.923076923076923
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","half_dependency_strength",467,467,0.992143215747956,"top_50",50,0.94,0.886792452830189
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","half_dependency_strength",467,467,0.992143215747956,"top_10_percent",47,0.936170212765957,0.88
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","double_dependency_strength",467,467,0.990599845091256,"top_10",10,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","double_dependency_strength",467,467,0.990599845091256,"top_25",25,0.96,0.923076923076923
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","double_dependency_strength",467,467,0.990599845091256,"top_50",50,0.96,0.923076923076923
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","double_dependency_strength",467,467,0.990599845091256,"top_10_percent",47,0.978723404255319,0.958333333333333
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","leave_out_cancer_selectivity",467,36,0.98346097121082,"top_10",10,0,0
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","leave_out_cancer_selectivity",467,36,0.98346097121082,"top_25",25,0,0
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","leave_out_cancer_selectivity",467,36,0.98346097121082,"top_50",50,0.02,0.0101010101010101
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","leave_out_cancer_selectivity",467,36,0.98346097121082,"top_10_percent",4,0,0
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","half_cancer_selectivity",467,467,0.997560989619308,"top_10",10,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","half_cancer_selectivity",467,467,0.997560989619308,"top_25",25,0.96,0.923076923076923
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","half_cancer_selectivity",467,467,0.997560989619308,"top_50",50,0.96,0.923076923076923
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","half_cancer_selectivity",467,467,0.997560989619308,"top_10_percent",47,0.978723404255319,0.958333333333333
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","double_cancer_selectivity",467,467,0.994870070415033,"top_10",10,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","double_cancer_selectivity",467,467,0.994870070415033,"top_25",25,0.96,0.923076923076923
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","double_cancer_selectivity",467,467,0.994870070415033,"top_50",50,0.94,0.886792452830189
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","double_cancer_selectivity",467,467,0.994870070415033,"top_10_percent",47,0.936170212765957,0.88
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","leave_out_cysteine_ligandability",467,467,0.986221099597373,"top_10",10,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","leave_out_cysteine_ligandability",467,467,0.986221099597373,"top_25",25,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","leave_out_cysteine_ligandability",467,467,0.986221099597373,"top_50",50,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","leave_out_cysteine_ligandability",467,467,0.986221099597373,"top_10_percent",47,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","half_cysteine_ligandability",467,467,0.999161448252037,"top_10",10,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","half_cysteine_ligandability",467,467,0.999161448252037,"top_25",25,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","half_cysteine_ligandability",467,467,0.999161448252037,"top_50",50,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","half_cysteine_ligandability",467,467,0.999161448252037,"top_10_percent",47,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","double_cysteine_ligandability",467,467,0.999651359474185,"top_10",10,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","double_cysteine_ligandability",467,467,0.999651359474185,"top_25",25,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","double_cysteine_ligandability",467,467,0.999651359474185,"top_50",50,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","double_cysteine_ligandability",467,467,0.999651359474185,"top_10_percent",47,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","leave_out_conservation",467,467,0.999211641176673,"top_10",10,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","leave_out_conservation",467,467,0.999211641176673,"top_25",25,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","leave_out_conservation",467,467,0.999211641176673,"top_50",50,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","leave_out_conservation",467,467,0.999211641176673,"top_10_percent",47,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","half_conservation",467,467,0.999787416462579,"top_10",10,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","half_conservation",467,467,0.999787416462579,"top_25",25,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","half_conservation",467,467,0.999787416462579,"top_50",50,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","half_conservation",467,467,0.999787416462579,"top_10_percent",47,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","double_conservation",467,467,0.999438098456367,"top_10",10,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","double_conservation",467,467,0.999438098456367,"top_25",25,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","double_conservation",467,467,0.999438098456367,"top_50",50,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","double_conservation",467,467,0.999438098456367,"top_10_percent",47,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","leave_out_clinical_evidence",467,467,0.971789691174482,"top_10",10,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","leave_out_clinical_evidence",467,467,0.971789691174482,"top_25",25,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","leave_out_clinical_evidence",467,467,0.971789691174482,"top_50",50,0.98,0.96078431372549
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","leave_out_clinical_evidence",467,467,0.971789691174482,"top_10_percent",47,0.978723404255319,0.958333333333333
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","half_clinical_evidence",467,467,0.99640248692981,"top_10",10,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","half_clinical_evidence",467,467,0.99640248692981,"top_25",25,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","half_clinical_evidence",467,467,0.99640248692981,"top_50",50,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","half_clinical_evidence",467,467,0.99640248692981,"top_10_percent",47,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","double_clinical_evidence",467,467,0.997119680198019,"top_10",10,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","double_clinical_evidence",467,467,0.997119680198019,"top_25",25,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","double_clinical_evidence",467,467,0.997119680198019,"top_50",50,1,1
+"Paediatric","pAML","Pediatric Acute Myeloid Leukemia","double_clinical_evidence",467,467,0.997119680198019,"top_10_percent",47,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","equal",303,303,0.993356555874319,"top_10",10,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","equal",303,303,0.993356555874319,"top_25",25,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","equal",303,303,0.993356555874319,"top_50",50,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","equal",303,303,0.993356555874319,"top_10_percent",31,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","leave_out_dependency_strength",303,33,0.971590909090909,"top_10",10,0,0
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","leave_out_dependency_strength",303,33,0.971590909090909,"top_25",25,0,0
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","leave_out_dependency_strength",303,33,0.971590909090909,"top_50",50,0.1,0.0526315789473684
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","leave_out_dependency_strength",303,33,0.971590909090909,"top_10_percent",4,0,0
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","half_dependency_strength",303,303,0.990698728285903,"top_10",10,0.9,0.818181818181818
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","half_dependency_strength",303,303,0.990698728285903,"top_25",25,0.96,0.923076923076923
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","half_dependency_strength",303,303,0.990698728285903,"top_50",50,0.92,0.851851851851852
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","half_dependency_strength",303,303,0.990698728285903,"top_10_percent",31,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","double_dependency_strength",303,303,0.987782714664734,"top_10",10,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","double_dependency_strength",303,303,0.987782714664734,"top_25",25,0.96,0.923076923076923
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","double_dependency_strength",303,303,0.987782714664734,"top_50",50,0.96,0.923076923076923
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","double_dependency_strength",303,303,0.987782714664734,"top_10_percent",31,0.935483870967742,0.878787878787879
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","leave_out_cancer_selectivity",303,33,0.991644385026738,"top_10",10,0,0
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","leave_out_cancer_selectivity",303,33,0.991644385026738,"top_25",25,0,0
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","leave_out_cancer_selectivity",303,33,0.991644385026738,"top_50",50,0.1,0.0526315789473684
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","leave_out_cancer_selectivity",303,33,0.991644385026738,"top_10_percent",4,0,0
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","half_cancer_selectivity",303,303,0.998437978560513,"top_10",10,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","half_cancer_selectivity",303,303,0.998437978560513,"top_25",25,0.96,0.923076923076923
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","half_cancer_selectivity",303,303,0.998437978560513,"top_50",50,0.96,0.923076923076923
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","half_cancer_selectivity",303,303,0.998437978560513,"top_10_percent",31,0.935483870967742,0.878787878787879
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","double_cancer_selectivity",303,303,0.996973557478957,"top_10",10,0.9,0.818181818181818
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","double_cancer_selectivity",303,303,0.996973557478957,"top_25",25,0.96,0.923076923076923
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","double_cancer_selectivity",303,303,0.996973557478957,"top_50",50,0.92,0.851851851851852
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","double_cancer_selectivity",303,303,0.996973557478957,"top_10_percent",31,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","leave_out_cysteine_ligandability",303,303,0.988558551310625,"top_10",10,0.9,0.818181818181818
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","leave_out_cysteine_ligandability",303,303,0.988558551310625,"top_25",25,0.96,0.923076923076923
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","leave_out_cysteine_ligandability",303,303,0.988558551310625,"top_50",50,0.98,0.96078431372549
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","leave_out_cysteine_ligandability",303,303,0.988558551310625,"top_10_percent",31,0.967741935483871,0.9375
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","half_cysteine_ligandability",303,303,0.998622177464319,"top_10",10,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","half_cysteine_ligandability",303,303,0.998622177464319,"top_25",25,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","half_cysteine_ligandability",303,303,0.998622177464319,"top_50",50,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","half_cysteine_ligandability",303,303,0.998622177464319,"top_10_percent",31,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","double_cysteine_ligandability",303,303,0.998476802951318,"top_10",10,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","double_cysteine_ligandability",303,303,0.998476802951318,"top_25",25,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","double_cysteine_ligandability",303,303,0.998476802951318,"top_50",50,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","double_cysteine_ligandability",303,303,0.998476802951318,"top_10_percent",31,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","leave_out_conservation",303,303,0.998734335842302,"top_10",10,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","leave_out_conservation",303,303,0.998734335842302,"top_25",25,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","leave_out_conservation",303,303,0.998734335842302,"top_50",50,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","leave_out_conservation",303,303,0.998734335842302,"top_10_percent",31,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","half_conservation",303,303,0.999639799055325,"top_10",10,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","half_conservation",303,303,0.999639799055325,"top_25",25,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","half_conservation",303,303,0.999639799055325,"top_50",50,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","half_conservation",303,303,0.999639799055325,"top_10_percent",31,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","double_conservation",303,303,0.99903932035474,"top_10",10,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","double_conservation",303,303,0.99903932035474,"top_25",25,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","double_conservation",303,303,0.99903932035474,"top_50",50,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","double_conservation",303,303,0.99903932035474,"top_10_percent",31,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","leave_out_clinical_evidence",303,303,0.946289078297548,"top_10",10,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","leave_out_clinical_evidence",303,303,0.946289078297548,"top_25",25,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","leave_out_clinical_evidence",303,303,0.946289078297548,"top_50",50,0.98,0.96078431372549
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","leave_out_clinical_evidence",303,303,0.946289078297548,"top_10_percent",31,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","half_clinical_evidence",303,303,0.992393505080882,"top_10",10,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","half_clinical_evidence",303,303,0.992393505080882,"top_25",25,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","half_clinical_evidence",303,303,0.992393505080882,"top_50",50,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","half_clinical_evidence",303,303,0.992393505080882,"top_10_percent",31,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","double_clinical_evidence",303,303,0.994908009639581,"top_10",10,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","double_clinical_evidence",303,303,0.994908009639581,"top_25",25,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","double_clinical_evidence",303,303,0.994908009639581,"top_50",50,1,1
+"Paediatric","T-ALL","T-Lymphoblastic Leukemia/Lymphoma","double_clinical_evidence",303,303,0.994908009639581,"top_10_percent",31,1,1

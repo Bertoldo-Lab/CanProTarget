@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use CanProTarget, please cite the software archive below."
+title: "CanProTarget"
+abstract: >-
+  A residue-resolved prioritization platform for covalent cancer drug
+  discovery. CanProTarget integrates cancer gene dependencies, small-molecule
+  covalent ligand engagement measured by chemoproteomics, and base-editing
+  evidence for individual cysteines, keeping each layer at the resolution it
+  is measured at.
+type: software
+license: AGPL-3.0-or-later
+repository-code: "https://github.com/Bertoldo-Lab/CanProTarget"
+url: "https://bertoldolab.shinyapps.io/CanProTarget/"
+version: "1.0.0"
+date-released: "2026-09-17"
+# doi: 10.5281/zenodo.XXXXXXX   # uncomment once Zenodo reserves the DOI
+keywords:
+  - covalent inhibitors
+  - chemoproteomics
+  - cancer dependencies
+  - cysteine ligandability
+  - target prioritization
+authors:
+  - family-names: Ong
+    given-names: John-Paul
+    affiliation: "Children's Cancer Institute; UNSW Sydney"
+  - family-names: Martins
+    given-names: Daniel
+    affiliation: "University of Technology Sydney"
+  - family-names: Bertoldo
+    given-names: Jean B.
+    affiliation: "Children's Cancer Institute; UNSW Sydney"
+    email: j.bertoldo@unsw.edu.au

@@ -1,0 +1,44 @@
+# Known-target recovery fixtures for CanProTarget.
+# Read by tests/test_finalize_today.R. Each entry names a well-established
+# target and the context it should be recovered in, with the score ranges the
+# pipeline is expected to reproduce. The ranges are regression anchors for the
+# scoring code, not clinical thresholds.
+
+fixtures:
+  - id: KRAS_PDAC
+    gene: KRAS
+    subtype: "Pancreatic Adenocarcinoma"
+    dataset: CRISPR
+    expect:
+      is_dependency: true
+      is_selective: true
+      dependency_percentile_min: 70
+      selectivity_percentile_min: 70
+      cpt_score_min: 40
+    notes: "Classic selective dependency for recovery benchmark."
+
+  - id: BRAF_Melanoma
+    gene: BRAF
+    subtype: Melanoma
+    dataset: CRISPR
+    expect:
+      is_dependency: true
+      is_selective: true
+      dependency_percentile_min: 60
+      selectivity_percentile_min: 60
+      cpt_score_min: 35
+    notes: "Lineage-selective dependency recovery."
+
+  - id: EGFR_C797
+    gene: EGFR
+    site_id: EGFR_797
+    expect:
+      site_exists: true
+      functional: true
+      ligandable: true
+    notes: "Osimertinib-relevant cysteine handle in atlas."
+
+recovery_summary: |
+  Known oncology targets should be recovered as selective dependencies, or as
+  annotated functional cysteines, in the context listed above. A fixture that
+  stops matching means the scoring pipeline has changed behaviour.

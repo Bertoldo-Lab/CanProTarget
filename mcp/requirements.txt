@@ -1,0 +1,7 @@
+# CanProTarget MCP Server dependencies
+#
+# Pinned below 2.0. The server is written against the v1 API, where the server
+# class is mcp.server.fastmcp.FastMCP; v2 renamed it to MCPServer and changed
+# other APIs, so an unpinned ">=1.6.0" now resolves to 2.x and the server dies
+# on import with ModuleNotFoundError: No module named 'mcp.server.fastmcp'.
+mcp[cli]>=1.6.0,<2

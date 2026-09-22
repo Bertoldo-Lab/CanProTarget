@@ -1,0 +1,368 @@
+---
+title: "CanProTarget Report"
+output:
+  html_document:
+    css: report_style.css
+    self_contained: true
+    toc: false
+    theme: null
+    highlight: null
+    mathjax: null
+params:
+  gene: "KRAS"
+  subtype: "Pancreatic Adenocarcinoma"
+  dataset: "CRISPR"
+  data_dir: "data"
+  project_root: "."
+---
+
+```{r hide-title, results='asis', echo=FALSE}
+cat('<style>.title { display: none; }</style>')
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE,
+                      fig.width = 8, fig.height = 5, dpi = 200,
+                      fig.align = "center", out.width = "100%")
+knitr::opts_knit$set(unnamed.chunk.label = "cpt-chunk")
+
+suppressPackageStartupMessages({
+  library(ggplot2)
+  library(dplyr)
+})
+
+source(file.path(params$project_root, "R", "app_helpers.R"))
+source(file.path(params$project_root, "R", "api_functions.R"))
+source(file.path(params$project_root, "R", "canprotarget_score.R"))
+source(file.path(params$project_root, "R", "pancancer_profile.R"))
+source(file.path(params$project_root, "R", "theme_canprotarget.R"))
+
+cpt_theme <- function() theme_canprotarget(base_size = 12)
+
+# Build data environment
+data_dir <- file.path(params$project_root, params$data_dir)
+data_env <- list(data_dir = data_dir)
+
+crispr_path <- file.path(data_dir, "CRISPRGeneEffect_23Q4_clean.rds")
+if (file.exists(crispr_path)) data_env$crispr_matrix <- readRDS(crispr_path)
+
+rnai_path <- file.path(data_dir, "d2_gene_effect_headers_refined.rds")
+if (file.exists(rnai_path)) data_env$rnai_matrix <- readRDS(rnai_path)
+
+meta_path <- file.path(data_dir, "cancer_model_data.rds")
+if (file.exists(meta_path)) data_env$cancer_model_data <- readRDS(meta_path)
+
+cys_path <- file.path(data_dir, "cys_editing_atlas.rds")
+if (file.exists(cys_path)) data_env$cys_atlas <- readRDS(cys_path)
+
+# Data provenance
+data_versions <- read_data_versions(data_dir)
+provenance <- data_provenance_string(data_versions)
+
+# Logo lives in www/ at runtime (shinyapps); graphics/ is the repo copy.
+logo_candidates <- c(
+  file.path(params$project_root, "www", "cpt_logo.png"),
+  file.path(params$project_root, "graphics", "cpt_logo.png")
+)
+logo_path <- logo_candidates[file.exists(logo_candidates)][1]
+logo_b64 <- if (!is.na(logo_path) && nzchar(logo_path)) {
+  paste0("data:image/png;base64,", base64enc::base64encode(logo_path))
+} else {
+  ""
+}
+```
+
+```{r compute, include=FALSE}
+dep_result <- tryCatch(
+  api_query_dependency(params$gene, params$subtype, params$dataset, data_env),
+  error = function(e) NULL
+)
+
+score_result <- tryCatch(
+  api_canprotarget_score(params$gene, params$subtype, params$dataset, data_env),
+  error = function(e) NULL
+)
+
+pancancer_result <- tryCatch(
+  api_pancancer_profile(params$gene, params$dataset, data_env, top_n = 30L),
+  error = function(e) NULL
+)
+
+cys_result <- tryCatch(
+  api_gene_cysteines(params$gene, data_env),
+  error = function(e) NULL
+)
+```
+
+```{r header, results='asis'}
+# Empty src="" makes pandoc --self-contained fail with error 99
+# ("File  not found in resource path").
+logo_cell <- if (nzchar(logo_b64)) {
+  sprintf('<td><img src="%s" alt="CanProTarget" style="width:48px;height:48px;border-radius:8px;"></td>', logo_b64)
+} else {
+  "<td></td>"
+}
+cat(sprintf('<div class="cpt-report-header"><table><tr>%s<td><h1>CanProTarget</h1><p class="cpt-report-type">Gene Dependency Report: %s in %s</p><p class="cpt-report-meta">Generated %s &middot; %s dataset &middot; %s</p></td></tr></table></div>',
+  logo_cell, params$gene, params$subtype,
+  format(Sys.time(), "%B %d, %Y"), params$dataset, provenance))
+```
+
+```{r summary, results='asis'}
+cat('<div class="cpt-summary-card">\n')
+
+# Interpretation line
+if (!is.null(dep_result)) {
+  cat(sprintf("<p><strong>%s</strong></p>\n", dep_result$interpretation))
+} else {
+  cat(sprintf("<p>Dependency data not available for %s in %s.</p>\n", params$gene, params$subtype))
+}
+
+# CPT Score circle
+has_score <- !is.null(score_result) &&
+  !is.null(score_result$cpt_score) &&
+  length(score_result$cpt_score) == 1 &&
+  !is.na(score_result$cpt_score)
+if (has_score) {
+  # Prefer guarded priority from cpt_score_single (never high for non-deps)
+  priority <- if (exists("cpt_priority_display", mode = "function")) {
+    cpt_priority_display(score_result)
+  } else if (!is.null(score_result$priority) && nzchar(as.character(score_result$priority)[1])) {
+    p0 <- as.character(score_result$priority)[1]
+    switch(p0,
+      high = "High priority",
+      moderate = "Moderate priority",
+      low = "Low priority",
+      paste0(p0, " priority")
+    )
+  } else if (score_result$cpt_score >= 70) {
+    "High priority"
+  } else if (score_result$cpt_score >= 40) {
+    "Moderate priority"
+  } else {
+    "Low priority"
+  }
+  # Visual class follows guarded priority, not raw score alone
+  score_class <- if (grepl("^High", priority, ignore.case = TRUE)) "cpt-score-high"
+    else if (grepl("^Moderate", priority, ignore.case = TRUE)) "cpt-score-moderate"
+    else "cpt-score-low"
+
+  cat(sprintf('<div class="cpt-score-container"><div class="cpt-score-circle %s">%s</div><div class="cpt-score-label"><strong>CPT Score: %s / 100</strong><br>%s target (%d of 6 evidence dimensions available)</div></div>',
+    score_class, round(score_result$cpt_score), round(score_result$cpt_score, 1),
+    priority, score_result$n_dimensions_used))
+}
+cat('</div>\n')
+```
+
+## Dependency Statistics
+
+```{r stats_table, results='asis'}
+if (!is.null(dep_result)) {
+  stats_df <- data.frame(
+    Metric = c(
+      "Mean gene effect (subtype)",
+      "Mean gene effect (other cancers)",
+      "Effect size (selectivity)",
+      "p-value (one-sided t-test)",
+      "Cell lines in subtype",
+      "Cell lines (other)",
+      "Is dependency (mean < -0.5)",
+      "Is selective (p < 0.05, ES < -0.1)"
+    ),
+    Value = c(
+      sprintf("%.4f", dep_result$cancer_mean_effect),
+      sprintf("%.4f", dep_result$other_mean_effect),
+      sprintf("%.4f", dep_result$effect_size),
+      format(dep_result$p_value, scientific = TRUE, digits = 3),
+      as.character(dep_result$n_cell_lines_in_subtype),
+      as.character(dep_result$n_cell_lines_other),
+      ifelse(dep_result$is_dependency, "Yes", "No"),
+      ifelse(dep_result$is_selective_dependency, "Yes", "No")
+    ),
+    stringsAsFactors = FALSE
+  )
+  knitr::kable(stats_df, format = "html", escape = FALSE, row.names = FALSE)
+}
+```
+
+## CPT Score Breakdown
+
+```{r score_bars, results='asis'}
+if (!is.null(score_result) && !is.null(score_result$dimensions)) {
+  dims <- score_result$dimensions
+  dim_info <- list(
+    list(name = "Dependency Strength", key = "dependency_strength"),
+    list(name = "Cancer Selectivity", key = "cancer_selectivity"),
+    list(name = "Cysteine Ligandability", key = "cysteine_ligandability"),
+    list(name = "Conservation", key = "conservation"),
+    list(name = "Clinical Evidence", key = "clinical_evidence"),
+    list(name = "ADME / Drug-likeness", key = "adme_druggability")
+  )
+
+  for (d in dim_info) {
+    val <- dims[[d$key]]$score
+    if (is.null(val) || is.na(val)) {
+      cat(sprintf(
+        '<div class="cpt-dim-bar"><span class="label">%s</span><span class="bar-bg"><span class="bar-fill" style="width:0%%;background:#ccc;"></span></span><span class="value">N/A</span></div>\n',
+        d$name))
+    } else {
+      cat(sprintf(
+        '<div class="cpt-dim-bar"><span class="label">%s</span><span class="bar-bg"><span class="bar-fill" style="width:%.0f%%"></span></span><span class="value">%.0f</span></div>\n',
+        d$name, val, val))
+    }
+  }
+
+  # Description table
+  cat("\n\n")
+  desc_df <- data.frame(
+    Dimension = sapply(dim_info, function(d) d$name),
+    Score = sapply(dim_info, function(d) {
+      v <- dims[[d$key]]$score
+      if (is.null(v) || is.na(v)) "Not available" else sprintf("%.1f / 100", v)
+    }),
+    Description = sapply(dim_info, function(d) dims[[d$key]]$description),
+    stringsAsFactors = FALSE
+  )
+  knitr::kable(desc_df, format = "html", escape = FALSE, row.names = FALSE)
+}
+```
+
+## Pan-Cancer Dependency Profile
+
+```{r pancancer_plot, fig.width=8, fig.height=7}
+if (!is.null(pancancer_result) && length(pancancer_result$subtypes) > 0) {
+  pc_df <- do.call(rbind, lapply(pancancer_result$subtypes, function(s) {
+    data.frame(
+      subtype = s$subtype,
+      mean_effect = s$mean_effect,
+      n_cell_lines = s$n_cell_lines,
+      is_dependency = s$is_dependency,
+      stringsAsFactors = FALSE
+    )
+  }))
+
+  pc_df$is_target <- pc_df$subtype == params$subtype
+  pc_df$subtype_label <- paste0(pc_df$subtype, " (n=", pc_df$n_cell_lines, ")")
+  pc_df$subtype_label <- factor(pc_df$subtype_label,
+    levels = pc_df$subtype_label[order(pc_df$mean_effect, decreasing = TRUE)])
+
+  ggplot(pc_df, aes(x = subtype_label, y = mean_effect, fill = is_target)) +
+    geom_col(width = 0.75) +
+    geom_hline(yintercept = -0.5, linetype = "dashed", colour = "#999999", linewidth = 0.4) +
+    scale_fill_manual(
+      values = c("FALSE" = "#7bafd4", "TRUE" = "#cc3340"),
+      labels = c("Other subtypes", params$subtype),
+      name = NULL
+    ) +
+    labs(
+      x = NULL,
+      y = "Mean gene effect score",
+      title = paste0(params$gene, " dependency across cancer subtypes"),
+      subtitle = paste0("Top ", nrow(pc_df), " most dependent subtypes (",
+                        params$dataset, " dataset)"),
+      caption = "Dashed line = dependency threshold (-0.5)"
+    ) +
+    coord_flip() +
+    cpt_theme() +
+    theme(
+      legend.position = "top",
+      legend.justification = "left",
+      axis.text.y = element_text(size = 8),
+      plot.title = element_text(size = 13, face = "bold"),
+      plot.subtitle = element_text(size = 10, colour = "#666666"),
+      plot.caption = element_text(size = 9, colour = "#999999", hjust = 0)
+    )
+}
+```
+
+```{r pancancer_interp, results='asis'}
+if (!is.null(pancancer_result)) {
+  n_dep <- pancancer_result$n_dependency_subtypes
+  cat(sprintf(
+    "<p style='color:#6c757d;font-size:0.88em;text-align:center;margin-top:-8px;'>%s is a dependency (mean effect &lt; -0.5) in <strong>%d of %d</strong> cancer subtypes. %s</p>\n",
+    params$gene, n_dep, pancancer_result$total_subtypes,
+    if (n_dep > 10) "Broadly essential across many cancers."
+    else if (n_dep >= 3) "Moderately selective."
+    else "Highly selective target."
+  ))
+}
+```
+
+## Druggable Cysteines
+
+```{r cysteine_section, results='asis'}
+if (!is.null(cys_result) && cys_result$total_sites > 0) {
+  cat(sprintf(
+    "<p><strong>%s</strong> has <strong>%d</strong> cysteine site(s) in the functional editing atlas: %d functional, %d ligandable, %d functional+ligandable.</p>\n",
+    cys_result$gene, cys_result$total_sites,
+    cys_result$n_functional, cys_result$n_ligandable, cys_result$n_functional_ligandable))
+
+  # Filter to interesting sites
+  site_df <- do.call(rbind, lapply(cys_result$sites, function(s) {
+    data.frame(
+      Site = s$site_id,
+      Pos = s$cysteine_position,
+      Functional = ifelse(isTRUE(s$functional), "\u2713", ""),
+      Ligandable = ifelse(isTRUE(s$ligandable), "\u2713", ""),
+      `Priority` = ifelse(isTRUE(s$functional_ligandable), "\u2713", ""),
+      Editor = ifelse(is.null(s$editor_support), "", s$editor_support),
+      `Lig. Score` = ifelse(is.null(s$ligandability_score), "",
+                            sprintf("%.0f", s$ligandability_score)),
+      Conservation = ifelse(is.null(s$conservation_score), "",
+                            sprintf("%.0f%%", s$conservation_score * 100)),
+      ClinVar = ifelse(isTRUE(s$clinvar_pathogenic), "Pathogenic", ""),
+      stringsAsFactors = FALSE,
+      check.names = FALSE
+    )
+  }))
+  knitr::kable(site_df, format = "html", escape = FALSE, row.names = FALSE)
+} else {
+  cat(sprintf("<p>No cysteine data available for %s in the functional editing atlas.</p>\n", params$gene))
+}
+```
+
+## External Resources
+
+```{r links, results='asis'}
+# Get UniProt accession: try cysteine result first, then do direct lookup
+uniprot_id <- NULL
+if (!is.null(cys_result) && !is.null(cys_result$uniprot_accession)) {
+  uniprot_id <- cys_result$uniprot_accession
+}
+# Fallback: direct atlas lookup for UniProt even if gene_cysteines failed
+if ((is.null(uniprot_id) || is.na(uniprot_id) || !nzchar(uniprot_id)) && !is.null(data_env$cys_atlas)) {
+  atlas_hit <- data_env$cys_atlas[toupper(data_env$cys_atlas$gene_symbol) == toupper(params$gene), ]
+  if (nrow(atlas_hit) > 0) {
+    uniprot_id <- atlas_hit$uniprot_accession[1]
+  }
+}
+
+cat('<div class="cpt-links">\n')
+cat('<table style="border-collapse:collapse;width:100%;"><tr>\n')
+
+# Structure links column
+cat('<td style="vertical-align:top;padding:8px;width:50%;">\n')
+cat('<p style="margin:0 0 6px 0;"><strong>Structure &amp; Protein</strong></p><ul style="margin:0;padding-left:18px;">\n')
+if (!is.null(uniprot_id) && !is.na(uniprot_id) && nzchar(uniprot_id)) {
+  cat(sprintf('<li><a href="https://alphafold.ebi.ac.uk/entry/%s" target="_blank">AlphaFold Structure (%s)</a></li>\n', uniprot_id, uniprot_id))
+  cat(sprintf('<li><a href="https://www.uniprot.org/uniprot/%s" target="_blank">UniProt Entry (%s)</a></li>\n', uniprot_id, uniprot_id))
+} else {
+  cat(sprintf('<li><a href="https://www.uniprot.org/uniprotkb?query=%s" target="_blank">UniProt Search (%s)</a></li>\n', params$gene, params$gene))
+}
+cat(sprintf('<li><a href="https://www.rcsb.org/search?q=%s" target="_blank">PDB Search (%s)</a></li>\n', params$gene, params$gene))
+cat('</ul></td>\n')
+
+# Data portal links column
+cat('<td style="vertical-align:top;padding:8px;width:50%;">\n')
+cat('<p style="margin:0 0 6px 0;"><strong>Data Portals</strong></p><ul style="margin:0;padding-left:18px;">\n')
+cat(sprintf('<li><a href="https://depmap.org/portal/gene/%s?tab=overview" target="_blank">DepMap Portal (%s)</a></li>\n', params$gene, params$gene))
+cat(sprintf('<li><a href="https://www.genecards.org/cgi-bin/carddisp.pl?gene=%s" target="_blank">GeneCards (%s)</a></li>\n', params$gene, params$gene))
+cat(sprintf('<li><a href="https://www.oncokb.org/gene/%s" target="_blank">OncoKB (%s)</a></li>\n', params$gene, params$gene))
+cat('</ul></td>\n')
+
+cat('</tr></table></div>\n')
+```
+
+```{r footer, results='asis'}
+cat(sprintf('<div class="cpt-footer"><table><tr><td><img src="%s" alt="" style="width:28px;height:28px;border-radius:6px;opacity:0.8;"></td><td><p><strong>CanProTarget</strong> &middot; Cancer chemoproteomics-based target prioritization pipeline</p><p>Ong JP, Martins D, Bertoldo JB. CanProTarget. Zenodo. DOI pending release.</p><p>CanProTarget v1.0.0 &middot; <a href="https://github.com/Bertoldo-Lab/CanProTarget">github.com/Bertoldo-Lab/CanProTarget</a></p><p><strong>Data provenance:</strong> %s</p><p style="font-size:0.85em;color:#666;">Manifest: data/data_versions.yaml</p></td></tr></table></div>',
+  logo_b64, provenance))
+```

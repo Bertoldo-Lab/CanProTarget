@@ -1,0 +1,275 @@
+---
+title: "CanProTarget Report"
+output:
+  html_document:
+    css: report_style.css
+    self_contained: true
+    toc: false
+    theme: null
+    highlight: null
+    mathjax: null
+params:
+  gene: "EGFR"
+  site_id: null
+  data_dir: "data"
+  project_root: "."
+---
+
+```{r hide-title, results='asis', echo=FALSE}
+cat('<style>.title { display: none; }</style>')
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE,
+                      fig.width = 8, fig.height = 5.5, dpi = 200,
+                      fig.align = "center", out.width = "100%")
+
+suppressPackageStartupMessages({
+  library(ggplot2)
+  library(dplyr)
+})
+
+source(file.path(params$project_root, "R", "app_helpers.R"))
+source(file.path(params$project_root, "R", "api_functions.R"))
+source(file.path(params$project_root, "R", "canprotarget_score.R"))
+source(file.path(params$project_root, "R", "theme_canprotarget.R"))
+
+cpt_theme <- function() theme_canprotarget(base_size = 12)
+
+# Build data environment
+data_dir <- file.path(params$project_root, params$data_dir)
+data_env <- list(data_dir = data_dir)
+
+cys_path <- file.path(data_dir, "cys_editing_atlas.rds")
+if (file.exists(cys_path)) data_env$cys_atlas <- readRDS(cys_path)
+
+# Provenance
+data_versions <- read_data_versions(data_dir)
+provenance <- data_provenance_string(data_versions)
+
+# Logo lives in www/ at runtime (shinyapps); graphics/ is the repo copy.
+logo_candidates <- c(
+  file.path(params$project_root, "www", "cpt_logo.png"),
+  file.path(params$project_root, "graphics", "cpt_logo.png")
+)
+logo_path <- logo_candidates[file.exists(logo_candidates)][1]
+logo_b64 <- if (!is.na(logo_path) && nzchar(logo_path)) {
+  paste0("data:image/png;base64,", base64enc::base64encode(logo_path))
+} else {
+  ""
+}
+```
+
+```{r compute, include=FALSE}
+cys_result <- tryCatch(
+  api_gene_cysteines(params$gene, data_env),
+  error = function(e) NULL
+)
+
+site_detail <- NULL
+if (!is.null(params$site_id) && nzchar(params$site_id)) {
+  site_detail <- tryCatch(
+    api_cysteine_detail(params$site_id, data_env),
+    error = function(e) NULL
+  )
+}
+
+atlas <- data_env$cys_atlas
+gene_atlas <- NULL
+if (!is.null(atlas)) {
+  gene_atlas <- atlas[toupper(atlas$gene_symbol) == toupper(params$gene), , drop = FALSE]
+}
+```
+
+```{r header, results='asis'}
+subtitle <- if (!is.null(params$site_id) && nzchar(params$site_id)) {
+  sprintf("Cysteine Target Report: %s (%s)", params$gene, params$site_id)
+} else {
+  sprintf("Cysteine Target Report: %s", params$gene)
+}
+
+logo_cell <- if (nzchar(logo_b64)) {
+  sprintf('<td><img src="%s" alt="CanProTarget" style="width:48px;height:48px;border-radius:8px;"></td>', logo_b64)
+} else {
+  "<td></td>"
+}
+cat(sprintf('<div class="cpt-report-header"><table><tr>%s<td><h1>CanProTarget</h1><p class="cpt-report-type">%s</p><p class="cpt-report-meta">Generated %s &middot; Cysteine Editing Atlas (Li et al., 2023) &middot; %s</p></td></tr></table></div>',
+  logo_cell, subtitle, format(Sys.time(), "%B %d, %Y"), provenance))
+```
+
+```{r summary_card, results='asis'}
+if (!is.null(cys_result)) {
+  cat('<div class="cpt-summary-card">\n')
+  cat(sprintf("<p><strong>%s</strong>", cys_result$gene))
+  if (!is.null(cys_result$protein_name) && !is.na(cys_result$protein_name)) {
+    cat(sprintf(" (%s)", cys_result$protein_name))
+  }
+  cat("</p>\n")
+  if (!is.null(cys_result$uniprot_accession) && !is.na(cys_result$uniprot_accession)) {
+    cat(sprintf("<p>UniProt: %s</p>\n", cys_result$uniprot_accession))
+  }
+  cat(sprintf(
+    "<p>%d cysteine sites tested &middot; <strong>%d functional</strong> &middot; %d ligandable &middot; <strong>%d priority targets</strong> (functional + ligandable)</p>\n",
+    cys_result$total_sites, cys_result$n_functional,
+    cys_result$n_ligandable, cys_result$n_functional_ligandable))
+  cat('</div>\n')
+}
+```
+
+```{r specific_site, results='asis'}
+if (!is.null(site_detail)) {
+  cat(sprintf("\n\n## Site Detail: %s\n\n", site_detail$site_id))
+
+  detail_df <- data.frame(
+    Property = c(
+      "Cysteine position", "Editor support", "Study context",
+      "ABE mean LFC", "CBE mean LFC",
+      "ABE guides tested", "CBE guides tested",
+      "Functional", "Ligandable", "Functional + Ligandable",
+      "Ligandability score", "Conservation",
+      "AlphaFold pLDDT", "Solvent accessibility",
+      "ClinVar", "ClinVar annotation"
+    ),
+    Value = c(
+      as.character(site_detail$cysteine_position),
+      site_detail$editor_support %||% "N/A",
+      site_detail$study_context %||% "N/A",
+      sprintf("%.3f", site_detail$abe_mean_lfc),
+      sprintf("%.3f", site_detail$cbe_mean_lfc),
+      as.character(site_detail$abe_guide_count),
+      as.character(site_detail$cbe_guide_count),
+      ifelse(isTRUE(site_detail$functional), "Yes", "No"),
+      ifelse(isTRUE(site_detail$ligandable), "Yes", "No"),
+      ifelse(isTRUE(site_detail$functional_ligandable), "Yes", "No"),
+      if (is.null(site_detail$ligandability_score)) "N/A" else sprintf("%.1f", site_detail$ligandability_score),
+      if (is.null(site_detail$conservation_score)) "N/A" else sprintf("%.0f%%", site_detail$conservation_score * 100),
+      if (is.null(site_detail$alphafold_plddt)) "N/A" else sprintf("%.1f", site_detail$alphafold_plddt),
+      if (is.null(site_detail$relative_solvent_accessibility)) "N/A" else sprintf("%.3f", site_detail$relative_solvent_accessibility),
+      ifelse(isTRUE(site_detail$clinvar_pathogenic), "Pathogenic", "No"),
+      site_detail$clinvar_annotation %||% ""
+    ),
+    stringsAsFactors = FALSE
+  )
+  knitr::kable(detail_df, format = "html", escape = FALSE, row.names = FALSE)
+}
+```
+
+## ABE vs CBE Dropout
+
+```{r lfc_plot, fig.width=7.5, fig.height=5.5}
+if (!is.null(gene_atlas) && nrow(gene_atlas) > 0) {
+  plot_df <- gene_atlas %>%
+    mutate(
+      evidence_class = case_when(
+        functional_ligandable ~ "Functional + Ligandable",
+        functional ~ "Functional only",
+        TRUE ~ "Not significant"
+      ),
+      label = site_id
+    )
+
+  p <- ggplot(plot_df, aes(x = abe_mean_lfc, y = cbe_mean_lfc, colour = evidence_class)) +
+    geom_hline(yintercept = -0.6, linetype = "dashed", colour = "#bbb", linewidth = 0.3) +
+    geom_vline(xintercept = -0.6, linetype = "dashed", colour = "#bbb", linewidth = 0.3) +
+    geom_point(size = 3.5, alpha = 0.85) +
+    scale_colour_manual(
+      values = c(
+        "Functional + Ligandable" = "#D55E00",
+        "Functional only" = "#0072B2",
+        "Not significant" = "#BDBDBD"
+      ),
+      name = "Evidence"
+    ) +
+    labs(
+      x = "ABE mean log2 fold-change",
+      y = "CBE mean log2 fold-change",
+      title = paste0(params$gene, ": base-editing dropout by editor"),
+      subtitle = "Dashed lines at LFC = -0.6 (functional threshold)"
+    ) +
+    cpt_theme() +
+    theme(
+      legend.position = "top",
+      legend.justification = "left",
+      plot.title = element_text(size = 13, face = "bold"),
+      plot.subtitle = element_text(size = 10, colour = "#666666")
+    )
+
+  # Label priority sites
+  func_lig <- plot_df %>% filter(evidence_class == "Functional + Ligandable")
+  if (nrow(func_lig) > 0 && nrow(func_lig) <= 12) {
+    p <- p + ggrepel::geom_text_repel(
+      data = func_lig, aes(label = label),
+      size = 3.2, max.overlaps = 10, colour = "#D55E00",
+      fontface = "bold", nudge_y = 0.1
+    )
+  }
+
+  print(p)
+}
+```
+
+## All Cysteine Sites
+
+```{r sites_table, results='asis'}
+if (!is.null(cys_result) && cys_result$total_sites > 0) {
+  site_df <- do.call(rbind, lapply(cys_result$sites, function(s) {
+    data.frame(
+      Site = s$site_id,
+      Pos = s$cysteine_position,
+      Functional = ifelse(isTRUE(s$functional), "\u2713", ""),
+      Ligandable = ifelse(isTRUE(s$ligandable), "\u2713", ""),
+      Priority = ifelse(isTRUE(s$functional_ligandable), "\u2713", ""),
+      Editor = s$editor_support %||% "",
+      Context = s$study_context %||% "",
+      `Lig. Score` = if (is.null(s$ligandability_score)) "" else sprintf("%.0f", s$ligandability_score),
+      Conservation = if (is.null(s$conservation_score)) "" else sprintf("%.0f%%", s$conservation_score * 100),
+      ClinVar = ifelse(isTRUE(s$clinvar_pathogenic), "Pathogenic", ""),
+      stringsAsFactors = FALSE,
+      check.names = FALSE
+    )
+  }))
+  knitr::kable(site_df, format = "html", escape = FALSE, row.names = FALSE)
+}
+```
+
+## External Resources
+
+```{r links, results='asis'}
+uniprot_id <- if (!is.null(cys_result)) cys_result$uniprot_accession else NULL
+
+cat('<div class="cpt-links">\n')
+cat('<table style="border-collapse:collapse;width:100%;"><tr>\n')
+
+# Structure links column
+cat('<td style="vertical-align:top;padding:8px;width:50%;">\n')
+cat('<p style="margin:0 0 6px 0;"><strong>Structure &amp; Protein</strong></p><ul style="margin:0;padding-left:18px;">\n')
+if (!is.null(uniprot_id) && !is.na(uniprot_id) && nzchar(uniprot_id)) {
+  cat(sprintf('<li><a href="https://alphafold.ebi.ac.uk/entry/%s" target="_blank">AlphaFold Structure (%s)</a></li>\n', uniprot_id, uniprot_id))
+  cat(sprintf('<li><a href="https://www.uniprot.org/uniprot/%s" target="_blank">UniProt Entry (%s)</a></li>\n', uniprot_id, uniprot_id))
+} else {
+  cat(sprintf('<li><a href="https://www.uniprot.org/uniprotkb?query=%s" target="_blank">UniProt Search (%s)</a></li>\n', params$gene, params$gene))
+}
+cat(sprintf('<li><a href="https://www.rcsb.org/search?q=%s" target="_blank">PDB Search (%s)</a></li>\n', params$gene, params$gene))
+cat('</ul></td>\n')
+
+# Data portal links column
+cat('<td style="vertical-align:top;padding:8px;width:50%;">\n')
+cat('<p style="margin:0 0 6px 0;"><strong>Data Portals</strong></p><ul style="margin:0;padding-left:18px;">\n')
+cat(sprintf('<li><a href="https://depmap.org/portal/gene/%s?tab=overview" target="_blank">DepMap Portal (%s)</a></li>\n', params$gene, params$gene))
+cat(sprintf('<li><a href="https://www.genecards.org/cgi-bin/carddisp.pl?gene=%s" target="_blank">GeneCards (%s)</a></li>\n', params$gene, params$gene))
+cat(sprintf('<li><a href="https://www.oncokb.org/gene/%s" target="_blank">OncoKB (%s)</a></li>\n', params$gene, params$gene))
+cat('</ul></td>\n')
+
+cat('</tr></table></div>\n')
+```
+
+## Methods
+
+Base-editing functional screens (Li et al., Nat Chem Biol 2023) use adenine base editors (ABE) and cytidine base editors (CBE) to introduce mutations at cysteine codons. Sites where editing causes fitness dropout are classified as **functional** using these thresholds: mean LFC ≤ -0.6, empirical p < 0.05, within-gene FDR < 0.1.
+
+**Ligandability** is assessed from competitive activity-based protein profiling (ABPP), where engagement scores quantify cysteine accessibility to covalent probes. **Conservation** is derived from ortholog analysis across species. **ClinVar** annotations identify clinically relevant variants at each cysteine position.
+
+```{r footer, results='asis'}
+cat(sprintf('<div class="cpt-footer"><table><tr><td><img src="%s" alt="" style="width:28px;height:28px;border-radius:6px;opacity:0.8;"></td><td><p><strong>CanProTarget</strong> &middot; Cancer chemoproteomics-based target prioritization pipeline</p><p>Ong JP, Martins D, Bertoldo JB. CanProTarget. Zenodo. DOI pending release.</p><p>CanProTarget v1.0.0 &middot; <a href="https://github.com/Bertoldo-Lab/CanProTarget">github.com/Bertoldo-Lab/CanProTarget</a></p><p><strong>Data provenance:</strong> %s</p><p style="font-size:0.85em;color:#666;">Manifest: data/data_versions.yaml</p></td></tr></table></div>',
+  logo_b64, provenance))
+```

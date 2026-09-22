@@ -1,0 +1,5 @@
+"panel","scope","gene_level_combined_associations","exact_site_functional_gene_associations","gene_level_false_upgrades","false_upgrade_fraction","exact_site_retention_fraction","gene_level_precision_if_exact_site_is_reference"
+"Adult","All engaged molecules",151,52,99,0.655629139072848,0.344370860927152,0.344370860927152
+"Adult","Molecules with <=20 targets",63,17,46,0.73015873015873,0.26984126984127,0.26984126984127
+"Paediatric","All engaged molecules",150,58,92,0.613333333333333,0.386666666666667,0.386666666666667
+"Paediatric","Molecules with <=20 targets",61,23,38,0.622950819672131,0.377049180327869,0.377049180327869

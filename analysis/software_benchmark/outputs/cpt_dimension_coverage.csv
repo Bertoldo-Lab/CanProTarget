@@ -1,0 +1,8 @@
+"dimension","n_available","n_total","fraction_available"
+"dependency_strength",14877,14877,1
+"cancer_selectivity",14877,14877,1
+"cysteine_ligandability",1168,14877,0.0785104523761511
+"conservation",1115,14877,0.0749479061638771
+"clinical_evidence",1168,14877,0.0785104523761511
+"adme_druggability",3391,14877,0.227935739732473
+"CPT_default",14877,14877,1

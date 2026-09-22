@@ -1,0 +1,1155 @@
+
+
+
+
+
+
+<head>
+
+
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>COVPDB</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/staticfiles/covpdb/img/favicon.png" rel="icon">
+  <link href="/staticfiles/covpdb/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/staticfiles/covpdb/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="/staticfiles/covpdb/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/staticfiles/covpdb/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/staticfiles/covpdb/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/staticfiles/covpdb/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/staticfiles/covpdb/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/staticfiles/covpdb/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/staticfiles/covpdb/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/staticfiles/covpdb/css/style.css" rel="stylesheet">
+
+
+  <!-- Vendor JS Files -->
+  <script src="/staticfiles/covpdb/vendor/aos/aos.js"></script>
+  <script src="/staticfiles/covpdb/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/staticfiles/covpdb/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/staticfiles/covpdb/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/staticfiles/covpdb/vendor/php-email-form/validate.js"></script>
+  <script src="/staticfiles/covpdb/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="/staticfiles/covpdb/vendor/jquery/jquery.min.js"></script> <!-- this is added to solve the problem of show and hide synonyms-->
+
+
+
+  <!-- =======================================================
+  * Template Name: Anyar - v4.2.0
+  * Template URL: https://bootstrapmade.com/anyar-free-multipurpose-one-page-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+
+ <!-- ======= Top Bar ======= -->
+  <!--<div id="topbar" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">info@example.com</a>
+        <i class="bi bi-phone-fill phone-icon"></i> +1 5589 55488 55
+      </div>
+      <div class="cta d-none d-md-block">
+        <a href="#about" class="scrollto">Get Started</a>
+      </div>
+    </div>
+  </div>-->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="/covpdb">Covpdb</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href=index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+         <li><a class="nav-link scrollto active" href="/covpdb">Home</a></li>
+
+         <li class="dropdown"><a href="#"><span>Browse</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/covpdb/ligands_list/initial=Allsortedby=ligand_name">Ligands</a></li>
+              <li><a href="/covpdb/proteins_list/initial=Allsortedby=protein_name">Proteins</a></li>
+              <li><a href="/covpdb/complexes_list/initial=Allsortedby=protein_id">Complexes</a></li>
+              <li><a href="/covpdb/warheads_list/initial=Allsortedby=warhead_name">Warheads</a></li>
+              <li><a href="/covpdb/mechanisms_list/initial=Allsortedby=mechanism_name">Cov. Mechanisms</a></li>
+              <li><a href="/covpdb/residues_list/initial=Allsortedby=residue_name">Targetable Residues</a></li>
+              <!--<li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>-->
+
+            </ul>
+          </li>
+
+
+
+
+         <li class="dropdown"><a href="#"><span>Search</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="/covpdb/search/search_type=by_pdb_id"><span>Name/ID</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+
+                  <li><a href="/covpdb/search/search_type=by_prot_name">Protein Name</a></li>
+                  <li><a href="/covpdb/search/search_type=by_pdb_id">PDB ID</a></li>
+                  <li><a href="/covpdb/search/search_type=by_uniprot_id">Uniprot ID/ACC</a></li>
+                  <li><a href="/covpdb/search/search_type=by_ligand_name">Ligand Name</a></li>
+                  <li><a href="/covpdb/search/search_type=by_het_code">HET Code</a></li>
+                  <li><a href="/covpdb/search/search_type=by_ligand_id">Ligand ID</a></li>
+                  <li><a href="/covpdb/search/search_type=by_protein_sequence">Sequence</a></li>
+
+                </ul>
+              </li>
+			  <!--<li><a href="">Warhead</a></li>-->
+              <!--<li><a href="#">Covalent Mechanism</a></li>-->
+              <!--<li><a href="#">Targetable Residue</a></li>-->
+              <!--<li><a href="/covpdb/search/search_type=by_uniprot_id">Uniprot ID</a></li>
+              <li><a href="/covpdb/search/search_type=by_het_code">HET Code</a></li>-->
+              <li><a href="/covpdb/structure_search/">Similarity/Structure</a></li>
+			  <!--<li><a href="/covpdb/structure_search/">SMILES/Sequence</a></li>
+              <li><a href="/covpdb/protein_squence_search/">Sequence</a></li>-->
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto " href="/covpdb/statistics">Statistics</a></li>
+          <li><a class="nav-link scrollto" href="/covpdb/download">Download</a></li>
+           <li><a class="nav-link scrollto" href="/covpdb/help">Help</a></li>
+
+          <li><a class="nav-link scrollto" href="/covpdb/contact">Contact</a></li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+</head>
+
+<body>
+
+ 
+
+
+<script>
+
+function doSorting(sortObj) {
+
+	sortTyp = sortObj.value;
+	//const queryString = window.location.search;
+	//const urlParams = new URLSearchParams(queryString);
+	//const syn_name = urlParams.get('syn_name');
+	//var mytext = getUrlParam.get('syn_name','Empty');
+	var url = window.location.href ;
+	if (sortTyp == 'uniprot_id') 
+	{	url = url.replace('sortedby=protein_name', 'sortedby=uniprot_id');
+		url = url.replace('sortedby=organism', 'sortedby=uniprot_id');
+		url = url.replace('sortedby=complexes', 'sortedby=uniprot_id');
+	}
+	else if (sortTyp == 'protein_name') 
+	{	url = url.replace('sortedby=uniprot_id', 'sortedby=protein_name');
+		url = url.replace('sortedby=organism', 'sortedby=protein_name');
+		url = url.replace('sortedby=complexes', 'sortedby=protein_name');
+	}
+	else if (sortTyp == 'organism') 
+	{	url = url.replace('sortedby=protein_name', 'sortedby=organism');
+		url = url.replace('sortedby=uniprot_id', 'sortedby=organism');
+		url = url.replace('sortedby=complexes', 'sortedby=organism');
+	}
+	else if (sortTyp == 'complexes') 
+	{	url = url.replace('sortedby=protein_name', 'sortedby=complexes');
+		url = url.replace('sortedby=uniprot_id', 'sortedby=complexes');
+		url = url.replace('sortedby=organism', 'sortedby=complexes');
+	}
+
+	url = url.replace(/initial=.sortedby=/, 'initial=Allsortedby=');
+	url = url.replace(/\?page=\d+/, '');
+
+
+	//alert(url)
+
+	location.href = url
+
+}
+
+</script>
+
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 25px;	
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 10px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+}
+
+.pagination a.active {
+  background-color: #007bff;;
+  color: white;
+  border: 1px solid #007bff;;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.pagination a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+</style>
+
+<body>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+<div class="" align="center">
+	<span class="">
+
+
+ <div class="pagination" >
+            
+		
+			<a href="?page=1">&Iota;&lt;</a>
+			<a href="?page=2">&lt;</a>
+			<a href="?page=2">2</a>
+		
+
+			
+			
+			<a class="active" href="?page=3">3</a>
+
+
+		
+			<a href="?page=4">4</a>
+			<a href="?page=4">&gt;</a>
+
+		
+           
+		
+
+			<a href="?page=6">6</a>
+		 
+
+</div>
+
+
+
+
+	</span>
+</div>
+
+
+<br>
+<br>
+<!--
+<br>
+<form method="GET" action="">
+
+      <div class="">
+	<div align="center">
+           <form class="">
+  <div class="">
+    <label for="">Sort</label>
+  </div>
+              <div align="center">
+				  <select value='prot_name' id= "sortSelect" name="sortSelect" onchange="doSorting(this)" class="" style="height:4%;">
+
+					
+  				  </select>
+         	 </form>
+        	</div>
+		</div>
+		</div>
+
+</form>
+
+-->
+
+<div style="overflow-x:auto;" align="center">
+
+<table style ="width:80%" class="result_table">
+
+<thead>
+			<td colspan="5" style = "text-align:left"><h5>291 Protein(s) </h5> <a href="/covpdb/download_proteins_results/n=33"> Download </a> </td>
+</thead>
+
+
+<thead style="background-color:#002a77; color:white;">
+
+		<td>  </td> <td> <h5> Protein Name </h5> </td> <td> <h5> Organism </h5> </td> <td> <h5> Uniprot ID/ACC </h5> </td> </td> <td style="width=5%"> <h5> #Protein-Ligand Complex(es)</h5> </td>
+
+</thead>
+
+<tbody>
+		
+			<tr class="color1">
+
+
+
+			<td> 101 </td> <td> <a href="/covpdb/protein_card/protein_id=45"> Genome polyprotein </a> </td> <td> Human enterovirus 71 (EV71) (EV-71) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/A9XG43" target="_blank"> A9XG43 (A9XG43_HE71) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=45" >12</a> </td>
+
+			</tr>
+		
+			<tr class="color2">
+
+
+
+			<td> 102 </td> <td> <a href="/covpdb/protein_card/protein_id=63"> Genome polyprotein </a> </td> <td> Coxsackievirus A16 </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/C8CIL7" target="_blank"> C8CIL7 (C8CIL7_9ENTO) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=63" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color1">
+
+
+
+			<td> 103 </td> <td> <a href="/covpdb/protein_card/protein_id=78"> Genome polyprotein </a> </td> <td> Human enterovirus 71 (EV71) (EV-71) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/E0WWC7" target="_blank"> E0WWC7 (E0WWC7_HE71) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=78" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color2">
+
+
+
+			<td> 104 </td> <td> <a href="/covpdb/protein_card/protein_id=81"> Genome polyprotein </a> </td> <td> Human enterovirus 71 (EV71) (EV-71) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/E7E815" target="_blank"> E7E815 (E7E815_HE71) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=81" >3</a> </td>
+
+			</tr>
+		
+			<tr class="color1">
+
+
+
+			<td> 105 </td> <td> <a href="/covpdb/protein_card/protein_id=124"> Genome polyprotein </a> </td> <td> Echovirus 1 (strain Human/Egypt/Farouk/1951) (E-1) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/O91734" target="_blank"> O91734 (POLG_EC01F) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=124" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color2">
+
+
+
+			<td> 106 </td> <td> <a href="/covpdb/protein_card/protein_id=125"> Genome polyprotein </a> </td> <td> Hepatitis C virus genotype 1b (strain HC-J4) (HCV) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/O92972" target="_blank"> O92972 (POLG_HCVJ4) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=125" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color1">
+
+
+
+			<td> 107 </td> <td> <a href="/covpdb/protein_card/protein_id=139"> Genome polyprotein </a> </td> <td> Foot-and-mouth disease virus (isolate Bovine/Germany/O1Kaufbeuren/1966 serotype O) (FMDV) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/P03305" target="_blank"> P03305 (POLG_FMDVO) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=139" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color2">
+
+
+
+			<td> 108 </td> <td> <a href="/covpdb/protein_card/protein_id=140"> Genome polyprotein </a> </td> <td> Coxsackievirus B3 (strain Nancy) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/P03313" target="_blank"> P03313 (POLG_CXB3N) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=140" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color1">
+
+
+
+			<td> 109 </td> <td> <a href="/covpdb/protein_card/protein_id=146"> Genome polyprotein </a> </td> <td> Human rhinovirus 2 (HRV-2) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/P04936" target="_blank"> P04936 (POLG_HRV2) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=146" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color2">
+
+
+
+			<td> 110 </td> <td> <a href="/covpdb/protein_card/protein_id=198"> Genome polyprotein </a> </td> <td> Hepatitis C virus genotype 1b (isolate BK) (HCV) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/P26663" target="_blank"> P26663 (POLG_HCVBK) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=198" >4</a> </td>
+
+			</tr>
+		
+			<tr class="color1">
+
+
+
+			<td> 111 </td> <td> <a href="/covpdb/protein_card/protein_id=243"> Genome polyprotein </a> </td> <td> Southampton virus (strain GI/Human/United Kingdom/Southampton/1991) (SHV) (Hu/NV/SHV/1991/UK) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/Q04544" target="_blank"> Q04544 (POLG_SOUV3) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=243" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color2">
+
+
+
+			<td> 112 </td> <td> <a href="/covpdb/protein_card/protein_id=285"> Genome polyprotein </a> </td> <td> Enterovirus B </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/Q5DSM6" target="_blank"> Q5DSM6 (Q5DSM6_9ENTO) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=285" >2</a> </td>
+
+			</tr>
+		
+			<tr class="color1">
+
+
+
+			<td> 113 </td> <td> <a href="/covpdb/protein_card/protein_id=291"> Genome polyprotein </a> </td> <td> Coxsackievirus B3 </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/Q5UEA2" target="_blank"> Q5UEA2 (Q5UEA2_9ENTO) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=291" >9</a> </td>
+
+			</tr>
+		
+			<tr class="color2">
+
+
+
+			<td> 114 </td> <td> <a href="/covpdb/protein_card/protein_id=458"> Genome polyprotein </a> </td> <td> Poliovirus type 1 (strain Mahoney) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/P03300" target="_blank"> P03300 (POLG_POL1M) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=458" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color1">
+
+
+
+			<td> 115 </td> <td> <a href="/covpdb/protein_card/protein_id=485"> Genome polyprotein </a> </td> <td> Human hepatitis A virus genotype IB (isolate HM175) (HHAV) (Human hepatitis A virus (isolate Human/Australia/HM175/1976)) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/P08617" target="_blank"> P08617 (POLG_HAVHM) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=485" >5</a> </td>
+
+			</tr>
+		
+			<tr class="color2">
+
+
+
+			<td> 116 </td> <td> <a href="/covpdb/protein_card/protein_id=689"> Genome polyprotein </a> </td> <td> Norwalk virus (strain GI/Human/United States/Norwalk/1968) (Hu/NV/NV/1968/US) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/Q83883" target="_blank"> Q83883 (POLG_NVN68) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=689" >19</a> </td>
+
+			</tr>
+		
+			<tr class="color1">
+
+
+
+			<td> 117 </td> <td> <a href="/covpdb/protein_card/protein_id=238"> Gingipain R2 </a> </td> <td> Porphyromonas gingivalis (strain ATCC BAA-308 / W83) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/P95493" target="_blank"> P95493 (CPG2_PORGI) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=238" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color2">
+
+
+
+			<td> 118 </td> <td> <a href="/covpdb/protein_card/protein_id=633"> Glutamine-dependent NAD(+) synthetase </a> </td> <td> Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/P9WJJ3" target="_blank"> P9WJJ3 (NADE_MYCTU) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=633" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color1">
+
+
+
+			<td> 119 </td> <td> <a href="/covpdb/protein_card/protein_id=532"> Glutamine--fructose-6-phosphate aminotransferase [isomerizing] </a> </td> <td> Escherichia coli (strain K12) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/P17169" target="_blank"> P17169 (GLMS_ECOLI) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=532" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color2">
+
+
+
+			<td> 120 </td> <td> <a href="/covpdb/protein_card/protein_id=286"> Glutamyl-tRNA reductase </a> </td> <td> Bacteroides fragilis (strain ATCC 25285 / DSM 2151 / JCM 11019 / NCTC 9343) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/Q5LAQ6" target="_blank"> Q5LAQ6 (Q5LAQ6_BACFN) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=286" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color1">
+
+
+
+			<td> 121 </td> <td> <a href="/covpdb/protein_card/protein_id=426"> Glutathione reductase, mitochondrial </a> </td> <td> Homo sapiens (Human) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/P00390" target="_blank"> P00390 (GSHR_HUMAN) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=426" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color2">
+
+
+
+			<td> 122 </td> <td> <a href="/covpdb/protein_card/protein_id=624"> Glutathione S-transferase omega-1 </a> </td> <td> Homo sapiens (Human) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/P78417" target="_blank"> P78417 (GSTO1_HUMAN) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=624" >7</a> </td>
+
+			</tr>
+		
+			<tr class="color1">
+
+
+
+			<td> 123 </td> <td> <a href="/covpdb/protein_card/protein_id=425"> Glyceraldehyde-3-phosphate dehydrogenase </a> </td> <td> Geobacillus stearothermophilus (Bacillus stearothermophilus) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/P00362" target="_blank"> P00362 (G3P_GEOSE) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=425" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color2">
+
+
+
+			<td> 124 </td> <td> <a href="/covpdb/protein_card/protein_id=498"> Glyceraldehyde-3-phosphate dehydrogenase A </a> </td> <td> Escherichia coli (strain K12) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/P0A9B2" target="_blank"> P0A9B2 (G3P1_ECOLI) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=498" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color1">
+
+
+
+			<td> 125 </td> <td> <a href="/covpdb/protein_card/protein_id=190"> Glyceraldehyde-3-phosphate dehydrogenase, glycosomal </a> </td> <td> Trypanosoma cruzi </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/P22513" target="_blank"> P22513 (G3PG_TRYCR) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=190" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color2">
+
+
+
+			<td> 126 </td> <td> <a href="/covpdb/protein_card/protein_id=593"> Glycogen synthase kinase-3 beta </a> </td> <td> Homo sapiens (Human) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/P49841" target="_blank"> P49841 (GSK3B_HUMAN) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=593" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color1">
+
+
+
+			<td> 127 </td> <td> <a href="/covpdb/protein_card/protein_id=69"> Glyoxalase/bleomycin resistance protein/dioxygenase </a> </td> <td> Thermomonospora curvata (strain ATCC 19995 / DSM 43183 / JCM 3096 / KCTC 9072 / NBRC 15933 / NCIMB 10081 / Henssen B9) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/D1A230" target="_blank"> D1A230 (D1A230_THECD) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=69" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color2">
+
+
+
+			<td> 128 </td> <td> <a href="/covpdb/protein_card/protein_id=716"> Golgi-associated PDZ and coiled-coil motif-containing protein </a> </td> <td> Homo sapiens (Human) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/Q9HD26" target="_blank"> Q9HD26 (GOPC_HUMAN) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=716" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color1">
+
+
+
+			<td> 129 </td> <td> <a href="/covpdb/protein_card/protein_id=449"> GTPase HRas </a> </td> <td> Homo sapiens (Human) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/P01112" target="_blank"> P01112 (RASH_HUMAN) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=449" >9</a> </td>
+
+			</tr>
+		
+			<tr class="color2">
+
+
+
+			<td> 130 </td> <td> <a href="/covpdb/protein_card/protein_id=450"> GTPase KRas </a> </td> <td> Homo sapiens (Human) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/P01116" target="_blank"> P01116 (RASK_HUMAN) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=450" >43</a> </td>
+
+			</tr>
+		
+			<tr class="color1">
+
+
+
+			<td> 131 </td> <td> <a href="/covpdb/protein_card/protein_id=383"> GTPase KRas isoform X2 </a> </td> <td> Erinaceus europaeus (Western European hedgehog) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/A0A1S2ZE25" target="_blank"> A0A1S2ZE25 (A0A1S2ZE25_ERIEU) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=383" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color2">
+
+
+
+			<td> 132 </td> <td> <a href="/covpdb/protein_card/protein_id=618"> Hemoglobin subunit beta </a> </td> <td> Homo sapiens (Human) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/P68871" target="_blank"> P68871 (HBB_HUMAN) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=618" >2</a> </td>
+
+			</tr>
+		
+			<tr class="color1">
+
+
+
+			<td> 133 </td> <td> <a href="/covpdb/protein_card/protein_id=269"> Histidine--tRNA ligase </a> </td> <td> Trypanosoma cruzi (strain CL Brener) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/Q4DA54" target="_blank"> Q4DA54 (Q4DA54_TRYCC) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=269" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color2">
+
+
+
+			<td> 134 </td> <td> <a href="/covpdb/protein_card/protein_id=305"> Histone deacetylase-like amidohydrolase </a> </td> <td> Alcaligenes sp. (strain DSM 11172) (Bordetella sp. (strain FB188)) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/Q70I53" target="_blank"> Q70I53 (HDAH_ALCSD) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=305" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color1">
+
+
+
+			<td> 135 </td> <td> <a href="/covpdb/protein_card/protein_id=220"> Histone lysine acetyltransferase CREBBP </a> </td> <td> Mus musculus (Mouse) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/P45481" target="_blank"> P45481 (CBP_MOUSE) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=220" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color2">
+
+
+
+			<td> 136 </td> <td> <a href="/covpdb/protein_card/protein_id=715"> Histone-lysine N-methyltransferase SMYD3 </a> </td> <td> Homo sapiens (Human) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/Q9H7B4" target="_blank"> Q9H7B4 (SMYD3_HUMAN) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=715" >2</a> </td>
+
+			</tr>
+		
+			<tr class="color1">
+
+
+
+			<td> 137 </td> <td> <a href="/covpdb/protein_card/protein_id=713"> Hydroxymethylglutaryl-CoA synthase </a> </td> <td> Enterococcus faecalis (Streptococcus faecalis) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/Q9FD71" target="_blank"> Q9FD71 (HMGCS_ENTFL) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=713" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color2">
+
+
+
+			<td> 138 </td> <td> <a href="/covpdb/protein_card/protein_id=210"> Immunoglobulin G-binding protein A </a> </td> <td> Staphylococcus aureus </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/P38507" target="_blank"> P38507 (SPA_STAAU) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=210" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color1">
+
+
+
+			<td> 139 </td> <td> <a href="/covpdb/protein_card/protein_id=307"> Inosine-5&#x27;-monophosphate dehydrogenase </a> </td> <td> Ashbya gossypii (strain ATCC 10895 / CBS 109.51 / FGSC 9923 / NRRL Y-1056) (Yeast) (Eremothecium gossypii) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/Q756Z6" target="_blank"> Q756Z6 (Q756Z6_ASHGO) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=307" >2</a> </td>
+
+			</tr>
+		
+			<tr class="color2">
+
+
+
+			<td> 140 </td> <td> <a href="/covpdb/protein_card/protein_id=384"> Inosine-5&#x27;-monophosphate dehydrogenase </a> </td> <td> Bacillus anthracis </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/A0A6L8P2U9" target="_blank"> A0A6L8P2U9 (A0A6L8P2U9_BACAN) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=384" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color1">
+
+
+
+			<td> 141 </td> <td> <a href="/covpdb/protein_card/protein_id=537"> Inosine-5&#x27;-monophosphate dehydrogenase 1 </a> </td> <td> Homo sapiens (Human) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/P20839" target="_blank"> P20839 (IMDH1_HUMAN) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=537" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color2">
+
+
+
+			<td> 142 </td> <td> <a href="/covpdb/protein_card/protein_id=560"> Interleukin-12 subunit beta </a> </td> <td> Homo sapiens (Human) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/P29460" target="_blank"> P29460 (IL12B_HUMAN) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=560" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color1">
+
+
+
+			<td> 143 </td> <td> <a href="/covpdb/protein_card/protein_id=609"> Interleukin-2 </a> </td> <td> Homo sapiens (Human) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/P60568" target="_blank"> P60568 (IL2_HUMAN) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=609" >3</a> </td>
+
+			</tr>
+		
+			<tr class="color2">
+
+
+
+			<td> 144 </td> <td> <a href="/covpdb/protein_card/protein_id=636"> Isocitrate lyase </a> </td> <td> Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/P9WKK7" target="_blank"> P9WKK7 (ACEA_MYCTU) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=636" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color1">
+
+
+
+			<td> 145 </td> <td> <a href="/covpdb/protein_card/protein_id=272"> Isonitrile hydratase InhA </a> </td> <td> Pseudomonas fluorescens (strain ATCC BAA-477 / NRRL B-23932 / Pf-5) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/Q4K977" target="_blank"> Q4K977 (Q4K977_PSEF5) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=272" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color2">
+
+
+
+			<td> 146 </td> <td> <a href="/covpdb/protein_card/protein_id=667"> Isopentenyl-diphosphate Delta-isomerase </a> </td> <td> Escherichia coli (strain K12) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/Q46822" target="_blank"> Q46822 (IDI_ECOLI) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=667" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color1">
+
+
+
+			<td> 147 </td> <td> <a href="/covpdb/protein_card/protein_id=656"> Kelch-like ECH-associated protein 1 </a> </td> <td> Homo sapiens (Human) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/Q14145" target="_blank"> Q14145 (KEAP1_HUMAN) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=656" >3</a> </td>
+
+			</tr>
+		
+			<tr class="color2">
+
+
+
+			<td> 148 </td> <td> <a href="/covpdb/protein_card/protein_id=408"> L,D-transpeptidase 1 </a> </td> <td> Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/O53638" target="_blank"> O53638 (LDT1_MYCTU) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=408" >1</a> </td>
+
+			</tr>
+		
+			<tr class="color1">
+
+
+
+			<td> 149 </td> <td> <a href="/covpdb/protein_card/protein_id=116"> L,D-transpeptidase 2 </a> </td> <td> Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/O53223" target="_blank"> O53223 (LDT2_MYCTO) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=116" >2</a> </td>
+
+			</tr>
+		
+			<tr class="color2">
+
+
+
+			<td> 150 </td> <td> <a href="/covpdb/protein_card/protein_id=392"> L,D-transpeptidase 2 </a> </td> <td> Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv) </td> 
+			  
+				<td> <a href="https://www.uniprot.org/uniprot/I6Y9J2" target="_blank"> I6Y9J2 (LDT2_MYCTU) </a> </td>
+			
+
+  			<td> <a href="/covpdb/complexes_list_by_id/search_type=by_protein_idsearch_id=392" >15</a> </td>
+
+			</tr>
+		
+
+</tbody>
+
+</table>
+
+
+</div>
+
+
+
+
+<br>
+<br>
+<br>
+
+
+<div class="" align="center">
+	<span class="">
+
+
+ <div class="pagination" align="center">
+            
+		
+			<a href="?page=1">&Iota;&lt;</a>
+			<a href="?page=2">&lt;</a>
+			<a href="?page=2">2</a>
+		
+
+			
+			
+			<a class="active" href="?page=3">3</a>
+
+
+		
+			<a href="?page=4">4</a>
+			<a href="?page=4">&gt;</a>
+
+		
+           
+		
+
+			<a href="?page=6">6</a>
+		 
+
+</div>
+
+
+
+	</span>
+</div>
+
+
+
+
+</body>
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+</body>
+
+<footer>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+	<div class="footer-top">
+      <div class="container">
+        <div class="row" style="width:130%">
+
+          <div class="col-lg-3 col-md-3 footer-contact">
+            <h4>Group</h4>
+            <p>
+              <strong>Pharmaceutical Bioinformatics</strong> <br>
+              <strong>Institute of Pharmaceutical Sciences</strong> <br>
+              <strong>University of Freiburg</strong> <br><br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-3 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              Hermann-Herder-Strasse 9<br>
+              79104 Freiburg i. Br.<br>
+              Germany <br>
+              <strong>Phone:</strong> +49 761 203 4871<br>
+              <strong>Email:</strong> stefan.guenther[at]pharmazie.uni-freiburg.de<br>
+            </p>
+
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="/covpdb/#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/covpdb/#browse">Browse</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/covpdb/#search">Search</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/covpdb/download">Download</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/covpdb/contact">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>External Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="http://www.pharmbioinf.uni-freiburg.de/">Group Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://github.com/PhaBiFreiburg">Group Github</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.cup.uni-freiburg.de/de">Uni Freiburg</a></li>
+            </ul>
+          </div>
+
+
+
+		<!--
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>About Anyar</h3>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+		-->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>PhaBiFr</span></strong>. All Rights Reserved
+      </div>
+      
+    </div>
+
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+  <!-- Template Main JS File -->
+  <script src="/staticfiles/covpdb/js/main.js"></script>
+
+
+  </footer><!-- End Footer -->
+
+
