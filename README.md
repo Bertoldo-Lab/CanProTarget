@@ -314,12 +314,10 @@ CSVs and the rebuild inputs under `data/raw/` are excluded.
 
 ## Citation
 
-**Software** — Ong JP, Martins D, Bertoldo JB. *CanProTarget*. Zenodo.
-The version DOI for tag `v1.0.0` is the archive of that tag, and it is the
-DOI to cite in the manuscript. It is pending until that GitHub Release is
-published. The concept DOI, which always resolves to the newest version,
-will be added here, in [CITATION.cff](CITATION.cff), and on the About page.
-Steps still open are in [docs/RELEASE_CHECKLIST.md](docs/RELEASE_CHECKLIST.md).
+**Software** — Ong JP, Martins D, Bertoldo JB. *CanProTarget* (Version v1.0.0).
+Zenodo. https://doi.org/10.5281/zenodo.22908610
+
+For the latest version, use the concept DOI: https://doi.org/10.5281/zenodo.22908609
 
 **Article** — Ong JP, Bell J, Martins D, Zhu J, Rodrigues T, Bertoldo JB.
 *CanProTarget: a residue-resolved prioritization platform for covalent cancer
