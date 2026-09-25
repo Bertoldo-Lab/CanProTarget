@@ -3,10 +3,6 @@
 # Purpose:  Pure query functions for MCP/API access to CanProTarget.
 #           These are stateless functions that operate on pre-loaded data.
 #           No Shiny dependencies. Called by R/mcp_worker.R.
-#
-# Note:     Core dependency analysis builds on the original cell_cpt
-#           Shiny app (John-Paul Ong). MCP/API wrappers and composite
-#           scoring are platform extensions layered on top of that work.
 # ============================================================
 # Sections:
 #   Helpers
@@ -37,9 +33,55 @@
 
 # ---- Helpers ---------------------------------------------------
 
-CPT_PLATFORM_VERSION <- "1.0.0"
-CPT_CITATION <- "Ong JP, Martins D, Bertoldo JB. CanProTarget. Zenodo. DOI pending release."
 CPT_REPO <- "https://github.com/Bertoldo-Lab/CanProTarget"
+
+# Single source of truth for version + citation string: CITATION.cff at the
+# project root. Bumping the release version and DOI happens in ONE file.
+cpt_read_citation_cff <- function() {
+  path <- Sys.getenv("CPT_CITATION_CFF", "CITATION.cff")
+  if (!file.exists(path)) path <- file.path("..", "CITATION.cff")
+  if (!file.exists(path) || !requireNamespace("yaml", quietly = TRUE)) {
+    return(list(version = NA_character_, citation = "See CITATION.cff"))
+  }
+  y <- yaml::read_yaml(path)
+  version <- if (is.null(y$version)) NA_character_ else as.character(y$version)
+  authors <- vapply(y$authors, function(a) {
+    fam <- a[["family-names"]]
+    giv <- a[["given-names"]]
+    initials <- paste(substr(strsplit(giv, "[- ]+")[[1]], 1, 1), collapse = "")
+    paste(fam, initials)
+  }, character(1))
+  authors_str <- paste(authors, collapse = ", ")
+  # DOI: prefer the version-specific archive DOI in y$identifiers[] so every
+  # report cites the exact snapshot it was generated from. Falls back to the
+  # first DOI identifier of any kind, then to a legacy top-level y$doi, then
+  # to a "pending" string when nothing has been minted.
+  pick_doi <- function(y) {
+    if (!is.null(y$identifiers) && length(y$identifiers)) {
+      is_doi <- vapply(y$identifiers,
+                       function(x) identical(tolower(as.character(x$type)), "doi"),
+                       logical(1))
+      doi_ids <- y$identifiers[is_doi]
+      if (length(doi_ids)) {
+        is_version <- vapply(doi_ids, function(x)
+          !is.null(x$description) &&
+            grepl("version|snapshot|archive", x$description, ignore.case = TRUE),
+          logical(1))
+        if (any(is_version)) return(as.character(doi_ids[is_version][[1]]$value))
+        return(as.character(doi_ids[[1]]$value))
+      }
+    }
+    if (!is.null(y$doi) && nzchar(as.character(y$doi))) return(as.character(y$doi))
+    NA_character_
+  }
+  doi_val <- pick_doi(y)
+  doi <- if (!is.na(doi_val)) sprintf("https://doi.org/%s", doi_val) else "DOI pending release."
+  citation <- sprintf("%s. %s. Zenodo. %s", authors_str, y$title, doi)
+  list(version = version, citation = citation)
+}
+
+CPT_PLATFORM_VERSION <- tryCatch(cpt_read_citation_cff()$version, error = function(e) NA_character_)
+CPT_CITATION         <- tryCatch(cpt_read_citation_cff()$citation, error = function(e) "See CITATION.cff")
 
 #' Normalize dataset label to "CRISPR" or "RNAi".
 #' Rejects typos rather than falling through silently to the RNAi matrix.
@@ -85,7 +127,6 @@ cpt_provenance <- function(extra = NULL) {
     version = CPT_PLATFORM_VERSION,
     citation = CPT_CITATION,
     repository = CPT_REPO,
-    original_app = "John-Paul Ong, cell_cpt (original Shiny foundation)",
     data_snapshot = list(
       crispr = "DepMap 23Q4",
       rnai = "DEMETER2 v6",
@@ -668,8 +709,7 @@ api_platform_info <- function() {
     repository = CPT_REPO,
     credits = list(
       authors = "Ong JP, Martins D, Bertoldo JB",
-      lab = "Bertoldo Lab, Children's Cancer Institute / UNSW Sydney",
-      original_app = "John-Paul Ong (cell_cpt), the Shiny foundation this platform builds on"
+      lab = "Bertoldo Lab, Children's Cancer Institute / UNSW Sydney"
     ),
     mcp_version = "1.2.0",
     available_tools = c(

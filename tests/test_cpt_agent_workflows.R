@@ -137,7 +137,7 @@ assert("lists assess_target", "assess_target" %in% info$available_tools)
 assert("lists rank_targets", "rank_targets" %in% info$available_tools)
 assert("lists rank_site_targets", "rank_site_targets" %in% info$available_tools)
 assert("tool count is 14", length(info$available_tools) == 14L)
-assert("credits original cell_cpt author", grepl("John-Paul Ong", info$credits$original_app))
+assert("credits authors present", grepl("Ong JP", info$credits$authors))
 
 # Cysteine ordering + links
 cat("[cysteine quality]\n")

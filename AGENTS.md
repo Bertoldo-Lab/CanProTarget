@@ -11,8 +11,7 @@ When integrating results into a broader workflow:
 - Use structured JSON (including `provenance`, `methods_note`, `external_resources`) to chain into docking, literature, or clinical trial lookup elsewhere
 - Generate reports via `generate_report` for self-contained, citable outputs
 - Follow `external_resources` links (AlphaFold, UniProt, PDB, DepMap, OncoKB) rather than asking CanProTarget to render structures
-- Always cite CanProTarget when using its outputs: "Ong JP, Martins D, Bertoldo JB. CanProTarget. Zenodo. DOI pending release."
-- Credit the original app foundation: John-Paul Ong, cell_cpt (github.com/johnpaul-ong/cell_cpt)
+- When using CanProTarget outputs in a paper or downstream tool, cite it — see [CITATION.cff](CITATION.cff).
 
 ## What this platform does
 
@@ -139,6 +138,7 @@ data/                      - Runtime RDS + data_versions.yaml (DepMap matrices g
 data/raw/                  - Chemoproteomics rebuild inputs (xlsx via Git LFS)
 tests/fixtures/            - Known-target recovery fixtures (YAML)
 docs/DATA_PROVENANCE.md    - Where each dataset came from
+REBUILD.md                 - DepMap setup, rebuild commands, coverage limits
 ```
 
 ## Performance note
@@ -149,12 +149,6 @@ There is no committed cache of subtype statistics, so `top_dependencies`,
 slow first call as a failure. A local cache can be built with
 `docs/scripts/precompute_effectsizes_all_subtypes.R`.
 
-## Branch
-
-Use **`dev`** for current platform work. See README branch strategy.
-
 ## Citation
 
-> Ong JP, Martins D, Bertoldo JB. CanProTarget. Zenodo. DOI pending release.
-
-Also credit: John-Paul Ong, cell_cpt.
+See [CITATION.cff](CITATION.cff).

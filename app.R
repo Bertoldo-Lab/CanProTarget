@@ -214,9 +214,7 @@ ui <- dashboardPage(
                 style = "margin-left: 20px;",
                 tags$dt(style = "font-weight: 600; color: #1a3a5c;", "Software"),
                 tags$dd(style = "margin-bottom: 12px;",
-                        "Ong JP, Martins D, Bertoldo JB. ",
-                        tags$em("CanProTarget"), ". Zenodo. ",
-                        tags$span(style = "color: #7b8a94;", "DOI pending release.")),
+                        CPT_CITATION),
                 tags$dt(style = "font-weight: 600; color: #1a3a5c;", "Article"),
                 tags$dd("Ong JP, Bell J, Martins D, Zhu J, Rodrigues T, Bertoldo JB. ",
                         tags$em("CanProTarget: a residue-resolved prioritization
@@ -318,7 +316,7 @@ server <- function(input, output, session) {
     if (!file.exists(fast_path) && !file.exists(lookup_path)) {
       cpt_notify_error("CPT-1007",
         "Protein binding data not available",
-        detail = "See docs/DATA_PROVENANCE.md for setup instructions")
+        detail = "See REBUILD.md for setup instructions")
       return(NULL)
     }
     tryCatch(

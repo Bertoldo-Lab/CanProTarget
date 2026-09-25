@@ -270,6 +270,6 @@ Base-editing functional screens (Li et al., Nat Chem Biol 2023) use adenine base
 **Ligandability** is assessed from competitive activity-based protein profiling (ABPP), where engagement scores quantify cysteine accessibility to covalent probes. **Conservation** is derived from ortholog analysis across species. **ClinVar** annotations identify clinically relevant variants at each cysteine position.
 
 ```{r footer, results='asis'}
-cat(sprintf('<div class="cpt-footer"><table><tr><td><img src="%s" alt="" style="width:28px;height:28px;border-radius:6px;opacity:0.8;"></td><td><p><strong>CanProTarget</strong> &middot; Cancer chemoproteomics-based target prioritization pipeline</p><p>Ong JP, Martins D, Bertoldo JB. CanProTarget. Zenodo. DOI pending release.</p><p>CanProTarget v1.0.0 &middot; <a href="https://github.com/Bertoldo-Lab/CanProTarget">github.com/Bertoldo-Lab/CanProTarget</a></p><p><strong>Data provenance:</strong> %s</p><p style="font-size:0.85em;color:#666;">Manifest: data/data_versions.yaml</p></td></tr></table></div>',
-  logo_b64, provenance))
+cat(sprintf('<div class="cpt-footer"><table><tr><td><img src="%s" alt="" style="width:28px;height:28px;border-radius:6px;opacity:0.8;"></td><td><p><strong>CanProTarget</strong> &middot; Cancer chemoproteomics-based target prioritization pipeline</p><p>%s</p><p>CanProTarget v%s &middot; <a href="https://github.com/Bertoldo-Lab/CanProTarget">github.com/Bertoldo-Lab/CanProTarget</a></p><p><strong>Data provenance:</strong> %s</p><p style="font-size:0.85em;color:#666;">Manifest: data/data_versions.yaml</p></td></tr></table></div>',
+  logo_b64, CPT_CITATION, CPT_PLATFORM_VERSION, provenance))
 ```

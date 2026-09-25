@@ -121,7 +121,12 @@ probe_name_raw_lookup <- unique(
 names(probe_name_raw_lookup) <- c("raw", "out")
 
 protein_binding_long <- protein_binding_long %>%
-  select(-probe_num, -probe_type, -probe_name_raw)
+  select(-probe_num, -probe_type)
+# NOTE: probe_name_raw (CysDB Compound_Name before the ACRYL/CL rename shift)
+# is intentionally KEPT here. Section 7 joins compound_keys on probe_name_raw
+# so SMILES/Dataset/Cell_Line come from the actual molecule that was tested,
+# not from a CysDB row that happens to share the post-rename name. Dropped
+# from the final output in section 9.
 
 # ============================================================
 # 5b. A merge is only allowed between replicates of one compound
@@ -171,13 +176,21 @@ protein_binding_long <- protein_binding_long %>%
 # ============================================================
 cat("Joining with compound keys...\n")
 
-# Create lookup from compound keys
+# Compound_Keys is keyed on the CysDB raw name. Every row here was pivoted
+# from a CysDB column of the same raw name, so its SMILES/Dataset/Cell_Line
+# live in Compound_Keys under probe_name_raw. Joining on the post-rename
+# probe_name silently pulls metadata from a different CysDB row (the one
+# that shares the post-rename name), which is a different molecule for
+# every probe the rename shifts (e.g. app CL174 = CysDB CL_175, so its
+# SMILES must come from CysDB CL_175, not CysDB CL_174).
 compound_lookup <- compound_keys %>%
   select(Compound_Name, Dataset, Cell_Line, SMILES) %>%
-  rename(probe_name = Compound_Name)
+  rename(probe_name_raw = Compound_Name)
 
 protein_binding_long <- protein_binding_long %>%
-  left_join(compound_lookup, by = "probe_name")
+  left_join(compound_lookup, by = "probe_name_raw",
+            relationship = "many-to-many") %>%
+  select(-probe_name_raw)
 
 # ============================================================
 # 8. Calculate n_targets for each probe (CR >= threshold)
@@ -216,25 +229,9 @@ protein_binding_final <- protein_binding_final %>%
   ) %>%
   arrange(probe_name, gene_name)
 
-# ============================================================
-# 9b. Optional: align SMILES with SwissADME (reduces work in Shiny)
-#     Build data/swissadme_preprocessed.rds first (SwissADME preprocessing).
-# ============================================================
-swiss_rds <- file.path(dirname(OUTPUT_FILE), "swissadme_preprocessed.rds")
-if (file.exists(swiss_rds)) {
-  functions_r <- normalizePath(
-    file.path(dirname(OUTPUT_FILE), "..", "R", "functions.R"),
-    mustWork = FALSE
-  )
-  if (!is.na(functions_r) && file.exists(functions_r)) {
-    source(functions_r, local = FALSE)
-    protein_binding_final <- overlay_canonical_smiles_from_swissadme(
-      protein_binding_final,
-      readRDS(swiss_rds)
-    )
-    cat("Aligned SMILES with SwissADME (swissadme_preprocessed.rds).\n")
-  }
-}
+# 9b: pb SMILES now come from Compound_Keys joined on probe_name_raw
+# (section 7), which is the authoritative CysDB row for the molecule that
+# was actually tested. No SwissADME overlay needed.
 
 # ============================================================
 # 10. Drop CR == 0 (not used in app), add gene_name_key for lookups
