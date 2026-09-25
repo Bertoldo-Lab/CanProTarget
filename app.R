@@ -316,7 +316,7 @@ server <- function(input, output, session) {
     if (!file.exists(fast_path) && !file.exists(lookup_path)) {
       cpt_notify_error("CPT-1007",
         "Protein binding data not available",
-        detail = "See MISSING_DATA.md for setup instructions")
+        detail = "See REBUILD.md for setup instructions")
       return(NULL)
     }
     tryCatch(

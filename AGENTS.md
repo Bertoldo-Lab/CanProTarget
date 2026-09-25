@@ -137,7 +137,8 @@ app.R                      - Shiny app entry point
 data/                      - Runtime RDS + data_versions.yaml (DepMap matrices gitignored)
 data/raw/                  - Chemoproteomics rebuild inputs (xlsx via Git LFS)
 tests/fixtures/            - Known-target recovery fixtures (YAML)
-MISSING_DATA.md            - Data provenance, coverage limits, rebuild commands
+docs/DATA_PROVENANCE.md    - Where each dataset came from
+REBUILD.md                 - DepMap setup, rebuild commands, coverage limits
 ```
 
 ## Performance note

@@ -1,4 +1,4 @@
-# Data notes
+# Rebuilding CanProTarget
 
 Discover, Target and Chemistry all run from data bundled in this repo. The
 only inputs you still fetch yourself are the DepMap gene-effect matrices.

@@ -110,7 +110,7 @@ evidence rather than as a negative.
 
 **Coverage is wild-type and per-cysteine.** Genes absent from this table were not
 detected in these screens. Mutation-created cysteines cannot appear at all — see
-the coverage-limits section of `MISSING_DATA.md`.
+the coverage-limits section of `REBUILD.md`.
 
 | Column | Meaning |
 |--------|--------|
