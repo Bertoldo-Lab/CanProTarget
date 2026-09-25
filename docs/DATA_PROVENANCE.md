@@ -2,7 +2,7 @@
 
 The **Shiny app only reads compiled `.rds` files** (and plain-text subtype lists, TSV precomputes, etc.). It does **not** load DepMap CSV exports, `swissadme.csv`, `Model_v2.csv`, retracted `Model.csv`, or Excel chemoproteomics sources at runtime.
 
-To **rebuild** those RDS files from the original downloads, use the **reference scripts under `docs/scripts/`** from the **project root** (`cell_cpt/`).
+To **rebuild** those RDS files from the original downloads, use the **reference scripts under `docs/scripts/`** from the repository root.
 
 ---
 
@@ -68,7 +68,7 @@ Other DepMap columns often present (e.g. `PatientID`, `CellLineName`, `OncotreeL
 | Part | Meaning |
 |------|--------|
 | **Object type** | `data.frame` |
-| **Origin** | Built offline from **`swissadme.csv`** (SwissADME export) with optional **Backus** link join (`docs/scripts/reference_swissadme_from_csv.R`). |
+| **Origin** | Built offline from **`swissadme.csv`** (SwissADME export) with the **Backus** probe-name link join (`docs/scripts/reference_swissadme_from_csv.R`), which reads the archived `data/raw/_archive/backus_swiss_link.xlsx`. The bundled RDS is stable; rebuilds are rare. |
 
 | Column | Meaning |
 |--------|--------|
@@ -109,9 +109,8 @@ source sheet carried no call for that site, which CPT scoring treats as missing
 evidence rather than as a negative.
 
 **Coverage is wild-type and per-cysteine.** Genes absent from this table were not
-detected in these screens. Mutation-created cysteines cannot appear at all:
-the screens profile the wild-type cysteinome, so a cysteine that exists only
-because of a somatic mutation, such as KRAS G12C, is outside their scope.
+detected in these screens. Mutation-created cysteines cannot appear at all — see
+the coverage-limits section of `MISSING_DATA.md`.
 
 | Column | Meaning |
 |--------|--------|
@@ -125,7 +124,58 @@ because of a somatic mutation, such as KRAS G12C, is outside their scope.
 | **`ligandable`** | Whether the site is classified ligandable in the source sheet (e.g. `"yes"` / `"no"`). |
 | **`Dataset`** | Experimental dataset label from **Compound Keys** (e.g. cell line panel). |
 | **`Cell_Line`** | Cell line label from **Compound Keys**. |
-| **`SMILES`** | Structure string; after offline preprocessing, may be **overwritten** with SwissADME **canonical** SMILES per `probe_name` when `swissadme_preprocessed.rds` exists (`overlay_canonical_smiles_from_swissadme()` in `R/functions.R`). |
+| **`SMILES`** | Structure string. Joined from **Compound Keys** using the *raw* CysDB `Compound_Name` (i.e. before the rename shift in the next section), so the SMILES attached to each row is the molecule that was actually tested, not one that happens to share the post-rename name in Compound Keys. |
+
+#### Probe naming — why the raw S2 spreadsheet uses a different numbering
+
+There are **two** CysDB probe namings to distinguish:
+
+1. The **CysDB web app** at <https://backuslab.shinyapps.io/cysdb/> — the
+   public-facing, canonical probe names (`CL_174`, `ACRYL_1`, …).
+2. The **raw S2 spreadsheet** (`data/raw/table-s2.xlsx`, `Compound_Name`
+   column) — an off-by-one indexing that does **not** match the CysDB web
+   app. For every `CL_N` with `N ≥ 20`, the S2 spreadsheet stores the
+   molecule under `CL_(N+1)`; the ACRYL side has its own set of shifts.
+   Example: the molecule the CysDB web app calls `CL_174` is stored in
+   the S2 spreadsheet under `Compound_Name = CL_175`.
+
+CanProTarget follows the **CysDB web app** naming (dropping the underscore
+for compact display: `CL174`, `AC23`, …). To do that,
+`docs/scripts/preprocess_protein_binding.R` §5 applies a deterministic
+rename to the S2 raw names when it builds `protein_binding_lookup_preprocessed.rds`.
+The full rule table with per-band justification is in that script
+(lines 82–116).
+
+Confirmed correspondences (CL side is the clean case):
+
+| this app | CysDB web app | raw S2 `Compound_Name` |
+|---|---|---|
+| `CL15` | `CL_15` | `CL_15` (CL_1..19 unchanged) |
+| `CL174` | `CL_174` | `CL_175` (CL_20+ shifted by −1) |
+
+The ACRYL side is more involved because CysDB assigned adjacent
+`Compound_Name` values to the same molecule tested in different cell lines
+and the rename reconciles those against the underlying publication's
+compound numbering (see the per-band justification in the rename script).
+The `OTHER_6` and `OTHER_7` app names hold molecules stored in S2 as
+`ACRYL_12` and `ACRYL_13` respectively.
+
+To look up an app probe's row in `table-s2.xlsx`, use the rename table in
+`preprocess_protein_binding.R` §5 as the source of truth.
+
+The rename script's collision guard (section 5b) prevents two distinct
+molecules from ever sharing an app name. It does **not** collapse replicate
+rows: when the same molecule was tested in two cell lines and CysDB assigned
+it two adjacent `Compound_Name` values (e.g. S2 `ACRYL_1` in MDA-MB-231 and
+S2 `ACRYL_2` in Ramos are the same compound), the app carries them as two
+near-duplicate probe names (`AC0` and `AC1`) that share Canonical.SMILES and
+ADME properties but differ only in `Cell_Line`. This is by design and
+visible on the Chemistry Explorer as two dropdown entries with identical
+structure images.
+
+Do not "fix" the rename to match `Compound_Name` numerically — the app's
+names intentionally follow the CysDB web app's public naming, which is what
+users cross-reference against.
 
 ---
 
@@ -203,20 +253,6 @@ the same dependency gene. Its `cys_probe_site_match` and `cys_relationship`
 columns distinguish exact-site evidence from same-gene prioritisation; these two
 evidence levels must not be interpreted as equivalent.
 
-### Recovery from the historical ChemProTarget folder
-
-When the original data directory is available, rebuild every core deployable
-data product without staging the large raw files inside the repository:
-
-```bash
-Rscript docs/scripts/recover_original_data.R /path/to/ChemProTarget/data data
-```
-
-This produces both gene-effect RDS matrices and model-ID sidecars,
-`cancer_model_data.rds`, both subtype lists,
-`protein_binding_lookup_preprocessed.rds`, and
-`swissadme_preprocessed.rds`.
-
 ### Gene effect matrices (`*_clean.rds`, `d2_*.rds`)
 
 - **CRISPR 23Q4 source:** official `CRISPRGeneEffect.csv` (Public 23Q4). Expected
@@ -243,15 +279,15 @@ This produces both gene-effect RDS matrices and model-ID sidecars,
 
 ### SwissADME (`swissadme_preprocessed.rds`)
 
-- **Source:** **`swissadme.csv`** plus optional **`backus_swiss_link.xlsx`** or **`backus_swiss_link.rds`** (probe / Molecule alignment).
-- **Helpers:** `docs/scripts/reference_swissadme_from_csv.R` defines `read_swissadme_from_raw_files()` used only offline.
-- **Optional:** `Rscript docs/scripts/backus_swiss_link_xlsx_to_rds.R` to refresh `backus_swiss_link.rds` from the xlsx before building SwissADME.
+- **Source:** **`swissadme.csv`** joined with **`data/raw/_archive/backus_swiss_link.xlsx`** (probe / Molecule alignment).
+- **Helper:** `docs/scripts/reference_swissadme_from_csv.R` defines `read_swissadme_from_raw_files()`, used only when rebuilding SwissADME offline.
 - **Command:** `docs/scripts/preprocess_data.R` step 2.
+- **Note:** The bundled `swissadme_preprocessed.rds` is stable and rebuilds are rare. The Backus link is archived under `data/raw/_archive/` because it is only needed here; the probe binding pipeline (below) reads CysDB directly and does not use it.
 
 ### Protein binding (`protein_binding_lookup_preprocessed.rds`)
 
-- **Source:** **`table-s2.xlsx`** (Ligandable Dataset + Compound Keys sheets) and **`id_mapping.tsv`** (proteinid → gene); uses **`swissadme_preprocessed.rds`** for canonical SMILES alignment inside the script.
-- **Command:** Invoked from `docs/scripts/preprocess_data.R` step 4, which sources **`docs/scripts/preprocess_protein_binding.R`**. That script also `source()`s `R/functions.R` for `overlay_canonical_smiles_from_swissadme()`.
+- **Source:** **`table-s2.xlsx`** (Ligandable Dataset + Compound Keys sheets) and **`id_mapping.tsv`** (proteinid → gene).
+- **Command:** Invoked from `docs/scripts/preprocess_data.R` step 4, which sources **`docs/scripts/preprocess_protein_binding.R`**. Since v1.0.1 the script joins Compound Keys on the *raw* CysDB `Compound_Name` (before the ACRYL/CL rename shift) so each row's SMILES belongs to the molecule that was actually tested — see the "Probe naming" note in the reference section above.
 - **Probe naming:** the source columns are renumbered to the scheme SwissADME
   uses. Verified probe by probe against the `Compound Keys` sheet by
   heavy-atom formula: all 998 agree. One boundary previously sent `ACRYL_6`
@@ -278,15 +314,6 @@ This produces both gene-effect RDS matrices and model-ID sidecars,
   tsv <- readr::read_tsv("data/precomputed_effectsizes/CRISPR_Melanoma.tsv")
   nrow(tsv); tail(tsv$gene_name, 1)
   ```
-
-  A batch recovered in July 2026 stopped at `TNFRSF10C`, dropping 2,508 CRISPR
-  genes (TP53, WEE1, TOP2A, VCP and WRN among them) while every value it did
-  contain matched the live pipeline to ~1e-9. The cutoff was already in the
-  CRISPR matrix (Excel column limit), not in the TSV export.
-- **`gene_name` format differs between paths.** The live pipeline emits matrix
-  column names carrying the Entrez suffix (`KRAS (3845)`); some external caches
-  carry bare symbols. CPT scoring strips the suffix before matching so both work,
-  but do not rely on exact string equality across the two paths.
 
 ---
 

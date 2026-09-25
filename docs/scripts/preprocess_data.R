@@ -21,7 +21,7 @@ library(tidyr)
 if (!dir.exists("data") || !dir.exists("R")) {
   stop(
     "Run from CanProTarget project root (folder with data/ and R/), e.g.\n",
-    "  cd cell_cpt && Rscript docs/scripts/preprocess_data.R",
+    "  cd CanProTarget && Rscript docs/scripts/preprocess_data.R",
     call. = FALSE
   )
 }
