@@ -32,6 +32,11 @@ if (!file.exists(file.path(app_dir, "app.R"))) {
 # before the Gene tab and redeploying still produces a valid bundle.
 app_files <- c(
   "app.R", "R", "www", "inst/report_templates",
+  # CITATION.cff is the single source of truth for version + DOI; the About
+  # tab and generated report footers read it at runtime via
+  # cpt_read_citation_cff() in R/api_functions.R. Without it in the bundle
+  # they fall back to "See CITATION.cff".
+  "CITATION.cff",
   "data/CRISPRGeneEffect_23Q4_clean.rds",
   "data/CRISPRGeneEffect_23Q4_clean_modelids.rds",
   "data/d2_gene_effect_headers_refined.rds",
