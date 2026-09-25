@@ -32,6 +32,9 @@ suppressPackageStartupMessages({
 })
 
 source(file.path(params$project_root, "R", "app_helpers.R"))
+# Knitting runs in a temp working directory, so cpt_read_citation_cff()'s
+# relative "CITATION.cff" lookup misses the real file. Pin it explicitly.
+Sys.setenv(CPT_CITATION_CFF = file.path(params$project_root, "CITATION.cff"))
 source(file.path(params$project_root, "R", "api_functions.R"))
 source(file.path(params$project_root, "R", "canprotarget_score.R"))
 source(file.path(params$project_root, "R", "pancancer_profile.R"))

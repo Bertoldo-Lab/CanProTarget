@@ -31,6 +31,12 @@
 #     api_assess_target()
 # ============================================================
 
+# yaml is used by cpt_read_citation_cff() below. An explicit library() call
+# here (rather than requireNamespace() alone) is what rsconnect's dependency
+# scanner picks up, so the package is guaranteed to be installed in the
+# shinyapps container. Without it the reader falls back to "See CITATION.cff".
+library(yaml)
+
 # ---- Helpers ---------------------------------------------------
 
 CPT_REPO <- "https://github.com/Bertoldo-Lab/CanProTarget"

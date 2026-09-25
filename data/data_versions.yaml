@@ -75,6 +75,11 @@ datasets:
 
 platform:
   name: "CanProTarget"
-  version: "1.0.0"
+  # Bump on each release. Keep in sync with CITATION.cff's `version:`; the
+  # About tab and reports render this string directly.
+  version: "1.0.1"
   r_version: "4.6.1"
+  # Date the upstream source data was last refreshed, not the release date.
+  # v1.0.1 rebuilt derived .rds files (pb SMILES join fix) without touching
+  # the source spreadsheet, so this stays at 2026-08-18.
   last_data_refresh: "2026-08-18"
