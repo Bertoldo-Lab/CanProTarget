@@ -22,10 +22,10 @@ and adjustable scoring.
 Each layer is held at the resolution it was measured at. A functional cysteine
 elsewhere in a protein is not evidence about the residue a ligand engages, and
 gene-level integration conflates the two: across ten adult and ten paediatric
-cancers, 62–73% of candidates produced by gene-level integration lacked
+cancers, 63–75% of candidates produced by gene-level integration lacked
 functional evidence at the engaged cysteine. Matching on the exact residue
 removes those, at the cost of a smaller candidate set — cysteine-derived
-evidence covers only 7.5–7.9% of the retained dependency associations. What
+evidence covers only 7.4–7.8% of the retained dependency associations. What
 limits the approach is the reach of the experiments, not the arithmetic that
 combines them, and the app is built to show which layers actually support a
 given site rather than to imply agreement between them.
@@ -269,7 +269,7 @@ probability of tractability. The full definition is in
 
 ## Reproducing the manuscript benchmark
 
-The tables in `analysis/software_benchmark/outputs/` are the 19 September
+The tables in `analysis/software_benchmark/outputs/` are the 27 September
 2026 run against this release. To run it again:
 
 ```bash
@@ -314,10 +314,9 @@ CSVs and the rebuild inputs under `data/raw/` are excluded.
 
 ## Citation
 
-**Software** — Ong JP, Martins D, Bertoldo JB. *CanProTarget* (Version v1.0.0).
-Zenodo. https://doi.org/10.5281/zenodo.22908610
-
-For the latest version, use the concept DOI: https://doi.org/10.5281/zenodo.22908609
+**Software** — Ong JP, Martins D, Bertoldo JB. *CanProTarget* (Version v1.0.2).
+Zenodo. https://doi.org/10.5281/zenodo.22908609 (concept DOI — always resolves
+to the current version).
 
 **Article** — Ong JP, Bell J, Martins D, Zhu J, Rodrigues T, Bertoldo JB.
 *CanProTarget: a residue-resolved prioritization platform for covalent cancer
