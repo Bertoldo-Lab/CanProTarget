@@ -693,9 +693,6 @@ api_compare_subtypes <- function(gene, subtype1, subtype2, dataset = "CRISPR", d
 #' Return platform metadata, version, and citation info.
 #' @return List with platform information
 api_platform_info <- function(data_env = NULL) {
-  # Counts come from the loaded data when there is any, so they cannot drift
-  # from what the tools actually query (the RNAi figure had said 17,309 while
-  # the loaded matrix holds 17,107 genes).
   dims <- function(m, genes, lines) {
     if (is.null(m)) return(c(genes, lines))
     c(ncol(m), nrow(m))

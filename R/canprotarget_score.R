@@ -580,9 +580,7 @@ cpt_dimension_report <- function(dim_scores, raw_values = list(), weights = NULL
   active <- character(0)
   missing <- character(0)
   unweighted <- character(0)
-  # A dimension counts as active only if it is scored AND carries weight in
-  # the composite. ADME is scored for most engaged genes but weighted 0 by
-  # default, and counting it made "3 of 6 active" out of a 2-dimension score.
+  # Active = scored AND weight > 0 (else zero-weight dims inflate the count).
   w <- if (is.null(weights)) NULL else unlist(cpt_coerce_weights(weights))
 
   for (nm in names(dim_scores)) {
@@ -1135,7 +1133,6 @@ cpt_rank_targets <- function(subtype,
     cpt_weighted_composite(ds, weights = weights, min_dimensions = 2L)
   }, numeric(1))
 
-  # Scored dimensions that carry weight, as in cpt_dimension_report().
   w_on <- unlist(weights)[c("dependency_strength", "cancer_selectivity",
                             "cysteine_ligandability", "conservation",
                             "clinical_evidence", "adme_druggability")] > 0
@@ -1308,8 +1305,6 @@ cpt_build_smcl_index <- function(binding, min_cr = 4) {
     names(binding)
   )
   x <- as.data.frame(binding[keep, cols, drop = FALSE], stringsAsFactors = FALSE)
-  # The stored tables carry source names (CL_344); every other surface of the
-  # app shows the canonical form (CL344), so the MCP tools do too.
   x$probe_name <- cpt_canonical_probe_name(x$probe_name)
   x$CR <- suppressWarnings(as.numeric(x$CR))
   if ("n_targets" %in% names(x)) {

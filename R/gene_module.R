@@ -201,20 +201,12 @@ gene_ui <- function(id) {
 #' @param dep_context Optional list of reactives from Discover: dataset,
 #'   subtype and a one-line context label. The Target tab follows them instead
 #'   of keeping its own dataset control.
-#' Subtypes in which a gene is a selected dependency, for one screen.
 cpt_dep_n_subtypes <- function(idx, gene_key, dataset) {
   ds <- idx$dep_summary
   n <- ds$n_subtypes[ds$gene_key == gene_key & ds$dataset == dataset]
   if (length(n) && !is.na(n[1])) as.integer(n[1]) else 0L
 }
 
-#' Every probe record for one gene: all engagements at CR >= 4, plus the
-#' index's top records below 4 so a gene with no engagement still shows some.
-#'
-#' `idx$probes` alone is capped at the top 10 records by CR per gene, which let
-#' promiscuous high-CR probes push selective ones out (SAFB2 lost CL344).
-#' Structure and assay context for the engaged rows come from the CR >= 4
-#' binding file, since the index's engaged-site table does not carry them.
 cpt_gene_probe_rows <- function(idx, gene_key, cr4 = NULL) {
   cols <- c("probe_name", "CR", "n_targets", "cysteineid", "ligandable",
             "Dataset", "Cell_Line", "SMILES")
@@ -345,8 +337,6 @@ gene_server <- function(id, shared_data, on_jump = NULL, preset = NULL,
     })
 
     output$vb_dependency <- renderValueBox({
-      # Per screen, like the dependency table beside it. The index's
-      # dep_n_subtypes adds CRISPR and RNAi together.
       n <- cpt_dep_n_subtypes(index(), gene_sel(), active_dataset())
       valueBox(
         n, paste0("Subtypes where dependent (", active_dataset(), ")"),

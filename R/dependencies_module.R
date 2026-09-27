@@ -320,10 +320,6 @@ dependencies_server <- function(id, shared_data, preset = NULL, on_open_gene = N
     # cpt_scores travels with the shared data so the all-combined table can
     # carry the composite score. It is defined further down; a reactive is
     # lazy, so referring to it here is fine.
-    # The settings the results on screen were produced with: the last run's,
-    # or the live inputs before anything has run. Discover follows these, so
-    # its summary and browse views match the Dependency analysis and go stale
-    # together, as the "Showing previous settings" note says.
     dep_filters <- reactive({
       f <- displayed_filters()
       em <- suppressWarnings(as.numeric(if (is.null(f)) input$effect_min else f$effect_min))
@@ -541,14 +537,8 @@ dependencies_server <- function(id, shared_data, preset = NULL, on_open_gene = N
       "ligandability" %in% (input$tp_layers %||% character(0)) || isTRUE(needs_full_table())
     })
 
-    # Recompute the probe set whenever the ligandability layer toggles OR the
-    # dependency analysis produces new results (subtype / dataset / cutoffs
-    # changed). Without ge_results() as a dependency the probe set stays
-    # restricted to the previous subtype's cancer-gene list, so the Dep × Lig
-    # volcano and combined tables filter fresh dependency data against a stale
-    # ligandable-gene intersection and silently drop rows. compute_probe_results
-    # uses the CR≥4 compact file (~0.01 s) by default, so the extra recomputes
-    # are cheap in the common path.
+    # Recompute probes on layer toggle OR when ge_results changes, else the
+    # probe set stays scoped to the previous subtype's cancer-gene list.
     observeEvent({
       list(needs_probe_tables(),
            tryCatch(ge_results(), error = function(e) NULL))
@@ -1098,11 +1088,6 @@ dependencies_server <- function(id, shared_data, preset = NULL, on_open_gene = N
     })
 
     # ---- 2.4 Gene tables and exports ---------------------------
-    # Priority columns shown by default (CPT first when present)
-    # Default view: identity, rank, the dependency statistics that define the
-    # set (raw + subtype-vs-other-lines context), then targetability. Everything
-    # else is behind "Show all columns" — the full frame runs to about twenty
-    # columns and buries the first four.
     priority_cols <- c("gene_name", "CPT_Score", "CPT_Rank",
                        "EffectSize", "p_value",
                        "Cancer_Avg", "Other_Avg", "NonCancer_Avg",
@@ -1114,16 +1099,7 @@ dependencies_server <- function(id, shared_data, preset = NULL, on_open_gene = N
                           "pval_vs_NonCancer", "pval_vs_Other_Avg",
                           "pval_vs_OtherCancers")
 
-    # Helper: subset columns based on "show all" checkbox.
-    #
-    # A table answers the question the layers asked. Cys_tier and
-    # Cys_functional are residue evidence and Probes and Max_CR are
-    # ligandability, so on a dependency-only run they are columns the reader
-    # never asked for and cannot act on. Dependency-context columns (subtype
-    # mean, other-line mean, non-cancer mean, and the paired p-values) are
-    # the reason to open the Cancer-selective view at all, so they stay in
-    # whenever the dependency layer is on. "Show all columns" still reveals
-    # everything the frame holds.
+    # Show columns only for layers that are currently on; "Show all" bypasses.
     display_cols <- function(df, show_all, scope = NULL) {
       if (show_all) return(df)
       on <- if (is.null(scope)) input$tp_layers %||% character(0) else scope
@@ -1141,8 +1117,7 @@ dependencies_server <- function(id, shared_data, preset = NULL, on_open_gene = N
     format_display_4dp <- function(df) {
       out <- df
       num_cols <- vapply(out, is.numeric, logical(1))
-      # p- and q-values keep significant figures; to four decimals the
-      # strongest hits read as 0.
+      # p/q kept as sig figs; 4dp rounds strong hits to 0.
       p_cols <- grepl("^(p|q)[._]|^pval|^P\\.Value", names(out)) &
         !grepl("neg_log10", names(out))
       out[num_cols & !p_cols] <- lapply(out[num_cols & !p_cols], function(x) round(x, 4))
@@ -1515,12 +1490,7 @@ dependencies_server <- function(id, shared_data, preset = NULL, on_open_gene = N
       ifelse(is.na(cid), NA_character_, sub("^.*_C", "C", cid))
     }
 
-    # Selectively ligandable — every engaged probe that passes the CR + max-
-    # targets selectivity filter. Reads selective_probes_per_protein, NOT
-    # all_proteins_best_probe: the latter is pre-collapsed to one row per gene
-    # and hides the "one row per cysteine × probe" view the row-grain control
-    # promises. Row-grain collapse happens here via apply_grain(), so the
-    # single control drives every grain the reader might pick.
+    # Row-grain collapse is applied here via apply_grain(); the data stays wide.
     best_probe_display <- reactive({
       req(probe_results())
       d <- probe_results()$selective_probes_per_protein
@@ -1539,8 +1509,6 @@ dependencies_server <- function(id, shared_data, preset = NULL, on_open_gene = N
         `Cell line` = col("Cell_Line"),
         check.names = FALSE, stringsAsFactors = FALSE
       )
-      # No atlas columns: Selectively ligandable belongs to the ligandability
-      # layer, and a per-layer view shows that layer only.
       out <- order_present(out, list(col = "Probe targets"),
                                 list(col = "CR", desc = TRUE))
       apply_grain(out)
@@ -1552,11 +1520,6 @@ dependencies_server <- function(id, shared_data, preset = NULL, on_open_gene = N
         options = list(pageLength = 15, scrollX = TRUE))
     })
 
-    # Dependency + ligandability. Identity first, then the dependency evidence,
-    # then the chemistry, then the residue annotation when that layer is on.
-    # Previously this rendered the joined frame as-is: every intermediate
-    # column of the effect-size file at full float precision, and one row per
-    # probe record whatever the row grain said.
     combined_display <- reactive({
       req(probe_results())
       d <- probe_results()$ge_combined_final_data
@@ -1579,12 +1542,6 @@ dependencies_server <- function(id, shared_data, preset = NULL, on_open_gene = N
         `Cell line` = col_first(d, "Cell_Line"),
         check.names = FALSE, stringsAsFactors = FALSE
       )
-      # `combined_table` renders the "Dependency + ligandability" view (see
-      # targets_panel.R `lig_combined`), so it must stay in-scope: no cysteine
-      # atlas / functional / ligandable columns even when the functionality
-      # layer is active globally. Cys evidence belongs in the two combined
-      # views that name the cysteine-function layer (dep_res, res_integrated)
-      # and in "All combined".
       out <- drop_empty_cols(out)
       out <- order_present(out, list(col = "Probe targets"),
                                 list(col = "CR", desc = TRUE))
@@ -1776,10 +1733,7 @@ dependencies_server <- function(id, shared_data, preset = NULL, on_open_gene = N
       }
     )
 
-    # Ligandable dependencies volcano (subset of all_gene_ge_df that has a CR ≥ 4 probe).
-    # Assemble the effect-size / p-value frame for genes that carry a
-    # ligandable probe. Optionally overlay a Cys_editing-functional subset so
-    # the reader can see how the "combined evidence" set trims down.
+    # Ligandable dependencies volcano — subset of all_gene_ge_df with a CR ≥ 4 probe.
     lig_volcano_frame <- reactive({
       req(all_gene_ge_df())
       req(probe_results())
@@ -1802,10 +1756,6 @@ dependencies_server <- function(id, shared_data, preset = NULL, on_open_gene = N
       df
     })
 
-    # Dep × Lig volcano: every dependency gene with at least one CR ≥ 4
-    # engaged probe, layer-independent of the cysteine-function state so it
-    # stays stable when the reader toggles the third layer on and off.
-    # Subtitle carries n so a stale render is trivially detectable.
     lig_volcano_gg <- reactive({
       df <- lig_volcano_frame()
       effect_cut <- frozen_effect_min()
@@ -1829,9 +1779,6 @@ dependencies_server <- function(id, shared_data, preset = NULL, on_open_gene = N
         theme(legend.position = "none")
     })
 
-    # Same frame, but subset to genes carrying a Cys_editing functional site.
-    # Available only when the functionality layer is on. n in the subtitle
-    # must be < the Dep × Lig plot's n (else the cys layer isn't restricting).
     lig_volcano_cys_gg <- reactive({
       df <- lig_volcano_frame()
       effect_cut <- frozen_effect_min()

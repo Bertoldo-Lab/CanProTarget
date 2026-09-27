@@ -32,12 +32,6 @@ CPT_LAYERS <- c(
   "Cysteine function" = "functionality"
 )
 
-#' Flag engaged records against the cutoffs and collapse them to a row grain.
-#'
-#' The cutoffs are applied before the collapse. Collapsing first kept each
-#' site's highest-CR probe, which is often a promiscuous one, and so reported
-#' a site as filtered out even when a selective probe on it cleared both
-#' cutoffs (SAFB2 C672: AC34 at 364 targets hid CL344 at 11).
 cpt_collapse_engaged <- function(es, grain, cr, mt) {
   es$passes <- !is.na(es$CR) & es$CR >= cr &
     (is.na(es$n_targets) | es$n_targets <= mt)
@@ -857,15 +851,8 @@ targets_panel_server <- function(input, output, session, shared_data,
         df <- df[is.na(df$n_targets) | df$n_targets <= input$tp_max_targets, , drop = FALSE]
       }
       df$gene_key <- cpt_gene_match_key(df$gene_name)
-      # Match the Selectively-ligandable table's is_ligandable() filter (see
-      # R/dependencies_module.R compute_probe_results). engaged_sites in the
-      # index doesn't carry the source-data `ligandable` column, so filter at
-      # row level by (gene_name, cysteineid) against pb rows whose `ligandable`
-      # is stamped "yes". A gene-level filter via probe_summary's n_ligandable_rows
-      # is not enough — some genes have ligandable rows only at CR/target
-      # values outside the current sliders, so they must still be dropped from
-      # the funnel to match the table. Row-level: pull the pb rows once (it is
-      # already loaded in shared_data), build a compact key set, filter.
+      # Row-level ligandable filter, so this funnel matches the Selectively-
+      # ligandable table (engaged_sites doesn't carry pb's `ligandable` column).
       pb <- tryCatch(shared_data$protein_binding_cr4(), error = function(e) NULL)
       if (is.null(pb) && !is.null(shared_data$protein_binding_lookup)) {
         pb <- tryCatch(shared_data$protein_binding_lookup(), error = function(e) NULL)
@@ -1057,8 +1044,7 @@ targets_panel_server <- function(input, output, session, shared_data,
       uni <- tryCatch(dep_universe(), error = function(e) NULL)
       if (!is.null(uni) && nrow(uni)) {
         m <- match(cpt_gene_match_key(out$gene_name), cpt_gene_match_key(uni$gene_name))
-        # p- and q-values keep significant figures: rounded to decimals, the
-        # strongest hits all printed as 0.
+        # p/q kept as sig figs; 4dp rounds strong hits to 0.
         take <- function(target, candidates, digits, sig = FALSE) {
           src <- intersect(candidates, names(uni))[1]
           if (is.na(src)) return(invisible(NULL))
@@ -1494,9 +1480,8 @@ targets_panel_server <- function(input, output, session, shared_data,
   # (Avg < -0.5) that Discover applies on top of them.
   dep_settings <- reactive(shared_data$dep_filters())
 
-  # The subtype's selected dependencies under the Dependency box's settings.
-  # NULL when there is no precomputed file, and the index's default selection
-  # stands in.
+  # Subtype's selected deps under the Dependency box's settings; NULL falls
+  # back to the index's default selection.
   dep_selected <- reactive({
     df <- tryCatch(dep_universe(), error = function(e) NULL)
     if (is.null(df) || !nrow(df)) return(NULL)
@@ -1948,11 +1933,8 @@ targets_panel_server <- function(input, output, session, shared_data,
     shiny::validate(need(nrow(d) > 0,
       "No rows carry both a dependency and a tier."))
 
-    # enriched_rows() is one row per engagement (gene × cysteine × probe), but
-    # effect_size is a per-gene value, so plotting every row stamps the same y
-    # many times per gene and reads as a tight distribution that isn't there.
-    # Collapse to one row per gene at the gene's best (lowest-numbered) tier —
-    # the strongest cysteine evidence the gene carries.
+    # Collapse to one row per gene at the gene's best (lowest) tier — effect_size
+    # is per-gene, so plotting every engagement inflates the tier distributions.
     d$evidence_tier <- as.integer(d$evidence_tier)
     d <- d[order(d$gene_name, d$evidence_tier), , drop = FALSE]
     d <- d[!duplicated(d$gene_name), , drop = FALSE]

@@ -317,9 +317,7 @@ repeat {
     )
   }
 
-  # Write response (single line JSON)
-  # digits = NA: jsonlite's default rounds to 4 decimal places, which sent
-  # every p-value below 5e-5 to agents as 0.
+  # digits = NA preserves small p-values; jsonlite's default rounds to 4dp.
   json_out <- toJSON(response, auto_unbox = TRUE, null = "null", na = "null",
                      digits = NA)
   cat(json_out, "\n", sep = "")

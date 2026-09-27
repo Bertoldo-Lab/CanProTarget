@@ -747,11 +747,6 @@ cpt_read_effectsizes <- function(path) {
   else readr::read_tsv(path, show_col_types = FALSE, progress = FALSE)
 }
 
-#' Apply the Dependency box's selection rules to a precomputed effect-size table.
-#'
-#' One definition for every view that says which genes are selected, so the
-#' Discover summary, its dependency browse and the Dependency analysis agree.
-#' Adds passes_effect, passes_p, passes_nc, is_essential, selected and status.
 cpt_dependency_status <- function(df, effect_min = -0.1, apply_pvalue = TRUE,
                                   excl_common = TRUE, req_nc_sig = FALSE) {
   p <- suppressWarnings(as.numeric(df$p_value))
