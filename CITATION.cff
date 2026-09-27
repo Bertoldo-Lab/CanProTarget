@@ -11,8 +11,8 @@ type: software
 license: AGPL-3.0-or-later
 repository-code: "https://github.com/Bertoldo-Lab/CanProTarget"
 url: "https://bertoldolab.shinyapps.io/CanProTarget/"
-version: "1.0.2"
-date-released: "2026-09-27"
+version: "1.1.0"
+date-released: "2026-09-28"
 identifiers:
   - type: doi
     value: 10.5281/zenodo.22952372

@@ -314,7 +314,7 @@ CSVs and the rebuild inputs under `data/raw/` are excluded.
 
 ## Citation
 
-**Software** — Ong JP, Martins D, Bertoldo JB. *CanProTarget* (Version v1.0.2).
+**Software** — Ong JP, Martins D, Bertoldo JB. *CanProTarget* (Version v1.1.0).
 Zenodo. https://doi.org/10.5281/zenodo.22908609 (concept DOI — always resolves
 to the current version).
 

@@ -791,78 +791,6 @@
 "Paediatric","ARMS","Alveolar Rhabdomyosarcoma","double_clinical_evidence",829,829,0.998101999712049,"top_25",25,1,1
 "Paediatric","ARMS","Alveolar Rhabdomyosarcoma","double_clinical_evidence",829,829,0.998101999712049,"top_50",50,1,1
 "Paediatric","ARMS","Alveolar Rhabdomyosarcoma","double_clinical_evidence",829,829,0.998101999712049,"top_10_percent",83,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","adme_active",1011,1011,0.99929332585364,"top_10",10,0.9,0.818181818181818
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","adme_active",1011,1011,0.99929332585364,"top_25",25,0.96,0.923076923076923
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","adme_active",1011,1011,0.99929332585364,"top_50",50,0.96,0.923076923076923
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","adme_active",1011,1011,0.99929332585364,"top_10_percent",102,0.980392156862745,0.961538461538462
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","equal_six",1011,1011,0.979041732061517,"top_10",10,0.8,0.666666666666667
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","equal_six",1011,1011,0.979041732061517,"top_25",25,0.92,0.851851851851852
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","equal_six",1011,1011,0.979041732061517,"top_50",50,0.86,0.754385964912281
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","equal_six",1011,1011,0.979041732061517,"top_10_percent",102,0.911764705882353,0.837837837837838
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","equal_five",1011,1011,0.992523616082601,"top_10",10,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","equal_five",1011,1011,0.992523616082601,"top_25",25,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","equal_five",1011,1011,0.992523616082601,"top_50",50,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","equal_five",1011,1011,0.992523616082601,"top_10_percent",102,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_dependency_strength",1011,66,0.948105625717566,"top_10",10,0,0
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_dependency_strength",1011,66,0.948105625717566,"top_25",25,0,0
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_dependency_strength",1011,66,0.948105625717566,"top_50",50,0,0
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_dependency_strength",1011,66,0.948105625717566,"top_10_percent",7,0,0
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_dependency_strength",1011,1011,0.988020657272885,"top_10",10,0.8,0.666666666666667
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_dependency_strength",1011,1011,0.988020657272885,"top_25",25,0.96,0.923076923076923
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_dependency_strength",1011,1011,0.988020657272885,"top_50",50,0.9,0.818181818181818
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_dependency_strength",1011,1011,0.988020657272885,"top_10_percent",102,0.931372549019608,0.871559633027523
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_dependency_strength",1011,1011,0.98760817052743,"top_10",10,0.9,0.818181818181818
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_dependency_strength",1011,1011,0.98760817052743,"top_25",25,0.88,0.785714285714286
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_dependency_strength",1011,1011,0.98760817052743,"top_50",50,0.98,0.96078431372549
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_dependency_strength",1011,1011,0.98760817052743,"top_10_percent",102,0.941176470588235,0.888888888888889
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_cancer_selectivity",1011,66,0.995866819747417,"top_10",10,0,0
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_cancer_selectivity",1011,66,0.995866819747417,"top_25",25,0,0
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_cancer_selectivity",1011,66,0.995866819747417,"top_50",50,0,0
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_cancer_selectivity",1011,66,0.995866819747417,"top_10_percent",7,0,0
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_cancer_selectivity",1011,1011,0.99697923138073,"top_10",10,0.9,0.818181818181818
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_cancer_selectivity",1011,1011,0.99697923138073,"top_25",25,0.88,0.785714285714286
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_cancer_selectivity",1011,1011,0.99697923138073,"top_50",50,0.98,0.96078431372549
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_cancer_selectivity",1011,1011,0.99697923138073,"top_10_percent",102,0.941176470588235,0.888888888888889
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_cancer_selectivity",1011,1011,0.993236668842534,"top_10",10,0.8,0.666666666666667
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_cancer_selectivity",1011,1011,0.993236668842534,"top_25",25,0.96,0.923076923076923
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_cancer_selectivity",1011,1011,0.993236668842534,"top_50",50,0.9,0.818181818181818
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_cancer_selectivity",1011,1011,0.993236668842534,"top_10_percent",102,0.931372549019608,0.871559633027523
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_cysteine_ligandability",1011,1011,0.983101819254671,"top_10",10,0.9,0.818181818181818
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_cysteine_ligandability",1011,1011,0.983101819254671,"top_25",25,0.96,0.923076923076923
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_cysteine_ligandability",1011,1011,0.983101819254671,"top_50",50,0.98,0.96078431372549
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_cysteine_ligandability",1011,1011,0.983101819254671,"top_10_percent",102,0.990196078431373,0.980582524271845
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_cysteine_ligandability",1011,1011,0.998192875237189,"top_10",10,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_cysteine_ligandability",1011,1011,0.998192875237189,"top_25",25,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_cysteine_ligandability",1011,1011,0.998192875237189,"top_50",50,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_cysteine_ligandability",1011,1011,0.998192875237189,"top_10_percent",102,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_cysteine_ligandability",1011,1011,0.998610474831037,"top_10",10,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_cysteine_ligandability",1011,1011,0.998610474831037,"top_25",25,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_cysteine_ligandability",1011,1011,0.998610474831037,"top_50",50,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_cysteine_ligandability",1011,1011,0.998610474831037,"top_10_percent",102,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_conservation",1011,1011,0.998888189418698,"top_10",10,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_conservation",1011,1011,0.998888189418698,"top_25",25,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_conservation",1011,1011,0.998888189418698,"top_50",50,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_conservation",1011,1011,0.998888189418698,"top_10_percent",102,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_conservation",1011,1011,0.999722633789409,"top_10",10,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_conservation",1011,1011,0.999722633789409,"top_25",25,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_conservation",1011,1011,0.999722633789409,"top_50",50,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_conservation",1011,1011,0.999722633789409,"top_10_percent",102,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_conservation",1011,1011,0.999102011651715,"top_10",10,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_conservation",1011,1011,0.999102011651715,"top_25",25,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_conservation",1011,1011,0.999102011651715,"top_50",50,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_conservation",1011,1011,0.999102011651715,"top_10_percent",102,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_clinical_evidence",1011,1011,0.977889436370551,"top_10",10,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_clinical_evidence",1011,1011,0.977889436370551,"top_25",25,0.96,0.923076923076923
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_clinical_evidence",1011,1011,0.977889436370551,"top_50",50,0.96,0.923076923076923
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","leave_out_clinical_evidence",1011,1011,0.977889436370551,"top_10_percent",102,0.980392156862745,0.961538461538462
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_clinical_evidence",1011,1011,0.995874228422449,"top_10",10,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_clinical_evidence",1011,1011,0.995874228422449,"top_25",25,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_clinical_evidence",1011,1011,0.995874228422449,"top_50",50,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","half_clinical_evidence",1011,1011,0.995874228422449,"top_10_percent",102,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_clinical_evidence",1011,1011,0.995250389603141,"top_10",10,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_clinical_evidence",1011,1011,0.995250389603141,"top_25",25,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_clinical_evidence",1011,1011,0.995250389603141,"top_50",50,1,1
-"Paediatric","ATRT","Atypical Teratoid/Rhabdoid Tumor","double_clinical_evidence",1011,1011,0.995250389603141,"top_10_percent",102,1,1
 "Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","adme_active",1819,1819,0.999086687397319,"top_10",10,0.8,0.666666666666667
 "Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","adme_active",1819,1819,0.999086687397319,"top_25",25,0.92,0.851851851851852
 "Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","adme_active",1819,1819,0.999086687397319,"top_50",50,0.94,0.886792452830189
@@ -935,78 +863,78 @@
 "Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","double_clinical_evidence",1819,1819,0.994518551105465,"top_25",25,1,1
 "Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","double_clinical_evidence",1819,1819,0.994518551105465,"top_50",50,1,1
 "Paediatric","B-ALL","B-Lymphoblastic Leukemia/Lymphoma","double_clinical_evidence",1819,1819,0.994518551105465,"top_10_percent",182,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","adme_active",646,646,0.998740131732991,"top_10",10,0.9,0.818181818181818
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","adme_active",646,646,0.998740131732991,"top_25",25,0.96,0.923076923076923
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","adme_active",646,646,0.998740131732991,"top_50",50,0.98,0.96078431372549
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","adme_active",646,646,0.998740131732991,"top_10_percent",65,0.969230769230769,0.940298507462687
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","equal_six",646,646,0.971484014041968,"top_10",10,0.9,0.818181818181818
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","equal_six",646,646,0.971484014041968,"top_25",25,0.92,0.851851851851852
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","equal_six",646,646,0.971484014041968,"top_50",50,0.9,0.818181818181818
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","equal_six",646,646,0.971484014041968,"top_10_percent",65,0.923076923076923,0.857142857142857
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","equal_five",646,646,0.998703475233438,"top_10",10,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","equal_five",646,646,0.998703475233438,"top_25",25,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","equal_five",646,646,0.998703475233438,"top_50",50,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","equal_five",646,646,0.998703475233438,"top_10_percent",65,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_dependency_strength",646,29,0.961576354679803,"top_10",10,0,0
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_dependency_strength",646,29,0.961576354679803,"top_25",25,0,0
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_dependency_strength",646,29,0.961576354679803,"top_50",50,0,0
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_dependency_strength",646,29,0.961576354679803,"top_10_percent",3,0,0
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_dependency_strength",646,646,0.989161855138407,"top_10",10,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_dependency_strength",646,646,0.989161855138407,"top_25",25,0.84,0.724137931034483
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_dependency_strength",646,646,0.989161855138407,"top_50",50,0.96,0.923076923076923
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_dependency_strength",646,646,0.989161855138407,"top_10_percent",65,0.907692307692308,0.830985915492958
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_dependency_strength",646,646,0.992078468413342,"top_10",10,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_dependency_strength",646,646,0.992078468413342,"top_25",25,0.92,0.851851851851852
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_dependency_strength",646,646,0.992078468413342,"top_50",50,0.94,0.886792452830189
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_dependency_strength",646,646,0.992078468413342,"top_10_percent",65,0.969230769230769,0.940298507462687
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_cancer_selectivity",646,29,0.994581280788177,"top_10",10,0,0
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_cancer_selectivity",646,29,0.994581280788177,"top_25",25,0,0
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_cancer_selectivity",646,29,0.994581280788177,"top_50",50,0,0
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_cancer_selectivity",646,29,0.994581280788177,"top_10_percent",3,0,0
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_cancer_selectivity",646,646,0.994942244027692,"top_10",10,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_cancer_selectivity",646,646,0.994942244027692,"top_25",25,0.92,0.851851851851852
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_cancer_selectivity",646,646,0.994942244027692,"top_50",50,0.94,0.886792452830189
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_cancer_selectivity",646,646,0.994942244027692,"top_10_percent",65,0.969230769230769,0.940298507462687
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_cancer_selectivity",646,646,0.990200205357617,"top_10",10,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_cancer_selectivity",646,646,0.990200205357617,"top_25",25,0.84,0.724137931034483
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_cancer_selectivity",646,646,0.990200205357617,"top_50",50,0.96,0.923076923076923
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_cancer_selectivity",646,646,0.990200205357617,"top_10_percent",65,0.907692307692308,0.830985915492958
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_cysteine_ligandability",646,646,0.991723866187985,"top_10",10,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_cysteine_ligandability",646,646,0.991723866187985,"top_25",25,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_cysteine_ligandability",646,646,0.991723866187985,"top_50",50,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_cysteine_ligandability",646,646,0.991723866187985,"top_10_percent",65,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_cysteine_ligandability",646,646,0.999298522577444,"top_10",10,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_cysteine_ligandability",646,646,0.999298522577444,"top_25",25,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_cysteine_ligandability",646,646,0.999298522577444,"top_50",50,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_cysteine_ligandability",646,646,0.999298522577444,"top_10_percent",65,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_cysteine_ligandability",646,646,0.999369164411926,"top_10",10,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_cysteine_ligandability",646,646,0.999369164411926,"top_25",25,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_cysteine_ligandability",646,646,0.999369164411926,"top_50",50,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_cysteine_ligandability",646,646,0.999369164411926,"top_10_percent",65,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_conservation",646,646,0.999652711031742,"top_10",10,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_conservation",646,646,0.999652711031742,"top_25",25,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_conservation",646,646,0.999652711031742,"top_50",50,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_conservation",646,646,0.999652711031742,"top_10_percent",65,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_conservation",646,646,0.999914891501242,"top_10",10,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_conservation",646,646,0.999914891501242,"top_25",25,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_conservation",646,646,0.999914891501242,"top_50",50,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_conservation",646,646,0.999914891501242,"top_10_percent",65,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_conservation",646,646,0.999557631662837,"top_10",10,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_conservation",646,646,0.999557631662837,"top_25",25,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_conservation",646,646,0.999557631662837,"top_50",50,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_conservation",646,646,0.999557631662837,"top_10_percent",65,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_clinical_evidence",646,646,0.984758857287537,"top_10",10,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_clinical_evidence",646,646,0.984758857287537,"top_25",25,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_clinical_evidence",646,646,0.984758857287537,"top_50",50,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_clinical_evidence",646,646,0.984758857287537,"top_10_percent",65,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_clinical_evidence",646,646,0.998001196637956,"top_10",10,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_clinical_evidence",646,646,0.998001196637956,"top_25",25,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_clinical_evidence",646,646,0.998001196637956,"top_50",50,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_clinical_evidence",646,646,0.998001196637956,"top_10_percent",65,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_clinical_evidence",646,646,0.999041683645523,"top_10",10,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_clinical_evidence",646,646,0.999041683645523,"top_25",25,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_clinical_evidence",646,646,0.999041683645523,"top_50",50,1,1
-"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_clinical_evidence",646,646,0.999041683645523,"top_10_percent",65,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","adme_active",559,559,0.998422355544309,"top_10",10,0.9,0.818181818181818
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","adme_active",559,559,0.998422355544309,"top_25",25,0.96,0.923076923076923
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","adme_active",559,559,0.998422355544309,"top_50",50,0.94,0.886792452830189
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","adme_active",559,559,0.998422355544309,"top_10_percent",56,0.928571428571429,0.866666666666667
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","equal_six",559,559,0.966252107134048,"top_10",10,0.7,0.538461538461538
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","equal_six",559,559,0.966252107134048,"top_25",25,0.88,0.785714285714286
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","equal_six",559,559,0.966252107134048,"top_50",50,0.88,0.785714285714286
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","equal_six",559,559,0.966252107134048,"top_10_percent",56,0.875,0.777777777777778
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","equal_five",559,559,0.998615655853049,"top_10",10,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","equal_five",559,559,0.998615655853049,"top_25",25,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","equal_five",559,559,0.998615655853049,"top_50",50,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","equal_five",559,559,0.998615655853049,"top_10_percent",56,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_dependency_strength",559,29,0.965024630541872,"top_10",10,0,0
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_dependency_strength",559,29,0.965024630541872,"top_25",25,0,0
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_dependency_strength",559,29,0.965024630541872,"top_50",50,0.04,0.0204081632653061
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_dependency_strength",559,29,0.965024630541872,"top_10_percent",3,0,0
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_dependency_strength",559,559,0.989688797736633,"top_10",10,0.9,0.818181818181818
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_dependency_strength",559,559,0.989688797736633,"top_25",25,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_dependency_strength",559,559,0.989688797736633,"top_50",50,0.9,0.818181818181818
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_dependency_strength",559,559,0.989688797736633,"top_10_percent",56,0.910714285714286,0.836065573770492
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_dependency_strength",559,559,0.992104254690594,"top_10",10,0.9,0.818181818181818
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_dependency_strength",559,559,0.992104254690594,"top_25",25,0.96,0.923076923076923
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_dependency_strength",559,559,0.992104254690594,"top_50",50,0.94,0.886792452830189
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_dependency_strength",559,559,0.992104254690594,"top_10_percent",56,0.982142857142857,0.964912280701754
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_cancer_selectivity",559,29,0.989162561576354,"top_10",10,0,0
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_cancer_selectivity",559,29,0.989162561576354,"top_25",25,0,0
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_cancer_selectivity",559,29,0.989162561576354,"top_50",50,0.04,0.0204081632653061
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_cancer_selectivity",559,29,0.989162561576354,"top_10_percent",3,0,0
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_cancer_selectivity",559,559,0.995381415010756,"top_10",10,0.9,0.818181818181818
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_cancer_selectivity",559,559,0.995381415010756,"top_25",25,0.96,0.923076923076923
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_cancer_selectivity",559,559,0.995381415010756,"top_50",50,0.94,0.886792452830189
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_cancer_selectivity",559,559,0.995381415010756,"top_10_percent",56,0.982142857142857,0.964912280701754
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_cancer_selectivity",559,559,0.990659404866043,"top_10",10,0.9,0.818181818181818
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_cancer_selectivity",559,559,0.990659404866043,"top_25",25,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_cancer_selectivity",559,559,0.990659404866043,"top_50",50,0.9,0.818181818181818
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_cancer_selectivity",559,559,0.990659404866043,"top_10_percent",56,0.910714285714286,0.836065573770492
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_cysteine_ligandability",559,559,0.990035346768201,"top_10",10,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_cysteine_ligandability",559,559,0.990035346768201,"top_25",25,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_cysteine_ligandability",559,559,0.990035346768201,"top_50",50,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_cysteine_ligandability",559,559,0.990035346768201,"top_10_percent",56,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_cysteine_ligandability",559,559,0.999223225709299,"top_10",10,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_cysteine_ligandability",559,559,0.999223225709299,"top_25",25,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_cysteine_ligandability",559,559,0.999223225709299,"top_50",50,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_cysteine_ligandability",559,559,0.999223225709299,"top_10_percent",56,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_cysteine_ligandability",559,559,0.999400399220904,"top_10",10,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_cysteine_ligandability",559,559,0.999400399220904,"top_25",25,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_cysteine_ligandability",559,559,0.999400399220904,"top_50",50,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_cysteine_ligandability",559,559,0.999400399220904,"top_10_percent",56,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_conservation",559,559,0.999447045523494,"top_10",10,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_conservation",559,559,0.999447045523494,"top_25",25,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_conservation",559,559,0.999447045523494,"top_50",50,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_conservation",559,559,0.999447045523494,"top_10_percent",56,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_conservation",559,559,0.999837459275511,"top_10",10,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_conservation",559,559,0.999837459275511,"top_25",25,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_conservation",559,559,0.999837459275511,"top_50",50,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_conservation",559,559,0.999837459275511,"top_10_percent",56,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_conservation",559,559,0.999449518670612,"top_10",10,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_conservation",559,559,0.999449518670612,"top_25",25,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_conservation",559,559,0.999449518670612,"top_50",50,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_conservation",559,559,0.999449518670612,"top_10_percent",56,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_clinical_evidence",559,559,0.978081664966607,"top_10",10,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_clinical_evidence",559,559,0.978081664966607,"top_25",25,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_clinical_evidence",559,559,0.978081664966607,"top_50",50,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","leave_out_clinical_evidence",559,559,0.978081664966607,"top_10_percent",56,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_clinical_evidence",559,559,0.99717504770426,"top_10",10,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_clinical_evidence",559,559,0.99717504770426,"top_25",25,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_clinical_evidence",559,559,0.99717504770426,"top_50",50,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","half_clinical_evidence",559,559,0.99717504770426,"top_10_percent",56,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_clinical_evidence",559,559,0.998973575247425,"top_10",10,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_clinical_evidence",559,559,0.998973575247425,"top_25",25,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_clinical_evidence",559,559,0.998973575247425,"top_50",50,1,1
+"Paediatric","ERMS","Embryonal Rhabdomyosarcoma","double_clinical_evidence",559,559,0.998973575247425,"top_10_percent",56,1,1
 "Paediatric","EWS","Ewing Sarcoma","adme_active",1703,1703,0.99921495791207,"top_10",10,1,1
 "Paediatric","EWS","Ewing Sarcoma","adme_active",1703,1703,0.99921495791207,"top_25",25,0.92,0.851851851851852
 "Paediatric","EWS","Ewing Sarcoma","adme_active",1703,1703,0.99921495791207,"top_50",50,0.98,0.96078431372549
@@ -1151,6 +1079,78 @@
 "Paediatric","MB","Medulloblastoma","double_clinical_evidence",1154,1154,0.996016594854856,"top_25",25,1,1
 "Paediatric","MB","Medulloblastoma","double_clinical_evidence",1154,1154,0.996016594854856,"top_50",50,1,1
 "Paediatric","MB","Medulloblastoma","double_clinical_evidence",1154,1154,0.996016594854856,"top_10_percent",116,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","adme_active",1540,1540,0.999312724826611,"top_10",10,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","adme_active",1540,1540,0.999312724826611,"top_25",25,0.88,0.785714285714286
+"Paediatric","MRT","Malignant Rhabdoid Tumor","adme_active",1540,1540,0.999312724826611,"top_50",50,0.9,0.818181818181818
+"Paediatric","MRT","Malignant Rhabdoid Tumor","adme_active",1540,1540,0.999312724826611,"top_10_percent",154,0.993506493506494,0.987096774193548
+"Paediatric","MRT","Malignant Rhabdoid Tumor","equal_six",1540,1540,0.978653657807976,"top_10",10,0.7,0.538461538461538
+"Paediatric","MRT","Malignant Rhabdoid Tumor","equal_six",1540,1540,0.978653657807976,"top_25",25,0.84,0.724137931034483
+"Paediatric","MRT","Malignant Rhabdoid Tumor","equal_six",1540,1540,0.978653657807976,"top_50",50,0.88,0.785714285714286
+"Paediatric","MRT","Malignant Rhabdoid Tumor","equal_six",1540,1540,0.978653657807976,"top_10_percent",154,0.941558441558442,0.889570552147239
+"Paediatric","MRT","Malignant Rhabdoid Tumor","equal_five",1540,1540,0.992402699746612,"top_10",10,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","equal_five",1540,1540,0.992402699746612,"top_25",25,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","equal_five",1540,1540,0.992402699746612,"top_50",50,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","equal_five",1540,1540,0.992402699746612,"top_10_percent",154,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","leave_out_dependency_strength",1540,90,0.94807589414331,"top_10",10,0,0
+"Paediatric","MRT","Malignant Rhabdoid Tumor","leave_out_dependency_strength",1540,90,0.94807589414331,"top_25",25,0,0
+"Paediatric","MRT","Malignant Rhabdoid Tumor","leave_out_dependency_strength",1540,90,0.94807589414331,"top_50",50,0,0
+"Paediatric","MRT","Malignant Rhabdoid Tumor","leave_out_dependency_strength",1540,90,0.94807589414331,"top_10_percent",9,0,0
+"Paediatric","MRT","Malignant Rhabdoid Tumor","half_dependency_strength",1540,1540,0.986784540774503,"top_10",10,0.7,0.538461538461538
+"Paediatric","MRT","Malignant Rhabdoid Tumor","half_dependency_strength",1540,1540,0.986784540774503,"top_25",25,0.88,0.785714285714286
+"Paediatric","MRT","Malignant Rhabdoid Tumor","half_dependency_strength",1540,1540,0.986784540774503,"top_50",50,0.9,0.818181818181818
+"Paediatric","MRT","Malignant Rhabdoid Tumor","half_dependency_strength",1540,1540,0.986784540774503,"top_10_percent",154,0.928571428571429,0.866666666666667
+"Paediatric","MRT","Malignant Rhabdoid Tumor","double_dependency_strength",1540,1540,0.988259581695934,"top_10",10,0.9,0.818181818181818
+"Paediatric","MRT","Malignant Rhabdoid Tumor","double_dependency_strength",1540,1540,0.988259581695934,"top_25",25,0.88,0.785714285714286
+"Paediatric","MRT","Malignant Rhabdoid Tumor","double_dependency_strength",1540,1540,0.988259581695934,"top_50",50,0.92,0.851851851851852
+"Paediatric","MRT","Malignant Rhabdoid Tumor","double_dependency_strength",1540,1540,0.988259581695934,"top_10_percent",154,0.935064935064935,0.878048780487805
+"Paediatric","MRT","Malignant Rhabdoid Tumor","leave_out_cancer_selectivity",1540,90,0.994237971766062,"top_10",10,0,0
+"Paediatric","MRT","Malignant Rhabdoid Tumor","leave_out_cancer_selectivity",1540,90,0.994237971766062,"top_25",25,0,0
+"Paediatric","MRT","Malignant Rhabdoid Tumor","leave_out_cancer_selectivity",1540,90,0.994237971766062,"top_50",50,0,0
+"Paediatric","MRT","Malignant Rhabdoid Tumor","leave_out_cancer_selectivity",1540,90,0.994237971766062,"top_10_percent",9,0,0
+"Paediatric","MRT","Malignant Rhabdoid Tumor","half_cancer_selectivity",1540,1540,0.99568224189115,"top_10",10,0.9,0.818181818181818
+"Paediatric","MRT","Malignant Rhabdoid Tumor","half_cancer_selectivity",1540,1540,0.99568224189115,"top_25",25,0.88,0.785714285714286
+"Paediatric","MRT","Malignant Rhabdoid Tumor","half_cancer_selectivity",1540,1540,0.99568224189115,"top_50",50,0.92,0.851851851851852
+"Paediatric","MRT","Malignant Rhabdoid Tumor","half_cancer_selectivity",1540,1540,0.99568224189115,"top_10_percent",154,0.935064935064935,0.878048780487805
+"Paediatric","MRT","Malignant Rhabdoid Tumor","double_cancer_selectivity",1540,1540,0.990923294283887,"top_10",10,0.7,0.538461538461538
+"Paediatric","MRT","Malignant Rhabdoid Tumor","double_cancer_selectivity",1540,1540,0.990923294283887,"top_25",25,0.88,0.785714285714286
+"Paediatric","MRT","Malignant Rhabdoid Tumor","double_cancer_selectivity",1540,1540,0.990923294283887,"top_50",50,0.9,0.818181818181818
+"Paediatric","MRT","Malignant Rhabdoid Tumor","double_cancer_selectivity",1540,1540,0.990923294283887,"top_10_percent",154,0.928571428571429,0.866666666666667
+"Paediatric","MRT","Malignant Rhabdoid Tumor","leave_out_cysteine_ligandability",1540,1540,0.985569860845047,"top_10",10,0.9,0.818181818181818
+"Paediatric","MRT","Malignant Rhabdoid Tumor","leave_out_cysteine_ligandability",1540,1540,0.985569860845047,"top_25",25,0.96,0.923076923076923
+"Paediatric","MRT","Malignant Rhabdoid Tumor","leave_out_cysteine_ligandability",1540,1540,0.985569860845047,"top_50",50,0.98,0.96078431372549
+"Paediatric","MRT","Malignant Rhabdoid Tumor","leave_out_cysteine_ligandability",1540,1540,0.985569860845047,"top_10_percent",154,0.993506493506494,0.987096774193548
+"Paediatric","MRT","Malignant Rhabdoid Tumor","half_cysteine_ligandability",1540,1540,0.998536341536465,"top_10",10,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","half_cysteine_ligandability",1540,1540,0.998536341536465,"top_25",25,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","half_cysteine_ligandability",1540,1540,0.998536341536465,"top_50",50,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","half_cysteine_ligandability",1540,1540,0.998536341536465,"top_10_percent",154,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","double_cysteine_ligandability",1540,1540,0.998874390680604,"top_10",10,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","double_cysteine_ligandability",1540,1540,0.998874390680604,"top_25",25,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","double_cysteine_ligandability",1540,1540,0.998874390680604,"top_50",50,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","double_cysteine_ligandability",1540,1540,0.998874390680604,"top_10_percent",154,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","leave_out_conservation",1540,1540,0.99870086643119,"top_10",10,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","leave_out_conservation",1540,1540,0.99870086643119,"top_25",25,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","leave_out_conservation",1540,1540,0.99870086643119,"top_50",50,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","leave_out_conservation",1540,1540,0.99870086643119,"top_10_percent",154,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","half_conservation",1540,1540,0.999707506187278,"top_10",10,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","half_conservation",1540,1540,0.999707506187278,"top_25",25,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","half_conservation",1540,1540,0.999707506187278,"top_50",50,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","half_conservation",1540,1540,0.999707506187278,"top_10_percent",154,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","double_conservation",1540,1540,0.999073437743897,"top_10",10,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","double_conservation",1540,1540,0.999073437743897,"top_25",25,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","double_conservation",1540,1540,0.999073437743897,"top_50",50,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","double_conservation",1540,1540,0.999073437743897,"top_10_percent",154,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","leave_out_clinical_evidence",1540,1540,0.979303524596771,"top_10",10,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","leave_out_clinical_evidence",1540,1540,0.979303524596771,"top_25",25,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","leave_out_clinical_evidence",1540,1540,0.979303524596771,"top_50",50,0.96,0.923076923076923
+"Paediatric","MRT","Malignant Rhabdoid Tumor","leave_out_clinical_evidence",1540,1540,0.979303524596771,"top_10_percent",154,0.980519480519481,0.961783439490446
+"Paediatric","MRT","Malignant Rhabdoid Tumor","half_clinical_evidence",1540,1540,0.996349090928494,"top_10",10,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","half_clinical_evidence",1540,1540,0.996349090928494,"top_25",25,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","half_clinical_evidence",1540,1540,0.996349090928494,"top_50",50,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","half_clinical_evidence",1540,1540,0.996349090928494,"top_10_percent",154,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","double_clinical_evidence",1540,1540,0.994974088758332,"top_10",10,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","double_clinical_evidence",1540,1540,0.994974088758332,"top_25",25,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","double_clinical_evidence",1540,1540,0.994974088758332,"top_50",50,1,1
+"Paediatric","MRT","Malignant Rhabdoid Tumor","double_clinical_evidence",1540,1540,0.994974088758332,"top_10_percent",154,1,1
 "Paediatric","NB","Neuroblastoma","adme_active",959,959,0.998898632726581,"top_10",10,0.9,0.818181818181818
 "Paediatric","NB","Neuroblastoma","adme_active",959,959,0.998898632726581,"top_25",25,0.92,0.851851851851852
 "Paediatric","NB","Neuroblastoma","adme_active",959,959,0.998898632726581,"top_50",50,0.96,0.923076923076923

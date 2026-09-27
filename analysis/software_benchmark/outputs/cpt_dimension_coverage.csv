@@ -1,8 +1,8 @@
 "dimension","n_available","n_total","fraction_available"
-"dependency_strength",14877,14877,1
-"cancer_selectivity",14877,14877,1
-"cysteine_ligandability",1168,14877,0.0785104523761511
-"conservation",1115,14877,0.0749479061638771
-"clinical_evidence",1168,14877,0.0785104523761511
-"adme_druggability",3391,14877,0.227935739732473
-"CPT_default",14877,14877,1
+"dependency_strength",15319,15319,1
+"cancer_selectivity",15319,15319,1
+"cysteine_ligandability",1192,15319,0.0778118676153796
+"conservation",1137,15319,0.0742215549317841
+"clinical_evidence",1192,15319,0.0778118676153796
+"adme_druggability",3483,15319,0.227364710490241
+"CPT_default",15319,15319,1
