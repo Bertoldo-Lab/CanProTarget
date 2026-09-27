@@ -562,7 +562,7 @@ cpt_subtype_background <- function(matrix, meta, subtype) {
 #' @param dim_scores Named list of dimension scores (may be NA)
 #' @param raw_values Named list of optional raw values
 #' @return List with dimensions, active, missing, n_used
-cpt_dimension_report <- function(dim_scores, raw_values = list()) {
+cpt_dimension_report <- function(dim_scores, raw_values = list(), weights = NULL) {
   descriptions <- list(
     dependency_strength = "Mean gene effect in subtype (more negative = more essential). Score is percentile among all genes in this subtype.",
     cancer_selectivity = "Effect size vs other cancers (more negative = more selective). Score is percentile among all genes in this subtype.",
@@ -579,6 +579,11 @@ cpt_dimension_report <- function(dim_scores, raw_values = list()) {
   dims <- list()
   active <- character(0)
   missing <- character(0)
+  unweighted <- character(0)
+  # A dimension counts as active only if it is scored AND carries weight in
+  # the composite. ADME is scored for most engaged genes but weighted 0 by
+  # default, and counting it made "3 of 6 active" out of a 2-dimension score.
+  w <- if (is.null(weights)) NULL else unlist(cpt_coerce_weights(weights))
 
   for (nm in names(dim_scores)) {
     sc <- dim_scores[[nm]]
@@ -587,13 +592,18 @@ cpt_dimension_report <- function(dim_scores, raw_values = list()) {
       description = descriptions[[nm]] %||% nm,
       active = !(is.null(sc) || (length(sc) == 1 && is.na(sc)))
     )
+    if (isTRUE(entry$active) && !is.null(w) && !isTRUE(w[[nm]] > 0)) {
+      entry$active <- FALSE
+      entry$weight <- 0
+      unweighted <- c(unweighted, nm)
+    }
     if (!is.null(raw_values[[nm]]) && !is.na(raw_values[[nm]])) {
       entry$raw_value <- round(as.numeric(raw_values[[nm]]), 4)
     }
     dims[[nm]] <- entry
     if (isTRUE(entry$active)) {
       active <- c(active, nm)
-    } else {
+    } else if (!nm %in% unweighted) {
       missing <- c(missing, nm)
     }
   }
@@ -602,6 +612,7 @@ cpt_dimension_report <- function(dim_scores, raw_values = list()) {
     dimensions = dims,
     dimensions_active = active,
     dimensions_missing = missing,
+    dimensions_unweighted = unweighted,
     n_dimensions_used = length(active)
   )
 }
@@ -965,7 +976,8 @@ cpt_score_single <- function(gene, subtype, dataset = "CRISPR", data_env,
     raw_values = list(
       dependency_strength = cancer_mean,
       cancer_selectivity = effect_size
-    )
+    ),
+    weights = weights
   )
 
   # Raw thresholds (same as api_query_dependency) so we do not over-label
@@ -1123,15 +1135,19 @@ cpt_rank_targets <- function(subtype,
     cpt_weighted_composite(ds, weights = weights, min_dimensions = 2L)
   }, numeric(1))
 
+  # Scored dimensions that carry weight, as in cpt_dimension_report().
+  w_on <- unlist(weights)[c("dependency_strength", "cancer_selectivity",
+                            "cysteine_ligandability", "conservation",
+                            "clinical_evidence", "adme_druggability")] > 0
   n_dims <- vapply(seq_along(cand_idx), function(i) {
-    sum(!is.na(c(
+    sum(w_on & !is.na(c(
       dim_dep_all[cand_idx[i]],
       dim_sel_all[cand_idx[i]],
       dim_lig[i],
       dim_con[i],
       dim_cli[i],
       dim_adme[i]
-    )))
+    )), na.rm = TRUE)
   }, integer(1))
 
   is_dep <- !is.na(bg$cancer_means[cand_idx]) & bg$cancer_means[cand_idx] < -0.5
@@ -1292,6 +1308,9 @@ cpt_build_smcl_index <- function(binding, min_cr = 4) {
     names(binding)
   )
   x <- as.data.frame(binding[keep, cols, drop = FALSE], stringsAsFactors = FALSE)
+  # The stored tables carry source names (CL_344); every other surface of the
+  # app shows the canonical form (CL344), so the MCP tools do too.
+  x$probe_name <- cpt_canonical_probe_name(x$probe_name)
   x$CR <- suppressWarnings(as.numeric(x$CR))
   if ("n_targets" %in% names(x)) {
     x$n_targets <- suppressWarnings(as.numeric(x$n_targets))

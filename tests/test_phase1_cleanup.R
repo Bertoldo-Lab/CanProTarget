@@ -31,6 +31,7 @@ suppressPackageStartupMessages({
   library(dplyr)
 })
 
+source("R/plot_palette.R", local = TRUE)
 source("R/app_helpers.R", local = TRUE)
 source("R/functions.R", local = TRUE)
 
@@ -180,7 +181,8 @@ p_all <- cpt_boiled_egg_gg(adme_toy, selected_probe = "AC2", show_mode = "all")
 assert("returns ggplot", inherits(p_all, "ggplot"))
 assert("x axis label is WLOGP", identical(p_all$labels$x, "WLOGP"))
 assert("y axis label is TPSA", grepl("TPSA", p_all$labels$y, fixed = TRUE))
-assert("title is BOILED-Egg", identical(p_all$labels$title, "BOILED-Egg"))
+# No in-plot title by design: the section heading above names the chart.
+assert("no in-plot title", is.null(p_all$labels$title))
 assert("subtitle explains HIA white / BBB yolk",
        !is.null(p_all$labels$subtitle) &&
          grepl("HIA", p_all$labels$subtitle, fixed = TRUE) &&
@@ -267,39 +269,11 @@ deps_src <- paste(readLines("R/dependencies_module.R", warn = FALSE), collapse =
 swiss_src <- paste(readLines("R/swissadme_module.R", warn = FALSE), collapse = "\n")
 app_src <- paste(readLines("app.R", warn = FALSE), collapse = "\n")
 
-assert("deps uses cpt_group_comparison_df",
-       grepl("cpt_group_comparison_df", deps_src, fixed = TRUE))
-assert("cancer plot uses selected_gene_cancer",
-       grepl("make_group_gg\\(input\\$selected_gene_cancer\\)", deps_src))
-assert("all-genes plot uses selected_gene_all",
-       grepl("make_group_gg\\(input\\$selected_gene_all\\)", deps_src))
-# Old bug: one reactive preferred cancer picker then fell back to all.
-old_shared_picker <- grepl(
-  "if\\s*\\(!is\\.null\\(input\\$selected_gene_cancer\\)",
-  deps_src
-) && grepl(
-  "nzchar\\(input\\$selected_gene_cancer\\)",
-  deps_src
-)
-assert("no shared prefer-cancer-then-all gene picker", !isTRUE(old_shared_picker))
-
-count_re <- function(pattern, text) {
-  m <- gregexpr(pattern, text)[[1]]
-  ml <- attr(m, "match.length")
-  if (length(ml) == 1L && ml[1] == -1L) 0L else length(m)
-}
-n_cancer_calls <- count_re("make_group_gg\\(input\\$selected_gene_cancer\\)", deps_src)
-n_all_calls <- count_re("make_group_gg\\(input\\$selected_gene_all\\)", deps_src)
-assert("make_group_gg called for cancer gene at least twice (plot+download)",
-       n_cancer_calls >= 2)
-assert("make_group_gg called for all gene at least twice (plot+download)",
-       n_all_calls >= 2)
-
-assert("HTML report gene follows the open Dependencies subtab",
-       grepl("resolve_report_gene", deps_src, fixed = TRUE) &&
-         grepl("input\\$dep_subtabs", deps_src) &&
-         grepl("input\\$selected_gene_all", deps_src) &&
-         grepl("input\\$selected_gene_cancer", deps_src))
+# The group-comparison box plots moved from a Dependencies subtab to the
+# Target tab's effect_box, so the old per-subtab picker checks no longer apply.
+gene_src <- paste(readLines("R/gene_module.R", warn = FALSE), collapse = "\n")
+assert("Target tab renders the group comparison box plot",
+       grepl('output$effect_box', gene_src, fixed = TRUE))
 
 assert("swissadme uses cpt_boiled_egg_gg",
        grepl("cpt_boiled_egg_gg", swiss_src, fixed = TRUE))

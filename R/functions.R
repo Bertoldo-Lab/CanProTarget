@@ -746,3 +746,30 @@ cpt_read_effectsizes <- function(path) {
   if (grepl("\\.rds$", path)) readRDS(path)
   else readr::read_tsv(path, show_col_types = FALSE, progress = FALSE)
 }
+
+#' Apply the Dependency box's selection rules to a precomputed effect-size table.
+#'
+#' One definition for every view that says which genes are selected, so the
+#' Discover summary, its dependency browse and the Dependency analysis agree.
+#' Adds passes_effect, passes_p, passes_nc, is_essential, selected and status.
+cpt_dependency_status <- function(df, effect_min = -0.1, apply_pvalue = TRUE,
+                                  excl_common = TRUE, req_nc_sig = FALSE) {
+  p <- suppressWarnings(as.numeric(df$p_value))
+  df$passes_effect <- !is.na(df$EffectSize) & df$EffectSize <= effect_min
+  df$passes_p <- !is.na(p) & p < 0.05
+  nc <- if ("pval_vs_NonCancer" %in% names(df)) {
+    suppressWarnings(as.numeric(df$pval_vs_NonCancer))
+  } else {
+    rep(NA_real_, nrow(df))
+  }
+  df$passes_nc <- !is.na(nc) & nc < 0.05
+  df$is_essential <- !is.na(df$Avg) & df$Avg < -0.5
+  candidate <- df$passes_effect &
+    (!isTRUE(apply_pvalue) | df$passes_p) &
+    (!isTRUE(req_nc_sig) | df$passes_nc)
+  df$selected <- candidate & !(isTRUE(excl_common) & df$is_essential)
+  df$status <- ifelse(df$selected, "Selected",
+                      ifelse(candidate & df$is_essential, "Common essential",
+                             "Not selected"))
+  df
+}

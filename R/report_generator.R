@@ -92,6 +92,11 @@ cpt_render_report <- function(report_type,
   # Inject project_root and data_dir into params
   params$project_root <- normalizePath(project_root)
   if (is.null(params$data_dir)) params$data_dir <- "data"
+  # rmarkdown refuses any param the template does not declare. Callers pass
+  # request-level fields too (report_type from the MCP server, dataset for a
+  # cysteine report), which failed every MCP report request.
+  declared <- names(rmarkdown::yaml_front_matter(tpl_file)$params)
+  params <- params[intersect(names(params), declared)]
 
   # Copy CSS to temp render location (rmarkdown resolves relative to .Rmd)
   css_src <- file.path(tpl_dir, "report_style.css")

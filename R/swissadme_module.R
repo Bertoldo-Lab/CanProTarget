@@ -63,32 +63,38 @@ swissadme_ui <- function(id, wrap = TRUE) {
     fluidRow(
       # ---- Left control panel --------------------------------
       box(
-        title = "Probe & Filter Controls", width = 3, status = "primary",
+        title = "Probe & filter controls", width = 3, status = "primary",
         solidHeader = TRUE,
 
         # Probe selector (populated from SwissADME table)
-        cpt_label("Select Probe", for_id = ns("probe_select")),
+        cpt_label("Select probe", for_id = ns("probe_select")),
         selectInput(ns("probe_select"), label = NULL,
           choices  = character(0),
           selectize = TRUE),
         hr(),
 
         # CR cutoff for counting "targets" in the protein binding tables
-        cpt_label("Minimum Competition Ratio (CR)", for_id = ns("cr_cutoff")),
+        cpt_label(
+          "Competition ratio",
+          tags$p("Range 0–20 · default 4. R ≥ 4 is the field-standard \"liganded\" threshold (Backus et al., Nature 2016)."),
+          tags$p("Values above 20 exist in the data but are treated as at the ceiling (MS dynamic-range limit)."),
+          tags$p("Going below 1.5 pulls in millions of low-confidence records and can hang the app for 20+ seconds."),
+          for_id = ns("cr_cutoff")
+        ),
         numericInput(ns("cr_cutoff"), label = NULL,
-          value = 4, min = 0, step = 0.5),
+          value = 4, min = 0, max = 20, step = 0.5),
         hr(),
 
         # Explicit load button for protein binding + full table
         actionButton(
           ns("load_binding"),
-          "Load Protein Binding",
+          "Load protein binding",
           class = "btn-sm btn-primary btn-block"
         ),
         br(),
         actionButton(
           ns("reset_swiss"),
-          "Reset Controls",
+          "Reset controls",
           icon = icon("rotate-left"),
           class = "btn-sm btn-default btn-block"
         )
@@ -96,7 +102,7 @@ swissadme_ui <- function(id, wrap = TRUE) {
 
       # ---- Main display area ---------------------------------
       box(
-        title = "Chemistry Explorer", width = 9, status = "info",
+        title = "Chemistry explorer", width = 9, status = "info",
         solidHeader = TRUE,
         uiOutput(ns("data_unavailable")),
         tabsetPanel(
@@ -156,7 +162,7 @@ swissadme_ui <- function(id, wrap = TRUE) {
                 ),
                 column(
                   width = 6,
-                  cpt_section("Drug-likeness Radar", level = "h4"),
+                  cpt_section("Drug-likeness radar", level = "h4"),
                   br(),
                   plotlyOutput(ns("radar_plot"), height = "550px")
                 )
@@ -181,7 +187,7 @@ swissadme_ui <- function(id, wrap = TRUE) {
 
           # -- Protein binding tables --------------------------
           tabPanel(
-            "Protein Binding",
+            "Protein binding",
             br(),
             conditionalPanel(
               condition = paste0("output['", ns("binding_ready"), "'] != '1'"),
@@ -214,7 +220,7 @@ swissadme_ui <- function(id, wrap = TRUE) {
 
           # -- Full SwissADME table ----------------------------
           tabPanel(
-            "Full SwissADME Table",
+            "Full SwissADME table",
             br(),
             DTOutput(ns("full_adme_table")),
             br(),
@@ -966,7 +972,7 @@ swissadme_server <- function(id, shared_data) {
           x = "Target Rank",
           y = "Competition Ratio (CR)",
           colour = "Cell Line",
-          title = "Probe Protein Binding"
+          title = "Probe protein binding"
         ) +
         cpt_theme() +
         ggplot2::theme(

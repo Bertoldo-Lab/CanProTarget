@@ -191,7 +191,7 @@ dispatch <- function(request) {
       )
     },
     "platform_info" = {
-      api_platform_info()
+      api_platform_info(data_env)
     },
     "canprotarget_score" = {
       api_canprotarget_score(
@@ -318,7 +318,10 @@ repeat {
   }
 
   # Write response (single line JSON)
-  json_out <- toJSON(response, auto_unbox = TRUE, null = "null", na = "null")
+  # digits = NA: jsonlite's default rounds to 4 decimal places, which sent
+  # every p-value below 5e-5 to agents as 0.
+  json_out <- toJSON(response, auto_unbox = TRUE, null = "null", na = "null",
+                     digits = NA)
   cat(json_out, "\n", sep = "")
   flush(stdout())
 }

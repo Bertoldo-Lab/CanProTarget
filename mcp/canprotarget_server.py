@@ -125,7 +125,7 @@ def list_genes(
     List all genes available in a dataset.
 
     Returns gene symbols from the DepMap gene effect matrix.
-    CRISPR (23Q4) has ~18,443 genes; RNAi (DEMETER2) has ~17,309 genes.
+    CRISPR (23Q4) has ~18,443 genes; RNAi (DEMETER2) has ~17,107 genes.
     """
     return r_query("list_genes", {"dataset": dataset})
 
