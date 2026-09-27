@@ -32,6 +32,15 @@ CPT_LAYERS <- c(
   "Cysteine function" = "functionality"
 )
 
+cpt_collapse_engaged <- function(es, grain, cr, mt) {
+  es$passes <- !is.na(es$CR) & es$CR >= cr &
+    (is.na(es$n_targets) | es$n_targets <= mt)
+  if (!nrow(es) || grain == "probe") return(es)
+  es <- es[order(!es$passes, -ifelse(is.na(es$CR), -Inf, es$CR)), , drop = FALSE]
+  key <- if (grain == "gene") cpt_gene_match_key(es$gene_name) else es$cysteineid
+  es[!duplicated(key), , drop = FALSE]
+}
+
 CPT_GRAINS <- c(
   "One row per gene"              = "gene",
   "One row per cysteine"          = "cysteine",
@@ -54,15 +63,19 @@ targets_panel_ligandability_box <- function(ns) {
       tags$details(
         class = "cpt-box-details",
         tags$summary(class = "cpt-box-details-summary", "Change"),
-        cpt_label("Minimum competition ratio", for_id = ns("tp_cr")),
-        # The floor stops at 1.5, not 0. A competition ratio near 1 is equal
-        # signal with and without the competitor, which is no engagement at
-        # all, so the positions below it describe nothing: CR >= 1 keeps 5.5
-        # million of the 10.6 million records and CR >= 0 keeps every one.
-        # They also cost 20 s and more to re-tier, which read as the app
-        # hanging. CR >= 1.5 keeps 792,000 and takes under three seconds.
-        sliderInput(ns("tp_cr"), label = NULL, min = 1.5, max = 20, value = 4, step = 0.5),
-        cpt_label("Maximum probe targets", for_id = ns("tp_max_targets")),
+        cpt_label(
+          "Competition ratio",
+          tags$p("Range 0–20 · default 4. R ≥ 4 is the field-standard \"liganded\" threshold (Backus et al., Nature 2016)."),
+          tags$p("Values above 20 exist in the data but are treated as at the ceiling (MS dynamic-range limit)."),
+          tags$p("Going below 1.5 pulls in millions of low-confidence records and can hang the app for 20+ seconds."),
+          for_id = ns("tp_cr")
+        ),
+        sliderInput(ns("tp_cr"), label = NULL, min = 0, max = 20, value = 4, step = 0.5),
+        cpt_label(
+          "Maximum probe targets",
+          tags$p("Default 20. Upper bound in the data is 1,252 (some probes engage that many proteins). Raise this to include promiscuous probes; lower it to tighten selectivity."),
+          for_id = ns("tp_max_targets")
+        ),
         numericInput(ns("tp_max_targets"), label = NULL, value = 20, min = 1,
                      max = 1252, step = 1)
       )
@@ -155,7 +168,7 @@ targets_panel_actions <- function(ns) {
                      icon("sliders"), " CPT Score weights"),
         tags$div(
           class = "cpt-collapse-body",
-          cpt_section("CPT Score weights", level = "h5"),
+          cpt_section("CPT score weights", level = "h5"),
           fluidRow(
             column(4, sliderInput(ns("w_dependency_strength"), "Dependency strength",
               min = 0, max = 10, value = 3, step = 0.5)),
@@ -363,6 +376,7 @@ targets_panel_results <- function(ns, dep_extra = NULL,
         pick("tp_chart_pick", "lig_select",   cht("tp_selectivity")),
         pick("tp_chart_pick", "dep_tier",     cht("tp_dep_tier")),
         pick("tp_chart_pick", "lig_vol_best", cht("lig_volcano_best")),
+        pick("tp_chart_pick", "lig_vol_cys",  cht("lig_volcano_cys")),
         pick("tp_chart_pick", "res_tiers",    cht("res_tier_chart")),
         pick("tp_chart_pick", "res_join",     cht("res_join_chart")),
         pick("tp_chart_pick", "res_abe_cbe",  atlas_charts$abe_cbe),
@@ -554,10 +568,11 @@ targets_panel_server <- function(input, output, session, shared_data,
     # Each layer states the settings it was run under, so the line accounts for
     # everything on screen rather than only the chemistry.
     if ("dependency" %in% on) {
-      bits <- c(bits, paste0("effect \u2264 ", input$effect_min %||% -0.1))
-      if (isTRUE(input$apply_pvalue)) bits <- c(bits, "p<0.05")
-      if (isTRUE(input$excl_common)) bits <- c(bits, "no common essentials")
-      if (isTRUE(input$req_nc_sig)) bits <- c(bits, "significant vs non-cancer")
+      set <- dep_settings()
+      bits <- c(bits, paste0("effect \u2264 ", set$effect_min))
+      if (set$apply_pvalue) bits <- c(bits, "p<0.05")
+      if (set$excl_common) bits <- c(bits, "no common essentials")
+      if (set$req_nc_sig) bits <- c(bits, "significant vs non-cancer")
     }
     if ("ligandability" %in% on)
       bits <- c(bits, paste0("CR \u2265 ", input$tp_cr %||% 4,
@@ -591,10 +606,10 @@ targets_panel_server <- function(input, output, session, shared_data,
       g[["Dependency"]] <- c("Cancer-selective genes" = "dep_ranked",
                              "Every gene in this subtype" = "dep_all")
     if ("ligandability" %in% on)
-      g[["Ligandability"]] <- c("Best probe per protein" = "lig_best",
-                                "Every engaged cysteine" = "lig_engaged")
+      g[["Ligandability"]] <- c("Selectively ligandable" = "lig_best",
+                                "All engagements" = "lig_engaged")
     if ("functionality" %in% on)
-      g[["Cysteine function"]] <- c("Engaged cysteines" = "res_engaged",
+      g[["Cysteine function"]] <- c("Cys-function-annotated engagements" = "res_engaged",
                                     "Cysteine atlas" = "res_atlas")
     combined <- character(0)
     if (all(c("dependency", "ligandability") %in% on))
@@ -633,7 +648,10 @@ targets_panel_server <- function(input, output, session, shared_data,
     if (length(on) > 1L)
       combined <- c(combined, "Engagement vs selectivity (candidates)" = "lig_select")
     if (all(c("dependency", "ligandability") %in% on))
-      combined <- c(combined, "Ligandable volcano" = "lig_vol_best")
+      combined <- c(combined, "Ligandable volcano (Dep × Lig)" = "lig_vol_best")
+    if (all(c("dependency", "ligandability", "functionality") %in% on))
+      combined <- c(combined,
+                    "Ligandable volcano (Cys-functional)" = "lig_vol_cys")
     if (all(c("dependency", "functionality") %in% on))
       combined <- c(combined, "Dependency by tier" = "dep_tier")
     if (all(c("ligandability", "functionality") %in% on))
@@ -833,6 +851,21 @@ targets_panel_server <- function(input, output, session, shared_data,
         df <- df[is.na(df$n_targets) | df$n_targets <= input$tp_max_targets, , drop = FALSE]
       }
       df$gene_key <- cpt_gene_match_key(df$gene_name)
+      # Row-level ligandable filter, so this funnel matches the Selectively-
+      # ligandable table (engaged_sites doesn't carry pb's `ligandable` column).
+      pb <- tryCatch(shared_data$protein_binding_cr4(), error = function(e) NULL)
+      if (is.null(pb) && !is.null(shared_data$protein_binding_lookup)) {
+        pb <- tryCatch(shared_data$protein_binding_lookup(), error = function(e) NULL)
+      }
+      if (is.data.frame(pb) && nrow(pb) > 0 &&
+          all(c("gene_name", "cysteineid", "ligandable") %in% names(pb))) {
+        lig_yes <- !is.na(pb$ligandable) &
+          toupper(as.character(pb$ligandable)) %in% c("YES", "TRUE", "1", "Y")
+        lig_keys <- unique(paste(as.character(pb$gene_name[lig_yes]),
+                                 as.character(pb$cysteineid[lig_yes])))
+        df_keys <- paste(as.character(df$gene_name), as.character(df$cysteineid))
+        df <- df[df_keys %in% lig_keys, , drop = FALSE]
+      }
       return(restrict_to_genes(df))
     }
 
@@ -868,9 +901,14 @@ targets_panel_server <- function(input, output, session, shared_data,
     if (has_layer("dependency")) {
       st <- get_subtype()
       ds <- get_dataset()
-      dep <- idx$dependency
-      dep <- dep[dep$dataset == ds & dep$subtype %in% st, , drop = FALSE]
-      dep_genes <- unique(dep$gene_key)
+      sel <- dep_selected()
+      if (!is.null(sel)) {
+        dep_genes <- unique(sel$gene_key)
+      } else {
+        dep <- idx$dependency
+        dep <- dep[dep$dataset == ds & dep$subtype %in% st, , drop = FALSE]
+        dep_genes <- unique(dep$gene_key)
+      }
       steps[["Dependency"]] <- length(dep_genes)
     }
 
@@ -967,12 +1005,20 @@ targets_panel_server <- function(input, output, session, shared_data,
 
     # Attach dependency columns when that layer is on.
     if (has_layer("dependency")) {
-      dep <- idx$dependency
-      dep <- dep[dep$dataset == get_dataset() & dep$subtype %in% get_subtype(), , drop = FALSE]
-      m <- match(out$gene_key, dep$gene_key)
-      out$effect_size <- dep$effect_size[m]
-      out$p_value <- dep$p_value[m]
-      out$subtype <- dep$subtype[m]
+      sel <- dep_selected()
+      if (!is.null(sel)) {
+        m <- match(out$gene_key, sel$gene_key)
+        out$effect_size <- sel$EffectSize[m]
+        out$p_value <- suppressWarnings(as.numeric(sel$p_value[m]))
+        out$subtype <- ifelse(is.na(m), NA_character_, get_subtype()[[1]])
+      } else {
+        dep <- idx$dependency
+        dep <- dep[dep$dataset == get_dataset() & dep$subtype %in% get_subtype(), , drop = FALSE]
+        m <- match(out$gene_key, dep$gene_key)
+        out$effect_size <- dep$effect_size[m]
+        out$p_value <- dep$p_value[m]
+        out$subtype <- dep$subtype[m]
+      }
     }
     out
   })
@@ -998,17 +1044,19 @@ targets_panel_server <- function(input, output, session, shared_data,
       uni <- tryCatch(dep_universe(), error = function(e) NULL)
       if (!is.null(uni) && nrow(uni)) {
         m <- match(cpt_gene_match_key(out$gene_name), cpt_gene_match_key(uni$gene_name))
-        take <- function(target, candidates, digits) {
+        # p/q kept as sig figs; 4dp rounds strong hits to 0.
+        take <- function(target, candidates, digits, sig = FALSE) {
           src <- intersect(candidates, names(uni))[1]
           if (is.na(src)) return(invisible(NULL))
-          out[[target]] <<- round(suppressWarnings(as.numeric(uni[[src]][m])), digits)
+          x <- suppressWarnings(as.numeric(uni[[src]][m]))
+          out[[target]] <<- if (sig) signif(x, digits) else round(x, digits)
         }
-        take("q_value",           c("q.value", "q_value"), 4)
+        take("q_value",           c("q.value", "q_value"), 3, sig = TRUE)
         take("neg_log10_p",       c("neg_log10_p_value", "neg_log10_p"), 2)
         take("cancer_avg",        c("Cancer_Avg", "cancer_avg"), 3)
         take("noncancer_avg",     c("NonCancer_Avg", "noncancer_avg"), 3)
         take("avg",               c("Avg", "avg"), 3)
-        take("pval_vs_noncancer", c("pval_vs_NonCancer", "pval_vs_noncancer"), 4)
+        take("pval_vs_noncancer", c("pval_vs_NonCancer", "pval_vs_noncancer"), 3, sig = TRUE)
       }
     }
     out
@@ -1050,7 +1098,7 @@ targets_panel_server <- function(input, output, session, shared_data,
       # The index stores these at full precision; printing sixteen decimals of
       # a gene effect says nothing the fourth does not.
       add("Effect size", num("effect_size", 4))
-      add("p", num("p_value", 4))
+      add("p", signif(suppressWarnings(as.numeric(col("p_value"))), 3))
       add("q", col("q_value"))
       add("-log10 p", col("neg_log10_p"))
       add("Mean in subtype", col("cancer_avg"))
@@ -1208,7 +1256,9 @@ targets_panel_server <- function(input, output, session, shared_data,
     df <- out[, unname(cols), drop = FALSE]
     names(df) <- names(cols)
     num <- vapply(df, is.numeric, logical(1))
-    df[num] <- lapply(df[num], function(x) round(x, 4))
+    pcol <- names(df) %in% c("p", "q", "p vs non-cancer")
+    df[num & !pcol] <- lapply(df[num & !pcol], function(x) round(x, 4))
+    df[num & pcol] <- lapply(df[num & pcol], function(x) signif(x, 3))
     # "true"/"false" is how the data frame prints, not how a result should
     # read. An em dash for FALSE keeps the column scannable; NA stays blank,
     # because unknown and negative are different answers.
@@ -1428,6 +1478,21 @@ targets_panel_server <- function(input, output, session, shared_data,
   # Both selection rules, applied to the whole subtype so the excluded side is
   # visible: effect size, p < 0.05, and the common-essential exclusion
   # (Avg < -0.5) that Discover applies on top of them.
+  dep_settings <- reactive(shared_data$dep_filters())
+
+  # Subtype's selected deps under the Dependency box's settings; NULL falls
+  # back to the index's default selection.
+  dep_selected <- reactive({
+    df <- tryCatch(dep_universe(), error = function(e) NULL)
+    if (is.null(df) || !nrow(df)) return(NULL)
+    set <- dep_settings()
+    df <- cpt_dependency_status(df, shared_data$dep_effect_min(),
+                                set$apply_pvalue, set$excl_common, set$req_nc_sig)
+    df <- df[df$selected, , drop = FALSE]
+    df$gene_key <- cpt_gene_match_key(df$gene_name)
+    df
+  })
+
   dep_browse <- reactive({
     df <- dep_universe()
     cut <- shared_data$dep_effect_min()
@@ -1439,14 +1504,10 @@ targets_panel_server <- function(input, output, session, shared_data,
     }
     df$p_value <- suppressWarnings(as.numeric(df$p_value))
     df$neglog_p <- -log10(pmax(df$p_value, .Machine$double.xmin))
-    df$is_essential <- !is.na(df$Avg) & df$Avg < -0.5
-    df$passes_effect <- !is.na(df$EffectSize) & df$EffectSize <= cut
-    df$passes_p <- !is.na(df$p_value) & df$p_value < 0.05
-    df$status <- ifelse(
-      df$is_essential, "Common essential",
-      ifelse(df$passes_effect & df$passes_p, "Selected",
-             "Not selected"))
-    list(df = df, cut = cut)
+    set <- dep_settings()
+    df <- cpt_dependency_status(df, cut, set$apply_pvalue, set$excl_common,
+                                set$req_nc_sig)
+    list(df = df, cut = cut, settings = set)
   })
 
   dep_vb <- function(expr, subtitle, icon_name, colour) {
@@ -1466,17 +1527,30 @@ targets_panel_server <- function(input, output, session, shared_data,
                                 "genes scored in this subtype", "dna", "light-blue")
   output$dep_vb_effect <- dep_vb(function(b) sum(b$df$passes_effect),
                                  "clear the effect-size cutoff", "arrow-down", "aqua")
-  output$dep_vb_both <- dep_vb(
-    function(b) sum(b$df$passes_effect & b$df$passes_p),
-    "also clear p < 0.05", "filter", "blue")
+  output$dep_vb_both <- renderValueBox({
+    b <- dep_browse()
+    d <- b$df
+    keep <- d$passes_effect
+    rules <- character(0)
+    if (b$settings$apply_pvalue) { keep <- keep & d$passes_p; rules <- "p < 0.05" }
+    if (b$settings$req_nc_sig) { keep <- keep & d$passes_nc; rules <- c(rules, "p vs non-cancer < 0.05") }
+    valueBox(format(sum(keep), big.mark = ","),
+             if (length(rules)) paste("also clear", paste(rules, collapse = " and "))
+             else "no significance filter applied",
+             icon = icon("filter"), color = "blue")
+  })
   output$dep_vb_essential <- renderValueBox({
     b <- dep_browse()
     sel <- sum(b$df$status == "Selected")
-    dropped <- sum(b$df$passes_effect & b$df$passes_p & b$df$is_essential)
+    dropped <- sum(b$df$status == "Common essential")
     valueBox(
       format(sel, big.mark = ","),
-      paste0("selected (", format(dropped, big.mark = ","),
-             " pan-essential removed)"),
+      if (b$settings$excl_common) {
+        paste0("selected (", format(dropped, big.mark = ","),
+               " pan-essential removed)")
+      } else {
+        "selected (pan-essentials kept)"
+      },
       icon = icon("circle-check"), color = "navy")
   })
 
@@ -1653,12 +1727,14 @@ targets_panel_server <- function(input, output, session, shared_data,
              provenance = data.frame(
                setting = c("dataset", "subtype", "effect-size cutoff",
                            "p-value rule", "common-essential rule",
+                           "non-cancer significance rule",
                            "rows exported", "exported"),
                value = c(get_dataset(),
                          paste(get_subtype(), collapse = "; "),
                          as.character(shared_data$dep_effect_min()),
-                         "p < 0.05",
-                         "mean effect < -0.5 excluded",
+                         if (dep_settings()$apply_pvalue) "p < 0.05" else "not applied",
+                         if (dep_settings()$excl_common) "mean effect < -0.5 excluded" else "not applied",
+                         if (dep_settings()$req_nc_sig) "p vs non-cancer < 0.05" else "not applied",
                          as.character(nrow(df)),
                          format(Sys.time(), "%Y-%m-%d %H:%M:%S")),
                stringsAsFactors = FALSE)),
@@ -1691,11 +1767,7 @@ targets_panel_server <- function(input, output, session, shared_data,
       n_by <- tapply(as.character(es$probe_name), ckey, function(x) length(unique(x)))
       es$n_probes <- as.integer(n_by[as.character(ckey)])
     }
-    if (nrow(es) && grain != "probe") {
-      es <- es[order(-ifelse(is.na(es$CR), -Inf, es$CR)), , drop = FALSE]
-      key <- if (grain == "gene") cpt_gene_match_key(es$gene_name) else es$cysteineid
-      es <- es[!duplicated(key), , drop = FALSE]
-    }
+    es <- cpt_collapse_engaged(es, grain, cr, mt)
 
     # SMILES, dataset and cell line are measurements, so they live in the
     # binding table rather than the index. The CR >= 4 file holds exactly these
@@ -1709,8 +1781,6 @@ targets_panel_server <- function(input, output, session, shared_data,
       }
     }
 
-    es$passes <- !is.na(es$CR) & es$CR >= cr &
-      (is.na(es$n_targets) | es$n_targets <= mt)
     list(es = es, cr = cr, mt = mt, grain = grain)
   })
 
@@ -1863,8 +1933,14 @@ targets_panel_server <- function(input, output, session, shared_data,
     shiny::validate(need(nrow(d) > 0,
       "No rows carry both a dependency and a tier."))
 
-    tiers <- sort(unique(as.integer(d$evidence_tier)))
-    ti <- match(as.integer(d$evidence_tier), tiers)
+    # Collapse to one row per gene at the gene's best (lowest) tier — effect_size
+    # is per-gene, so plotting every engagement inflates the tier distributions.
+    d$evidence_tier <- as.integer(d$evidence_tier)
+    d <- d[order(d$gene_name, d$evidence_tier), , drop = FALSE]
+    d <- d[!duplicated(d$gene_name), , drop = FALSE]
+
+    tiers <- sort(unique(d$evidence_tier))
+    ti <- match(d$evidence_tier, tiers)
     site <- if ("site" %in% names(d)) d$site else rep("", nrow(d))
 
     # Points are spread across the box by rank within their tier rather than at

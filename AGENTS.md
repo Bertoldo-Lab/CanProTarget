@@ -112,7 +112,7 @@ Requires: Python 3.10+ with `mcp` package, R 4.x+ with `jsonlite`, data files in
 | Dataset | Coverage | Source |
 |---------|----------|--------|
 | CRISPR Gene Effect | 18,443 genes x 1,100 cell lines | DepMap 23Q4 |
-| RNAi Gene Effect | 17,309 genes x 712 cell lines | DEMETER2 v6 |
+| RNAi Gene Effect | 17,107 genes x 712 cell lines | DEMETER2 v6 |
 | Cancer subtypes | 83 (CRISPR), 56 (RNAi) | OncotreeSubtype classification |
 | Cysteine Editing Atlas | 13,872 sites, 1,778 genes | Li et al., Nat Chem Biol 2023 |
 | Chemoproteomics (CR) | 998 probes x 8,425 genes x 37,774 cysteine sites | Six probe studies, 7 cell lines (see README) |

@@ -692,7 +692,14 @@ api_compare_subtypes <- function(gene, subtype1, subtype2, dataset = "CRISPR", d
 
 #' Return platform metadata, version, and citation info.
 #' @return List with platform information
-api_platform_info <- function() {
+api_platform_info <- function(data_env = NULL) {
+  dims <- function(m, genes, lines) {
+    if (is.null(m)) return(c(genes, lines))
+    c(ncol(m), nrow(m))
+  }
+  cr <- dims(data_env$crispr_matrix, 18443L, 1100L)
+  rn <- dims(data_env$rnai_matrix, 17107L, 712L)
+  n_sites <- if (is.null(data_env$cys_atlas)) 13872L else nrow(data_env$cys_atlas)
   list(
     name = "CanProTarget",
     version = CPT_PLATFORM_VERSION,
@@ -702,9 +709,9 @@ api_platform_info <- function() {
       "Specialist tool for covalent oncology target questions; not a general science workbench."
     ),
     data_sources = list(
-      list(name = "DepMap CRISPR", version = "23Q4", genes = 18443L, cell_lines = 1100L),
-      list(name = "DepMap RNAi (DEMETER2)", version = "v6", genes = 17309L, cell_lines = 712L),
-      list(name = "Cysteine Editing Atlas", reference = "Li et al. Nat Chem Biol 2023", sites = 13872L),
+      list(name = "DepMap CRISPR", version = "23Q4", genes = cr[1], cell_lines = cr[2]),
+      list(name = "DepMap RNAi (DEMETER2)", version = "v6", genes = rn[1], cell_lines = rn[2]),
+      list(name = "Cysteine Editing Atlas", reference = "Li et al. Nat Chem Biol 2023", sites = n_sites),
       list(
         name = "Chemoproteomic competition ratios",
         reference = "Six CysDB-indexed ligandability studies (not a live CysDB query)",

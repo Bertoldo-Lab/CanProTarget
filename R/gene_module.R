@@ -201,6 +201,40 @@ gene_ui <- function(id) {
 #' @param dep_context Optional list of reactives from Discover: dataset,
 #'   subtype and a one-line context label. The Target tab follows them instead
 #'   of keeping its own dataset control.
+cpt_dep_n_subtypes <- function(idx, gene_key, dataset) {
+  ds <- idx$dep_summary
+  n <- ds$n_subtypes[ds$gene_key == gene_key & ds$dataset == dataset]
+  if (length(n) && !is.na(n[1])) as.integer(n[1]) else 0L
+}
+
+cpt_gene_probe_rows <- function(idx, gene_key, cr4 = NULL) {
+  cols <- c("probe_name", "CR", "n_targets", "cysteineid", "ligandable",
+            "Dataset", "Cell_Line", "SMILES")
+  top <- as.data.frame(idx$probes[idx$probes$gene_key == gene_key, , drop = FALSE],
+                       stringsAsFactors = FALSE)
+  es <- idx$engaged_sites
+  es <- es[cpt_gene_match_key(es$gene_name) == gene_key, , drop = FALSE]
+  eng <- data.frame(
+    probe_name = as.character(es$probe_name), CR = es$CR,
+    n_targets = es$n_targets, cysteineid = as.character(es$cysteineid),
+    ligandable = rep("yes", nrow(es)), stringsAsFactors = FALSE
+  )
+  if (is.data.frame(cr4) && nrow(cr4) && nrow(eng)) {
+    k <- paste(tolower(as.character(cr4$probe_name)), as.character(cr4$cysteineid))
+    m <- match(paste(tolower(eng$probe_name), eng$cysteineid), k)
+    for (nm in c("Dataset", "Cell_Line", "SMILES")) {
+      if (nm %in% names(cr4)) eng[[nm]] <- as.character(cr4[[nm]])[m]
+    }
+  }
+  for (nm in c("probe_name", "cysteineid")) top[[nm]] <- as.character(top[[nm]])
+  seen <- paste(tolower(eng$probe_name), eng$cysteineid)
+  rest <- top[!(paste(tolower(top$probe_name), top$cysteineid) %in% seen), , drop = FALSE]
+  out <- dplyr::bind_rows(eng, rest[, intersect(cols, names(rest)), drop = FALSE])
+  out <- out[, intersect(cols, names(out)), drop = FALSE]
+  out$CR <- round(out$CR, 2)
+  out[order(-out$CR), , drop = FALSE]
+}
+
 gene_server <- function(id, shared_data, on_jump = NULL, preset = NULL,
                         dep_effect_min = NULL, dep_context = NULL) {
   moduleServer(id, function(input, output, session) {
@@ -239,6 +273,11 @@ gene_server <- function(id, shared_data, on_jump = NULL, preset = NULL,
       if (!identical(want, isolate(input$dataset))) {
         updateSelectInput(session, "dataset", selected = want)
       }
+    })
+
+    probe_cr4 <- reactive({
+      if (is.null(shared_data$protein_binding_cr4)) return(NULL)
+      tryCatch(shared_data$protein_binding_cr4(), error = function(e) NULL)
     })
 
     index <- reactive({
@@ -298,10 +337,9 @@ gene_server <- function(id, shared_data, on_jump = NULL, preset = NULL,
     })
 
     output$vb_dependency <- renderValueBox({
-      row <- gene_row()
-      n <- if (is.null(row) || is.na(row$dep_n_subtypes)) 0 else row$dep_n_subtypes
+      n <- cpt_dep_n_subtypes(index(), gene_sel(), active_dataset())
       valueBox(
-        n, "Subtypes where dependent",
+        n, paste0("Subtypes where dependent (", active_dataset(), ")"),
         icon = icon("dna"), color = if (n > 0) "navy" else "light-blue"
       )
     })
@@ -376,7 +414,10 @@ gene_server <- function(id, shared_data, on_jump = NULL, preset = NULL,
       # emptyTable rather than validate(): a validation error inside renderDT
       # leaves the previous gene's rows on screen.
       datatable(
-        df %>% dplyr::mutate(dplyr::across(where(is.numeric), ~ round(.x, 4))),
+        df %>% dplyr::mutate(
+          dplyr::across(c("p", "p vs non-cancer"), ~ signif(.x, 3)),
+          dplyr::across(where(is.numeric) & !dplyr::any_of(c("p", "p vs non-cancer")),
+                        ~ round(.x, 4))),
         rownames = FALSE, selection = "single",
         options = list(
           pageLength = 10, scrollX = TRUE,
@@ -1009,7 +1050,7 @@ gene_server <- function(id, shared_data, on_jump = NULL, preset = NULL,
       # Every covalent probe recorded for the gene. A CR floor here hid the
       # whole table for genes with no engagement at CR >= 4, which is a fact
       # about the gene worth seeing rather than an empty panel.
-      df <- idx$probes %>% dplyr::filter(.data$gene_key == key)
+      df <- cpt_gene_probe_rows(idx, key, probe_cr4())
 
       # DT's own empty text rather than validate(): a validation error inside
       # renderDT leaves the previous gene's widget on screen.
@@ -1207,8 +1248,7 @@ gene_server <- function(id, shared_data, on_jump = NULL, preset = NULL,
     })
     output$dl_probe_table <- dl_table("probes", function() {
       idx <- index()
-      df <- idx$probes %>% dplyr::filter(.data$gene_key == gene_sel())
-      df
+      cpt_gene_probe_rows(idx, gene_sel(), probe_cr4())
     })
     output$dl_cmp <- dl_table("subtype_comparison", function() {
       r <- cmp_out()
@@ -1235,7 +1275,7 @@ gene_server <- function(id, shared_data, on_jump = NULL, preset = NULL,
           ),
           probes = tryCatch({
             idx <- index()
-            idx$probes %>% dplyr::filter(.data$gene_key == gene_sel())
+            cpt_gene_probe_rows(idx, gene_sel(), probe_cr4())
           }, error = function(e) NULL)
         )
         sheets <- sheets[!vapply(sheets, is.null, logical(1))]
@@ -1316,7 +1356,7 @@ cpt_gene_card <- function(idx, gene_key, dataset = "RNAi", n_show = 5) {
     ),
     shiny::tags$div(
       class = "cpt-card-stats",
-      stat("subtypes", count(row$dep_n_subtypes)),
+      stat(paste(dataset, "subtypes"), cpt_dep_n_subtypes(idx, gene_key, dataset)),
       stat("engaged sites", count(row$n_engaged_sites)),
       stat("probes", count(row$n_probes)),
       stat("ClinVar", count(row$n_clinvar))

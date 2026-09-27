@@ -108,7 +108,7 @@ test("cysteine_target report contains branding", {
   if (!length(files)) return(FALSE)
   content <- readLines(files[1], warn = FALSE)
   text <- paste(content, collapse = " ")
-  grepl("CanProTarget", text) && grepl("Bertoldo Lab", text) && grepl("github.com/Bertoldo-Lab", text)
+  grepl("CanProTarget", text) && grepl("Bertoldo JB", text) && grepl("github.com/Bertoldo-Lab", text)
 })
 
 test("cysteine_target report contains gene data", {
@@ -146,7 +146,7 @@ test("gene_dependency report contains branding", {
   files <- list.files(output_dir, pattern = "gene_dependency_KRAS", full.names = TRUE)
   if (!length(files)) return(FALSE)
   content <- paste(readLines(files[1], warn = FALSE), collapse = " ")
-  grepl("CanProTarget", content) && grepl("Bertoldo Lab", content) && grepl("github.com/Bertoldo-Lab", content)
+  grepl("CanProTarget", content) && grepl("Bertoldo JB", content) && grepl("github.com/Bertoldo-Lab", content)
 })
 
 test("gene_dependency report contains analysis results", {
